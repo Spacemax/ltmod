@@ -10468,8 +10468,8 @@
     <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="OutdoorDecor/stalactite01" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
   <block id="1385" name="stalactite02">
@@ -10479,8 +10479,8 @@
     <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="OutdoorDecor/stalactite02" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
 
   <block id="1386" name="stalactite03">
@@ -10490,8 +10490,8 @@
     <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="OutdoorDecor/stalactite03" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
   <block id="1387" name="stalactite04">
@@ -10501,8 +10501,8 @@
     <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="OutdoorDecor/stalactite04" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
   <block id="1388" name="cobweb">
@@ -10530,8 +10530,8 @@
 	<property name="Mesh" value="models" />
     <property name="Texture" value="1" />
     <property name="Model" value="OutdoorDecor/stalagmite01" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
   <block id="1391" name="stalagmite02">
@@ -10549,8 +10549,8 @@
 	<property name="Mesh" value="models" />
     <property name="Texture" value="1" />
     <property name="Model" value="OutdoorDecor/stalagmite03" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
   <block id="1393" name="stalagmite04">
@@ -10559,8 +10559,8 @@
 	<property name="Mesh" value="models" />
     <property name="Texture" value="1" />
     <property name="Model" value="OutdoorDecor/stalagmite04" param1="main_mesh" />
-    <drop event="Destroy" name="potassiumNitrate" count="1" prob="1.0" />
-    <drop event="Fall" name="potassiumNitrate" count="1" prob="1.0" />
+    <drop event="Destroy" name="potassiumNitrate" count="2" prob="1.0" />
+    <drop event="Fall" name="potassiumNitrate" count="4" prob="1.0" />
   </block>
   
     <block id="1394" name="artcube">
@@ -10951,7 +10951,7 @@
     <property name="Collide" value="rockets,melee" />
     <!-- Water Condenser Stage 1 - begins working -->
     <property name="IsTerrainDecoration" value="true" />
-    <property name="PlantGrowing.FertileLevel" value="7" />
+    <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.Next" value="smelterStage2" />
 	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
     <property name="PlantGrowing.GrowthRate" value="12" />
@@ -10970,7 +10970,7 @@
     <property name="Collide" value="rockets,melee" />
     <!-- Smelter Stage 2 - finish and prepare water, reset base to inactive -->
     <property name="IsTerrainDecoration" value="true" />
-    <property name="PlantGrowing.FertileLevel" value="7" />
+    <property name="PlantGrowing.FertileLevel" value="0" />
 	<!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="Smelter" />
 	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
