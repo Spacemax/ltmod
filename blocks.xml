@@ -10872,7 +10872,9 @@
   <!-- Final Stage - UHPC Concrete -->
 
   <block id="1423" name="uhpConcrete">
-		<property name="Material" value="concrete_steel" />
+	<property name="Material" value="concrete_steel" />
+	<property name="Shape" value="CubeCutoutBackFaces" />
+    <property name="Mesh" value="cutout" />
 		<property name="Texture" value="176,176,176,176,176,176" />
 <!-- 	<property name="Texture" value="381" /> -->
 		<property class="UpgradeBlock">
