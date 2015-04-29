@@ -10872,7 +10872,9 @@
   <!-- Final Stage - UHPC Concrete -->
 
   <block id="1423" name="uhpConcrete">
-		<property name="Material" value="concrete_steel" />
+	<property name="Material" value="concrete_steel" />
+	<property name="Shape" value="CubeCutoutBackFaces" />
+    <property name="Mesh" value="cutout" />
 		<property name="Texture" value="176,176,176,176,176,176" />
 <!-- 	<property name="Texture" value="381" /> -->
 		<property class="UpgradeBlock">
@@ -10933,19 +10935,13 @@
     <block id="1424" name="Smelter">
 	<property name="CustomIcon" value="brickpainted"/>
 	<property name="CustomIconTint" value="FD9095"/>
-	<property name="Class" value="Torch" />
-	<property name="ParticleName" value="campfire" />
-    <property name="ParticleOffset" value="1,1,1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelter2" />
-      <property name="Item" value="ironOre" />
-      <property name="ItemCount" value="64" />
+      <property name="Item" value="coalOre" />
+      <property name="ItemCount" value="32" />
       <property name="UpgradeHitCount" value="2" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
@@ -10959,16 +10955,15 @@
     <property name="ParticleOffset" value="1,1,1" />
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	
+	<property name="HeatMapFrequency" value="25"/>	
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelterStage1" />
-      <property name="Item" value="coalOre" />
-      <property name="ItemCount" value="32" />
-      <property name="UpgradeHitCount" value="3" />
+      <property name="Item" value="ironOre" />
+      <property name="ItemCount" value="64" />
+      <property name="UpgradeHitCount" value="4" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
@@ -10990,7 +10985,7 @@
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.Next" value="smelterStage2" />
 	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -11010,7 +11005,7 @@
 	<!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="Smelter" />
 	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />

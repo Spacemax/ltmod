@@ -572,30 +572,17 @@
       <property name="stability_glue" value="100" />
       <property name="Mass" type="int" value="6" />
    </material>
-   
-   	
-			<!-- LT Steel / Concrete Hybrid -->
+ 
+ <!-- LT Steel / Concrete Hybrid -->  
    <material id="concrete_steel">
       <property name="damage_category" value="metal" />
       <property name="surface_category" value="metal" />
       <property name="Hardness" type="float" value="300.0" />
-      <property name="stepsound" value="metal" />
+      <property name="stepsound" value="stone" />
       <property name="stability_glue" value="210" />
       <property name="Mass" type="int" value="25" />
-      <property name="explosionresistance" value=".2" />
+      <property name="explosionresistance" value=".9" />
    </material>
-	
-				<!-- LT Tungsten / Concrete Hybrid -->
-   <material id="concrete_tungsten">
-      <property name="damage_category" value="tungsten" />
-      <property name="surface_category" value="tungsten" />
-      <property name="Hardness" type="float" value="40.0" />
-      <property name="stepsound" value="metal" />
-      <property name="stability_glue" value="240" />
-      <property name="Mass" type="int" value="30" />
-      <property name="explosionresistance" value=".1" />
-   </material>
-   
    
    
 </materials>
