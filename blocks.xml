@@ -10933,19 +10933,13 @@
     <block id="1424" name="Smelter">
 	<property name="CustomIcon" value="brickpainted"/>
 	<property name="CustomIconTint" value="FD9095"/>
-	<property name="Class" value="Torch" />
-	<property name="ParticleName" value="campfire" />
-    <property name="ParticleOffset" value="1,1,1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelter2" />
-      <property name="Item" value="ironOre" />
-      <property name="ItemCount" value="64" />
+      <property name="Item" value="coalOre" />
+      <property name="ItemCount" value="32" />
       <property name="UpgradeHitCount" value="2" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
@@ -10959,16 +10953,15 @@
     <property name="ParticleOffset" value="1,1,1" />
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	
+	<property name="HeatMapFrequency" value="25"/>	
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelterStage1" />
-      <property name="Item" value="coalOre" />
-      <property name="ItemCount" value="32" />
-      <property name="UpgradeHitCount" value="3" />
+      <property name="Item" value="ironOre" />
+      <property name="ItemCount" value="64" />
+      <property name="UpgradeHitCount" value="4" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
