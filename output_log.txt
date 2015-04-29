@@ -1,0 +1,356 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti   (ID=0x1200)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\libnoise.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\libnoise.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LogLibrary.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LogLibrary.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\ProfileAttribute.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\ProfileAttribute.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\NSpeex.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\NSpeex.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\EasyAntiCheat.Client.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\EasyAntiCheat.Client.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\EasyAntiCheat.Server.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\EasyAntiCheat.Server.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LitJson.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LitJson.dll into Unity Child Domain
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UMA.dll (this message is harmless)
+Loading F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UMA.dll into Unity Child Domain
+- Completed reload, in  0.111 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1200 59Hz; virtual: 3840x1200 at -1920,0
+<RI> Initialized touch support.
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\System.dll (this message is harmless)
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Boo.Lang.dll (this message is harmless)
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:25:21 0.000 INF [Steamworks.NET] SteamAPI_Init() ok
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:25:21 0.031 INF Initializing EAC
+2015-04-29T17:25:21 0.034 INF EAC initialized :: Initialization completed.
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Legacy Shaders/Reflective/Diffuse': fallback shader 'Legacy Shaders/Reflective/VertexLit' not found
+UnloadTime: 2.733479 ms
+2015-04-29T17:25:24 3.527 INF Awake
+2015-04-29T17:25:24 3.554 INF Version: Alpha 11.3 (b8) Compatibility Version: Alpha 11.3, OS: Windows 64 Bit 12280MB RAM
+2015-04-29T17:25:24 3.555 INF Last played version: Alpha 11.3
+2015-04-29T17:25:24 3.556 INF Local UTC offset: 10 hours
+2015-04-29T17:25:24 3.558 INF Command line arguments: F:\Games\steamapps\common\7 Days To Die\7DaysToDie.exe
+2015-04-29T17:26:05 44.815 ERR Loading and parsing 'loot.xml' (lootgroup 'armor' does not exist or has not been defined before being reference by lootcontainer/lootgroup id='6')
+2015-04-29T17:26:05 44.815 ERR Loading of loot aborted due to errors!
+2015-04-29T17:26:05 44.817 ERR   at LootFromXml.3AAA1 (System.String 0AAAA, System.Xml.XmlNodeList 1AAAA, System.Collections.Generic.List`1 2AAAA) [0x00000] in <filename unknown>:0 
+  at LootFromXml.LoadLootContainers (.8F7AA _xmlFile) [0x00000] in <filename unknown>:0 
+2015-04-29T17:26:05 44.840 INF WorldStaticData.Init() needed 27.609s
+2015-04-29T17:26:06 44.930 INF Loading permissions file at 'C:\Users\Kurt\Documents/7 Days To Die/Saves/serveradmin.xml'
+2015-04-29T17:26:06 44.964 INF Loading permissions file done.
+2015-04-29T17:26:06 44.995 INF Load key config check
+2015-04-29T17:26:06 44.996 INF Load key config
+2015-04-29T17:26:06 45.006 INF [MODS] No mods folder found
+2015-04-29T17:26:06 45.021 INF Awake done
+
+Unloading 579 unused Assets to reduce memory usage. Loaded Objects now: 186882.
+Total: 174.258728 ms (FindLiveObjects: 14.314035 ms CreateObjectMapping: 8.626201 ms MarkObjects: 150.706833 ms  DeleteObjects: 0.610327 ms)
+
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:06 45.334 INF [Steamworks.NET] Login ok.
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2140 -> priority: 1 
+  Thread -> id: 1508 -> priority: 1 
+2015-04-29T17:26:11 50.836 WRN Ex: Invalid length.
+2015-04-29T17:26:11 50.846 WRN Ex: Invalid length.
+2015-04-29T17:26:36 75.254 INF StartGame
+2015-04-29T17:26:36 75.257 INF Persistent GamePrefs saved
+GamePref.AdminFileName = serveradmin.xml
+GamePref.AirDropFrequency = 168
+GamePref.AutopilotMode = 0
+GamePref.BlockDurabilityModifier = 100
+GamePref.BuildCreate = True
+GamePref.ConnectToServerIP = 203.217.31.140
+GamePref.ConnectToServerPort = 25900
+GamePref.ControlPanelEnabled = False
+GamePref.ControlPanelPort = 8080
+GamePref.CraftTimer = 1
+GamePref.CreateLevelDim = 6
+GamePref.CreateLevelName = My Level
+GamePref.CreativeMenuEnabled = False
+GamePref.DayCount = 3
+GamePref.DayNightLength = 60
+GamePref.DebugMenuEnabled = False
+GamePref.DebugMenuShowTasks = False
+GamePref.DebugStopEnemiesMoving = False
+GamePref.DedicatedServer = False
+GamePref.DisableNAT = False
+GamePref.DropOnDeath = 2
+GamePref.DropOnQuit = 0
+GamePref.DynamicSpawner = 
+GamePref.EACEnabled = False
+GamePref.EnemyDifficulty = 0
+GamePref.EnemySenseMemory = 60
+GamePref.EnemySpawnMode = 0
+GamePref.FavoriteServersList = 
+GamePref.FragLimit = 20
+GamePref.FriendlyFire = True
+GamePref.GameDifficulty = 2
+GamePref.GameMode = GameModeSurvivalMP
+GamePref.GameName = AshenTest2
+GamePref.GameVersion = Alpha 11.3
+GamePref.GameWorld = Random Gen
+GamePref.JoiningOptions = True
+GamePref.LandClaimDeadZone = 30
+GamePref.LandClaimDecayMode = 0
+GamePref.LandClaimExpiryTime = 5
+GamePref.LandClaimOfflineDurabilityModifier = 256
+GamePref.LandClaimOnlineDurabilityModifier = 8
+GamePref.LandClaimSize = 15
+GamePref.LastGameResetRevision = 1
+GamePref.LootAbundance = 100
+GamePref.LootRespawnDays = 3
+GamePref.LootTimer = 1
+GamePref.MatchLength = 10
+GamePref.MaxSpawnedAnimals = 50
+GamePref.MaxSpawnedZombies = 60
+GamePref.NightPercentage = 20
+GamePref.OptionsAA = 0
+GamePref.OptionsAmbientVolumeLevel = 0
+GamePref.OptionsDeferredLighting = True
+GamePref.OptionsFieldOfView = 90
+GamePref.OptionsGrassDistance = 1
+GamePref.OptionsImageEffects = False
+GamePref.OptionsInvertMouse = False
+GamePref.OptionsLODDistance = 0.7043827
+GamePref.OptionsMicVolumeLevel = 0.75
+GamePref.OptionsMouseSensitivity = 6
+GamePref.OptionsMusicVolumeLevel = 0
+GamePref.OptionsOverallAudioVolumeLevel = 0.3027527
+GamePref.OptionsPlayerModel = playerMale
+GamePref.OptionsPlayerModelTexture = Player/Male/Player_male
+GamePref.OptionsReflectionDistance = 10
+GamePref.OptionsReflectionQuality = 0
+GamePref.OptionsReflectiveWater = False
+GamePref.OptionsShadowDistance = 0
+GamePref.OptionsSSAO = False
+GamePref.OptionsTextureQuality = 1
+GamePref.OptionsTreeQuality = 1
+GamePref.OptionsViewDistance = 11
+GamePref.OptionsVoiceChatEnabled = True
+GamePref.OptionsVoiceVolumeLevel = 0.75
+GamePref.OptionsVsync = 0
+GamePref.PersistentPlayerProfiles = True
+GamePref.PlayerAutologin = False
+GamePref.PlayerId = 76561198007713922
+GamePref.PlayerName = Ashen
+GamePref.PlayerSafeZoneHours = 5
+GamePref.PlayerSafeZoneLevel = 5
+GamePref.PlayerToken = 
+GamePref.RebuildMap = False
+GamePref.SaveGameFolder = C:\Users\Kurt\Documents/7 Days To Die/Saves
+GamePref.SelectionContextMode = 0
+GamePref.SelectionOperationMode = 0
+GamePref.ServerDescription = 
+GamePref.ServerIP = 
+GamePref.ServerIsPublic = True
+GamePref.ServerMaxPlayerCount = 8
+GamePref.ServerName = Default Server
+GamePref.ServerPort = 26900
+GamePref.ServerWebsiteURL = 
+GamePref.ShowFriendPlayerOnMap = True
+GamePref.TelnetEnabled = False
+GamePref.TelnetPort = 25003
+GamePref.ZombiePlayers = True
+GamePref.ZombiesRun = 0
+GameStat.AirDropFrequency = 0
+GameStat.AnimalCount = 0
+GameStat.BlockDurabilityModifier = 1
+GameStat.CraftTimer = 1
+GameStat.CurrentRoundIx = 0
+GameStat.DayLimitActive = False
+GameStat.DayLimitThisRound = 0
+GameStat.Difficulty = 2
+GameStat.DropOnDeath = 1
+GameStat.DropOnQuit = 0
+GameStat.EnemyCount = 0
+GameStat.EnemyDifficulty = Normal
+GameStat.EnemySenseMemory = 60
+GameStat.EnemySpawnMode = 3
+GameStat.FragLimitActive = False
+GameStat.FragLimitThisRound = 0
+GameStat.GameDifficulty = 2
+GameStat.GameModeId = 0
+GameStat.GameState = 0
+GameStat.GlobalMessageToShow = 
+GameStat.IsCreativeMenuEnabled = False
+GameStat.IsFlyingEnabled = False
+GameStat.IsFriendlyFire = True
+GameStat.IsPlayerCollisionEnabled = True
+GameStat.IsPlayerDamageEnabled = True
+GameStat.IsResetMapOnRestart = False
+GameStat.IsSaveSupplyCrates = True
+GameStat.IsSpawnEnemies = True
+GameStat.IsSpawnNearOtherPlayer = False
+GameStat.IsTeleportEnabled = False
+GameStat.IsVersionCheckDone = True
+GameStat.LandClaimDeadZone = 30
+GameStat.LandClaimDecayMode = 0
+GameStat.LandClaimExpiryTime = 3
+GameStat.LandClaimOfflineDurabilityModifier = 32
+GameStat.LandClaimOnlineDurabilityModifier = 32
+GameStat.LandClaimSize = 7
+GameStat.LoadScene = 
+GameStat.LootTimer = 1
+GameStat.NightPercentage = 50
+GameStat.ScoreDiedMultiplier = -5
+GameStat.ScorePlayerKillMultiplier = 1
+GameStat.ScoreZombieKillMultiplier = 1
+GameStat.ShowAllPlayersOnMap = False
+GameStat.ShowFriendPlayerOnMap = True
+GameStat.ShowSpawnWindow = False
+GameStat.ShowWindow = 
+GameStat.ShowZombieCounter = False
+GameStat.TimeLimitActive = False
+GameStat.TimeLimitThisRound = 0
+GameStat.TimeOfDayIncPerSec = 20
+GameStat.ZombieHordeMeter = False
+2015-04-29T17:26:36 75.328 INF StartAsServer
+2015-04-29T17:26:36 75.330 INF createWorld: Random Gen, AshenTest2, GameModeSurvivalMP
+2015-04-29T17:26:36 75.365 INF Started thread thread_Regenerating
+2015-04-29T17:26:36 75.409 INF World.Load: Random Gen
+2015-04-29T17:26:36 75.502 INF Started thread thread_Pathfinder
+2015-04-29T17:26:37 76.093 INF SelectionBoxManager.Instance: SelectionBoxes (SelectionBoxManager)
+2015-04-29T17:26:37 76.096 INF Started thread thread_GenerateChunks
+2015-04-29T17:26:37 76.708 INF Loading rwgmixer.xml
+2015-04-29T17:26:37 76.776 INF Loading and parsing of generator took 83ms
+2015-04-29T17:26:37 76.781 INF createWorld() done
+2015-04-29T17:26:37 76.782 INF Loading players.xml
+2015-04-29T17:26:38 77.839 INF Created player with id=171
+2015-04-29T17:26:39 77.864 INF Adding observed entity: 1, (417.5, 64.0, -806.2), 11
+2015-04-29T17:26:39 77.870 INF Setting for 'DayNightLength' does not match the default (server will go to the modded category): current = 60, default = 40
+2015-04-29T17:26:39 77.870 INF Setting for 'DropOnDeath' does not match the default (server will go to the modded category): current = 2, default = 0
+2015-04-29T17:26:39 77.871 INF Setting for 'EnemySpawnMode' does not match the default (server will go to the modded category): current = 0, default = 3
+2015-04-29T17:26:39 77.871 INF Setting for 'LootRespawnDays' does not match the default (server will go to the modded category): current = 3, default = 7
+2015-04-29T17:26:39 77.872 INF Setting for 'AirDropFrequency' does not match the default (server will go to the modded category): current = 168, default = 72
+2015-04-29T17:26:39 77.872 INF Setting for 'BuildCreate' does not match the default (server will go to the modded category): current = True, default = False
+2015-04-29T17:26:39 77.877 INF Modified file (server will go to the modded category): Data/Config/biomes.xml has invalid hash
+2015-04-29T17:26:39 77.879 INF StartGame done
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\System.Configuration.dll (this message is harmless)
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:39 78.181 ERR Exception in thread thread_GenerateChunks:
+2015-04-29T17:26:39 78.182 EXC Object reference not set to an instance of an object
+NullReferenceException: Object reference not set to an instance of an object
+  at 680AA.4FAAA (.7B7AA world, .Chunk _chunk, Vector3i _blockPos, 801AA _blockValue) [0x00000] in <filename unknown>:0 
+  at Chunk.SetBlock (.7B7AA _world, Int32 x, Int32 y, Int32 z, Int32 _clrIdx, 801AA _blockValue) [0x00000] in <filename unknown>:0 
+  at Chunk.SetBlock (.7B7AA _world, Int32 x, Int32 y, Int32 z, 801AA _blockValue) [0x00000] in <filename unknown>:0 
+  at WorldDecoratorBlocksFromBiome.decorateSingleBlocks (.World _world, .Chunk _chunk, .Chunk cXp1Z, .Chunk cXZp1, .Chunk cXp1Zp1, System.Random _random) [0x00000] in <filename unknown>:0 
+  at WorldDecoratorBlocksFromBiome.DecorateChunkOverlapping (.World _world, .Chunk _chunk, .Chunk cXp1Z, .Chunk cXZp1, .Chunk cXp1Zp1, Int32 seed) [0x00000] in <filename unknown>:0 
+  at ChunkProviderGenerateWorld.3AAA1 (.Chunk 0AAAA) [0x00000] in <filename unknown>:0 
+  at ChunkProviderGenerateWorld.7AAA1 (.Chunk 0AAAA) [0x00000] in <filename unknown>:0 
+  at ChunkProviderGenerateWorld.thread_GenerateChunks (.ThreadInfo _threadInfo) [0x00000] in <filename unknown>:0 
+  at ThreadManager.3AAA1 (System.Object 0AAAA) [0x00000] in <filename unknown>:0 
+UnityEngine.Debug:Internal_LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Logger:masterLogException(Exception)
+Logger:Exception(Exception)
+Log:Exception(Exception)
+ThreadManager:3AAA1(Object)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIDrawCall.3AAA1 () [0x00000] in <filename unknown>:0 
+  at UIDrawCall.5AAA1 () [0x00000] in <filename unknown>:0 
+  at UIDrawCall.7AAA1 () [0x00000] in <filename unknown>:0 
+  at UIDrawCall.OnWillRenderObject () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+2015-04-29T17:26:39 78.189 INF Exited thread thread_GenerateChunks
+Platform assembly: F:\Games\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Mono.Security.dll (this message is harmless)
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:39 78.825 INF [Steamworks.NET] GameServer.Init successful
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:41 79.867 INF [Steamworks.NET] Create Lobby
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:41 79.870 INF [Steamworks.NET] GameServer.LogOn successful
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:41 80.145 INF [Steamworks.NET] Lobby creation succeeded
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:41 80.150 INF [Steamworks.NET] Lobby entered: 109775242022089657
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:48 87.331 INF Disconnect
+2015-04-29T17:26:48 87.333 INF [NET] DisconnectedFromServer: Server shut down
+2015-04-29T17:26:48 87.334 INF SaveAndCleanupWorld
+2015-04-29T17:26:48 87.366 INF Saving 0 of chunks took 19ms
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:48 87.370 INF [Steamworks.NET] Stopping server
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:48 87.407 INF World.Unload
+2015-04-29T17:26:48 87.412 INF Exited thread thread_Pathfinder
+2015-04-29T17:26:48 87.414 INF World.Cleanup
+2015-04-29T17:26:48 87.414 INF Exited thread thread_Regenerating
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+2015-04-29T17:26:48 87.616 INF Persistent GamePrefs saved
+2015-04-29T17:26:48 87.616 INF Cleanup
+Unloading 5 Unused Serialized files (Serialized files now loaded: 2)
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
+
+Unloading 11362 unused Assets to reduce memory usage. Loaded Objects now: 60850.
+Total: 70.514107 ms (FindLiveObjects: 11.428641 ms CreateObjectMapping: 6.912154 ms MarkObjects: 43.399857 ms  DeleteObjects: 8.772452 ms)
+
+2015-04-29T17:26:48 87.824 INF OnApplicationQuit
+Fallback handler could not load library F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Mono/.\F:/Games/steamapps/common/7 Days To Die/7DaysToDie_Data/Plugins/CSteamworks.dll
