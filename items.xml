@@ -619,7 +619,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Upgrade_hit_offset" value="0" />
             <property name="Sound_start" value="UseActions/repair_block" />
             <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron" />
-            <property name="Restricted_upgrade_items" value="concreteMix" />
+            <property name="Restricted_upgrade_items" value="concreteMix,uhpconcreteMix" />
         </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Attributes">
@@ -674,8 +674,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Repair_amount" value="2" />
             <property name="Upgrade_hit_offset" value="-2" />
             <property name="Sound_start" value="UseActions/repair_block" />
-            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron" />
-            <property name="Restricted_upgrade_items" value="concreteMix" />
+            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron,hardwoodPlank" />
+            <property name="Restricted_upgrade_items" value="concreteMix,uhpconcreteMix" />
         </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
@@ -711,7 +711,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Repair_amount" value="2" />
             <property name="Upgrade_hit_offset" value="-1" />
             <property name="Sound_start" value="UseActions/repair_block" />
-            <property name="Restricted_upgrade_items" value="concreteMix" />
+            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron,hardwoodPlank,ironOre,coalOre" />
+            <property name="Restricted_upgrade_items" value="concreteMix,uhpconcreteMix" />
         </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
@@ -6221,8 +6222,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Upgrade_hit_offset" value="-3" />
             <property name="Repair_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
             <property name="Upgrade_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
-            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron" />
-            <property name="Restricted_upgrade_items" value="concrete" />
+            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron,hardwoodPlank" />
+            <property name="Restricted_upgrade_items" value="concrete,concreteMix,uhpconcreteMix" />
         </property>
         <property name="Group" value="Ammo/Weapons" />
         <property class="Preview">
