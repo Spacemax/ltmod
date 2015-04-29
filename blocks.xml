@@ -10985,7 +10985,7 @@
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.Next" value="smelterStage2" />
 	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="300" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -11005,7 +11005,7 @@
 	<!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="Smelter" />
 	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="300" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
