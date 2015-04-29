@@ -10711,7 +10711,7 @@
     <property name="Material" value="wood" />
     <property name="Shape" value="Tube" />
     <property name="Texture" value="21,21,116,116,116,116" />
-    <property name="FuelValue" value="192" />
+    <property name="FuelValue" value="384" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="reinforcedWoodTrunk" />
       <property name="Item" value="woodPlank" />
