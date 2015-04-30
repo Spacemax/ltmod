@@ -67,7 +67,7 @@
 			<property name="RoadRadius" value="7" />
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" />
 			<property name="MaxCityBlockSizeInMeters" value="412,412" />
 			
@@ -102,7 +102,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
@@ -137,7 +137,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
@@ -172,7 +172,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
@@ -207,7 +207,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
@@ -242,7 +242,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.2">
+		<hub name="town" prob="0.35">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
