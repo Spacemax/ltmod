@@ -581,50 +581,50 @@
 		<day value="1">
 			<property name="EntityGroupName"    value="ZombiesAll" />
 			<property name="Time"               value="Any" />
-			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive"         value="0" />
-			<property name="TotalPerWave"       value="1,5" />
+			<property name="DelayBetweenSpawns" value="3" />
+			<property name="TotalAlive"         value="3" />
+			<property name="TotalPerWave"       value="3" />
 		</day>
 		<day value="2">
 		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
-		  <property name="TotalPerWave"       value="5,10" />
+		  <property name="TotalAlive"         value="5" />
+		  <property name="TotalPerWave"       value="5" />
 		</day>
 		<day value="3">
 		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
-		  <property name="TotalPerWave"       value="10,15" />
+		  <property name="TotalAlive"         value="10" />
+		  <property name="TotalPerWave"       value="20" />
 		</day>
 		<day value="4">
 		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="10" />
+		  <property name="TotalAlive"         value="15" />
 		  <property name="TotalPerWave"       value="10,20" />
 		</day>
 		<day value="5">
 		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalAlive"         value="15" />
 		  <property name="TotalPerWave"       value="10,30" />
 		</day>
 		<day value="6">
 		  <property name="EntityGroupName"    value="ZombieDogGroup" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalAlive"         value="10" />
 		  <property name="TotalPerWave"       value="10,20" />
 		</day>
 		<day value="7">
 		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalAlive"         value="15" />
 		  <property name="TotalPerWave"       value="30,40" />
 		</day>	
 		<day value="8">
@@ -642,51 +642,51 @@
 			<property name="EntityGroupName"    value="ZombiesNight" />
 			<property name="Time"               value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive"         value="3" />
+			<property name="TotalAlive"         value="4" />
 			<property name="TotalPerWave"       value="4" />
 		</day>
 		<day value="2">
 		  <property name="EntityGroupName"    value="ZombiesNight" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
-		  <property name="TotalPerWave"       value="7" />
+		  <property name="TotalAlive"         value="10" />
+		  <property name="TotalPerWave"       value="10" />
 		</day>
 		<day value="3">
 		  <property name="EntityGroupName"    value="ZombiesNight" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="8" />
-		  <property name="TotalPerWave"       value="10" />
+		  <property name="TotalAlive"         value="15" />
+		  <property name="TotalPerWave"       value="15" />
 		</day>
 		<day value="4">
 		  <property name="EntityGroupName"    value="ZombiesNight" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalAlive"         value="15" />
 		  <property name="TotalPerWave"       value="15" />
 		</day>
 		<day value="5">
 		  <property name="EntityGroupName"    value="ZombiesNight" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalAlive"         value="12" />
 		  <property name="TotalPerWave"       value="20" />
 		</day>
 		<day value="6">
 		  <property name="EntityGroupName"    value="ZombiesNight" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="0" />
-		  <property name="TotalPerWave"       value="0,10" />
+		  <property name="TotalAlive"         value="15" />
+		  <property name="TotalPerWave"       value="25" />
 		</day>
 		
 		<day value="7">
 		  <property name="EntityGroupName"    value="ZombiesHoard" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
-		  <property name="TotalAlive"         value="25" />
-		  <property name="TotalPerWave"       value="20,40" />
+		  <property name="TotalAlive"         value="18" />
+		  <property name="TotalPerWave"       value="40" />
 		</day>		
 
 	</entityspawner>
@@ -696,8 +696,8 @@
 			<property name="ResetToday"         value="true" />
 			<property name="EntityGroupName"    value="ZombiesNight" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive"         value="0" />
-			<property name="TotalPerWave"       value="0" />
+			<property name="TotalAlive"         value="5" />
+			<property name="TotalPerWave"       value="5" />
 		</day>
 		<day value="7">
 			<property name="ResetToday"         value="true" />
