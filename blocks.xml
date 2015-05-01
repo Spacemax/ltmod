@@ -10711,7 +10711,7 @@
     <property name="Material" value="wood" />
     <property name="Shape" value="Tube" />
     <property name="Texture" value="21,21,116,116,116,116" />
-    <property name="FuelValue" value="192" />
+    <property name="FuelValue" value="384" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="reinforcedWoodTrunk" />
       <property name="Item" value="woodPlank" />
@@ -10872,24 +10872,62 @@
   <!-- Final Stage - UHPC Concrete -->
 
   <block id="1423" name="uhpConcrete">
-      <property name="CustomIcon" value="ironWall"/>
-	<property name="CustomIconTint" value="FD9095"/>
+	<property name="Material" value="concrete_steel" />
 	<property name="Shape" value="CubeCutoutBackFaces" />
     <property name="Mesh" value="cutout" />
-    <property name="Material" value="concrete_steel" />
-    <property name="Texture" value="176,176,176,176,176,176" />
+		<property name="Texture" value="176,176,176,176,176,176" />
 <!-- 	<property name="Texture" value="381" /> -->
-	<property class="UpgradeBlock">
+		<property class="UpgradeBlock">
 	<!-- LT Modified the block to new UHPC, was previously normal concrete form -->
-      <property name="ToBlock" value="steelWall" />
-      <property name="Item" value="forgedSteel" />
-      <property name="ItemCount" value="2" />
-      <property name="UpgradeHitCount" value="4" />
-    </property>
-    <property name="DowngradeBlock" value="concreteReinforcedBroke01" />
+			<property name="ToBlock" value="steelWall" />
+			<property name="Item" value="forgedSteel" />
+			<property name="ItemCount" value="2" />
+			<property name="UpgradeHitCount" value="4" />
+		</property>
+		<property name="DowngradeBlock" value="uhpConcreteBroke01" />
     <drop event="Destroy" count="0" prob="1" />
   </block>
   
+  
+  <block id="1430" name="uhpConcreteBroke01">
+    <property name="Material" value="concrete_steel" />
+    <property name="Texture" value="404" /> 
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="uhpConcrete" />
+      <property name="Item" value="uhpconcreteMix" />
+      <property name="ItemCount" value="1" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>    
+    <property name="DowngradeBlock" value="uhpConcreteBroke02" />
+    <drop event="Destroy" count="0" />
+  </block>
+  
+  <block id="1431" name="uhpConcreteBroke02">
+	<property name="Material" value="concrete_steel" />
+	<property name="Texture" value="405" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="uhpConcreteBroke01" />
+		<property name="Item" value="uhpconcreteMix" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="1" />
+	</property>  
+	<property name="DowngradeBlock" value="uhpConcreteBroke03" />
+	<drop event="Destroy" count="0" />
+  </block>
+  
+<block id="1432" name="uhpConcreteBroke03">
+	<property name="Material" value="concrete_steel" />
+	<property name="Texture" value="406" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="uhpConcreteBroke02" />
+		<property name="Item" value="uhpconcreteMix" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="1" />
+	</property>          
+	<property name="DowngradeBlock" value="steelRebarFrame" />
+	<drop event="Destroy" count="0" />
+</block>
+
   <!-- SMELTER -->
   
       <!-- SMELTING MACHINE BUILD STAGE 1/2 - BUILT BUT UNPOWERED -->
@@ -10897,19 +10935,13 @@
     <block id="1424" name="Smelter">
 	<property name="CustomIcon" value="brickpainted"/>
 	<property name="CustomIconTint" value="FD9095"/>
-	<property name="Class" value="Torch" />
-	<property name="ParticleName" value="campfire" />
-    <property name="ParticleOffset" value="1,1,1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelter2" />
-      <property name="Item" value="ironOre" />
-      <property name="ItemCount" value="64" />
+      <property name="Item" value="coalOre" />
+      <property name="ItemCount" value="32" />
       <property name="UpgradeHitCount" value="2" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
@@ -10923,16 +10955,15 @@
     <property name="ParticleOffset" value="1,1,1" />
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	
+	<property name="HeatMapFrequency" value="25"/>	
     <property name="Material" value="metal_hard" />
     <property name="Texture" value="332" />
     <property name="Weight" value="216" />
 	  <property class="UpgradeBlock">
       <property name="ToBlock" value="smelterStage1" />
-      <property name="Item" value="coalOre" />
-      <property name="ItemCount" value="32" />
-      <property name="UpgradeHitCount" value="3" />
+      <property name="Item" value="ironOre" />
+      <property name="ItemCount" value="64" />
+      <property name="UpgradeHitCount" value="4" />
     </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
@@ -10954,7 +10985,7 @@
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.Next" value="smelterStage2" />
 	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -10974,7 +11005,7 @@
 	<!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="Smelter" />
 	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />

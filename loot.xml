@@ -61,6 +61,14 @@ Happy looting
 		</itemlist>
 -->
 
+<!--Ashen: The bulk of all the probabilities have been calculated using the formula given to us by fun pimps that expresses the probability of an item dropping with the following formula:  
+
+Trueprob= Manualprob/#itemsinlist+Prob preceding item.  It's functionality is still being tested but to date it seems to work. -->
+
+
+
+
+
 
 <lootcontainers>
 
@@ -351,7 +359,7 @@ The higher your level the more ammo you can find
 	</lootgroup>
 	
 	<!-- KM:Increase drop rate when this group is called, this should populate fridges,coolers with more rotten items in general-->
-	<lootgroup name="rottenFood" count="1,3">
+	<lootgroup name="rottenFood" count="1">
 		<item name="moldyBread" count="1,3" />
 		<item name="shamSandwich" count="1,3" />
 		<item name="rottingFlesh" count="2,4"/>
@@ -435,240 +443,240 @@ more opportunities to score that flawless part!
 		<item name="pistol_barrel" quality="500, 600" prob="0.010"/>
 		<item name="pistol_barrel" quality="400, 499" prob="0.05"/>
 		<item name="pistol_barrel" quality="300, 399" prob="0.2"/>
-		<item name="pistol_barrel" quality="200, 299" prob="0.4"/>
-		<item name="pistol_barrel" quality="100, 199" prob="0.6"/>
+		<item name="pistol_barrel" quality="200, 299" prob="0.35"/>
+		<item name="pistol_barrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="pistol_receiver">
 		<item name="pistol_receiver" quality="500, 600" prob="0.010"/>
 		<item name="pistol_receiver" quality="400, 499" prob="0.05"/>
 		<item name="pistol_receiver" quality="300, 399" prob="0.2"/>
-		<item name="pistol_receiver" quality="200, 299" prob="0.4"/>
-		<item name="pistol_receiver" quality="100, 199" prob="0.6"/>
+		<item name="pistol_receiver" quality="200, 299" prob="0.35"/>
+		<item name="pistol_receiver" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="pistol_grip">
 		<item name="pistol_grip" quality="500, 600" prob="0.010"/>
 		<item name="pistol_grip" quality="400, 499" prob="0.05"/>
 		<item name="pistol_grip" quality="300, 399" prob="0.2"/>
-		<item name="pistol_grip" quality="200, 299" prob="0.4"/>
-		<item name="pistol_grip" quality="100, 199" prob="0.6"/>
+		<item name="pistol_grip" quality="200, 299" prob="0.35"/>
+		<item name="pistol_grip" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="PumpShotgun_barrel">
 		<item name="PumpShotgun_barrel" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_barrel" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_barrel" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_barrel" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_barrel" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_barrel" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_barrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="PumpShotgun_shortBarrel">
 		<item name="PumpShotgun_shortBarrel" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_shortBarrel" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_shortBarrel" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_shortBarrel" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_shortBarrel" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_shortBarrel" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_shortBarrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="PumpShotgun_shortStock">
 		<item name="PumpShotgun_shortStock" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_shortStock" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_shortStock" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_shortStock" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_shortStock" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_shortStock" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_shortStock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="PumpShotgun_stock">
 		<item name="PumpShotgun_stock" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_stock" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_stock" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_stock" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_stock" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_stock" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_stock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="PumpShotgun_receiver">
 		<item name="PumpShotgun_receiver" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_receiver" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_receiver" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_receiver" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_receiver" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_receiver" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_receiver" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="huntingRifleBarrel">
 		<item name="huntingRifleBarrel" quality="500, 600" prob="0.010"/>
 		<item name="huntingRifleBarrel" quality="400, 499" prob="0.05"/>
 		<item name="huntingRifleBarrel" quality="300, 399" prob="0.2"/>
-		<item name="huntingRifleBarrel" quality="200, 299" prob="0.4"/>
-		<item name="huntingRifleBarrel" quality="100, 199" prob="0.6"/>
+		<item name="huntingRifleBarrel" quality="200, 299" prob="0.35"/>
+		<item name="huntingRifleBarrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="huntingRifleStock">
 		<item name="huntingRifleStock" quality="500, 600" prob="0.010"/>
 		<item name="huntingRifleStock" quality="400, 499" prob="0.05"/>
 		<item name="huntingRifleStock" quality="300, 399" prob="0.2"/>
-		<item name="huntingRifleStock" quality="200, 299" prob="0.4"/>
-		<item name="huntingRifleStock" quality="100, 199" prob="0.6"/>
+		<item name="huntingRifleStock" quality="200, 299" prob="0.35"/>
+		<item name="huntingRifleStock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="huntingRifleBolt">
 		<item name="huntingRifleBolt" quality="500, 600" prob="0.010"/>
 		<item name="huntingRifleBolt" quality="400, 499" prob="0.05"/>
 		<item name="huntingRifleBolt" quality="300, 399" prob="0.2"/>
-		<item name="huntingRifleBolt" quality="200, 299" prob="0.4"/>
-		<item name="huntingRifleBolt" quality="100, 199" prob="0.6"/>
+		<item name="huntingRifleBolt" quality="200, 299" prob="0.35"/>
+		<item name="huntingRifleBolt" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="pistol_parts">
 		<item name="pistol_parts" quality="500, 600" prob="0.010"/>
 		<item name="pistol_parts" quality="400, 499" prob="0.05"/>
 		<item name="pistol_parts" quality="300, 399" prob="0.2"/>
-		<item name="pistol_parts" quality="200, 299" prob="0.4"/>
-		<item name="pistol_parts" quality="100, 199" prob="0.6"/>
+		<item name="pistol_parts" quality="200, 299" prob="0.35"/>
+		<item name="pistol_parts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="PumpShotgun_parts">
 		<item name="PumpShotgun_parts" quality="500, 600" prob="0.010"/>
 		<item name="PumpShotgun_parts" quality="400, 499" prob="0.05"/>
 		<item name="PumpShotgun_parts" quality="300, 399" prob="0.2"/>
-		<item name="PumpShotgun_parts" quality="200, 299" prob="0.4"/>
-		<item name="PumpShotgun_parts" quality="100, 199" prob="0.6"/>
+		<item name="PumpShotgun_parts" quality="200, 299" prob="0.35"/>
+		<item name="PumpShotgun_parts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="huntingRifleParts">
 		<item name="huntingRifleParts" quality="500, 600" prob="0.010"/>
 		<item name="huntingRifleParts" quality="400, 499" prob="0.05"/>
 		<item name="huntingRifleParts" quality="300, 399" prob="0.2"/>
-		<item name="huntingRifleParts" quality="200, 299" prob="0.4"/>
-		<item name="huntingRifleParts" quality="100, 199" prob="0.6"/>
+		<item name="huntingRifleParts" quality="200, 299" prob="0.35"/>
+		<item name="huntingRifleParts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="mp5_barrel">
 		<item name="mp5_barrel" quality="500, 600" prob="0.010"/>
 		<item name="mp5_barrel" quality="400, 499" prob="0.05"/>
 		<item name="mp5_barrel" quality="300, 399" prob="0.2"/>
-		<item name="mp5_barrel" quality="200, 299" prob="0.4"/>
-		<item name="mp5_barrel" quality="100, 199" prob="0.6"/>
+		<item name="mp5_barrel" quality="200, 299" prob="0.35"/>
+		<item name="mp5_barrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="mp5_stock">
 		<item name="mp5_stock" quality="500, 600" prob="0.010"/>
 		<item name="mp5_stock" quality="400, 499" prob="0.05"/>
 		<item name="mp5_stock" quality="300, 399" prob="0.2"/>
-		<item name="mp5_stock" quality="200, 299" prob="0.4"/>
-		<item name="mp5_stock" quality="100, 199" prob="0.6"/>
+		<item name="mp5_stock" quality="200, 299" prob="0.35"/>
+		<item name="mp5_stock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="mp5_receiver">
 		<item name="mp5_receiver" quality="500, 600" prob="0.010"/>
 		<item name="mp5_receiver" quality="400, 499" prob="0.05"/>
 		<item name="mp5_receiver" quality="300, 399" prob="0.2"/>
-		<item name="mp5_receiver" quality="200, 299" prob="0.4"/>
-		<item name="mp5_receiver" quality="100, 199" prob="0.6"/>
+		<item name="mp5_receiver" quality="200, 299" prob="0.35"/>
+		<item name="mp5_receiver" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="sniperRifleBarrel">
 		<item name="sniperRifleBarrel" quality="500, 600" prob="0.010"/>
 		<item name="sniperRifleBarrel" quality="400, 499" prob="0.05"/>
 		<item name="sniperRifleBarrel" quality="300, 399" prob="0.2"/>
-		<item name="sniperRifleBarrel" quality="200, 299" prob="0.4"/>
-		<item name="sniperRifleBarrel" quality="100, 199" prob="0.6"/>
+		<item name="sniperRifleBarrel" quality="200, 299" prob="0.35"/>
+		<item name="sniperRifleBarrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="sniperRifle_stock">
 		<item name="sniperRifle_stock" quality="500, 600" prob="0.010"/>
 		<item name="sniperRifle_stock" quality="400, 499" prob="0.05"/>
 		<item name="sniperRifle_stock" quality="300, 399" prob="0.2"/>
-		<item name="sniperRifle_stock" quality="200, 299" prob="0.4"/>
-		<item name="sniperRifle_stock" quality="100, 199" prob="0.6"/>
+		<item name="sniperRifle_stock" quality="200, 299" prob="0.35"/>
+		<item name="sniperRifle_stock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="rem8Bolt">
 		<item name="rem8Bolt" quality="700, 900" prob="0.05"/>
 		<item name="rem8Bolt" quality="400, 699" prob="0.05"/>
 		<item name="rem8Bolt" quality="300, 399" prob="0.2"/>
-		<item name="rem8Bolt" quality="200, 299" prob="0.4"/>
-		<item name="rem8Bolt" quality="100, 199" prob="0.6"/>
+		<item name="rem8Bolt" quality="200, 299" prob="0.35"/>
+		<item name="rem8Bolt" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 		<lootgroup name="rem8Barrel">
 		<item name="rem8Barrel" quality="700, 900" prob="0.05"/>
 		<item name="rem8Barrel" quality="400, 699" prob="0.05"/>
 		<item name="rem8Barrel" quality="300, 399" prob="0.2"/>
-		<item name="rem8Barrel" quality="200, 299" prob="0.4"/>
-		<item name="rem8Barrel" quality="100, 199" prob="0.6"/>
+		<item name="rem8Barrel" quality="200, 299" prob="0.35"/>
+		<item name="rem8Barrel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="rem8Stock">
 		<item name="rem8Stock" quality="700, 900" prob="0.05"/>
 		<item name="rem8Stock" quality="400, 699" prob="0.05"/>
 		<item name="rem8Stock" quality="300, 399" prob="0.2"/>
-		<item name="rem8Stock" quality="200, 299" prob="0.4"/>
-		<item name="rem8Stock" quality="100, 199" prob="0.6"/>
+		<item name="rem8Stock" quality="200, 299" prob="0.35"/>
+		<item name="rem8Stock" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="sniperRifle_triggerHousing">
 		<item name="sniperRifle_triggerHousing" quality="500, 600" prob="0.010"/>
 		<item name="sniperRifle_triggerHousing" quality="400, 499" prob="0.05"/>
 		<item name="sniperRifle_triggerHousing" quality="300, 399" prob="0.2"/>
-		<item name="sniperRifle_triggerHousing" quality="200, 299" prob="0.4"/>
-		<item name="sniperRifle_triggerHousing" quality="100, 199" prob="0.6"/>
+		<item name="sniperRifle_triggerHousing" quality="200, 299" prob="0.35"/>
+		<item name="sniperRifle_triggerHousing" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="44MagnumCylinder">
 		<item name="44MagnumCylinder" quality="500, 600" prob="0.010"/>
 		<item name="44MagnumCylinder" quality="400, 499" prob="0.05"/>
 		<item name="44MagnumCylinder" quality="300, 399" prob="0.2"/>
-		<item name="44MagnumCylinder" quality="200, 299" prob="0.4"/>
-		<item name="44MagnumCylinder" quality="100, 199" prob="0.6"/>
+		<item name="44MagnumCylinder" quality="200, 299" prob="0.35"/>
+		<item name="44MagnumCylinder" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="44MagnumFrame">
 		<item name="44MagnumFrame" quality="500, 600" prob="0.010"/>
 		<item name="44MagnumFrame" quality="400, 499" prob="0.05"/>
 		<item name="44MagnumFrame" quality="300, 399" prob="0.2"/>
-		<item name="44MagnumFrame" quality="200, 299" prob="0.4"/>
-		<item name="44MagnumFrame" quality="100, 199" prob="0.6"/>
+		<item name="44MagnumFrame" quality="200, 299" prob="0.35"/>
+		<item name="44MagnumFrame" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="44MagnumGrip">
 		<item name="44MagnumGrip" quality="500, 600" prob="0.010"/>
 		<item name="44MagnumGrip" quality="400, 499" prob="0.05"/>
 		<item name="44MagnumGrip" quality="300, 399" prob="0.2"/>
-		<item name="44MagnumGrip" quality="200, 299" prob="0.4"/>
-		<item name="44MagnumGrip" quality="100, 199" prob="0.6"/>
+		<item name="44MagnumGrip" quality="200, 299" prob="0.35"/>
+		<item name="44MagnumGrip" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="44MagnumParts">
 		<item name="44MagnumParts" quality="500, 600" prob="0.010"/>
 		<item name="44MagnumParts" quality="400, 499" prob="0.05"/>
 		<item name="44MagnumParts" quality="300, 399" prob="0.2"/>
-		<item name="44MagnumParts" quality="200, 299" prob="0.4"/>
-		<item name="44MagnumParts" quality="100, 199" prob="0.6"/>
+		<item name="44MagnumParts" quality="200, 299" prob="0.35"/>
+		<item name="44MagnumParts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="mp5_parts">
 		<item name="mp5_parts" quality="500, 600" prob="0.010"/>
 		<item name="mp5_parts" quality="400, 499" prob="0.05"/>
 		<item name="mp5_parts" quality="300, 399" prob="0.2"/>
-		<item name="mp5_parts" quality="200, 299" prob="0.4"/>
-		<item name="mp5_parts" quality="100, 199" prob="0.6"/>
+		<item name="mp5_parts" quality="200, 299" prob="0.35"/>
+		<item name="mp5_parts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="sniperRifleParts">
 		<item name="sniperRifleParts" quality="500, 600" prob="0.010"/>
 		<item name="sniperRifleParts" quality="400, 499" prob="0.05"/>
 		<item name="sniperRifleParts" quality="300, 399" prob="0.2"/>
-		<item name="sniperRifleParts" quality="200, 299" prob="0.4"/>
-		<item name="sniperRifleParts" quality="100, 199" prob="0.6"/>
+		<item name="sniperRifleParts" quality="200, 299" prob="0.35"/>
+		<item name="sniperRifleParts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="rem8parts">
 		<item name="rem8parts" quality="700, 900" prob="0.05"/>
 		<item name="rem8parts" quality="400, 699" prob="0.05"/>
 		<item name="rem8parts" quality="300, 399" prob="0.2"/>
-		<item name="rem8parts" quality="200, 299" prob="0.4"/>
-		<item name="rem8parts" quality="100, 199" prob="0.6"/>
+		<item name="rem8parts" quality="200, 299" prob="0.35"/>
+		<item name="rem8parts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="commonWeaponParts">
@@ -715,31 +723,31 @@ more opportunities to score that flawless part!
 	</lootgroup>	
 	
 	<lootgroup name="WeaponParts_low" level="1,14">
-		<item group="ultrarareWeaponParts" prob="0.004"/>	
-		<item group="rareWeaponParts" prob="0.116"/>
-		<item group="uncommonWeaponParts" prob="0.28"/>
-		<item group="commonWeaponParts" prob="3.076" />
+		<item group="ultrarareWeaponParts" prob="0.001"/>	<!-- 0.1% -->
+		<item group="rareWeaponParts" prob="0.049"/>		<!-- 4.9% -->
+		<item group="uncommonWeaponParts" prob="0.15"/>		<!-- 15% -->
+		<item group="commonWeaponParts" prob="0.8" />		<!-- 80% -->
 	</lootgroup>
 
 	<lootgroup name="WeaponParts_mid" level="15,29">
-		<item group="ultrarareWeaponParts" prob="0.02"/>	
-		<item group="rareWeaponParts" prob="0.38"/>
-		<item group="uncommonWeaponParts" prob="0.6"/>
-		<item group="commonWeaponParts" prob="1.58" />
+		<item group="ultrarareWeaponParts" prob="0.01"/>	<!-- 1% -->
+		<item group="rareWeaponParts" prob="0.1"/>			<!-- 10% -->
+		<item group="uncommonWeaponParts" prob="0.3"/>		<!-- 30% -->
+		<item group="commonWeaponParts" prob="0.59" />		<!-- 59% -->
 	</lootgroup>
 
-	<lootgroup name="WeaponParts_high" level="30,49">
-		<item group="ultrarareWeaponParts" prob="0.2"/>	
-		<item group="rareWeaponParts" prob="0.6"/>
-		<item group="uncommonWeaponParts" prob="0.4"/>		
-		<item group="commonWeaponParts" prob="0.6" />	
+	<lootgroup name="WeaponParts_high" level="30,54">
+		<item group="ultrarareWeaponParts" prob="0.1"/>		<!-- 10% -->
+		<item group="rareWeaponParts" prob="0.2"/>			<!-- 20% -->
+		<item group="uncommonWeaponParts" prob="0.35"/>		<!-- 35% -->	
+		<item group="commonWeaponParts" prob="0.35" />		<!-- 35% -->	
 	</lootgroup>
 
-	<lootgroup name="WeaponParts_max" level="50,100">
-		<item group="ultrarareWeaponParts" prob="0.4"/>	
-		<item group="rareWeaponParts" prob="0.6"/>
-		<item group="uncommonWeaponParts" prob="0.2"/>
-		<item group="commonWeaponParts" prob="0.2" />
+	<lootgroup name="WeaponParts_max" level="55,100">
+		<item group="ultrarareWeaponParts" />				<!-- 25% -->
+		<item group="rareWeaponParts" />					<!-- 25% -->
+		<item group="uncommonWeaponParts" />				<!-- 25% -->
+		<item group="commonWeaponParts" />					<!-- 25% -->
 	</lootgroup>
 
 	<lootgroup name="WeaponParts" count="all">
@@ -827,36 +835,37 @@ plentiful loot items in the game.
 		<item name="Furukawa780Schematic" />
 	</lootgroup>
 
-	<lootgroup name="books_low" level="1,9">
-		<item group="rareBooks" prob="0.02"/>
-		<item group="ironArmorSchematics" prob="0.001"/>
-		<item group="uncommonBooks" prob="0.78"/>
-		<item group="commonBooks" prob="2.36" />
+	<lootgroup name="books_low" level="1,14">
+		<item group="rareBooks" prob="0.001"/>				<!-- 0.1% -->
+		<item group="ironArmorSchematics" prob="0.019"/>	<!-- 1.9% -->
+		<item group="uncommonBooks" prob="0.13"/>			<!-- 13% -->	
+		<item group="commonBooks" prob="0.85" />			<!-- 85% -->
 	</lootgroup>
 
-	<lootgroup name="books_mid" level="10,19">
-		<item group="ultrarareBooks" prob="0.031" />
-		<item group="rareBooks" prob="0.594"/>
-		<item group="ironArmorSchematics" prob="0.625"/>
-		<item group="commonBooks" prob="0.0001" />
-		<item group="uncommonBooks" prob="0.594"/>
+	<lootgroup name="books_mid" level="15,29">
+		<item group="ultrarareBooks" prob="0.001" />		<!-- 0.1% -->
+		<item group="rareBooks" prob="0.01"/>				<!-- 1% -->
+		<item group="ironArmorSchematics" prob="0.1"/>		<!-- 10% -->
+		<item group="uncommonBooks" prob="0.4445"/>			<!-- 44% -->
+		<item group="commonBooks" prob="0.4445" />			<!-- 44% -->
 	</lootgroup>
 
-	<lootgroup name="books_high" level="20,39">
-		<item group="ultrarareBooks" prob="0.075" />
-		<item group="kevlarArmorSchematics" prob="0.3"/>
-		<item group="ironArmorSchematics" prob="0.375"/>
-		<item group="commonBooks" prob="0.3" />
-		<item group="rareBooks" prob="0.45"/>
-		<item group="uncommonBooks" prob="0.75"/>
+	<lootgroup name="books_high" level="30,54">
+		<item group="kevlarArmorSchematics" prob="0.01"/>	<!-- 1% -->
+		<item group="ultrarareBooks" prob="0.05" />			<!-- 5% -->
+		<item group="rareBooks" prob="0.1"/>				<!-- 10% -->
+		<item group="ironArmorSchematics" prob="0.37"/>		<!-- 37% -->
+		<item group="uncommonBooks" prob="0.37"/>			<!-- 37% -->
+		<item group="commonBooks" prob="0.1" />				<!-- 10% -->
 	</lootgroup>
 
-	<lootgroup name="books_max" level="40,100">
-		<item group="ultrarareBooks" prob="0.156" />
-		<item group="kevlarArmorSchematics" prob="0.469"/>
-		<item group="ironArmorSchematics" prob="0.0001"/>
-		<item group="uncommonBooks" prob="1.094"/>
-		<item group="rareBooks" prob="0.156"/>
+	<lootgroup name="books_max" level="55,100">
+		<item group="kevlarArmorSchematics" prob="0.05"/>	<!-- 5% -->
+		<item group="ultrarareBooks" prob="0.1" />			<!-- 10% -->
+		<item group="rareBooks" prob="0.3"/>				<!-- 30% -->
+		<item group="ironArmorSchematics" prob="0.27"/>		<!-- 27% -->
+		<item group="uncommonBooks" prob="0.27"/>			<!-- 27% -->
+		<item group="commonBooks" prob="0.01" />			<!-- 1% -->
 	</lootgroup>
 
 	<lootgroup name="books" count="all">
@@ -884,34 +893,34 @@ plentiful loot items in the game.
     </lootgroup>
 
 <!--
-Yes, coffee beans and potato seeds are no harder to find
+Yes, coffee beans and potato seeds are now harder to find
 -->
 
-	<lootgroup name="seeds_low" level="1,10" count="1"><!--5% coffee/Potato-->
-		<item name="coffeeBeans" prob="0.2"/>	
-		<item name="potatoSeed" prob="0.001"/>
-		<item name="cornSeed" prob="1.6"/>
-		<item name="blueberrySeed" prob="0.0001" />
+	<lootgroup name="seeds_low" level="1,14" count="1"><!--5% coffee/Potato-->
+		<item name="coffeeBeans" prob="0.05"/>	
+		<item name="potatoSeed" prob="0.05"/>
+		<item name="cornSeed" prob="0.45"/>
+		<item name="blueberrySeed" prob="0.45" />
    	 </lootgroup>    
     
-	<lootgroup name="seeds_mid" level="11,20" count="1"><!--10% coffee/Potato-->
-		<item name="coffeeBeans" prob="0.4"/>	
-		<item name="potatoSeed" prob="0.0001"/>
-		<item name="cornSeed" prob="1.2"/>
-		<item name="blueberrySeed" prob="0.0001"/>
-   	 </lootgroup>    
-    
-	<lootgroup name="seeds_high" level="21,30" count="1"><!--20% coffee/Potato-->
-		<item name="coffeeBeans" prob="0.8"/>	
-		<item name="potatoSeed" prob="0.0001"/>
+	<lootgroup name="seeds_mid" level="15,29" count="1"><!--10% coffee/Potato-->
+		<item name="coffeeBeans" prob="0.1"/>	
+		<item name="potatoSeed" prob="0.1"/>
 		<item name="cornSeed" prob="0.4"/>
-		<item name="blueberrySeed" prob="0.0001"/>
+		<item name="blueberrySeed" prob="0.4"/>
    	 </lootgroup>    
     
-	<lootgroup name="seeds_max" level="31,100" count="1"><!--even % -->
+	<lootgroup name="seeds_high" level="30,54" count="1"><!--20% coffee/Potato-->
+		<item name="coffeeBeans" prob="0.2"/>	
+		<item name="potatoSeed" prob="0.2"/>
+		<item name="cornSeed" prob="0.3"/>
+		<item name="blueberrySeed" prob="0.3"/>
+   	 </lootgroup>    
+    
+	<lootgroup name="seeds_max" level="55,100" count="1"><!--even % -->
 		<item name="coffeeBeans" />	
 		<item name="potatoSeed" />
-		<item name="cornSeed"/>
+		<item name="cornSeed" />
 		<item name="blueberrySeed"/>
    	 </lootgroup>     
     
@@ -941,42 +950,41 @@ Yes, coffee beans and potato seeds are no harder to find
     	</lootgroup>
     
     <lootgroup name="cupboard">
-		<item name="householdChemicals" prob="0.25" />
+		<item name="householdChemicals" prob="0.05" />
 		<item group="seeds" prob="0.05"/>
-		<item group="cannedfood" prob="0.05" />
 		<item name="cornMeal" prob="0.05" />
-		<item name="canEmpty" />
-		<item name="bottledWater"/>
-		<item name="emptyJar" count="1,4"  />
+		<item group="cannedfood" prob="0.1" />
+		<item name="bottledWater" prob="0.15" />
+		<item name="canEmpty" prob="0.3" />
+		<item name="emptyJar" count="0,4" prob="0.3" />
 	</lootgroup>
 	
 	<lootgroup name="junk">
-		<item name="householdChemicals" prob="0.25" />
-		<item name="candyTin"/>
-		<item name="emptyJar" count="1"/>
-		<item name="canEmpty" count="1"/>
-		<item name="painkillers" />
-		<item name="book"/>
-		<item name="paper" count="1,6"/>
-		<item name="cloth" count="1,4"/>
-		<item group="trophyGroup" prob="0.08" />
-		<item name="candleStick" prob="0.08" />
-		<item name="glass"/> 
-		<item name="gunPowder" count="1,3" />
-		<item name="doorKnob" count="1" prob="0.08" />
-		<item name="oil" count="2,6"/>
-		<item name="femur" count="1,2"/>
-		<item name="shortMetalPipe" count="1"/>
-		<item name="fishingWeight" count="1,3"/>
-		<item name="scrapLead" count="1"/>
-		<item name="woodPlank" count="1"/>
-		<item name="nail" count="1"/>
-		<item name="casinoCoin" count="1,5"/>
-		<item name="bulletCasing"  count="1,10"/>
-		<item name="feather" count="1,3"/> 
-		<item group="rottenFood"  count="1" />
-		<item group="books" />
-		<item group="seeds" />
+		<item name="householdChemicals" prob="0.01" />
+		<item name="doorKnob" count="1" prob="0.01" />
+		<item group="trophyGroup" prob="0.01" />
+		<item name="candleStick" prob="0.01" />
+		<item name="candyTin" prob="0.0457"/>
+		<item name="emptyJar" count="1" prob="0.0457" />
+		<item name="canEmpty" count="1" prob="0.0457" />
+		<item name="painkillers" prob="0.0457" />
+		<item name="book" prob="0.0457" />
+		<item name="paper" count="1,6" prob="0.0457" />
+		<item name="cloth" count="1,4" prob="0.0457" />
+		<item name="glass" prob="0.0457" /> 
+		<item name="gunPowder" count="1,3" prob="0.0457" />
+		<item name="oil" count="1,5" prob="0.0457" />
+		<item name="femur" count="1,2" prob="0.0457" />
+		<item name="shortMetalPipe" count="1" prob="0.0457" />
+		<item name="fishingWeight" count="1,3" prob="0.0457" />
+		<item name="scrapLead" count="1" prob="0.0457" />
+		<item name="woodPlank" count="1" prob="0.0457" />
+		<item name="nail" count="1" prob="0.0457" />
+		<item name="casinoCoin" count="1,5" prob="0.0457" />
+		<item name="bulletCasing" count="1,10" prob="0.0457" />
+		<item name="feather" count="1,3" prob="0.0457" /> 
+		<item group="rottenFood" count="1" prob="0.0457" />
+		<item group="seeds" prob="0.0457" />
         </lootgroup>
 		
 		<lootgroup name="augerParts">		
@@ -991,27 +999,39 @@ Yes, coffee beans and potato seeds are no harder to find
         <item name="Furukawa780Grips"/>
     	</lootgroup>
 	
-	<lootgroup name="rareAutomotive_low" level="1,9" count="1">	
-		<item group="augerParts" prob="0.010" />
-		<item name="gasCan" count="1,3" prob="0.020" />
-		<item name="oil" count="2,6" prob="0.040" />			
+	<lootgroup name="rareAutomotive_low" level="1,14" count="1">	
+		<item group="augerParts" prob="0.01" />
+		<item name="gasCan" count="1,3" prob="0.04" />
+		<item name="oil" count="2,6" prob="0.05" />			
 		<item name="radiator" prob="0.450" />
-		<item name="carBattery" prob="0.480" />   
+		<item name="carBattery" prob="0.450" />   
 	</lootgroup>	
 		
-	<lootgroup name="rareAutomotive_mid" level="10,19" count="1">
-		<item group="rockDrillParts" prob="0.2" />
-		<item group="augerParts" prob="1.6" />
+	<lootgroup name="rareAutomotive_mid" level="15,29" count="1">
+		<item group="rockDrillParts" prob="0.01" />
+		<item group="augerParts" prob="0.05" />
+		<item name="gasCan" count="1,3" prob="0.1" />
+		<item name="oil" count="2,6" prob="0.1" />			
+		<item name="radiator" prob="0.3745" />
+		<item name="carBattery" prob="0.3745" />   
 	</lootgroup>	
 		
-	<lootgroup name="rareAutomotive_high" level="20,29" count="1">
-		<item group="rockDrillParts" prob="0.4" />
-		<item group="augerParts" prob="1.2" />
+	<lootgroup name="rareAutomotive_high" level="30,54" count="1">
+		<item group="rockDrillParts" prob="0.02" />
+		<item group="augerParts" prob="0.1" />
+		<item name="gasCan" count="1,3" prob="0.15" />
+		<item name="oil" count="2,6" prob="0.15" />			
+		<item name="radiator" prob="0.29" />
+		<item name="carBattery" prob="0.29" />   
 	</lootgroup>	
 		
-	<lootgroup name="rareAutomotive_max" level="31,100" count="1">
-		<item group="augerParts" />
-		<item group="rockDrillParts" />
+	<lootgroup name="rareAutomotive_max" level="55,100" count="1">
+		<item group="rockDrillParts" prob="0.1" />
+		<item group="augerParts" prob="0.1" />
+		<item name="gasCan" count="1,3" prob="0.15" />
+		<item name="oil" count="2,6" prob="0.15" />			
+		<item name="radiator" prob="0.25" />
+		<item name="carBattery" prob="0.25" />  
 	</lootgroup>	
 		
 	<lootgroup name="rareAutomotive" count="all">     
@@ -1022,17 +1042,13 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>	
 		
 	<lootgroup name="automotive">
-		<item group="rareAutomotive" />
-        <item name="householdChemicals" prob="0.08" />
+		<item name="householdChemicals" prob="0.01" />
+		<item group="rareAutomotive" prob="0.1" />
 		<item name="gasCan" count="1,3" prob="0.1" />
-		<item name="radiator" prob="0.1" />
-		<item name="hubcap"  />
-		<item name="airFilter"  />
-		<item name="carBattery"  />   
-		<item name="oil" count="1,4" /> 
+		<item name="hubcap" prob="0.25" />
+		<item name="airFilter" prob="0.25" />
+		<item group="junk" prob="0.29" />
 	</lootgroup>	
-	
-				
 	
 	<lootgroup name="hats">
 		<item name="cowboyHat"/>
@@ -1045,11 +1061,11 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>
 	
 	<lootgroup name="clothes">
-		<item name="clothPants"/>
+			<item name="clothPants"/>
         	<item name="clothJacket"/>
         	<item name="clothBoots"/>
         	<item name="clothGloves"/>
-		<item name="cowboyHat"/>
+			<item name="cowboyHat"/>
         	<item name="skullCap"/>
         	<item name="skullCapRed"/>
         	<item name="skullCapGreen"/>
@@ -1106,29 +1122,29 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>	
 	
 	<!--  KM:Changed all the armour probabilities to reflect the probabilities I thought you were aiming for based on the FP formula.  Leather was dropping alot for 0-10's we had a chest full of it and it's a low level crafting book anyway   -->
-	<lootgroup name="Armor_low" level="1,9">
-		<item group="lightArmor" prob="0.4" /> 	<!-- 20%-->
-		<item group="clothes" prob="1.2" />		<!-- 80%-->
+	<lootgroup name="Armor_low" level="1,14">
+		<item group="lightArmor" prob="0.2" /> 		<!-- 20%-->
+		<item group="clothes" prob="0.8" />			<!-- 80%-->
 	</lootgroup>
 	
-	<lootgroup name="Armor_mid" level="10,19">	
-		<item group="heavyArmor" prob="0.3" />	<!-- 10%-->
-		<item group="lightArmor" prob="0.3" />	<!-- 20%-->
-		<item group="clothes" prob="1.5" />		<!-- 70%-->
+	<lootgroup name="Armor_mid" level="15,29">	
+		<item group="heavyArmor" prob="0.1" />		<!-- 10%-->
+		<item group="lightArmor" prob="0.2" />		<!-- 20%-->
+		<item group="clothes" prob="0.7" />			<!-- 70%-->
 	</lootgroup>
 	
-	<lootgroup name="Armor_high" level="20,39">
-		<item group="rareArmor" prob="0.2" />	<!--5%-->
-		<item group="heavyArmor" prob="0.4" />	<!--15%-->
-		<item group="lightArmor" prob="0.4" />	<!--25%-->
-		<item group="clothes" prob="0.55" />	<!--45%-->
+	<lootgroup name="Armor_high" level="30,54">
+		<item group="rareArmor" prob="0.05" />		<!--5%-->
+		<item group="heavyArmor" prob="0.15" />		<!--15%-->
+		<item group="lightArmor" prob="0.25" />		<!--25%-->
+		<item group="clothes" prob="0.55" />		<!--55%-->
 	</lootgroup>
 	
-	<lootgroup name="Armor_max" level="40,100">
-		<item group="rareArmor" prob="0.4" />	<!--10%-->
-		<item group="heavyArmor" prob="0.6" />	<!--25%-->
-		<item group="lightArmor" prob="0.2" />	<!--30%-->
-		<item group="clothes" prob="2" />		<!--35%-->
+	<lootgroup name="Armor_max" level="55,100">
+		<item group="rareArmor" prob="0.1" />		<!--10%-->
+		<item group="heavyArmor" prob="0.25" />		<!--25%-->
+		<item group="lightArmor" prob="0.3" />		<!--30%-->
+		<item group="clothes" prob="0.35" />		<!--35%-->
 	</lootgroup>
 	
 	<lootgroup name="Armor" count="all">
@@ -1143,8 +1159,8 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>
 	
 	<lootgroup name="metalpipe_scrap">
-		<item name="scrapIron" prob="1.5"/>
-		<item group="empty"/>
+		<item group="empty" prob="0.4" />
+		<item name="scrapIron" prob="0.6" />
 	</lootgroup>
 	
 	<lootgroup name="metalpipe" count="all">
@@ -1156,40 +1172,40 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item name="pickaxeIron" quality="500, 600" prob="0.010"/>
 		<item name="pickaxeIron" quality="400, 499" prob="0.05"/>
 		<item name="pickaxeIron" quality="300, 399" prob="0.2"/>
-		<item name="pickaxeIron" quality="200, 299" prob="0.4"/>
-		<item name="pickaxeIron" quality="100, 199" prob="0.6"/>
+		<item name="pickaxeIron" quality="200, 299" prob="0.35"/>
+		<item name="pickaxeIron" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="pickaxeSteel" count="1">
 		<item name="pickaxeSteel" quality="500, 600" prob="0.010"/>
 		<item name="pickaxeSteel" quality="400, 499" prob="0.05"/>
 		<item name="pickaxeSteel" quality="300, 399" prob="0.2"/>
-		<item name="pickaxeSteel" quality="200, 299" prob="0.4"/>
-		<item name="pickaxeSteel" quality="100, 199" prob="0.6"/>
+		<item name="pickaxeSteel" quality="200, 299" prob="0.35"/>
+		<item name="pickaxeSteel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="steelAxe" count="1">
 		<item name="steelAxe" quality="500, 600" prob="0.010"/>
 		<item name="steelAxe" quality="400, 499" prob="0.05"/>
 		<item name="steelAxe" quality="300, 399" prob="0.2"/>
-		<item name="steelAxe" quality="200, 299" prob="0.4"/>
-		<item name="steelAxe" quality="100, 199" prob="0.6"/>
+		<item name="steelAxe" quality="200, 299" prob="0.35"/>
+		<item name="steelAxe" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<lootgroup name="shovel" count="1">
 		<item name="shovel" quality="500, 600" prob="0.010"/>
 		<item name="shovel" quality="400, 499" prob="0.05"/>
 		<item name="shovel" quality="300, 399" prob="0.2"/>
-		<item name="shovel" quality="200, 299" prob="0.4"/>
-		<item name="shovel" quality="100, 199" prob="0.6"/>
+		<item name="shovel" quality="200, 299" prob="0.35"/>
+		<item name="shovel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="fireaxe" count="1">
 		<item name="fireaxe" quality="500, 600" prob="0.010"/>
 		<item name="fireaxe" quality="400, 499" prob="0.05"/>
 		<item name="fireaxe" quality="300, 399" prob="0.2"/>
-		<item name="fireaxe" quality="200, 299" prob="0.4"/>
-		<item name="fireaxe" quality="100, 199" prob="0.6"/>
+		<item name="fireaxe" quality="200, 299" prob="0.35"/>
+		<item name="fireaxe" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
 	<!--  KM: Inverted probabilities based on quality to have low prob on the top-->
@@ -1197,40 +1213,40 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item name="hoe" quality="500, 600" prob="0.010"/>
 		<item name="hoe" quality="400, 499" prob="0.05"/>
 		<item name="hoe" quality="300, 399" prob="0.2"/>
-		<item name="hoe" quality="200, 299" prob="0.4"/>
-		<item name="hoe" quality="100, 199" prob="0.6"/>
+		<item name="hoe" quality="200, 299" prob="0.35"/>
+		<item name="hoe" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="hammer" count="1">
 		<item name="hammer" quality="500, 600" prob="0.010"/>
 		<item name="hammer" quality="400, 499" prob="0.05"/>
 		<item name="hammer" quality="300, 399" prob="0.2"/>
-		<item name="hammer" quality="200, 299" prob="0.4"/>
-		<item name="hammer" quality="100, 199" prob="0.6"/>
+		<item name="hammer" quality="200, 299" prob="0.35"/>
+		<item name="hammer" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="sledgehammer" count="1">
 		<item name="sledgehammer" quality="500, 600" prob="0.010"/>
 		<item name="sledgehammer" quality="400, 499" prob="0.05"/>
 		<item name="sledgehammer" quality="300, 399" prob="0.2"/>
-		<item name="sledgehammer" quality="200, 299" prob="0.4"/>
-		<item name="sledgehammer" quality="100, 199" prob="0.6"/>
+		<item name="sledgehammer" quality="200, 299" prob="0.35"/>
+		<item name="sledgehammer" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="stoneShovel" count="1">
 		<item name="stoneShovel" quality="500, 600" prob="0.010"/>
 		<item name="stoneShovel" quality="400, 499" prob="0.05"/>
 		<item name="stoneShovel" quality="300, 399" prob="0.2"/>
-		<item name="stoneShovel" quality="200, 299" prob="0.4"/>
-		<item name="stoneShovel" quality="100, 199" prob="0.6"/>
+		<item name="stoneShovel" quality="200, 299" prob="0.35"/>
+		<item name="stoneShovel" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="stoneAxe" count="1">
 		<item name="stoneAxe" quality="500, 600" prob="0.010"/>
 		<item name="stoneAxe" quality="400, 499" prob="0.05"/>
 		<item name="stoneAxe" quality="300, 399" prob="0.2"/>
-		<item name="stoneAxe" quality="200, 299" prob="0.4"/>
-		<item name="stoneAxe" quality="100, 199" prob="0.6"/>
+		<item name="stoneAxe" quality="200, 299" prob="0.35"/>
+		<item name="stoneAxe" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="ultrarareTools" count="1">
@@ -1260,31 +1276,31 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>
 
 	<!-- KM: Percentages shifted based on formula-->
-  	<lootgroup name="tools_low" count="1" level="1,9">
-		<item group="rareTools" prob="0.15" />			<!--5%-->
-		<item group="uncommonTools" prob="0.9"/>		<!--35%-->
-		<item group="commonTools" prob="0.75" />		<!--60%-->
+  	<lootgroup name="tools_low" count="1" level="1,14">
+		<item group="rareTools" prob="0.05" />			<!--5%-->
+		<item group="uncommonTools" prob="0.35"/>		<!--35%-->
+		<item group="commonTools" prob="0.6" />			<!--60%-->
 	</lootgroup>
 
-	<lootgroup name="tools_mid" count="1" level="10,19">
-		<item group="ultrarareTools" prob="0.02" /> 	<!-- 0.5%-->
-		<item group="rareTools" prob="0.380" />			<!--10%-->
-		<item group="uncommonTools" prob="1.2"/>		<!-- 40%-->
-		<item group="commonTools" prob="0.380" />		<!-- 49.5%-->
+	<lootgroup name="tools_mid" count="1" level="15,29">
+		<item group="ultrarareTools" prob="0.005" /> 	<!-- 0.5%-->
+		<item group="rareTools" prob="0.1" />			<!--10%-->
+		<item group="uncommonTools" prob="0.4"/>		<!-- 40%-->
+		<item group="commonTools" prob="0.495" />		<!-- 49.5%-->
 	</lootgroup>
 
-	<lootgroup name="tools_high" count="1" level="20,29">
- 		<item group="ultrarareTools" prob="0.075" /> 	<!-- 2.5%-->
-		<item group="rareTools" prob="0.625" />			<!--20%-->	
-		<item group="uncommonTools" prob="0.0001"/>		<!-- 30%-->	
-		<item group="commonTools" prob="0.75" />		<!-- 47.5%-->
+	<lootgroup name="tools_high" count="1" level="30,54">
+ 		<item group="ultrarareTools" prob="0.025" /> 	<!-- 2.5%-->
+		<item group="rareTools" prob="0.2" />			<!--20%-->	
+		<item group="uncommonTools" prob="0.3" />		<!-- 30%-->	
+		<item group="commonTools" prob="0.475" />		<!-- 47.5%-->
 	</lootgroup>
 
-	<lootgroup name="tools_max" count="1" level="30,100">
-		<item group="ultrarareTools" prob="0.156" /> 	<!-- 5%-->
-		<item group="rareTools" prob="0.469" />			<!-- 25%-->
-		<item group="uncommonTools" prob="0.0001"/>		<!-- 30%-->
-		<item group="commonTools" prob="0.156" />		<!-- 40%-->
+	<lootgroup name="tools_max" count="1" level="55,100">
+		<item group="ultrarareTools" prob="0.05" /> 	<!-- 5%-->
+		<item group="rareTools" prob="0.25" />			<!-- 25%-->
+		<item group="uncommonTools" prob="0.3"/>		<!-- 30%-->
+		<item group="commonTools" prob="0.4" />			<!-- 40%-->
 	</lootgroup>
 
 	<lootgroup name="tools" count="all">
@@ -1294,7 +1310,7 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item group="tools_max" />
 	</lootgroup>
 	
-	<lootgroup name="constructionSupplies_low" count="1" level="1,9">
+	<lootgroup name="constructionSupplies_low" count="1" level="1,14">
 		<item name="woodFrame" count="4,8" />
 		<item name="rebarFrame" count="4,8" />
 		<item name="woodPlank" count="16,32" />
@@ -1304,7 +1320,7 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item name="cobblestones" count="12,20" />
 	</lootgroup>
 
-	<lootgroup name="constructionSupplies_mid" count="1" level="10,19">
+	<lootgroup name="constructionSupplies_mid" count="1" level="15,29">
 		<item name="woodFrame" count="4,8" />
 		<item name="rebarFrame" count="4,8" />
 		<item name="woodPlank" count="16,32" />
@@ -1314,7 +1330,7 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item name="cobblestones" count="12,20" />
 	</lootgroup>
 
-	<lootgroup name="constructionSupplies_high" count="1" level="20,29">
+	<lootgroup name="constructionSupplies_high" count="1" level="30,54">
 		<item name="woodFrame" count="4,8" />
 		<item name="rebarFrame" count="4,8" />
 		<item name="woodPlank" count="16,32" />
@@ -1324,7 +1340,7 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item name="cobblestones" count="12,20" />
 	</lootgroup>
 
-	<lootgroup name="constructionSupplies_max" count="1" level="30,100">
+	<lootgroup name="constructionSupplies_max" count="1" level="55,100">
 		<item name="woodFrame" count="4,8" />
 		<item name="rebarFrame" count="4,8" />
 		<item name="woodPlank" count="16,32" />
@@ -1343,27 +1359,27 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>    				
 		
   	<lootgroup name="workingStiffs" count="1">
-    		<item group="tools" prob="0.8"/>					<!--40%-->
-			<item group="constructionSupplies" prob="0.4" />	<!--60%-->
+    		<item group="tools" prob="0.4"/>					<!--40%-->
+			<item group="constructionSupplies" prob="0.6" />	<!--60%-->
   	</lootgroup>			
 	
-		<lootgroup name="rareMedicine" count="1,3">	
-		<item name="beaker" prob="0.4"/>					<!--10%-->
-		<item name="bloodDrawKit" prob="0.0001" />			<!--10%-->
-		<item name="firstAidKit" prob="1.2" />				<!--30%-->
-		<item name="antibiotics" prob="0.0001" />			<!--30%-->
+		<lootgroup name="rareMedicine" count="1">	
+		<item name="beaker" prob="0.05"/>								<!--5%-->
+		<item name="bloodDrawKit" prob="0.15" />						<!--25%-->
+		<item name="firstAidKit" count="1,2" prob="0.35" />				<!--35%-->
+		<item name="antibiotics" count="1,2" prob="0.35" />				<!--35%-->
 			</lootgroup>
 	
 <!-- KM:Removed empty jar as not needed in this group, Reduced are rareMedicine drop rate to 5%	-->
 	<lootgroup name="medicine" count="1">	
-		<item group="rareMedicine" prob="0.4" />  		<!--5%-->
-		<item name="painkillers" prob="0.4" />			<!--10%-->
-		<item name="firstAidBandage" prob="0.0001" />	<!--10%-->
-		<item name="bloodBag" prob="0.0001" />			<!--10%-->
-		<item name="vitamins" prob="0.0001" />			<!--10%-->
-		<item name="grainAlcohol" prob="0.0001" />		<!--10%-->
-		<item name="splint" prob="0.8" />				<!--20%-->
-		<item name="bandage" prob="0.4" />				<!--25%-->
+		<item group="rareMedicine" prob="0.1" />  		<!--10%-->
+		<item name="painkillers" prob="0.1" />			<!--10%-->
+		<item name="firstAidBandage" prob="0.1" />		<!--10%-->
+		<item name="bloodBag" prob="0.1" />				<!--10%-->
+		<item name="vitamins" prob="0.1" />				<!--10%-->
+		<item name="grainAlcohol" prob="0.1" />			<!--10%-->
+		<item name="splint" prob="0.2" />				<!--20%-->
+		<item name="bandage" prob="0.20" />				<!--20%-->
 
 	</lootgroup>	
 	
@@ -1405,9 +1421,9 @@ Yes, coffee beans and potato seeds are no harder to find
 	</lootgroup>	
 
 	<lootgroup name="beverages" count="1">	
-		<item name ="coffee" prob="0.45" /> 		<!--15%-->
-		<item name="beer" prob="0.0001" />			<!--15%-->
-		<item name="bottledWater" prob="1.65" />	<!--70%-->
+		<item name ="coffee" prob="0.15" /> 		<!--15%-->
+		<item name="beer" prob="0.15" />			<!--15%-->
+		<item name="bottledWater" prob="0.7" />		<!--70%-->
 	</lootgroup>	
 	
 	<lootgroup name="automotive+tools+junk" count="all">
@@ -1431,70 +1447,63 @@ Yes, coffee beans and potato seeds are no harder to find
 
     <!-- lootcontainer 1 misc storage, cardboard boxes-->
     <lootcontainer id="1" count="0,2" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-    	<item group="books" prob="0.05"/>  <!-- KM:Removed "books" from junk and made it reflect prob inside junk?-->
-		<item group="junk" prob="1.8"/>
+    	<item group="books" prob="0.01" />  
+		<item group="junk" prob="0.99" />
 		
     </lootcontainer>
 
     <!-- lootcontainer 2 garbage-->
     <lootcontainer id="2" count="1,2" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">    
-    	<item group="garbage"/>
+    	<item group="garbage" />
         		
     </lootcontainer>
 	
     <!-- lootcontainer 3 canned or dry food cupboard door open sound-->
     <lootcontainer id="3" count="0,1" size="3,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard">
-    
-    	<item group="cupboard"/>
-		    
-    </lootcontainer>	
+    	<item group="cupboard" />
+	</lootcontainer>	
 	
     <!-- lootcontainer 4 frozen or refridgerated food, spoiled food -->
-    <lootcontainer id="4" count="0,3" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge">
+    <lootcontainer id="4" count="0,4" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge">
 		<!-- KM:Food normalized and more rotten food will drop in fridges to simulate spoilage-->
-    	<item group="coldfood" prob="0.2" />					<!--5%-->
-    	<item name="bottledWater" prob="0.2" count="1,2" />		<!--10%-->
-		<item name="emptyJar"  prob="0.4" count="1,2"/>			<!--20%-->
-		<item group="rottenFood" prob="1.8" />					<!--65%-->
-				
+    	<item group="coldfood" prob="0.05" />					<!--5%-->
+    	<item name="bottledWater" prob="0.10" count="1,2" />	<!--10%-->
+		<item name="emptyJar"  prob="0.2" count="1,2" />		<!--20%-->
+		<item group="rottenFood" prob="0.65" />					<!--65%-->
     </lootcontainer>	
 
     <!-- lootcontainer 5 stove, cooking pots and pans rotten food -->
     <lootcontainer id="5" count="0,2" size="3,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox">
-		<item name="emptyJar" count="1,2"/>				<!-- 25% -->	
-		<item name="canEmpty"  count="1,2"/>				
+		<item name="canEmpty"  count="1,2" />				
 		<item name="cookingPot" count="1,2" />	
-		<item name="scrapIron" count="1,2" />	
+		<item name="scrapIron" count="1,2" />
+		<item group="rottenFood" />
     </lootcontainer>	
 
     <!-- lootcontainer 6 night stands and dressers, pistol, ammo, magazines, books -->
     <lootcontainer id="6" count="1,2" size="3,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
-    
-	<!-- KM: reordered and normalized via formula--> 
-    	<item group="ammo" prob="0.3" /> 				<!--5%-->
-    	<item group="books" prob="0.0001"/>				<!--5%-->
-		<item group="medicine" prob="0.3" />			<!--10%-->
-		<item group="trophyGroup" prob="0.0001" />		<!--10%-->
-		<item name="book" prob="0.6" count="1,2" />		<!--20%-->
-		<item group="clothes" prob="1.8" />				<!--50%-->		
-        
+       	<item group="books" prob="0.01"/>				<!--1%-->
+		<item group="ammo" count="1,3" prob="0.09" /> 	<!--9%-->
+		<item group="medicine" prob="0.1" />			<!--10%-->
+		<item group="trophyGroup" prob="0.1" />			<!--10%-->
+		<item name="book" prob="0.1" />					<!--10%-->
+		<item group="Armor" prob="0.2"/>				<!--20%-->
+		<item group="clothes" prob="0.4" />				<!--40%-->		 
     </lootcontainer>	
 	
     <!-- lootcontainer 7 medicine cabinets -->
     <lootcontainer id="7" count="0,2" size="2,3" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet">
-    
-		<item group="medicine"/>
-  
+   		<item group="medicine"/>
     </lootcontainer>	
 	
     <!-- lootcontainer 8 kitchen cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
     <lootcontainer id="8" count="0,2" size="3,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard">
 		<!-- KM:Cupboard added to replace a few items and make it similar to upper cupboards but with a few uniques, prob normalized-->
-		<item name="wrench" prob="0.25" count="1"/>				<!--5%-->
-		<item name="cookingPot" prob="0.25" count="1"/>			<!--10%-->
-		<item name="scrapLead" prob="0.25" count="1"/>			<!--15%-->
-		<item name="shortMetalPipe" prob="0.25" count="1,2" />	<!--20%-->
-		<item group="cupboard" prob="1.5"/>						<!--50%-->
+		<item name="wrench" prob="0.05" count="1" />			<!--5%-->
+		<item name="cookingPot" prob="0.1" count="1" />			<!--10%-->
+		<item name="scrapLead" prob="0.15" count="1" />			<!--15%-->
+		<item name="shortMetalPipe" prob="0.20" count="1,2" />	<!--20%-->
+		<item group="cupboard" prob="0.5" />					<!--50%-->
     </lootcontainer>		
 	
     <!-- lootcontainer 9 backpack, place where people stash things,  -->
@@ -1509,11 +1518,10 @@ Yes, coffee beans and potato seeds are no harder to find
 	
     <!-- lootcontainer 11 safes, weapon caches rare good loot -->
     <lootcontainer id="11" count="2,5" size="3,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="15">
-		<item group="rareMedicine" prob="0.13" />
-		<item group="ammo" prob="0.64"/>
-		<item group="Armor" prob="0.0001"  count="0,1"/>
-		<item group="WeaponParts" prob="0.0001"/>	            <!-- KM:Changed to weaponparts to remove double chance at ammo-->           
-		                        
+		<item group="rareMedicine" prob="0.05" />
+		<item group="Armor" prob="0.2" />
+		<item group="ammo" prob="0.35" />
+		<item group="WeaponParts" prob="0.4" />	            <!-- KM:Changed to weaponparts to remove double chance at ammo-->           
     </lootcontainer>	
 	
     <!-- lootcontainer 12 deer todo add deer skin or leather bones-->
@@ -1529,44 +1537,33 @@ Yes, coffee beans and potato seeds are no harder to find
     <!-- lootcontainer 14 misc metal container mailbox-->
     <lootcontainer id="14" count="0,2" size="2,1" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox">
 		<!--KM:tweaked to insert blank books to represent those books that are of no use-->
-    	<item group="books" prob="0.15"/>				<!--5%-->
-		<item name="book" prob="0.3" />					<!--15%-->
-		<item name="paper" prob="2.1" count="2,5" />	<!--80%-->
-        		
+    	<item group="books" prob="0.05"/>				<!--5%-->
+		<item name="book" prob="0.2" />					<!--20%-->
+		<item name="paper" prob="0.75" count="2,5" />	<!--75%-->
     </lootcontainer>	
 	
     <!-- lootcontainer 15 generic zombie loot-->
     <lootcontainer id="15" count="0,2" size="3,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		
-        <item group="junk"/>
-	<item group="rottenFood" prob="0.05"/>		
-        		      
+        <item group="junk" />
+		<item group="rottenFood" />		
     </lootcontainer>	
 	
     <!-- lootcontainer 16 metal garbage can-->
-    <lootcontainer id="16" count="0,3" size="3,1" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan">
-    
-    	<item group="garbage"/>
-    			
+    <lootcontainer id="16" count="1,3" size="3,1" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan">
+        <item group="garbage"/>
     </lootcontainer>	
 	
     <!-- lootcontainer 17 zombie cop-->
     <lootcontainer id="17" count="1,2" size="3,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
     
-<!--   	
-	<item group="pistol+ammo"/>
+		<item group="WeaponParts" />
+		<item group="ammo" count="1,2" />
+		<item name="shamSandwich" count="1,3"/>
+   	
+		<!-- <item group="pistol+ammo"/>
     	<item group="shotgun+ammo"/>
--->
-	<item group="WeaponParts" />
-	<item group="ammo"/>
-<!--
-    	<item name="9mmBullet" count="15,60"/>
--->
-    	<item name="shamSandwich" count="1,5"/>
-<!--
-        <item name="shotgunShell" count="1,2"/>
--->
-        
+	   	<item name="9mmBullet" count="15,60"/>
+        <item name="shotgunShell" count="1,2"/> -->     
     </lootcontainer>	
 	
     <!-- lootcontainer 18 pig -->
@@ -1576,7 +1573,6 @@ Yes, coffee beans and potato seeds are no harder to find
 	
     <!-- lootcontainer 19 cars-->
     <lootcontainer id="19" count="1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
-    	
     	<item group="automotive+tools+junk" />
     </lootcontainer>	
 
@@ -1585,23 +1581,19 @@ Yes, coffee beans and potato seeds are no harder to find
 		<item group="metalpipe"/>
     </lootcontainer>
 
-
     <!-- lootcontainer 21 medical supplies dead nurse-->
     <lootcontainer id="21" count="0,2" size="3,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="medicine" />	
-
     </lootcontainer>		
 		
     <!-- lootcontainer 22 garage stuff, tools, etc -->
-    <lootcontainer id="22" count="0,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-		<!-- Probability normalized-->
-		<item group="books" prob="0.3" />			<!--5%-->
-		<item group="tools" prob="0.0001" />		<!--5%-->
-		<item group="automotive" prob="0.3" />		<!--10%-->
-		<item name="canCatfood" prob="0.0001" />	<!--10%-->
-		<item name="canDogfood" prob="0.0001" />   	<!--10%-->
-		<item group="junk" prob="3.0" />			<!--60%-->
-        
+    <lootcontainer id="22" count="0,3" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+		<item group="books" prob="0.05" />			<!--5%-->
+		<item group="tools" prob="0.05" />			<!--5%-->
+		<item group="automotive" prob="0.1" />		<!--10%-->
+		<item name="canCatfood" prob="0.1" />		<!--10%-->
+		<item name="canDogfood" prob="0.1" />   	<!--10%-->
+		<item group="junk" prob="0.6" />			<!--60%-->   
     </lootcontainer>	
 
 	<!-- 23 see below !!! -->
@@ -1613,23 +1605,22 @@ Yes, coffee beans and potato seeds are no harder to find
 	
     <!-- lootcontainer 25 birds nest-->
     <lootcontainer id="25" count="0,4" size="3,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
-		<item name="egg" count="1,2" prob="0.15" />
-		<item name="feather" count="1,5" prob="0.35" />
+		<item name="egg" count="1,2" prob="0.40" />
+		<item name="feather" count="2,5" prob="0.6" />
     </lootcontainer>	
 		
     <!-- lootcontainer 23 Supply Crate Melee weapons -->
     <lootcontainer id="23" count="1,3" size="3,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">		
 		
-		<item name="clubWood" prob="0.1" count="1" />	
-		<item name="clubIron" prob="0.1" count="1" />
-		<item name="pickaxeIron" prob="0.1" count="1" />
-		<item name="shovel" prob="0.1" count="1" />
-		<item name="fireaxe" prob="0.1" count="1" />		
-		<item name="clubBarbed" prob="0.075" count="1" />
-		<item name="clubSpiked" prob="0.05" count="1" />
-		<item name="wrench" prob="0.1" count="1" />
-		<!-- Joel: add more -->
-    </lootcontainer>	
+		<item name="clubWood" />	
+		<item name="clubIron" />
+		<item name="pickaxeIron" />
+		<item name="shovel" />
+		<item name="fireaxe" />		
+		<item name="clubBarbed" />
+		<item name="clubSpiked" />
+		<item name="wrench" />
+	</lootcontainer>	
 		
     <!-- lootcontainer 26 Supply Crate Food -->
     <lootcontainer id="26" count="3,9" size="3,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">				
@@ -1693,36 +1684,33 @@ Yes, coffee beans and potato seeds are no harder to find
     <!-- lootcontainer 34 Supply Crate General -->
     <lootcontainer id="34" count="6,12" size="10,4" destroy_on_close="false" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
         <item group="militaryguns+ammo" />
-<!--
+		<item group="airdropMedicine" />
+		<item group="airdropfood" />
+		<item group="books" prob="0.5" />
+		<!--
     	<item group="rareBooks" />
 -->		
-	<item group="airdropMedicine" />
-	<item group="airdropfood" />
-	<item group="books" />
     </lootcontainer>	
 
     <!-- lootcontainer 35 tree hollowed stump, place where people stash things,  -->
     <lootcontainer id="35" count="0,2" size="3,2" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump">
-    
-    <!--KM:Probability normalized-->
-	<item group="guns+ammo" prob="0.3"/>					<!--5%-->
-	<item name="bottledWater" count="1,2" prob="0.6" />		<!--15%-->
-	<item name="canHam" prob="0.3" />						<!--20%-->
-	<item name="canChicken" prob="0.0001" />				<!--20%-->
-	<item name="flashlight02" prob="0.0001" />				<!--20%-->
-	<item name="painkillers" prob="0.0001" />				<!--20%-->
-				
-    </lootcontainer>	
+		<item group="guns+ammo" prob="0.05"/>					<!--5%-->
+		<item name="bottledWater" count="1,2" prob="0.15" />	<!--15%-->
+		<item name="canHam" prob="0.2" />						<!--20%-->
+		<item name="canChicken" prob="0.2" />					<!--20%-->
+		<item name="flashlight02" prob="0.2" />					<!--20%-->
+		<item name="painkillers" prob="0.2" />					<!--20%-->
+	</lootcontainer>	
 	
     <!-- lootcontainer 36 suitcase  -->
     <lootcontainer id="36" count="0,3" size="3,3" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase">
     
 	<!--KM:Probability normalized, clothes added and prob adjusted to make sense with suitcase-->
-		<item group="medicine" prob="0.5" />					<!--10%-->
-		<item group="guns+ammo" prob="0.0001"/>					<!--10%-->
-		<item group="melee" prob="0.0001"/>						<!--10%-->
-		<item group="junk" prob="0.5" />						<!--20%-->
-		<item group="clothes" prob="1.5" />						<!--50%-->
+		<item group="medicine" prob="0.1" />					<!--10%-->
+		<item group="guns+ammo" prob="0.1"/>					<!--10%-->
+		<item group="melee" prob="0.1"/>						<!--10%-->
+		<item group="junk" prob="0.2" />						<!--20%-->
+		<item group="clothes" prob="0.5" />						<!--50%-->
     </lootcontainer>	
 	
     <!-- lootcontainer 37 corpses -->
@@ -1737,27 +1725,25 @@ Yes, coffee beans and potato seeds are no harder to find
     <!-- fat zombie loot  -->
     <lootcontainer id="38" count="0,3" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
     
-		<item name="shamSandwich" prob="0.5" />					<!--10%-->
-		<item name="painkillers" prob="0.0001"/>				<!--10%-->
-		<item group="ammo" prob="0.0001"/>						<!--10%-->
-		<item name="bottledWater" prob="0.5" count="1,2" />		<!--20%-->
-		<item name="animalFat" prob="1.5" count="4,8" />		<!--50%-->	
+		<item name="shamSandwich" prob="0.1" />					<!--10%-->
+		<item name="painkillers" prob="0.1"/>					<!--10%-->
+		<item group="ammo" prob="0.1"/>							<!--10%-->
+		<item name="bottledWater" prob="0.2" count="1,2" />		<!--20%-->
+		<item name="animalFat" prob="0.5" count="4,8" />		<!--50%-->	
 		
     </lootcontainer>	
     
     <!-- shotgun messiah  -->
     <lootcontainer id="39" count="2,3" size="3,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" >
 		<!--Extra copies of ammo and weapons removed to simplify the odds-->
-		<item group="sportingGoods" prob="0.4" />
-		<item group="militaryguns+ammo" prob="1.2" />	
+		<item group="sportingGoods" prob="0.3" />
+		<item group="militaryguns+ammo" prob="0.7" />	
     </lootcontainer>	 
     
     <!-- military munitions  -->
     <lootcontainer id="40" count="1"  size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15">
-	
-		<item group="militaryguns+ammo" prob="0.3"/>
-		
-    </lootcontainer>	
+			<item group="militaryguns+ammo" prob="0.3"/>
+	</lootcontainer>	
 
 	<!-- player dropped backpacks -->
     <lootcontainer id="41" count="0,1" size="10,5" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
@@ -1766,51 +1752,47 @@ Yes, coffee beans and potato seeds are no harder to find
     
     <!-- lootcontainer 42 gun safe -->
     <lootcontainer id="42" count="2,6" size="10,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">	
-		<item group="guns+ammo"/>
-		<item group="WeaponParts" prob="0.1" />	
+		<item group="guns+ammo" prob="0.3"/>
+		<item group="WeaponParts" prob="0.7" />	
 		
     </lootcontainer>	
     
     <!-- lockers -->
     <lootcontainer id="43" count="0,3" size="2,4" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker">
     	<!--Prob Normalized-->
-		<item group="militaryguns+ammo" prob="0.4"/>			<!--5%-->
-		<item group="trophyGroup" prob="0.0001" />				<!--5%-->
-		<item name="book" count="1,2" prob="0.4"  />			<!--10%-->
-		<item name="paper" count="1,2" prob="0.0001" />			<!--10%-->
-		<item group="medicine" prob="0.0001" />					<!--10%-->
-		<item name="gunPowder" count="1,5" prob="0.0001" />		<!--10%-->
-		<item group="hats" prob="1.2" />						<!--25%-->
-		<item group="clothes" prob="0.0001" />					<!--25%-->
-        
+		<item group="militaryguns+ammo" prob="0.05"/>			<!--5%-->
+		<item group="trophyGroup" prob="0.05" />				<!--5%-->
+		<item name="book" count="1,2" prob="0.1"  />			<!--10%-->
+		<item name="paper" count="1,2" prob="0.1" />			<!--10%-->
+		<item group="medicine" prob="0.1" />					<!--10%-->
+		<item name="gunPowder" count="1,5" prob="0.1" />		<!--10%-->
+		<item group="hats" prob="0.25" />						<!--25%-->
+		<item group="clothes" prob="0.25" />					<!--25%--> 
     </lootcontainer>	   
     
-                          <!-- file cabinet -->
+    <!-- file cabinet -->
     <lootcontainer id="44" count="0,2" size="2,4" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet">
-		<!--Prob Normalized-->
-		<item group="ammo" prob="0.25"/>					<!--5%-->
-        <item name="painkillers" prob="0.0001" />			<!--5%-->
-		<item group="trophyGroup" prob="0.75" />			<!--20%-->
-		<item name="book" count="1,4" prob="0.75" />		<!--35%-->
-		<item name="paper" count="5,30" prob="0.0001" />	<!--35%-->
-        
+		<item group="ammo" prob="0.05"/>					<!--5%-->
+        <item name="painkillers" prob="0.05" />				<!--5%-->
+		<item group="trophyGroup" prob="0.20" />			<!--20%-->
+		<item name="book" count="1,4" prob="0.35" />		<!--35%-->
+		<item name="paper" count="5,30" prob="0.35" />		<!--35%-->
     </lootcontainer>	
     
     <!-- cooler loot -->
     <lootcontainer id="45" count="0,3" size="3,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler">
-		<item group="coldfood" prob="0.3" />			<!--10%-->
-    	<item group="beverages" prob="0.6" />			<!--20%-->
-		<item group="cupboard" prob="0.9" />			<!--60% TG: Also needs to be fixed to remove householdChemicals from the container -->   	    
+		<item group="coldfood" prob="0.1" />			<!--10%-->
+    	<item group="beverages" prob="0.2" />			<!--20%-->
+		<item group="cupboard" prob="0.6" />			<!--60% TG: Also needs to be fixed to remove householdChemicals from the container -->   	    
     </lootcontainer>
     
     <!-- lootcontainer 46 Supply Crate General multi player -->
     <lootcontainer id="46" count="1,5" size="10,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-		<item group="rareTools" prob="0.1" />				<!--2%-->
-		<item group="ammo" prob="0.9"/>						<!--20%-->
+		<item group="rareTools" prob="0.02" />				<!--2%-->
+		<item group="books" prob="0.10" />					<!--10%-->
+		<item group="ammo" prob="0.2" count="1,3"/>			<!--20%-->
 		<item group="airdropMedicine" prob="0.25" />		<!--25%-->
-		<item group="books" prob="0.0001" />				<!--25%-->
-		<item group="airdropfood" prob="0.15" />			<!--28%-->
-
+		<item group="airdropfood" prob="0.38" />			<!--38%-->
     </lootcontainer>	   
     
     <!-- zombie dog loot-->
@@ -1821,17 +1803,17 @@ Yes, coffee beans and potato seeds are no harder to find
     <!-- lootcontainer 48 purse  -->
     <lootcontainer id="48" count="1,3" size="2,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5">
 		<!--KM: this item needs consideration to make it make sense-->
-		<item group="medicine" prob="0.5"/> 		
-		<item group="beverages" />
-    	<item group="cannedfood"  />
-    	<item name="bottledWater" />								
+		<item group="medicine" prob="0.1" /> 		
+		<item group="beverages" prob="0.3" />
+    	<item group="cannedfood" prob="0.3" />
+    	<item name="bottledWater" prob="0.3" />								
     </lootcontainer>  
     
     <!-- bookcase  -->
-    <lootcontainer id="49" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
+    <lootcontainer id="49" count="3,7" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
 		<!-- KM drop overall drop rate to reflect that household book numbers would be less than a store-->
-		<item group="books" prob="0.04" />
-		<item name="book" prob="1.92" />						
+		<item group="books" prob="0.02" />
+		<item name="book" prob="0.98" />						
     </lootcontainer> 
     
     <!-- shotgun Messiah  -->
@@ -1861,19 +1843,19 @@ Yes, coffee beans and potato seeds are no harder to find
     	<item group="beverages" />			    
     </lootcontainer>	                                  	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                                    	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	      
     
-        <!-- cash register-->
+    <!-- cash register-->
     <lootcontainer id="55" count="1,5" size="3,3" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register">    
     	<item name="paper" />
     	<item name="casinoCoin" count="1,20"/>
     </lootcontainer>
     
-        <!-- Apache Artifact Chest -->
+    <!-- Apache Artifact Chest -->
     <lootcontainer id="56" count="1" size="3,3" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest">    
     	<item name="tazasStoneaxe" count="1" />
     	<item name="casinoCoin" count="20,200"/>
     </lootcontainer>    
     
-        <!-- miners chest -->
+    <!-- miners chest -->
     <lootcontainer id="57" count="1,5" size="3,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">       	
     	<item group="tools" />
     </lootcontainer>  
@@ -1885,19 +1867,19 @@ Yes, coffee beans and potato seeds are no harder to find
     </lootcontainer>
 
 
-  <!-- Shamway Cardboard Loot-->
-  <lootcontainer id="59" count="0,5" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-	<item group="coldfood" prob="0.02" />
-    <item name="shamSandwich" count="1,2"/>
-    <item name="canHam" count="1,2"/>
-    <item group="beverages" />
-    <item name="bottledWater" count="1,2" />
-  </lootcontainer>
+	<!-- Shamway Cardboard Loot-->
+	<lootcontainer id="59" count="0,5" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+		<item group="coldfood" prob="0.1" />
+		<item name="shamSandwich" count="1,2"/>
+		<item name="canHam" count="1,2"/>
+		<item group="beverages" />
+		<item name="bottledWater" count="1,2" />
+	</lootcontainer>
 
   <!-- Bookstore bookcase  -->
   <lootcontainer id="60" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
-    <item group="books" prob="0.04" />
-	<item name="book" prob="1.92" />
+	<item group="books" prob="0.02" />
+	<item name="book" prob="0.98" />
   </lootcontainer>
   
   <!-- LT tough zombie and feral loot  -->
