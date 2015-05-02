@@ -2401,7 +2401,7 @@
         <ingredient name="magnesiumOre" count="1" grid="0, 0"/>
     </recipe>
 	
-	<recipe name="shotgunSlug" count="5" scrapable="False" craft_time="2" craft_exp_gain="2" learn_exp_gain="20" >
+	<recipe name="shotgunSlug" count="5" scrapable="True" craft_time="2" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="steelSlug" count="5" grid="1, -2"/>
         <ingredient name="gunPowder" count="5" grid="0, -1"/>
         <ingredient name="gunPowder" count="5" grid="0, 0"/>

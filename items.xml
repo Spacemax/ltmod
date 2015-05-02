@@ -447,13 +447,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value=".3" />
             <property name="DamageBonus.wood" value=".5" />
             <property name="DamageBonus.stone" value="1" />
-             <property name="DamageBonus.metal" value=".5" />
+             <property name="DamageBonus.metal" value="2" />
             <property name="DamageBonus.head" value="4" />
-            <property name="DamageBonus.concrete" value="4" />
+            <property name="DamageBonus.concrete" value="3" />
             <property name="DamageBonus.glass" value="20" />
             <property class="Attributes">
             <property name="EntityDamage" value="15,60" />
-            <property name="BlockDamage" value="2,12" />
+            <property name="BlockDamage" value="2,10" />
             <property name="DegradationMax" value="400,900" />
 			<property name="DegradationRate" value="3,1" />
         </property>       
@@ -634,7 +634,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Group" value="Tools/Traps" />
         <property class="Attributes">
             <property name="EntityDamage" value="5,10" />
-            <property name="BlockDamage" value="1,6" />
+            <property name="BlockDamage" value="1,4" />
 			<property name="DegradationMax" value="60,400" />
 			<property name="DegradationRate" value="3,1" />
         </property>
@@ -8161,19 +8161,19 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Sphere" value="0.1" />
             <property name="Block_range" value="4" />
             <property name="DamageEntity" value="10" />
-            <property name="DamageBlock" value="6" />
+            <property name="DamageBlock" value="2" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="5" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
-            <property name="DamageBonus.stone" value="4" />
-            <property name="DamageBonus.metal" value="4" />
+            <property name="DamageBonus.stone" value="2" />
+            <property name="DamageBonus.metal" value="2" />
             <property name="DamageBonus.wood" value=".3" />
         </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Attributes">
             <property name="EntityDamage" value="5,17" />
-            <property name="BlockDamage" value="6,14" />
+            <property name="BlockDamage" value="6,8" />
             <property name="DegradationMax" value="500,900" />
 			<property name="DegradationRate" value="3,1" />
         </property>  
@@ -8336,16 +8336,16 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Sphere" value="0.1" />
             <property name="Block_range" value="4" />
             <property name="DamageEntity" value="20" />
-            <property name="DamageBlock" value="2" />
+            <property name="DamageBlock" value="1" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="4" />
-            <property name="DamageBonus.wood" value="6" />
-            <property name="DamageBonus.head" value="8" />
+            <property name="DamageBonus.wood" value="2" />
+            <property name="DamageBonus.head" value="2" />
             <property name="DamageBonus.glass" value="25" />
         </property>
         <property class="Attributes">
-            <property name="EntityDamage" value="8,15" />
-            <property name="BlockDamage" value="6,16" />
+            <property name="EntityDamage" value="8,16" />
+            <property name="BlockDamage" value="4,12" />
 			<property name="DegradationMax" value="500,900" />
 			<property name="DegradationRate" value="1,1" />       
         </property>                                              
@@ -9736,7 +9736,7 @@ ARMOR ATTRIBUTE EXAMPLE
     <item id="811" name="shotgunSlug">
         <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShell" />
         <property name="CustomIcon" value="shotgunShell" />
-        <property name="CustomIconTint" value="00AB00"/>
+        <property name="CustomIconTint" value="618C6D"/>
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="64" />
@@ -9753,7 +9753,7 @@ ARMOR ATTRIBUTE EXAMPLE
     <item id="812" name="Mossburg500S">
         <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab" />
         <property name="CustomIcon" value="PumpShotgun" />
-        <property name="CustomIconTint" value="00AB00"/>
+        <property name="CustomIconTint" value="618C6D"/>
         <property name="Material" value="metal" />
         <property name="HoldType" value="5" />
         <property name="Stacknumber" value="1" />
@@ -9961,7 +9961,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_barrel" />
-        <property name="CustomIconTint" value="00AB00"/>
+        <property name="CustomIconTint" value="618C6D"/>
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
@@ -9983,7 +9983,7 @@ ARMOR ATTRIBUTE EXAMPLE
 
     <item id="819" name="Mossburg500Schematics">
 		<property name="CustomIcon" value="smgSchematics"/>
-		<property name="CustomIconTint" value="00AB00"/>
+		<property name="CustomIconTint" value="618C6D"/>
         <property name="Meshfile" value="Items/Misc/Book" />
         <property name="Material" value="paper" />
         <property name="HoldType" value="21" />
