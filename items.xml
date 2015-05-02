@@ -9889,7 +9889,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="815 name="PartType" value="Barrel" />
+    <item id="815" name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_barrel" />
         <property name="CustomIconTint" value="FA0000"/>
