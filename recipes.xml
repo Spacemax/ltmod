@@ -1432,45 +1432,17 @@
         <ingredient name="PumpShotgun_shortStock" count="1" grid="-1, 1"/>
     </recipe>
 
-    <recipe name="scrapBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="leather" count="1" grid="0, -1"/>
-        <ingredient name="scrapIron" count="1" grid="0, 0"/>
-        <ingredient name="scrapIron" count="1" grid="1, 0"/>
-    </recipe>
+<!-- scrapBoots moved to bottom and modded -->
 
     <recipe name="scrapBrass" count="1" scrapable="False" tooltip="ttScrapMetalBrass" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <wildcard_forge_category />
     </recipe>
 
-    <recipe name="scrapChestArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="scrapIron" count="1" grid="-1, -1"/>
-        <ingredient name="scrapIron" count="1" grid="0, -1"/>
-        <ingredient name="scrapIron" count="1" grid="1, -1"/>
-        <ingredient name="scrapIron" count="1" grid="-2, 0"/>
-        <ingredient name="leather" count="1" grid="-1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="0, 0"/>
-        <ingredient name="leather" count="1" grid="1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="2, 0"/>
-        <ingredient name="leather" count="1" grid="-1, 1"/>
-        <ingredient name="scrapIron" count="1" grid="0, 1"/>
-        <ingredient name="leather" count="1" grid="1, 1"/>
-        <ingredient name="leather" count="1" grid="-1, 2"/>
-        <ingredient name="scrapIron" count="1" grid="0, 2"/>
-        <ingredient name="leather" count="1" grid="1, 2"/>
-    </recipe>
+<!-- scrapChestArmor moved to bottom and modded -->
 
-    <recipe name="scrapGloves" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="scrapIron" count="1" grid="1, -1"/>
-        <ingredient name="leather" count="1" grid="0, 0"/>
-    </recipe>
+<!-- scrapGloves moved to bottom and modded -->
 
-    <recipe name="scrapHelmet" count="1" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="scrapIron" count="1" grid="0, -1"/>
-        <ingredient name="scrapIron" count="1" grid="-1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="0, 0"/>
-        <ingredient name="scrapIron" count="1" grid="1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="-1, 1"/>
-    </recipe>
+<!-- scrapHelmet moved to bottom and modded -->
 
     <recipe name="scrapIron" count="1" scrapable="False" tooltip="ttScrapMetalIron" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <wildcard_forge_category />
@@ -1520,20 +1492,7 @@
         <wildcard_forge_category />
     </recipe>
 
-    <recipe name="scrapLegArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="leather" count="1" grid="-1, -2"/>
-        <ingredient name="leather" count="1" grid="0, -2"/>
-        <ingredient name="leather" count="1" grid="1, -2"/>
-        <ingredient name="leather" count="1" grid="-1, -1"/>
-        <ingredient name="scrapIron" count="1" grid="0, -1"/>
-        <ingredient name="leather" count="1" grid="1, -1"/>
-        <ingredient name="scrapIron" count="1" grid="-1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="1, 0"/>
-        <ingredient name="scrapIron" count="1" grid="-1, 1"/>
-        <ingredient name="scrapIron" count="1" grid="1, 1"/>
-        <ingredient name="scrapIron" count="1" grid="-1, 2"/>
-        <ingredient name="scrapIron" count="1" grid="1, 2"/>
-    </recipe>
+<!-- ScrapLegArmor moved to bottom and modded -->
 
     <recipe name="scrapMetalWall" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="scrapIron" count="1" grid="-1, -1"/>
@@ -2451,5 +2410,72 @@
         <ingredient name="forgedSteel" count="1" grid="-1, 1"/>
         <ingredient name="forgedSteel" count="1" grid="0, 1"/>
     </recipe>
+	
+<recipe name="308calBullet" count="1" scrapable="True" craft_time="1" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="bulletTip" count="1" grid="-2, 0"/>
+        <ingredient name="gunPowder" count="1" grid="-1, 0"/>
+        <ingredient name="gunPowder" count="1" grid="0, 0"/>
+        <ingredient name="gunPowder" count="1" grid="1, 0"/>
+        <ingredient name="bulletCasing" count="1" grid="2, 0"/>
+    </recipe>
+
+    <recipe name="hardenedLeather" count="1" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="40" >
+		<ingredient name="toughHide" count="1" grid="0, 0"/>
+		<ingredient name="yuccaFibers" count="1" grid="-1, 0"/>
+		<ingredient name="animalFat" count="1" grid="0, -1"/>
+		<ingredient name="treeSap" count="1" grid="0, 1"/>
+    </recipe>
+
+    <!-- Hardened Leather, Scrap Armor -->
+    <recipe name="scrapBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="hardenedLeather" count="1" grid="0, -1"/>
+        <ingredient name="scrapIron" count="1" grid="0, 0"/>
+        <ingredient name="scrapIron" count="1" grid="1, 0"/>
+    </recipe>
+
+    <recipe name="scrapChestArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="scrapIron" count="1" grid="-1, -1"/>
+        <ingredient name="scrapIron" count="1" grid="0, -1"/>
+        <ingredient name="scrapIron" count="1" grid="1, -1"/>
+        <ingredient name="scrapIron" count="1" grid="-2, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 0"/>
+        <ingredient name="scrapIron" count="1" grid="0, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 0"/>
+        <ingredient name="scrapIron" count="1" grid="2, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 1"/>
+        <ingredient name="scrapIron" count="1" grid="0, 1"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 1"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 2"/>
+        <ingredient name="scrapIron" count="1" grid="0, 2"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 2"/>
+    </recipe>
+
+    <recipe name="scrapGloves" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="scrapIron" count="1" grid="1, -1"/>
+        <ingredient name="hardenedLeather" count="1" grid="0, 0"/>
+    </recipe>
+
+    <recipe name="scrapHelmet" count="1" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="scrapIron" count="1" grid="0, -1"/>
+        <ingredient name="scrapIron" count="1" grid="-1, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="0, 0"/>
+        <ingredient name="scrapIron" count="1" grid="1, 0"/>
+        <ingredient name="scrapIron" count="1" grid="-1, 1"/>
+    </recipe>
+
+    <recipe name="scrapLegArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="hardenedLeather" count="1" grid="-1, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="0, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, -1"/>
+        <ingredient name="scrapIron" count="1" grid="0, -1"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, -1"/>
+        <ingredient name="scrapIron" count="1" grid="-1, 0"/>
+        <ingredient name="scrapIron" count="1" grid="1, 0"/>
+        <ingredient name="scrapIron" count="1" grid="-1, 1"/>
+        <ingredient name="scrapIron" count="1" grid="1, 1"/>
+        <ingredient name="scrapIron" count="1" grid="-1, 2"/>
+        <ingredient name="scrapIron" count="1" grid="1, 2"/>
+    </recipe>	
 	
 </recipes>

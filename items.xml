@@ -1101,55 +1101,11 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,0,0" />
         </property>
     </item>
-    <item id="49" name="sniperRifle">
-        <property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab" />
-        <property name="Material" value="metal" />
-        <property name="HoldType" value="11" />
-        <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="weaponRepairKit" />
-        <property name="Degradation" value="150" param1="false" />
-        <property name="DegradationBreaksAfter" value="false" />
-        <property name="Weight" value="64" />
-        <property class="Parts">
-            <property name="Stock" value="sniperRifle_stock" />
-            <property name="Receiver" value="sniperRifle_triggerHousing" />
-            <property name="Barrel" value="sniperRifleBarrel" />
-            <property name="Pump" value="sniperRifleParts" />
-        </property>
-        <property class="Action0">
-            <!-- AttackAction -->
-            <property name="Class" value="Ranged" />
-            <property name="Delay" value="0.5" />
-            <property name="Range" value="200" />
-            <property name="Rays_per_shot" value="1" />
-            <property name="Rays_spread" value="0" />
-            <property name="Crosshair_min_distance" value="30" />
-            <property name="Crosshair_max_distance" value="100" />
-            <property name="DamageEntity" value="85" />
-            <property name="DamageBlock" value="5" />
-            <property name="Magazine_size" value="5" />
-            <property name="Magazine_item" value="762mmBullet" />
-            <property name="Reload_time" value="2.5" />
-            <property name="Bullet_icon" value="uzi" />
-            <property name="Sound_start" value="Weapons/Ranged/SniperRifle/sniperrifle_fire" />
-            <property name="Sound_repeat" value="" />
-            <property name="Sound_end" value="" />
-            <property name="Sound_empty" value="Weapons/weapon_empty" />
-            <property name="Sound_reload" value="Weapons/Ranged/SniperRifle/sniperrifle_reload" />
-            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
-            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-            <property name="DamageBonus.head" value="6" />
-            <property name="DamageBonus.glass" value="25" />
-        </property>
-        <property class="Action1">
-            <!-- UseAction -->
-            <property name="Class" value="Zoom" />
-            <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-            <property name="Zoom_max_out" value="40" />
-            <property name="Zoom_max_in" value="15" />
-        </property>
-        <property name="Group" value="Ammo/Weapons" />
-    </item>
+
+	<!-- Item ID 49 Sniper Rifle moved to bottom and modded -->
+	
+	<!-- Item ID 50 and 51 not in use -->
+	
     <item id="52" name="chainsaw">
         <property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw" />
         <property name="Material" value="metal" />
@@ -2749,7 +2705,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <!-- AttackAction -->
             <property name="Class" value="Launcher" />
             <property name="Delay" value="0.8" />
-            <property name="Range" value="200" />
+            <property name="Range" value="100" />
             <property name="Magazine_size" value="1" />
             <property name="Magazine_item" value="crossbowBolt" />
             <property name="Reload_time" value="2" />
@@ -2789,7 +2745,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
             <property name="Velocity" value="500" />
-            <property name="FlyTime" value="1.2" />
+            <property name="FlyTime" value="0.6" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
@@ -2969,61 +2925,11 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
         <property name="Group" value="Ammo/Weapons" />
     </item>
-    <item id="274" name="huntingRifle">
-        <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
-        <property name="Material" value="metal" />
-        <property name="HoldType" value="30" />
-        <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="weaponRepairKit" />
-        <property name="FuelValue" value="32" />
-        <property name="Weight" value="22" />
-        <property name="Degradation" value="150" param1="false" />
-        <property name="DegradationBreaksAfter" value="false" />
-        <property class="Parts">
-            <property name="Stock" value="huntingRifleStock" />
-            <property name="Receiver" value="huntingRifleBolt" />
-            <property name="Barrel" value="huntingRifleBarrel" />
-            <property name="Pump" value="huntingRifleParts" />
-        </property>
-        <property class="Action0">
-            <!-- AttackAction -->
-            <property name="Class" value="Ranged" />
-            <property name="Delay" value="0.5" />
-            <property name="Range" value="150" />
-            <property name="Rays_per_shot" value="1" />
-            <property name="Rays_spread" value="0" />
-            <property name="Crosshair_min_distance" value="30" />
-            <property name="Crosshair_max_distance" value="100" />
-            <property name="DamageEntity" value="45" />
-            <property name="DamageBlock" value="5" />
-            <property name="Magazine_size" value="1" />
-            <property name="Magazine_item" value="762mmBullet" />
-            <property name="Reload_time" value="2.66" />
-            <property name="Bullet_icon" value="uzi" />
-            <property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
-            <property name="Sound_repeat" value="" />
-            <property name="Sound_end" value="" />
-            <property name="Sound_empty" value="Weapons/weapon_empty" />
-            <property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
-            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
-            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-            <property name="DamageBonus.head" value="6" />
-            <property name="DamageBonus.plants" value="6" />
-            <property name="DamageBonus.glass" value="25" />
-        </property>
-        <property class="Action1">
-            <!-- UseAction -->
-            <property name="Class" value="Zoom" />
-            <property name="Zoom_max_out" value="35" />
-            <property name="Zoom_max_in" value="35" />
-        </property>
-        <property name="Group" value="Ammo/Weapons" />
-        <property class="Preview">
-            <property name="Zoom" value="1" />
-            <property name="Pos" value="-0.15,-0.25" />
-            <property name="Rot" value="0,-45,0" />
-        </property>
-    </item>
+	
+ <!-- Item ID 274 Hunting Rifle moved to bottom -->
+ 
+ <!-- Item ID 275 not in use -->
+	
     <item id="276" name="buckshot">
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="Material" value="lead" />
@@ -3084,7 +2990,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="1,60" />
+            <property name="FalloffRange" value="10,60" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -3143,7 +3049,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="24" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="30,60" />
+            <property name="FalloffRange" value="10,40" />
             <property name="DegradationMax" value="30,600" />
         </property>
         <property class="Preview">
@@ -3259,7 +3165,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="25" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="10,80" />
+            <property name="FalloffRange" value="10,40" />
             <property name="DegradationMax" value="30,600" />
         </property>
         <property class="Preview">
@@ -3357,7 +3263,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="30" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="40,160" />
+            <property name="FalloffRange" value="80,160" />
             <property name="DegradationMax" value="30,600" />
         </property>
         <property class="Preview">
@@ -3627,7 +3533,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>
-    <item id="323" name="762mmBullet">
+    <item id="323" name="308calBullet">
         <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
         <property name="Material" value="brass" />
         <property name="HoldType" value="21" />
@@ -4254,7 +4160,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="40,160" />
+            <property name="FalloffRange" value="60,140" />
             <property name="DegradationMax" value="30,600" />
         </property>
         <property class="Preview">
@@ -5002,7 +4908,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="36" />
         <property name="Group" value="Miscellaneous" />
         <property class="Attributes">
-            <property name="FalloffRange" value="4,60" />
+            <property name="FalloffRange" value="10,30" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -5471,7 +5377,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Buckshot Weekly" />
             <property name="Description" value="Give a man a shotgun shell and he can kill one walker. Teach a man how to craft a shotgun shell and he can kill 'em all." />
-            <property name="Recipes_to_learn" value="shotgunShell,buckshot" />
+            <property name="Recipes_to_learn" value="shotgunShell,buckshot,steelSlugMold,shotgunSlug" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -8860,7 +8766,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="40,200" />
+            <property name="FalloffRange" value="80,150" />
             <property name="DegradationMax" value="30,800" />
         </property>
         <property class="Preview">
@@ -9947,7 +9853,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="25" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="FalloffRange" value="30,150" />
+            <property name="FalloffRange" value="20,80" />
             <property name="DegradationMax" value="30,700" />
         </property>
         <property class="Preview">
@@ -10037,6 +9943,146 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Zoom" value="14" />
             <property name="Pos" value="0.1,0" />
             <property name="Rot" value="10,-45,0" />
+        </property>
+    </item>
+	
+	<!-- Custom Hunting Rifle Tweaks -->
+    <item id="274" name="huntingRifle">
+        <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="30" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="weaponRepairKit" />
+        <property name="FuelValue" value="32" />
+        <property name="Weight" value="22" />
+        <property name="Degradation" value="150" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property class="Parts">
+            <property name="Stock" value="huntingRifleStock" />
+            <property name="Receiver" value="huntingRifleBolt" />
+            <property name="Barrel" value="huntingRifleBarrel" />
+            <property name="Pump" value="huntingRifleParts" />
+        </property>
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="0.5" />
+            <property name="Range" value="150" />
+            <property name="Rays_per_shot" value="1" />
+            <property name="Rays_spread" value="0" />
+            <property name="Crosshair_min_distance" value="30" />
+            <property name="Crosshair_max_distance" value="100" />
+            <property name="DamageEntity" value="45" />
+            <property name="DamageBlock" value="5" />
+            <property name="Magazine_size" value="1" />
+            <property name="Magazine_item" value="308calBullet" />
+            <property name="Reload_time" value="2.66" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
+            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.plants" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="35" />
+            <property name="Zoom_max_in" value="35" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="1" />
+            <property name="Pos" value="-0.15,-0.25" />
+            <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+
+    <!-- Sniper Rifle Tweaks -->
+    <item id="49" name="sniperRifle">
+        <property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab" />
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="11" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="weaponRepairKit" />
+        <property name="Degradation" value="150" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="Weight" value="64" />
+        <property class="Parts">
+            <property name="Stock" value="sniperRifle_stock" />
+            <property name="Receiver" value="sniperRifle_triggerHousing" />
+            <property name="Barrel" value="sniperRifleBarrel" />
+            <property name="Pump" value="sniperRifleParts" />
+        </property>
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="0.5" />
+            <property name="Range" value="200" />
+            <property name="Rays_per_shot" value="1" />
+            <property name="Rays_spread" value="0" />
+            <property name="Crosshair_min_distance" value="30" />
+            <property name="Crosshair_max_distance" value="100" />
+            <property name="DamageEntity" value="85" />
+            <property name="DamageBlock" value="5" />
+            <property name="Magazine_size" value="5" />
+            <property name="Magazine_item" value="762mmBullet" />
+            <property name="Reload_time" value="2.5" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/SniperRifle/sniperrifle_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/SniperRifle/sniperrifle_reload" />
+            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+            <property name="Zoom_max_out" value="40" />
+            <property name="Zoom_max_in" value="15" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+    </item>
+
+    <item id="822" name="toughHide">
+        <property name="Meshfile" value="Items/Crafting/animal_hide" />
+        <property name="CustomIcon" value="animalHide" />
+        <property name="CustomIconTint" value="FFCC00"/>
+        <property name="Material" value="organic" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="64" />
+        <property name="FuelValue" value="20" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="823" name="hardenedLeather">
+        <property name="Meshfile" value="Items/Crafting/leather" />
+        <property name="CustomIcon" value="leather" />
+        <property name="CustomIconTint" value="FFCC00"/>
+        <property name="Material" value="organic" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="64" />
+        <property name="FuelValue" value="20" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
         </property>
     </item>
 	
