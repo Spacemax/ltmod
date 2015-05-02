@@ -934,6 +934,7 @@
         <property name="Mesh"   value="Animals/Rabbit/RABBIT" />
         <property name="Prefab" value="NPC" />
         <property name="Class"  value="EntityAnimalRabbit" />
+		<property name="CanClimbVertical"  value="true" />
         <property name="Parent" value="Animals" />
         <property name="HandItem"             value="zrabbitAttack" />
         <property name="AITask-1" value="Swim" />

@@ -10815,7 +10815,7 @@
    	<property name="CustomIconTint" value="99CCFF"/>
     <property name="Material" value="concrete_steel" />
     <property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="uhpConcrete" />
+	<property name="DowngradeBlock" value="uhpConcreteBroke01" />
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
   

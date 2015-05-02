@@ -5400,7 +5400,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="The Enforcer Magazine" />
             <property name="Description" value="Do you feel lucky punk? You should because this guide shows you how to craft Magnum Rounds and a Compound Bow with Brass Tipped Arrows." />
-            <property name="Recipes_to_learn" value="44MagBullet,44Magnum,arrowBrass,compoundBow,brassArrowTipMold" />
+            <property name="Recipes_to_learn" value="44MagBullet,44Magnum,arrowBrass,compoundBow,brassArrowTipMold,dynamite" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
