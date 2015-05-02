@@ -348,7 +348,14 @@ The higher your level the more ammo you can find
 		<item name="animalHide" count="2,4"/>	
 		<item name="femur" count="1"/>
 		<item name="animalFat" count="4,8"/>			
-	</lootgroup>			
+	</lootgroup>
+
+	<lootgroup name="boar+hide" count="all">
+		<item name="pork" count="6,9"/>
+		<item name="toughHide" count="1,2"/>	
+		<item name="femur" count="1,4"/>
+		<item name="animalFat" count="6,10"/>			
+	</lootgroup>		
 	
 	<lootgroup name="zdog+hide" count="all">
 		<item name="rottingFlesh" count="2,4"/>
@@ -1505,11 +1512,9 @@ plentiful loot items in the game.
 		
     </lootcontainer>	
     
-    <!-- shotgun messiah  -->
-    <lootcontainer id="39" count="2,3" size="3,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" >
-		<!--Extra copies of ammo and weapons removed to simplify the odds-->
-		<item group="sportingGoods" prob="0.3" />
-		<item group="militaryguns+ammo" prob="0.7" />	
+    <!-- Boar Loot  -->
+    <lootcontainer id="39" count="1" size="3,2" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" open_time="5" destroy_on_close="true">
+		<item group="boar+hide" />
     </lootcontainer>	 
     
     <!-- military munitions  -->
