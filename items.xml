@@ -1049,7 +1049,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="25" />
             <property name="DamageBlock" value="1" />
             <property name="Magazine_size" value="30" />
-            <property name="Magazine_item" value="10mmBullet" />
+            <property name="Magazine_item" value="9mmBullet" />
             <property name="Reload_time" value="4.1" />
             <property name="Bullet_icon" value="uzi" />
             <property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
@@ -2985,7 +2985,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="45" />
             <property name="DamageBlock" value="5" />
             <property name="Magazine_size" value="1" />
-            <property name="Magazine_item" value="762mmBullet" />
+            <property name="Magazine_item" value="308calBullet" />
             <property name="Reload_time" value="2.66" />
             <property name="Bullet_icon" value="uzi" />
             <property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
@@ -3615,8 +3615,10 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>
-    <item id="323" name="762mmBullet">
+    <item id="323" name="308calBullet">
         <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
+        <property name="CustomIcon" value="762mmBullet" />
+        <property name="CustomIconTint" value="FAAB00"/>
         <property name="Material" value="brass" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="500" />
@@ -5434,7 +5436,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Ammunition Nation" />
             <property name="Description" value="Tired of paying top dollar for your ammo then make your own ammunion with this great guide." />
-            <property name="Recipes_to_learn" value="9mmBullet,10mmBullet,762mmBullet,bulletTipMold,bulletCasingMold" />
+            <property name="Recipes_to_learn" value="9mmBullet,223calBullet,308calBullet,bulletTipMold,bulletCasingMold,shotgunShell,buckshot" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -5457,8 +5459,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <!-- UseAction -->
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Buckshot Weekly" />
-            <property name="Description" value="Give a man a shotgun shell and he can kill one walker. Teach a man how to craft a shotgun shell and he can kill 'em all." />
-            <property name="Recipes_to_learn" value="shotgunShell,buckshot" />
+            <property name="Description" value="Advanced and powerful ammunition for the gun nut in all of us!" />
+            <property name="Recipes_to_learn" value="10mmBullet,556mmBullet,762mmBullet,shotgunSlug" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -9581,6 +9583,329 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Zoom" value="23" />
             <property name="Pos" value="0.18,-0.15" />
             <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] 7.62x51mm Military Grade Round -->
+    <item id="804" name="762mmBullet">
+        <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
+        <property name="Material" value="brass" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="500" />
+        <property name="Weight" value="1" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="18" />
+            <property name="Pos" value="0.1,0" />
+            <property name="Rot" value="10,-45,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] 12G Sabot Slug -->
+    <item id="805" name="shotgunSlug">
+        <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShell" />
+        <property name="CustomIcon" value="shotgunShell" />
+        <property name="CustomIconTint" value="00AB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="64" />
+        <property name="DropScale" value="4" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="40" />
+            <property name="Pos" value="0.0,0.0" />
+            <property name="Rot" value="10,0,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] Mossburg 500 "Super" Shotgun -->
+    <item id="806" name="Mossburg500S">
+        <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab" />
+        <property name="CustomIcon" value="PumpShotgun" />
+        <property name="CustomIconTint" value="00AB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="5" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="weaponRepairKit" />
+        <property name="Degradation" value="250" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="SoundJammed" value="Weapons/weapon_jam" />
+        <property name="Weight" value="27" />
+        <property class="Parts">
+            <property name="Stock" value="Mossburg_stock" />
+            <property name="Receiver" value="Mossburg_receiver" />
+            <property name="Pump" value="Mossburg_parts" />
+            <property name="Barrel" value="Mossburg_longbarrel" />
+        </property>
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="90" />
+            <property name="Rays_per_shot" value="1" />
+            <property name="Rays_spread" value="0.15" />
+            <property name="Crosshair_min_distance" value="30" />
+            <property name="Crosshair_max_distance" value="50" />
+            <property name="DamageEntity" value="200" />
+            <property name="DamageBlock" value="10" />
+            <property name="Magazine_size" value="6" />
+            <property name="Magazine_item" value="shotgunSlug" />
+            <property name="Reload_time" value="2.6" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
+            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <!-- TODO: Alter the DamageBonus properties for Mossburg500Slug
+            -->
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="35" />
+            <property name="Zoom_max_in" value="35" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="5" />
+            <property name="Pos" value="0.1,-0.05" />
+            <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+
+    <item id="807" name="Mossburg500B">
+        <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab" />
+        <property name="CustomIcon" value="PumpShotgun" />
+        <property name="CustomIconTint" value="AB0000"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="5" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="weaponRepairKit" />
+        <property name="Degradation" value="250" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="SoundJammed" value="Weapons/weapon_jam" />
+        <property name="Weight" value="27" />
+        <property class="Parts">
+            <property name="Stock" value="Mossburg_stock" />
+            <property name="Receiver" value="Mossburg_receiver" />
+            <property name="Pump" value="Mossburg_parts" />
+            <property name="Barrel" value="Mossburg_shortbarrel" />
+        </property>
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="45" />
+            <property name="Rays_per_shot" value="8" />
+            <property name="Rays_spread" value="0.75" />
+            <property name="Crosshair_min_distance" value="30" />
+            <property name="Crosshair_max_distance" value="50" />
+            <property name="DamageEntity" value="25" />
+            <property name="DamageBlock" value="0.5" />
+            <property name="Magazine_size" value="6" />
+            <property name="Magazine_item" value="shotgunShell" />
+            <property name="Reload_time" value="2.6" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
+            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <!-- TODO: Alter the DamageBonus properties for Mossburg500Buckshot
+            -->
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="35" />
+            <property name="Zoom_max_in" value="35" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="5" />
+            <property name="Pos" value="0.1,-0.05" />
+            <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] Mossburg 500 parts -->
+    <item id="808" name="Mossburg_parts">
+        <property name="PartType" value="Pump" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_parts" />
+        <property name="CustomIconTint" value="FAAB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property class="Attributes">
+            <property name="DegradationMax" value="30,500" />
+        </property>
+        <property name="FuelValue" value="16" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="809" name="Mossburg_shortbarrel">
+        <property name="PartType" value="Barrel" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_barrel" />
+        <property name="CustomIconTint" value="FA0000"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="EntityDamage" value="5, 40" />
+			<property name="BlockDamage" value="0.1, 4" />
+            <property name="Accuracy" value="1, 0.01" />
+             <property name="DegradationMax" value="30,700" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="810" name="Mossburg_stock">
+        <property name="PartType" value="Stock" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_stock" />
+        <property name="CustomIconTint" value="FAAB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="FuelValue" value="24" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="DegradationRate" value="1,1" />
+            <property name="DegradationMax" value="30,500" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+    <item id="811" name="Mossburg_receiver">
+        <property name="PartType" value="Receiver" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_receiver" />
+        <property name="CustomIconTint" value="FAAB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="25" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="FalloffRange" value="30,150" />
+            <property name="DegradationMax" value="30,700" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="812" name="Mossburg_longbarrel">
+        <property name="PartType" value="Barrel" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_barrel" />
+        <property name="CustomIconTint" value="00AB00"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="EntityDamage" value="50, 200" />
+			<property name="BlockDamage" value="1,15" />
+            <property name="Accuracy" value="1, 0.01" />
+            <property name="DegradationMax" value="30,700" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="813" name="Mossburg500Schematics">
+		<property name="CustomIcon" value="smgSchematics"/>
+		<property name="CustomIconTint" value="00AB00"/>
+        <property name="Meshfile" value="Items/Misc/Book" />
+        <property name="Material" value="paper" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="50" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="LearnRecipe" />
+            <property name="Title" value="Mossburg 500 Schematics" />
+            <property name="Description" value="Learn how to construct a powerful multipurpose shotgun." />
+            <property name="Recipes_to_learn" value="Mossburg500S,Mossburg500B" />
+            <property name="Delay" value="0" />
+            <property name="Sound_start" value="Misc/recipe_unlocked" />
+        </property>
+        <property name="FuelValue" value="20" />
+        <property name="Weight" value="20" />
+        <property name="Group" value="Special Items" />
+        <property class="Preview">
+            <property name="Zoom" value="10" />
+            <property name="Pos" value="0,-0.2" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] 5.56x45mm Military Grade Round -->
+    <item id="814" name="556mmBullet">
+        <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
+        <property name="CustomIcon" value="762mmBullet" />
+        <property name="Material" value="brass" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="500" />
+        <property name="Weight" value="1" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="14" />
+            <property name="Pos" value="0.1,0" />
+            <property name="Rot" value="10,-45,0" />
+        </property>
+    </item>
+
+    <!-- [RH99] .223cal Civilian Round -->
+    <item id="815" name="223calBullet">
+        <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
+        <property name="CustomIcon" value="762mmBullet" />
+        <property name="CustomIconTint" value="FFCC00"/>
+        <property name="Material" value="brass" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="500" />
+        <property name="Weight" value="1" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="14" />
+            <property name="Pos" value="0.1,0" />
+            <property name="Rot" value="10,-45,0" />
         </property>
     </item>
 

@@ -2390,12 +2390,26 @@
     </recipe>
 
     <!-- A more powerful bolt variant -->
-    <recipe name="ironCrossbowBolt" count="30" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
+    <!--<recipe name="ironCrossbowBolt" count="30" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="scrapIron" count="5" grid="1, -1"/>
         <ingredient name="stick" count="30" grid="0, 0"/>
         <ingredient name="feather" count="15" grid="-1, 1"/>
         <ingredient name="treeSap" count="1" grid="-1, 0"/>
         <ingredient name="yuccaFibers" count="1" grid="-1, -1"/>
+    </recipe>-->
+
+    <recipe name="Mossburg500S" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="200" >
+        <ingredient name="Mossburg_longbarrel" count="1" grid="1, -1"/>
+        <ingredient name="Mossburg_receiver" count="1" grid="0, 0"/>
+        <ingredient name="Mossburg_parts" count="1" grid="1, 0"/>
+        <ingredient name="Mossburg_stock" count="1" grid="-1, 1"/>
+    </recipe>
+
+    <recipe name="Mossburg500B" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="200" >
+        <ingredient name="Mossburg_shortbarrel" count="1" grid="1, -1"/>
+        <ingredient name="Mossburg_receiver" count="1" grid="0, 0"/>
+        <ingredient name="Mossburg_parts" count="1" grid="1, 0"/>
+        <ingredient name="Mossburg_stock" count="1" grid="-1, 1"/>
     </recipe>
 
 
