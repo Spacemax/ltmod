@@ -383,7 +383,7 @@
    <material id="wood">
       <property name="damage_category" value="wood" />
       <property name="surface_category" value="wood" />
-      <property name="Hardness" type="float" value="2.0" />
+      <property name="Hardness" type="float" value="4.0" />
       <property name="stepsound" value="wood" />
       <property name="stability_glue" value="24" />
       <property name="Mass" type="int" value="5" />
