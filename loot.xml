@@ -308,14 +308,15 @@ The higher your level the more ammo you can find
 -->
 	
 	<lootgroup name="ammo" count="1">
-		<item name="44MagBullet" count="1,4" /> 
+		<item name="44MagBullet" count="1,3" /> 
 		<item name="arrowBrass" count="1,2" /> 
-		<item name="arrow" count="4,8" />
-		<item name="crossbowBolt" count="4,8" />
-		<item name="9mmBullet" count="6,9" />
-        <item name="shotgunShell" count="1,8" />
-		<item name="10mmBullet" count="2,6" />
-        <item name="762mmBullet" count="3,9" />
+		<item name="arrow" count="2,6" />
+		<item name="crossbowBolt" count="2,6" />
+		<item name="9mmBullet" count="4,7" />
+        <item name="shotgunShell" count="2,6" />
+		<item name="10mmBullet" count="1,6" />
+        <item name="762mmBullet" count="1,5" />
+		<item name="shotgunSlug" count="0,1" />
 	</lootgroup>
 	
 	<!-- KM:Increase drop rate when this group is called, this should populate fridges,coolers with more rotten items in general-->
@@ -639,12 +640,51 @@ more opportunities to score that flawless part!
 		<item name="rem8parts" quality="100, 199" prob="0.39"/>
 	</lootgroup>
 	
+	<lootgroup name="Mossburg_stock">
+		<item name="Mossburg_stock" quality="500, 600" prob="0.05"/>
+		<item name="Mossburg_stock" quality="400, 499" prob="0.05"/>
+		<item name="Mossburg_stock" quality="300, 399" prob="0.2"/>
+		<item name="Mossburg_stock" quality="200, 299" prob="0.35"/>
+		<item name="Mossburg_stock" quality="100, 199" prob="0.39"/>
+	</lootgroup>
+	
+	<lootgroup name="Mossburg_receiver">
+		<item name="Mossburg_receiver" quality="500, 600" prob="0.05"/>
+		<item name="Mossburg_receiver" quality="400, 499" prob="0.05"/>
+		<item name="Mossburg_receiver" quality="300, 399" prob="0.2"/>
+		<item name="Mossburg_receiver" quality="200, 299" prob="0.35"/>
+		<item name="Mossburg_receiver" quality="100, 199" prob="0.39"/>
+	</lootgroup>
+	
+	<lootgroup name="Mossburg_parts">
+		<item name="Mossburg_parts" quality="500, 600" prob="0.05"/>
+		<item name="Mossburg_parts" quality="400, 499" prob="0.05"/>
+		<item name="Mossburg_parts" quality="300, 399" prob="0.2"/>
+		<item name="Mossburg_parts" quality="200, 299" prob="0.35"/>
+		<item name="Mossburg_parts" quality="100, 199" prob="0.39"/>
+	</lootgroup>
+	
+	<lootgroup name="Mossburg_longbarrel">
+		<item name="Mossburg_longbarrel" quality="500, 600" prob="0.05"/>
+		<item name="Mossburg_longbarrel" quality="400, 499" prob="0.05"/>
+		<item name="Mossburg_longbarrel" quality="300, 399" prob="0.2"/>
+		<item name="Mossburg_longbarrel" quality="200, 299" prob="0.35"/>
+		<item name="Mossburg_longbarrel" quality="100, 199" prob="0.39"/>
+	</lootgroup>
+	
+	<lootgroup name="Mossburg_shortbarrel">
+		<item name="Mossburg_shortbarrel" quality="500, 600" prob="0.05"/>
+		<item name="Mossburg_shortbarrel" quality="400, 499" prob="0.05"/>
+		<item name="Mossburg_shortbarrel" quality="300, 399" prob="0.2"/>
+		<item name="Mossburg_shortbarrel" quality="200, 299" prob="0.35"/>
+		<item name="Mossburg_shortbarrel" quality="100, 199" prob="0.39"/>
+	</lootgroup>
+	
 	<lootgroup name="pistol_components">
 		<item group="pistol_parts" prob="0.2" />
 		<item group="pistol_barrel" prob="0.2" />
 		<item group="pistol_receiver" prob="0.3" />
 		<item group="pistol_grip" prob="0.3" />
-		
 	</lootgroup>
 		
 	<lootgroup name="HuntingRifle_components">
@@ -652,7 +692,6 @@ more opportunities to score that flawless part!
 		<item group="huntingRifleParts" prob="0.2" />
 		<item group="huntingRifleBarrel" prob="0.3" />
 		<item group="huntingRifleStock" prob="0.3" />	
-		
 	</lootgroup>
 	
 	<lootgroup name="Shotgun_components">
@@ -662,14 +701,20 @@ more opportunities to score that flawless part!
 		<item group="PumpShotgun_shortBarrel" />
 		<item group="PumpShotgun_shortStock" />
 		<item group="PumpShotgun_stock" />	
-		
 	</lootgroup>
 	
 	<lootgroup name="rem8_components">
 		<item group="rem8Barrel" />
         <item group="rem8Stock" />
         <item group="rem8Bolt" />
-		<item name="rem8parts" />
+		<item group="rem8parts" />
+	</lootgroup>
+	
+	<lootgroup name="Mossburg_components">
+		<item group="Mossburg_shortbarrel" />
+        <item group="Mossburg_longbarrel" />
+        <item group="Mossburg_receiver" />
+		<item group="Mossburg_stock" />
 	</lootgroup>
 
 	<lootgroup name="rareWeaponParts">
@@ -685,18 +730,20 @@ more opportunities to score that flawless part!
 	</lootgroup>
 
 	<lootgroup name="ultrarareWeaponParts">
+		<item group="Mossburg_parts" />
 		<item group="mp5_parts" />
         <item group="44MagnumParts"/>
 		<item group="sniperRifleParts" />
 	</lootgroup>	
 	
 	<lootgroup name="WeaponParts" count="1">
-		<item group="ultrarareWeaponParts" prob="0.001"/>			<!-- 0.1% -->
-		<item group="rareWeaponParts" prob="0.049"/>				<!-- 4.9% -->
-		<item group="rem8_components" prob="0.1"/>					<!-- 10% -->
-		<item group="Shotgun_components" prob="0.15"/>				<!-- 15% -->
-		<item group="pistol_components" prob="0.225"/>				<!-- 22.5% -->
-		<item group="HuntingRifle_components" prob="0.225" />		<!-- 22.5% -->
+		<item group="ultrarareWeaponParts" prob="0.001" />			<!-- 0.1% -->
+		<item group="Mossburg_components" prob="0.049" />			<!-- 4.9% -->
+		<item group="rareWeaponParts" prob="0.05" />				<!-- 5% -->
+		<item group="rem8_components" prob="0.1" />					<!-- 10% -->
+		<item group="Shotgun_components" prob="0.2" />				<!-- 20% -->
+		<item group="pistol_components" prob="0.3" />				<!-- 30% -->
+		<item group="HuntingRifle_components" prob="0.3" />			<!-- 30% -->
 	</lootgroup>
 
 	<lootgroup name="militaryguns+ammo">
@@ -763,11 +810,12 @@ plentiful loot items in the game.
 		<item name="rem8Schematics" />
 		<item name="homeMaintenanceBookVolumeII" />
 		<item name="theEnforcerMagazine" />
+		<item name="smgSchematics" />
     	</lootgroup>
 
 	<lootgroup name="ultrarareBooks">  		
+		<item name="Mossburg500Schematics" />
 		<item name="MomsRecipeSecrets" />
-		<item name="smgSchematics" />
 		<item name="sniperRifleSchematic" />
 		<item name="Furukawa780Schematic" />
 	</lootgroup>
