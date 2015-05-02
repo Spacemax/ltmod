@@ -1224,6 +1224,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Horde_meter_distance" value="20" />
             <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
             <property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.metal" value="0.5" />
             <property name="DamageBonus.head" value="4" />
             <property name="DamageBonus.glass" value="25" />
         </property>
@@ -6283,18 +6285,18 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="4" />
         <property name="Degradation" value="250" param1="true" />
         <property class="Armor">
-            <property name="Melee" value="0.5" />
-            <property name="Bullet" value="0.3" />
-            <property name="Puncture" value="0.3" />
-            <property name="Blunt" value="0.4" />
-            <property name="Explosive" value="0.4" />
+            <property name="Melee" value="0.3" />
+            <property name="Bullet" value="0.2" />
+            <property name="Puncture" value="0.2" />
+            <property name="Blunt" value="0.2" />
+            <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.5" /> 
   			<property name="BulletProtection" value="0.2, 0.5" />
- 			 <property name="PunctureProtection" value="0.3, 0.5" />
-  			<property name="BluntProtection" value="0.3, 0.6" />
-  			<property name="ExplosiveProtection" value="0.2,0.6" />
+ 			 <property name="PunctureProtection" value="0.2, 0.3" />
+  			<property name="BluntProtection" value="0.2, 0.4" />
+  			<property name="ExplosiveProtection" value="0.1,0.3" />
   			<property name="DegradationMin" value="0.3,0.1" />
  		</property>         
         <property name="Group" value="Clothing" />
@@ -6319,20 +6321,20 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="250" param1="true" />
         <property class="Armor">
-            <property name="Melee" value="0.5" />
-            <property name="Bullet" value="0.3" />
-            <property name="Puncture" value="0.3" />
-            <property name="Blunt" value="0.4" />
-            <property name="Explosive" value="0.4" />
+            <property name="Melee" value="0.3" />
+            <property name="Bullet" value="0.2" />
+            <property name="Puncture" value="0.2" />
+            <property name="Blunt" value="0.2" />
+            <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.5" /> 
   			<property name="BulletProtection" value="0.2, 0.5" />
- 			 <property name="PunctureProtection" value="0.3, 0.5" />
-  			<property name="BluntProtection" value="0.3, 0.6" />
-  			<property name="ExplosiveProtection" value="0.2,0.6" />
+ 			 <property name="PunctureProtection" value="0.2, 0.3" />
+  			<property name="BluntProtection" value="0.2, 0.4" />
+  			<property name="ExplosiveProtection" value="0.1,0.3" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>           
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_legs" />
@@ -6355,20 +6357,20 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="250" param1="true" />
         <property class="Armor">
-            <property name="Melee" value="0.5" />
-            <property name="Bullet" value="0.3" />
-            <property name="Puncture" value="0.3" />
-            <property name="Blunt" value="0.4" />
-            <property name="Explosive" value="0.4" />
+            <property name="Melee" value="0.3" />
+            <property name="Bullet" value="0.2" />
+            <property name="Puncture" value="0.2" />
+            <property name="Blunt" value="0.2" />
+            <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.5" /> 
   			<property name="BulletProtection" value="0.2, 0.5" />
- 			 <property name="PunctureProtection" value="0.3, 0.5" />
-  			<property name="BluntProtection" value="0.3, 0.6" />
-  			<property name="ExplosiveProtection" value="0.2,0.6" />
+ 			 <property name="PunctureProtection" value="0.2, 0.3" />
+  			<property name="BluntProtection" value="0.2, 0.4" />
+  			<property name="ExplosiveProtection" value="0.1,0.3" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>            
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_chest" />
@@ -6391,20 +6393,20 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="250" param1="true" />
         <property class="Armor">
-            <property name="Melee" value="0.5" />
-            <property name="Bullet" value="0.3" />
-            <property name="Puncture" value="0.3" />
-            <property name="Blunt" value="0.4" />
-            <property name="Explosive" value="0.4" />
+            <property name="Melee" value="0.3" />
+            <property name="Bullet" value="0.2" />
+            <property name="Puncture" value="0.2" />
+            <property name="Blunt" value="0.2" />
+            <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.5" /> 
   			<property name="BulletProtection" value="0.2, 0.5" />
- 			 <property name="PunctureProtection" value="0.3, 0.5" />
-  			<property name="BluntProtection" value="0.3, 0.6" />
-  			<property name="ExplosiveProtection" value="0.2,0.6" />
+ 			 <property name="PunctureProtection" value="0.2, 0.3" />
+  			<property name="BluntProtection" value="0.2, 0.4" />
+  			<property name="ExplosiveProtection" value="0.1,0.3" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>           
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrapmetal_helmet" />
@@ -6428,20 +6430,20 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="250" param1="true" />
         <property class="Armor">
-            <property name="Melee" value="0.5" />
-            <property name="Bullet" value="0.3" />
-            <property name="Puncture" value="0.3" />
-            <property name="Blunt" value="0.4" />
-            <property name="Explosive" value="0.4" />
+            <property name="Melee" value="0.3" />
+            <property name="Bullet" value="0.2" />
+            <property name="Puncture" value="0.2" />
+            <property name="Blunt" value="0.2" />
+            <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.5" /> 
   			<property name="BulletProtection" value="0.2, 0.5" />
- 			 <property name="PunctureProtection" value="0.3, 0.5" />
-  			<property name="BluntProtection" value="0.3, 0.6" />
-  			<property name="ExplosiveProtection" value="0.2,0.6" />
+ 			 <property name="PunctureProtection" value="0.2, 0.3" />
+  			<property name="BluntProtection" value="0.2, 0.4" />
+  			<property name="ExplosiveProtection" value="0.1,0.3" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>             
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_hands" />
@@ -8986,15 +8988,15 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="Ranged" />
             <property name="Auto_fire" value="true" />
             <property name="Hitmask_override" value="Melee" />
-            <property name="Delay" value="0.3" />
+            <property name="Delay" value="0.1" />
             <property name="Range" value="2.3" />
             <property name="Rays_per_shot" value="1" />
             <property name="Rays_spread" value=".7" />
             <property name="Crosshair_min_distance" value="5" />
             <property name="Crosshair_max_distance" value="30" />
             <property name="DamageEntity" value="16" />
-            <property name="DamageBlock" value="10" />
-            <property name="Magazine_size" value="2000" />
+            <property name="DamageBlock" value="1" />
+            <property name="Magazine_size" value="1000" />
             <property name="Single_magazine_usage" value="true" />
             <property name="Magazine_item" value="gasCan" />
             <property name="Bullet_material" value="organic" />
@@ -9008,8 +9010,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Horde_meter_distance" value="20" />
             <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
             <property name="DamageBonus.wood" value="0.2" />
-			<property name="DamageBonus.stone" value="4" />
-			<property name="DamageBonus.metal" value="3" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.metal" value="0.5" />
             <property name="DamageBonus.head" value="4" />
             <property name="DamageBonus.glass" value="25" />
         </property>
@@ -9297,7 +9299,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 	
 	    <!-- Guide to making Kevlar -->
-    <item id="793" name="MomsSecretKevlarRecipe">
+    <item id="793" name="MomsRecipeSecrets">
 		<property name="CustomIcon" value="macDyverBook"/>
 		<property name="CustomIconTint" value="FAAB00"/>
         <property name="Meshfile" value="Items/Misc/Book" />
@@ -9308,8 +9310,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <!-- UseAction -->
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Government's Hate her!" />
-            <property name="Description" value="Learn how to make Kevlar and Kevlar Armor in 3 easy steps." />
-            <property name="Recipes_to_learn" value="kevlar,kevlarStrips" />
+            <property name="Description" value="Learn how to make Thermite, Kevlar and Kevlar Armor in 3 easy steps." />
+            <property name="Recipes_to_learn" value="kevlar,kevlarStrips,thermite,thermiteCharge" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -9581,6 +9583,126 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Zoom" value="23" />
             <property name="Pos" value="0.18,-0.15" />
             <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+	
+	 <item id="804" name="thermiteCharge">
+	 	<property name="CustomIcon" value="pipeBomb"/>
+		<property name="CustomIconTint" value="99CCFF"/>
+        <property name="Class" value="ItemClassTimeBomb" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab" />
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="25" />
+        <property name="Explosion.BlockDamage" value="10" />
+        <!-- damage for blocks in the center of the explosion -->
+        <property name="Explosion.EntityDamage" value="100" />
+        <!-- damage for entities in the center of the explosion -->
+        <property name="Explosion.ParticleIndex" value="1" />
+        <!-- which prefab/particle is used -->
+        <property name="Explosion.RadiusBlocks" value="4" />
+        <!-- damage radius for blocks -->
+        <property name="Explosion.RadiusEntities" value="2" />
+        <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value="20" />
+		<property name="Explosion.DamageBonus.metal" value="100" />
+		<property name="Explosion.DamageBonus.earth" value="0" />
+		<property name="Explosion.DamageBonus.cloth" value="5" />
+		<property name="Explosion.DamageBonus.wood" value="0" />
+		<property name="Explosion.DamageBonus.water" value="0" />
+		<property name="Explosion.DamageBonus.glass" value="10" />
+
+        <property name="FuseTime" value="6" />
+        <!-- time in sec, max 6 -->
+        <property name="DropScale" value="2" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="ThrowAway" />
+            <property name="Throw_strength_default" value="0.1" />
+            <property name="Throw_strength_max" value="1.5" />
+            <property name="Max_strain_time" value="2.1" />
+            <property name="Sound_start" value="swoosh" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Activate" />
+        </property>
+        <property name="ThrowableDecoy" value="true" />
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="805" name="thermite">
+		<property name="CustomIcon" value="potassiumNitratePowder"/>
+		<property name="CustomIconTint" value="8E918F"/>
+        <property name="Meshfile" value="Items/Food/cornmeal" />
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="200" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+	
+	<item id="806" name="magnesiumPowder">
+		<property name="CustomIcon" value="crushedSand"/>
+		<property name="CustomIconTint" value="4D4D4D"/>
+        <property name="Meshfile" value="Items/Food/cornmeal" />
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="200" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+	
+	<item id="807" name="wick">
+		<property name="CustomIcon" value="yuccaFibers"/>
+		<property name="CustomIconTint" value="4D4D4D"/>
+        <property name="Meshfile" value="Items/Crafting/plant_fibers" />
+        <property name="Material" value="organic" />
+        <property name="HoldType" value="16" />
+        <property name="Group" value="Resources" />
+    </item>
+	
+	<item id="808" name="steelSlug">
+		<property name="CustomIcon" value="bulletTip"/>
+		<property name="CustomIconTint" value="618C6D"/>
+        <property name="Meshfile" value="Items/Crafting/bullet_tip" />
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="200" />
+        <property name="Weight" value="12" />
+        <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="18" />
+            <property name="Pos" value="0.1,0" />
+            <property name="Rot" value="10,-45,0" />
+        </property>
+    </item>
+	
+	<item id="809" name="steelSlugMold">
+		<property name="CustomIcon" value="bulletTipMold"/>
+		<property name="CustomIconTint" value="618C6D"/>
+        <property name="Meshfile" value="Items/Crafting/mold" />
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="MoldTarget" value="steelSlug" />
+        <property name="Group" value="Forging/Molds" />
+        <property class="Preview">
+            <property name="Zoom" value="18" />
+            <property name="Pos" value="0.1,0" />
+            <property name="Rot" value="10,-45,0" />
         </property>
     </item>
 	
