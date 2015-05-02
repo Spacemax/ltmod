@@ -8993,7 +8993,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Crosshair_min_distance" value="5" />
             <property name="Crosshair_max_distance" value="30" />
             <property name="DamageEntity" value="16" />
-            <property name="DamageBlock" value="2" />
+            <property name="DamageBlock" value="10" />
             <property name="Magazine_size" value="2000" />
             <property name="Single_magazine_usage" value="true" />
             <property name="Magazine_item" value="gasCan" />
@@ -9007,7 +9007,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Horde_meter_rate" value=".275" />
             <property name="Horde_meter_distance" value="20" />
             <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-            <property name="DamageBonus.wood" value="0.5" />
+            <property name="DamageBonus.wood" value="0.2" />
 			<property name="DamageBonus.stone" value="4" />
 			<property name="DamageBonus.metal" value="3" />
             <property name="DamageBonus.head" value="4" />
