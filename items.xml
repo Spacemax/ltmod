@@ -4909,6 +4909,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="3" />
             <property name="Gain_water" value="1" />
             <property name="Gain_wellness" value="0" />
+
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
         <property name="DropScale" value="4" />
@@ -9889,7 +9890,8 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="815" name="PartType" value="Barrel" />
+    <item id="815" name="Mossburg_shortbarrel">
+	<property name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_barrel" />
         <property name="CustomIconTint" value="FA0000"/>
@@ -9900,10 +9902,10 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="EntityDamage" value="5, 40" />
-			<property name="BlockDamage" value="0.1, 4" />
-            <property name="Accuracy" value="1, 0.01" />
-             <property name="DegradationMax" value="30,700" />
+		<property name="EntityDamage" value="5, 40" />
+		<property name="BlockDamage" value="0.1, 4" />
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="30,700" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
