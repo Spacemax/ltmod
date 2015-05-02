@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  material="wood|metal|organic|bullet" 
+  material="wood|metal|organic|bullet"
            ATTENTION: this is not related to the materials defined in materials.xml!
 
   Planned:
@@ -8,26 +8,26 @@
                 class="Melee"
                 delay="0.5"
                 range="2.2"
-                    
+
     damage_entity="10.1"
                 damage_block="0.9"
                 sound_start="wuuush"
                 sound_repeat=""
                 sound_end=""
                 damage_type="blunt"
-                durability="100">            
+                durability="100">
         </property>
 
   rays_spread: 0 - 1
-  
+
   -->
-<!-- Hold Types 
+<!-- Hold Types
 14 = 6cm cylinder generic hold (no attack anim)
 15 = 4cm cylinder generic hold (no attack anim)
 16 = 2cm cylinder generic hold (no attack anim)
 17 = Fire Axe
 -->
-<!-- Metal weights based on real world density 
+<!-- Metal weights based on real world density
 Metal or alloy 	kg/cu.m
 aluminium - melted 	2560 - 2640
 aluminium bronze (3-10% Al) 	7700 - 8700
@@ -116,7 +116,7 @@ All parts must be filled in or the weapon will not work, period.
 	<property name="Receiver" value="pistol_receiver" />
 	<property name="Pump"     value="pistol_grip" />
 	<property name="Barrel"   value="pistol_barrel" />
-  </property>        
+  </property>
 </item>
 
 PART ATTRIBUTE EXAMPLES
@@ -162,17 +162,17 @@ Atttributes/Degradation: 		points each part is degraded per shot
       <property name="Stacknumber" value="1" />
 	  <property name="Degradation" value="100" />
    </item>
-   
-   
+
+
 ARMOR ATTRIBUTE EXAMPLE
 	Removal of the Armor class in the item is completely optional, it's reverse compatible like the others. If no Armor class or values it'll only read Attributes and any missing ones will have a default value of 0 percent protection.
 	Each range for armor is a percentage value. 1 being full protection but the armor will take the damage as degradation instead. So higher protection means faster degradation which balances it out.
 	DegradationMin is the minimum percentage degradation that the armor can be taken down to.
-	
+
 	leatherBoots currently have been swapped to the scaling attribute system as an example.
-	
+
 	<property class="Attributes">
-		<property name="MeleeProtection" value="0.1, 0.5" /> 
+		<property name="MeleeProtection" value="0.1, 0.5" />
 		<property name="BulletProtection" value="0.1, 0.3" />
 		<property name="PunctureProtection" value="0.1, 0.3" />
 		<property name="BluntProtection" value="0.15, 0.35" />
@@ -210,7 +210,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Attributes">
             <property name="EntityDamage" value="4,12" />
             <property name="BlockDamage" value="0.7,1.2" />
-        </property>         
+        </property>
         <property name="CritChance" value=".10" />
         <property name="Group" value="Ammo/Weapons" />
         <property class="Preview">
@@ -246,7 +246,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Attributes">
             <property name="EntityDamage" value="5,15" />
             <property name="BlockDamage" value="0.9,1.5" />
-        </property>           
+        </property>
         <property name="CritChance" value=".2" />
         <property name="Group" value="Ammo/Weapons" />
         <property class="Preview">
@@ -282,7 +282,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Attributes">
             <property name="EntityDamage" value="10,22" />
             <property name="BlockDamage" value="0.9,1.6" />
-        </property>          
+        </property>
         <property name="CritChance" value=".3" />
         <property name="Group" value="Ammo/Weapons" />
         <property class="Preview">
@@ -318,7 +318,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Attributes">
             <property name="EntityDamage" value="12,30" />
             <property name="BlockDamage" value="0.9,1.7" />
-        </property>          
+        </property>
         <property name="CritChance" value=".4" />
         <property name="Group" value="Ammo/Weapons" />
         <property class="Preview">
@@ -380,8 +380,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="EntityDamage" value="6,8" />
             <property name="BlockDamage" value="2,8" />
 			<property name="DegradationMax" value="300,600" />
-			<property name="DegradationRate" value="3,1" />       
-        </property>                                              
+			<property name="DegradationRate" value="3,1" />
+        </property>
         <property name="Group" value="Tools/Traps" />
     </item>
     <item id="21" name="pickaxeIron">
@@ -417,7 +417,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="4,8" />
             <property name="DegradationMax" value="300,600" />
 			<property name="DegradationRate" value="3,1" />
-        </property>  
+        </property>
         <property class="Preview">
             <property name="Pos" value="-0.05,-0.4" />
         </property>
@@ -456,7 +456,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="2,12" />
             <property name="DegradationMax" value="400,900" />
 			<property name="DegradationRate" value="3,1" />
-        </property>       
+        </property>
         </property>
         <property name="CritChance" value=".4" />
         <property class="Attributes">
@@ -464,7 +464,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="1" />
             <property name="DegradationMax" value="500,900" />
 			<property name="DegradationRate" value="3,1" />
-        </property>          
+        </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
             <property name="Zoom" value="-2" />
@@ -793,7 +793,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value=".4,1" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="1,1" />
-        </property>   
+        </property>
         <property name="Group" value="Ammo/Weapons" />
     </item>
     <item id="35" name="handZombieDog">
@@ -843,13 +843,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.earth" value="8" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
-        </property>		
+        </property>
         <property class="Attributes">
             <property name="EntityDamage" value="4,12" />
             <property name="BlockDamage" value=".5,1.5" />
 			<property name="DegradationMax" value="60,600" />
 			<property name="DegradationRate" value="1,1" />
-        </property>  
+        </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
             <property name="Zoom" value="5" />
@@ -879,7 +879,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="Ranged" />
             <property name="Delay" value="0.15" />
             <property name="Range" value="120" />
-        
+
             <property name="DamageBlock" value="1" />
             <property name="Magazine_size" value="15" />
             <property name="Magazine_item" value="9mmBullet" />
@@ -1877,7 +1877,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="20" />
             <property name="Sound_start" value="UseActions/player_drinking" />
             <property name="Create_item" value="emptyJar" />
-            
+
         </property>
         <property name="Group" value="Food/Cooking" />
         <property class="Preview">
@@ -2429,7 +2429,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Create_item" value="emptyJar" />
             <property name="Buff" value="dysentery" />
             <property name="Buff_chance" value="0.5" />
-            
+
         </property>
         <property name="Group" value="Food/Cooking" />
         <property class="Preview">
@@ -2700,7 +2700,7 @@ ARMOR ATTRIBUTE EXAMPLE
 		<property name="Explosion.DamageBonus.wood" value="0" />
 		<property name="Explosion.DamageBonus.water" value="0" />
 		<property name="Explosion.DamageBonus.glass" value="10" />
-		
+
 		-->
         <property name="FuseTime" value="5" />
         <!-- time in sec, max 6 -->
@@ -2905,7 +2905,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-    
+
     <item id="271" name="feather">
         <property name="Meshfile" value="Items/Crafting/feather" />
         <property name="Material" value="cloth" />
@@ -3111,7 +3111,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="DegradationBreaksAfter" value="false" />
         <property class="Attributes">
             <property name="DegradationMax" value="30,600" />
-        </property>     
+        </property>
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Preview">
@@ -4219,7 +4219,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="wood" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="100" param1="true" />       
+        <property name="Degradation" value="100" param1="true" />
         <property name="FuelValue" value="60" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -4312,7 +4312,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
 		<property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.25" /> 
+  			<property name="MeleeProtection" value="0.1, 0.25" />
   			<property name="BulletProtection" value="0.1, 0.15" />
  			 <property name="PunctureProtection" value="0.1, 0.15" />
   			<property name="BluntProtection" value="0.15, 0.25" />
@@ -4330,7 +4330,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="144" />
         <property name="Degradation" value="100" param1="true" />
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.25" /> 
+  			<property name="MeleeProtection" value="0.1, 0.25" />
   			<property name="BulletProtection" value="0.1, 0.15" />
  			 <property name="PunctureProtection" value="0.1, 0.15" />
   			<property name="BluntProtection" value="0.15, 0.25" />
@@ -4367,13 +4367,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.25" /> 
+  			<property name="MeleeProtection" value="0.1, 0.25" />
   			<property name="BulletProtection" value="0.1, 0.15" />
  			 <property name="PunctureProtection" value="0.1, 0.15" />
   			<property name="BluntProtection" value="0.15, 0.25" />
   			<property name="ExplosiveProtection" value="0.05,0.2" />
   			<property name="DegradationMin" value="0.1,0.5" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_leather_chest" />
@@ -4404,13 +4404,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.25" /> 
+  			<property name="MeleeProtection" value="0.1, 0.25" />
   			<property name="BulletProtection" value="0.1, 0.15" />
  			 <property name="PunctureProtection" value="0.1, 0.15" />
   			<property name="BluntProtection" value="0.15, 0.25" />
   			<property name="ExplosiveProtection" value="0.05,0.2" />
   			<property name="DegradationMin" value="0.1,0.5" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_leather_helmet" />
@@ -4441,13 +4441,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.3" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.25, 0.4" /> 
+  			<property name="MeleeProtection" value="0.25, 0.4" />
   			<property name="BulletProtection" value="0.3, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.4" />
   			<property name="BluntProtection" value="0.3, 0.4" />
   			<property name="ExplosiveProtection" value="0.2,0.35" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_feet" />
@@ -4478,13 +4478,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.5" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.8" /> 
+  			<property name="MeleeProtection" value="0.3, 0.8" />
   			<property name="BulletProtection" value="0.3, 0.7" />
  			 <property name="PunctureProtection" value="0.3, 0.7" />
   			<property name="BluntProtection" value="0.3, 0.8" />
   			<property name="ExplosiveProtection" value="0.3,0.7" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_legs" />
@@ -4515,13 +4515,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.3" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.25, 0.4" /> 
+  			<property name="MeleeProtection" value="0.25, 0.4" />
   			<property name="BulletProtection" value="0.3, 0.4" />
  			 <property name="PunctureProtection" value="0.3, 0.4" />
   			<property name="BluntProtection" value="0.3, 0.4" />
   			<property name="ExplosiveProtection" value="0.2,0.35" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_chest" />
@@ -4552,13 +4552,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.25, 0.4" /> 
+  			<property name="MeleeProtection" value="0.25, 0.4" />
   			<property name="BulletProtection" value="0.3, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.4" />
   			<property name="BluntProtection" value="0.3, 0.4" />
   			<property name="ExplosiveProtection" value="0.2,0.35" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steelplated_helmet" />
@@ -4589,13 +4589,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.25" /> 
+  			<property name="MeleeProtection" value="0.1, 0.25" />
   			<property name="BulletProtection" value="0.1, 0.15" />
  			 <property name="PunctureProtection" value="0.1, 0.15" />
   			<property name="BluntProtection" value="0.15, 0.25" />
   			<property name="ExplosiveProtection" value="0.05,0.2" />
   			<property name="DegradationMin" value="0.1,0.5" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_leather_hands" />
@@ -4626,13 +4626,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.2" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.25, 0.4" /> 
+  			<property name="MeleeProtection" value="0.25, 0.4" />
   			<property name="BulletProtection" value="0.3, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.4" />
   			<property name="BluntProtection" value="0.3, 0.4" />
   			<property name="ExplosiveProtection" value="0.2,0.35" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_hands" />
@@ -4729,7 +4729,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Sound_start" value="UseActions/player_drinking" />
             <property name="Buff" value="CoffeeStaminaBoost" />
             <property name="Create_item" value="emptyJar" />
-            
+
             <property name="Gain_wellness" value="-0.1" />
         </property>
         <property name="Group" value="Food/Cooking" />
@@ -4883,7 +4883,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-    
+
     <item id="396" name="mushrooms">
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="Material" value="organic" />
@@ -4906,7 +4906,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0,-0.05" />
             <property name="Rot" value="90,45,0" />
         </property>
-    </item>    
+    </item>
     <item id="397" name="handBurningZombie">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -5141,13 +5141,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="ShowHair" value="false" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.3, 0.6" />
  			 <property name="PunctureProtection" value="0.3, 0.6" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.3,0.5" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>         
+ 		</property>
         <property class="Preview">
             <property name="Zoom" value="28" />
             <property name="Pos" value="0,-0.05" />
@@ -5805,13 +5805,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.3" /> 
+  			<property name="MeleeProtection" value="0.1, 0.3" />
   			<property name="BulletProtection" value="0.05, 0.2" />
  			 <property name="PunctureProtection" value="0.05, 0.2" />
   			<property name="BluntProtection" value="0.05, 0.2" />
   			<property name="ExplosiveProtection" value="0.05,0.1" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_cloth_feet" />
@@ -5843,13 +5843,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.3" /> 
+  			<property name="MeleeProtection" value="0.1, 0.3" />
   			<property name="BulletProtection" value="0.05, 0.2" />
  			 <property name="PunctureProtection" value="0.05, 0.2" />
   			<property name="BluntProtection" value="0.05, 0.2" />
   			<property name="ExplosiveProtection" value="0.05,0.1" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_cloth_legs" />
@@ -5881,13 +5881,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.3" /> 
+  			<property name="MeleeProtection" value="0.1, 0.3" />
   			<property name="BulletProtection" value="0.05, 0.2" />
  			 <property name="PunctureProtection" value="0.05, 0.2" />
   			<property name="BluntProtection" value="0.05, 0.2" />
   			<property name="ExplosiveProtection" value="0.05,0.1" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_cloth_chest" />
@@ -5919,13 +5919,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.3" /> 
+  			<property name="MeleeProtection" value="0.1, 0.3" />
   			<property name="BulletProtection" value="0.05, 0.2" />
  			 <property name="PunctureProtection" value="0.05, 0.2" />
   			<property name="BluntProtection" value="0.05, 0.2" />
   			<property name="ExplosiveProtection" value="0.05,0.1" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_cloth_hood" />
@@ -5958,13 +5958,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.1" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.1, 0.3" /> 
+  			<property name="MeleeProtection" value="0.1, 0.3" />
   			<property name="BulletProtection" value="0.05, 0.2" />
  			 <property name="PunctureProtection" value="0.05, 0.2" />
   			<property name="BluntProtection" value="0.05, 0.2" />
   			<property name="ExplosiveProtection" value="0.05,0.1" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property>        
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_cloth_hands" />
@@ -6054,7 +6054,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_firstAidKit" />
             <property name="Debuff" value="bleeding,burning" />
-            
+
             <property name="Buff" value="firstAidLarge" />
         </property>
         <property name="Group" value="Medicine" />
@@ -6290,13 +6290,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.4" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.2, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.5" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.2,0.6" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_feet" />
@@ -6326,13 +6326,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.4" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.2, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.5" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.2,0.6" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_legs" />
@@ -6362,13 +6362,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.4" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.2, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.5" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.2,0.6" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_chest" />
@@ -6398,13 +6398,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.4" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.2, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.5" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.2,0.6" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrapmetal_helmet" />
@@ -6435,13 +6435,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.4" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.3, 0.7" /> 
+  			<property name="MeleeProtection" value="0.3, 0.7" />
   			<property name="BulletProtection" value="0.2, 0.5" />
  			 <property name="PunctureProtection" value="0.3, 0.5" />
   			<property name="BluntProtection" value="0.3, 0.6" />
   			<property name="ExplosiveProtection" value="0.2,0.6" />
   			<property name="DegradationMin" value="0.3,0.1" />
- 		</property>         
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_scrap_metal_hands" />
@@ -7029,7 +7029,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Create_item" value="canEmpty" />
             <property name="Buff" value="dysentery" />
             <property name="Buff_chance" value="0.5" />
-            
+
         </property>
         <property name="Group" value="Food/Cooking" />
         <property class="Preview">
@@ -7055,7 +7055,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="20" />
             <property name="Sound_start" value="UseActions/player_drinking" />
             <property name="Create_item" value="canEmpty" />
-            
+
         </property>
         <property name="Group" value="Food/Cooking" />
         <property class="Preview">
@@ -7129,7 +7129,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="10" />
             <property name="Sound_start" value="UseActions/player_drinking" />
             <property name="Create_item" value="emptyJar" />
-            
+
             <property name="Buff" value="DrinkBeer" />
         </property>
         <property name="Group" value="Food/Cooking" />
@@ -7831,7 +7831,7 @@ ARMOR ATTRIBUTE EXAMPLE
 		<property name="Explosion.DamageBonus.wood" value="0" />
 		<property name="Explosion.DamageBonus.water" value="0" />
 		<property name="Explosion.DamageBonus.glass" value="10" />
-		
+
 		-->
         <property name="FuseTime" value="5" />
         <!-- time in sec, max 6 -->
@@ -7982,7 +7982,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="2,12" />
 			<property name="DegradationMax" value="300,600" />
 			<property name="DegradationRate" value="1,1" />
-        </property>        
+        </property>
     </item>
     <item id="739" name="blunderbuss">
         <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
@@ -8030,7 +8030,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="1,3" />
             <property name="DegradationMax" value="50,600" />
 			<property name="DegradationRate" value="2,1" />
-        </property>        
+        </property>
         <property class="Preview">
             <property name="Zoom" value="5" />
             <property name="Pos" value="0.1,-0.05" />
@@ -8096,7 +8096,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Degradation" value="100" param1="true" />
         <property class="Attributes">
             <property name="DegradationMax" value="30,600" />
-        </property>          
+        </property>
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Preview">
@@ -8105,7 +8105,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-    
+
     <item id="744" name="sniperRifleParts">
         <property name="PartType" value="Pump" />
         <property name="CustomIcon" value="pistol_parts" />
@@ -8116,7 +8116,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Degradation" value="100" param1="true" />
         <property class="Attributes">
             <property name="DegradationMax" value="30,600" />
-        </property>          
+        </property>
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Preview">
@@ -8124,10 +8124,10 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0,-0.05" />
             <property name="Rot" value="90,45,0" />
         </property>
-    </item> 
-	
+    </item>
+
 	       <!-- LT Mod Steel: Tools -->
-	
+
 	    <item id="745" name="pickaxeSteel">
 		<property name="CustomIcon" value="pickaxeIron"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8163,14 +8163,14 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="6,14" />
             <property name="DegradationMax" value="500,900" />
 			<property name="DegradationRate" value="3,1" />
-        </property>  
+        </property>
         <property class="Preview">
             <property name="Pos" value="-0.05,-0.4" />
         </property>
     </item>
-	
+
 	       <!-- LT Mod Steel: Resources -->
-	
+
 	    <item id="746" name="ingotSteel">
 		<property name="CustomIcon" value="ingotIron"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8185,7 +8185,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	    <item id="747" name="forgedSteel">
 		<property name="CustomIcon" value="forgedIron"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8195,7 +8195,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="12" />
         <property name="Group" value="Resources" />
     </item>
-	
+
 	    <item id="748" name="steelStrips">
 		<property name="CustomIcon" value="metalStrips"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8212,7 +8212,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="749" name="shortSteelPipe">
 		<property name="CustomIcon" value="shortMetalPipe"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8226,7 +8226,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0,0" />
         </property>
     </item>
-	
+
 	<item id="750" name="IngotMoldSteel">
 		<property name="CustomIcon" value="IngotMoldIron"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8242,7 +8242,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>
-	
+
 	<item id="751" name="brassFragment">
 		<property name="CustomIcon" value="ironFragment"/>
 		<property name="CustomIconTint" value="F5BB51"/>
@@ -8259,7 +8259,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 		<item id="752" name="rawSteel">
 		<property name="CustomIcon" value="ironFragment"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8276,7 +8276,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="753" name="steelFibers">
 		<property name="CustomIcon" value="brownGrassDiagonal"/>
 		<property name="CustomIconTint" value="576AFF"/>
@@ -8286,7 +8286,7 @@ ARMOR ATTRIBUTE EXAMPLE
 		<property name="Stacknumber" value="900" />
         <property name="Group" value="Resources" />
     </item>
-	
+
 	<item id="754" name="zincPowder">
 		<property name="CustomIcon" value="potassiumNitratePowder"/>
 		<property name="CustomIconTint" value="DBDBDB"/>
@@ -8301,7 +8301,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-    
+
        <!-- LT Mod Steel: Tools -->
     <item id="755" name="steelAxe">
 		<property name="CustomIcon" value="fireaxe"/>
@@ -8334,10 +8334,10 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="EntityDamage" value="8,15" />
             <property name="BlockDamage" value="6,16" />
 			<property name="DegradationMax" value="500,900" />
-			<property name="DegradationRate" value="1,1" />       
-        </property>                                              
+			<property name="DegradationRate" value="1,1" />
+        </property>
         <property name="Group" value="Tools/Traps" />
-    </item>  
+    </item>
 
     <item id="756" name="compoundBow">
 		<property name="CustomIcon" value="woodenBow"/>
@@ -8379,8 +8379,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0,-0.05" />
             <property name="Rot" value="90,45,0" />
         </property>
-    </item>	
-	
+    </item>
+
 	<item id="757" name="arrowBrass">
 		<property name="CustomIcon" value="arrow"/>
 		<property name="CustomIconTint" value="F5BB51"/>
@@ -8407,7 +8407,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
         <property name="Group" value="Ammo/Weapons" />
     </item>
-	
+
 	<item id="758" name="brassArrowTip">
 		<property name="CustomIcon" value="bulletTip"/>
 		<property name="CustomIconTint" value="F5BB51"/>
@@ -8423,7 +8423,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>
-	
+
 	<item id="759" name="brassArrowTipMold">
 		<property name="CustomIcon" value="bulletTipMold"/>
 		<property name="CustomIconTint" value="F5BB51"/>
@@ -8439,7 +8439,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>
-	
+
 	<item id="760" name="forgeBehindBook">
 		<property name="CustomIcon" value="forgeAheadBook"/>
 		<property name="CustomIconTint" value="99CCFF"/>
@@ -8465,7 +8465,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 		<item id="761" name="caveBrew">
 		<property name="CustomIcon" value="goldenRodTea"/>
 		<property name="CustomIconTint" value="5D8C42"/>
@@ -8494,7 +8494,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
     <item id="762" name="kevlar">
 		<property name="CustomIcon" value="leather"/>
 		<property name="CustomIconTint" value="FAAB00"/>
@@ -8510,7 +8510,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="763" name="kevlarStrips">
 		<property name="CustomIcon" value="leatherStrips"/>
 		<property name="CustomIconTint" value="FAAB00"/>
@@ -8528,7 +8528,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-	
+
     <item id="764" name="householdChemicals">
 		<property name="CustomIcon" value="gunPowderCharge"/>
 		<property name="CustomIconTint" value="B57C00"/>
@@ -8547,7 +8547,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_stamina" value="0" />
             <property name="Gain_health" value="-20" />
             <property name="Sound_start" value="UseActions/player_eating" />
-            <property name="Buff" value="internalBleeding" />           
+            <property name="Buff" value="internalBleeding" />
         </property>
         <property name="Group" value="Food/Cooking" />
         <property class="Preview">
@@ -8555,8 +8555,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0.18,-0.15" />
             <property name="Rot" value="0,-45,0" />
         </property>
-    </item>	
-	
+    </item>
+
 	<item id="765" name="kevlarBoots">
 		<property name="CustomIcon" value="wornBoots"/>
 		<property name="CustomIconTint" value="FAAB00"/>
@@ -8608,13 +8608,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.5" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.6, 0.8" /> 
+  			<property name="MeleeProtection" value="0.6, 0.8" />
   			<property name="BulletProtection" value="0.6, 0.8" />
  			 <property name="PunctureProtection" value="0.5, 0.7" />
   			<property name="BluntProtection" value="0.5, 0.6" />
   			<property name="ExplosiveProtection" value="0.5,0.7" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_legs" />
@@ -8647,13 +8647,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.5" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.6, 0.8" /> 
+  			<property name="MeleeProtection" value="0.6, 0.8" />
   			<property name="BulletProtection" value="0.6, 0.8" />
  			 <property name="PunctureProtection" value="0.5, 0.7" />
   			<property name="BluntProtection" value="0.5, 0.6" />
   			<property name="ExplosiveProtection" value="0.5,0.7" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_chest" />
@@ -8667,7 +8667,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="768" name="kevlarGloves">
 		<property name="CustomIcon" value="ironGloves"/>
 		<property name="CustomIconTint" value="FAAB00"/>
@@ -8687,13 +8687,13 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosive" value="0.5" />
         </property>
         <property class="Attributes">
-  			<property name="MeleeProtection" value="0.6, 0.8" /> 
+  			<property name="MeleeProtection" value="0.6, 0.8" />
   			<property name="BulletProtection" value="0.6, 0.8" />
  			 <property name="PunctureProtection" value="0.5, 0.7" />
   			<property name="BluntProtection" value="0.5, 0.6" />
   			<property name="ExplosiveProtection" value="0.5,0.7" />
   			<property name="DegradationMin" value="0.1,0.1" />
- 		</property> 
+ 		</property>
         <property name="Group" value="Clothing" />
         <property class="UMA">
             <property name="Mesh" value="armor_steel_plated_hands" />
@@ -8707,7 +8707,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="769" name="hardwoodPlank">
 		<property name="CustomIcon" value="woodPlank"/>
 		<property name="CustomIconTint" value="B56E28"/>
@@ -8718,7 +8718,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="FuelValue" value="24" />
         <property name="Group" value="Resources" />
     </item>
-	
+
 	    <item id="770" name="Remington8">
 		<property name="CustomIcon" value="huntingRifle"/>
 		<property name="CustomIconTint" value="FFBF00"/>
@@ -8776,7 +8776,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="0,-45,0" />
         </property>
     </item>
-	
+
 	    <item id="771" name="rem8Barrel">
 		<property name="CustomIcon" value="huntingRifleBarrel"/>
 		<property name="CustomIconTint" value="FFBF00"/>
@@ -8822,7 +8822,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="hardwood" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="100" param1="true" />       
+        <property name="Degradation" value="100" param1="true" />
         <property name="FuelValue" value="60" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -8871,7 +8871,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="776" name="rem8parts">
         <property name="PartType" value="Pump" />
         <property name="CustomIcon" value="pistol_parts" />
@@ -8883,7 +8883,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Degradation" value="100" param1="true" />
         <property class="Attributes">
             <property name="DegradationMax" value="30,800" />
-        </property>          
+        </property>
         <property name="Weight" value="8" />
         <property name="Group" value="Resources" />
         <property class="Preview">
@@ -8892,7 +8892,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="777" name="rem8Schematics">
 		<property name="CustomIcon" value="smgSchematics"/>
 		<property name="CustomIconTint" value="FFCE2E"/>
@@ -8918,7 +8918,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	    <item id="778" name="sandpaper">
 		<property name="CustomIcon" value="paper"/>
 		<property name="CustomIconTint" value="B56E28"/>
@@ -8935,7 +8935,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="779" name="treeSap">
 		<property name="CustomIcon" value="beer"/>
 		<property name="CustomIconTint" value="E86005"/>
@@ -8950,7 +8950,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	    <item id="780" name="machineRepairKit">
 		<property name="CustomIcon" value="weaponRepairKit"/>
 		<property name="CustomIconTint" value="8BB3FC"/>
@@ -8967,7 +8967,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	    <item id="781" name="Furukawa780RockDrill">
 		<property name="CustomIcon" value="auger"/>
 		<property name="CustomIconTint" value="3F3F40"/>
@@ -9020,7 +9020,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="0,-45,0" />
         </property>
     </item>
-	
+
 	<item id="782" name="FurukawaEngine">
 		<property name="CustomIcon" value="smallEngine"/>
 		<property name="CustomIconTint" value="3F3F40"/>
@@ -9030,7 +9030,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="250" />
         <property name="Group" value="Resources" />
     </item>
-	
+
 	<item id="783" name="FurukawaBlades">
 		<property name="CustomIcon" value="augerBlade"/>
 		<property name="CustomIconTint" value="3F3F40"/>
@@ -9064,7 +9064,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="50" />
         <property name="Group" value="Resources" />
     </item>
-	
+
 	<item id="785" name="Furukawa780Schematic">
 		<property name="CustomIcon" value="smgSchematics"/>
 		<property name="CustomIconTint" value="3F3F40"/>
@@ -9090,7 +9090,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	<item id="786" name="hellhoundbite">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9114,7 +9114,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.wood" value="3" />
         </property>
     </item>
-	
+
     <item id="787" name="zrabbitAttack">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9138,7 +9138,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.wood" value="3" />
         </property>
     </item>
-	
+
 	    <item id="788" name="boarAttack">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9162,7 +9162,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.wood" value="3" />
         </property>
     </item>
-	
+
 	<item id="789" name="bearAttack">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9186,7 +9186,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.wood" value="3" />
         </property>
     </item>
-        
+
     <item id="790" name="gorillaAttack">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9207,8 +9207,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2,0.07,0.7" />
             <property name="DamageBonus.glass" value="25" />
         </property>
-    </item>   
-	
+    </item>
+
 	<item id="791" name="toastmaker">
         <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
 		<property name="CustomIcon" value="blunderbuss"/>
@@ -9221,7 +9221,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="DegradationBreaksAfter" value="false" />
         <property name="SoundJammed" value="Weapons/weapon_jam" />
         <property name="Weight" value="33" />
-        <property class="Action0">	
+        <property class="Action0">
      <!-- AttackAction -->
             <property name="Class" value="Launcher" />
             <property name="Delay" value="0.05" />
@@ -9245,7 +9245,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.glass" value="25" />
 			<property name="Particles_muzzle_fire" value="nozzleflash" />
             <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
-        </property>	
+        </property>
        <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Zoom" />
@@ -9258,14 +9258,14 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="1,3" />
             <property name="DegradationMax" value="800,1000" />
 			<property name="DegradationRate" value="2,1" />
-        </property>        
+        </property>
         <property class="Preview">
             <property name="Zoom" value="5" />
             <property name="Pos" value="0.1,-0.05" />
             <property name="Rot" value="0,-45,0" />
         </property>
-    </item>		
- 
+    </item>
+
      <item id="792" name="compressedFuel">
 	 	<property name="CustomIcon" value="canBoiledWater"/>
 		<property name="CustomIconTint" value="F54500"/>
@@ -9280,7 +9280,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="FlyTime" value=".5" />
             <property name="LifeTime" value="0.8" />
             <property name="CollisionRadius" value="0.5" />
-			
+
 			<property name="Explosion.BlockDamage" value="1" />
 			<!-- damage for blocks in the center of the explosion -->
 			<property name="Explosion.EntityDamage" value="200" />
@@ -9295,7 +9295,7 @@ ARMOR ATTRIBUTE EXAMPLE
 			<property name="Explosion.DamageBonus.wood" value="5" />
 			</property>
     </item>
-	
+
 	    <!-- Guide to making Kevlar -->
     <item id="793" name="MomsSecretKevlarRecipe">
 		<property name="CustomIcon" value="macDyverBook"/>
@@ -9322,7 +9322,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-	
+
 	   <!-- iron helmet schematic -->
     <item id="794" name="kevlarHelmetSchematic">
 		<property name="CustomIcon" value="smgSchematics"/>
@@ -9474,8 +9474,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2,0.07,0.7" />
             <property name="DamageBonus.glass" value="25" />
         </property>
-    </item>  
-	
+    </item>
+
 	<item id="800" name="handShitterZombie">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9496,8 +9496,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2,0.07,0.7" />
             <property name="DamageBonus.glass" value="25" />
         </property>
-    </item>  
-	
+    </item>
+
 	    <item id="801" name="bloodMouth">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
@@ -9539,7 +9539,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2" />
         </property>
     </item>
-	
+
 	<item id="802" name="vomitZombieBlood1">
         <property name="Meshfile" value="ParticleEffects/p_blood_death" />
         <property name="Material" value="organic" />
@@ -9556,7 +9556,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="CollisionRadius" value="0.5" />
         </property>
     </item>
-	
+
 	    <!-- Bucket of UHP Concrete Mix -->
     <item id="803" name="uhpconcreteMix">
 		<property name="CustomIcon" value="concreteMix"/>
@@ -9583,5 +9583,17 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="0,-45,0" />
         </property>
     </item>
-	
+
+    <!-- Fletching for Arrow/Bolt -->
+    <item id="804" name="fletching">
+		<property name="CustomIcon" value="paper"/>
+		<property name="CustomIconTint" value="E86005"/>
+        <property name="Meshfile" value="Items/Crafting/paper" />
+        <property name="Material" value="cloth" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="250" />
+        <property name="FuelValue" value="1" />
+        <property name="Group" value="Resources" />
+    </item>
+
 </items>
