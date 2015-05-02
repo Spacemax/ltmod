@@ -10657,7 +10657,7 @@
     <property name="DropScale" value="2" />
   </block>
   
-    <block id="1408" name="plushSleepingBag">
+ <block id="1408" name="plushSleepingBag">
 	<property name="CustomIcon" value="bedRoll01_1"/>
 	<property name="CustomIconTint" value="FF8000"/>
     <property name="Class" value="SleepingBag" />
@@ -10672,10 +10672,6 @@
     <property name="IsTerrainDecoration" value="true" />
     <property name="CanPickup" value="true" />
 	<property name="BuffsWhenWalkedOn" value="slowheal"/>
-	    <property class="UMA">
-            <property name="Layer" value="0" />
-            <property name="UISlot" value="Backpack" />
-        </property>
     <drop event="Destroy" name="cloth" count="1,3" />
     <property name="Group" value="Building" />
   </block>
@@ -10732,6 +10728,7 @@
   </block>
   
   <block id="1413" name="magnesiumOre">
+    <property name="CustomIcon" value="potassiumNitrate"/>
     <property name="Material" value="metal" />
     <property name="Shape" value="Terrain" />
     <property name="Mesh" value="terrain" />
@@ -10812,7 +10809,7 @@
   <block id="1419" name="steelWall">
   	<property name="CustomIcon" value="ironWall"/>
    	<property name="CustomIconTint" value="99CCFF"/>
-    <property name="Material" value="metal_steel" />
+    <property name="Material" value="concrete_steel" />
     <property name="Texture" value="356" />
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
