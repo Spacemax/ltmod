@@ -497,6 +497,16 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
         </property>
+		<property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Repair" />
+            <property name="Delay" value="0.4" />
+            <property name="Repair_amount" value="1" />
+            <property name="Upgrade_hit_offset" value="-1" />
+            <property name="Sound_start" value="UseActions/repair_block" />
+            <property name="Allowed_upgrade_items" value="ironOre,coalOre" />
+            <property name="Restricted_upgrade_items" value="concreteMix,uhpconcreteMix" />
+        </property>
             <property class="Attributes">
             <property name="EntityDamage" value="4,12" />
             <property name="BlockDamage" value="1,4" />
@@ -711,7 +721,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Repair_amount" value="2" />
             <property name="Upgrade_hit_offset" value="-1" />
             <property name="Sound_start" value="UseActions/repair_block" />
-            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron,hardwoodPlank,ironOre,coalOre,forgedSteel" />
+            <property name="Allowed_upgrade_items" value="woodPlank,scrapIron,forgedIron,hardwoodPlank,forgedSteel" />
             <property name="Restricted_upgrade_items" value="concreteMix,uhpconcreteMix" />
         </property>
         <property name="Group" value="Tools/Traps" />
