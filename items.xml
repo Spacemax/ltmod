@@ -3534,6 +3534,8 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
     <item id="323" name="308calBullet">
+	    <property name="CustomIcon" value="762mmBullet" />
+        <property name="CustomIconTint" value="8C6130"/>
         <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bullet" />
         <property name="Material" value="brass" />
         <property name="HoldType" value="21" />
