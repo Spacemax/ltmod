@@ -3620,7 +3620,7 @@
     <property name="LootList" value="44" />
     <property name="Model" value="Entities/LootContainers/file_cabinetPrefab" />
     <property name="Group" value="Furniture/Decor" />
-	<drop event="Destroy" name="scrapIron" count="3,10" prob="1" />
+	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
   </block>
   <block id="624" name="cooler">
     <property name="Class" value="Loot" />
@@ -3631,7 +3631,7 @@
     <property name="LootList" value="45" />
     <property name="Model" value="LootContainers/cooler" param1="main_mesh" />
     <property name="IsTerrainDecoration" value="true" />
-	<drop event="Destroy" name="scrapIron" count="3,10" prob="1" />
+	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
   </block>
   <block id="625" name="schoolDesk">
     <property name="Material" value="furniture" />
@@ -10657,7 +10657,7 @@
     <property name="DropScale" value="2" />
   </block>
   
-    <block id="1408" name="plushSleepingBag">
+ <block id="1408" name="plushSleepingBag">
 	<property name="CustomIcon" value="bedRoll01_1"/>
 	<property name="CustomIconTint" value="FF8000"/>
     <property name="Class" value="SleepingBag" />
@@ -10672,10 +10672,6 @@
     <property name="IsTerrainDecoration" value="true" />
     <property name="CanPickup" value="true" />
 	<property name="BuffsWhenWalkedOn" value="slowheal"/>
-	    <property class="UMA">
-            <property name="Layer" value="0" />
-            <property name="UISlot" value="Backpack" />
-        </property>
     <drop event="Destroy" name="cloth" count="1,3" />
     <property name="Group" value="Building" />
   </block>
@@ -10732,6 +10728,7 @@
   </block>
   
   <block id="1413" name="magnesiumOre">
+    <property name="CustomIcon" value="potassiumNitrate"/>
     <property name="Material" value="metal" />
     <property name="Shape" value="Terrain" />
     <property name="Mesh" value="terrain" />
@@ -10812,8 +10809,9 @@
   <block id="1419" name="steelWall">
   	<property name="CustomIcon" value="ironWall"/>
    	<property name="CustomIconTint" value="99CCFF"/>
-    <property name="Material" value="metal_steel" />
+    <property name="Material" value="concrete_steel" />
     <property name="Texture" value="356" />
+	<property name="DowngradeBlock" value="uhpConcrete" />
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
   
@@ -10869,25 +10867,122 @@
     <property name="Group" value="Building" />
   </block>
   
-  <!-- Final Stage - UHPC Concrete -->
+  <!-- Final Stage - Ultra High Performance Concrete (UHPC) -->
 
   <block id="1423" name="uhpConcrete">
-		<property name="Material" value="concrete_steel" />
-		<property name="Texture" value="176,176,176,176,176,176" />
-<!-- 	<property name="Texture" value="381" /> -->
-		<property class="UpgradeBlock">
+	<property name="Material" value="concrete_steel" />
+	<property name="Shape" value="CubeCutoutBackFaces" />
+    <property name="Mesh" value="cutout" />
+	<property name="Texture" value="176" />
+	<property class="UpgradeBlock">
 	<!-- LT Modified the block to new UHPC, was previously normal concrete form -->
-			<property name="ToBlock" value="steelWall" />
-			<property name="Item" value="forgedSteel" />
-			<property name="ItemCount" value="2" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="uhpConcreteBroke01" />
+		<property name="ToBlock" value="steelWall" />
+		<property name="Item" value="forgedSteel" />
+		<property name="ItemCount" value="2" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="DowngradeBlock" value="uhpConcreteBroke01" />
     <drop event="Destroy" count="0" prob="1" />
   </block>
+ 
+
+  <!-- SMELTER -->
+  <!-- SMELTING MACHINE BUILD STAGE 1/2 - BUILT BUT INACTIVE -->
+  <!-- Inactive Smelter Machine - First stage after placement. Needs coal to upgrade. -->
+    <block id="1424" name="Smelter">
+	<property name="CustomIcon" value="brickpainted"/>
+	<property name="CustomIconTint" value="FD9095"/>
+    <property name="Material" value="metal_hard" />
+    <property name="Texture" value="332,332,332,332,324,332" />
+    <property name="Weight" value="216" />
+	<property class="UpgradeBlock">
+      <property name="ToBlock" value="smelter2" />
+      <property name="Item" value="coalOre" />
+      <property name="ItemCount" value="32" />
+      <property name="UpgradeHitCount" value="2" />
+    </property>
+    <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+  </block>
   
+  <!-- SMELTING MACHINE BUILD STAGE 2/2 - BUILT BUT INACTIVE -->
+  <!-- Inactive Smelter Machine - first stage after upgrade. Needs iron ore to upgrade. -->
+    <block id="1425" name="smelter2">
+	<property name="Class" value="Torch" />
+	<property name="ParticleName" value="campfire" />
+    <property name="ParticleOffset" value="1,1,1" />
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>	
+    <property name="Material" value="metal_hard" />
+    <property name="Texture" value="332,332,332,332,324,332" />
+    <property name="Weight" value="216" />
+	<property class="UpgradeBlock">
+      <property name="ToBlock" value="smelterStage1" />
+      <property name="Item" value="ironOre" />
+      <property name="ItemCount" value="64" />
+      <property name="UpgradeHitCount" value="4" />
+    </property>
+    <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+  </block>
   
-  <block id="1430" name="uhpConcreteBroke01">
+  <!-- Smelter machine - input ironOre and coalOre and output rawSteel -->
+  <!-- MACHINE ACTIVITY STAGE 1/3 - half fueled -->
+  <!-- After ironOre added to upgrade machine, it becomes active in this stage. -->
+  <block id="1426" name="smelterStage1">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="metal_hard" />
+    <property name="Texture" value="332,332,332,332,356,332" />
+    <property name="Weight" value="216" />
+    <property name="Collide" value="rockets,melee" />
+	<property name="CustomIcon" value="brickpainted"/>
+		<property name="CustomIconTint" value="CC33FF"/>
+    <property name="Collide" value="rockets,melee" />
+    <!-- Water Condenser Stage 1 - begins working -->
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.Next" value="smelterStage2" />
+	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
+    <property name="PlantGrowing.GrowthRate" value="120" />
+    <property name="PlantGrowing.LightLevelStay" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
+  </block>
+  
+  <!-- MACHINE ACTIVITY STAGE 2/3 - PROCESS COMPLETE BEGIN OUTPUT -->
+  <!-- Final working stage, when it transitions to the next stage it goes back to inactive and requires more batteries. -->
+  <block id="1427" name="smelterStage2">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="metal_hard" />
+    <property name="Texture" value="332,332,332,332,356,332" />
+    <property name="Weight" value="216" />
+    <property name="Collide" value="rockets,melee" />
+    <!-- Smelter Stage 2 - finish and prepare , reset base to inactive -->
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.FertileLevel" value="0" />
+	<!-- Go back to inactive to reset for more fuel -->
+    <property name="PlantGrowing.Next" value="Smelter" />
+	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
+    <property name="PlantGrowing.GrowthRate" value="120" />
+    <property name="PlantGrowing.LightLevelStay" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
+    <!-- <property name="PlantGrowing.GrowOnTop" value="machineTopStage1" param1="3" param2="machineFinishedTop1" /> -->
+	<property name="PlantGrowing.GrowOnTop" value="smelterStage3" param1="3" param2="smelterStage3" />
+  </block>
+  
+  <!-- Smelter machine stage 3/3 - output rawSteel growing from top -->
+  <block id="1428" name="smelterStage3">
+    <property name="Class" value="CropsGrown" />
+    <property name="Material" value="glass" />
+    <property name="Shape" value="Eighth" />
+    <property name="Texture" value="356" />
+    <!-- Produced rawSteel is collectable on top of machine -->
+    <property name="IsTerrainDecoration" value="true" />
+    <drop event="Harvest" name="rawSteel" count="200" />
+    <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
+  </block>
+  
+   <block id="1429" name="uhpConcreteBroke01">
     <property name="Material" value="concrete_steel" />
     <property name="Texture" value="404" /> 
     <property class="UpgradeBlock">
@@ -10900,7 +10995,7 @@
     <drop event="Destroy" count="0" />
   </block>
   
-  <block id="1431" name="uhpConcreteBroke02">
+  <block id="1430" name="uhpConcreteBroke02">
 	<property name="Material" value="concrete_steel" />
 	<property name="Texture" value="405" />
 	<property class="UpgradeBlock">
@@ -10913,7 +11008,7 @@
 	<drop event="Destroy" count="0" />
   </block>
   
-<block id="1432" name="uhpConcreteBroke03">
+<block id="1431" name="uhpConcreteBroke03">
 	<property name="Material" value="concrete_steel" />
 	<property name="Texture" value="406" />
 	<property class="UpgradeBlock">
@@ -10925,124 +11020,81 @@
 	<property name="DowngradeBlock" value="steelRebarFrame" />
 	<drop event="Destroy" count="0" />
 </block>
-
-  <!-- SMELTER -->
   
-      <!-- SMELTING MACHINE BUILD STAGE 1/2 - BUILT BUT UNPOWERED -->
-  <!-- Inactive Smelter Machine - First stage after building it out of forge. Looks like Iron Wall. Needs coal and iron ore to upgrade. -->
-    <block id="1424" name="Smelter">
-	<property name="CustomIcon" value="brickpainted"/>
-	<property name="CustomIconTint" value="FD9095"/>
-	<property name="Class" value="Torch" />
-	<property name="ParticleName" value="campfire" />
-    <property name="ParticleOffset" value="1,1,1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-    <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332" />
-    <property name="Weight" value="216" />
-	  <property class="UpgradeBlock">
-      <property name="ToBlock" value="smelter2" />
-      <property name="Item" value="ironOre" />
-      <property name="ItemCount" value="64" />
-      <property name="UpgradeHitCount" value="2" />
+  <block id="1432" name="steelDoor2_v1">
+    <property name="Class" value="DoorSecure" />
+	<property name="CustomIcon" value="steelDoor1_v1"/>
+	<property name="CustomIconTint" value="99CCFF"/>
+    <property name="Material" value="hardened_steel" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="357" />
+    <property name="Tag" value="Door" />
+    <property name="MultiBlockDim" value="1,2,1" />
+    <property name="Place" value="Door" />
+    <property name="Model" value="Entities/Doors/steel_door_1_v1Prefab" />
+    <property name="Mesh-Damage-1" value="Door/Door_DMG0" />
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1" />
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2" />
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
+    <property name="OpenSound" value="UseActions/open_door_metal" />
+    <property name="CloseSound" value="UseActions/close_door_metal" />
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="steelDoor2_v2" />
+      <property name="Item" value="forgedSteel" />
+      <property name="ItemCount" value="2" />
+      <property name="UpgradeHitCount" value="4" />
     </property>
-    <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+    <drop event="Destroy" count="0" />
+    <property name="Group" value="Building" />
   </block>
-  
-    <!-- SMELTING MACHINE BUILD STAGE 2/2 - BUILT BUT UNPOWERED -->
-  <!-- Inactive Smelter Machine - First stage after building it out of forge. Looks like Iron Wall. Needs coal and iron ore to upgrade. -->
-    <block id="1425" name="smelter2">
-	<property name="Class" value="Torch" />
-	<property name="ParticleName" value="campfire" />
-    <property name="ParticleOffset" value="1,1,1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	
-    <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332" />
-    <property name="Weight" value="216" />
-	  <property class="UpgradeBlock">
-      <property name="ToBlock" value="smelterStage1" />
-      <property name="Item" value="coalOre" />
-      <property name="ItemCount" value="32" />
-      <property name="UpgradeHitCount" value="3" />
-    </property>
-    <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
-  </block>
-  
-  <!-- CONDENSER MACHINE - MAKES WATER AND IS POWERED BY CAR BATTERIES -->
-  <!-- MACHINE ACTIVITY STAGE 1/4 - POWERED / FUELED - ACTIVE -->
-  <!-- After batteries used to power / upgrade machine, it becomes active in this stage. -->
-  <block id="1426" name="smelterStage1">
-    <property name="Class" value="PlantGrowing" />
-    <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332,332,332,332,324,332" />
-    <property name="Weight" value="216" />
-    <property name="Collide" value="rockets,melee" />
-	<property name="CustomIcon" value="brickpainted"/>
-		<property name="CustomIconTint" value="CC33FF"/>
-    <property name="Collide" value="rockets,melee" />
-    <!-- Water Condenser Stage 1 - begins working -->
-    <property name="IsTerrainDecoration" value="true" />
-    <property name="PlantGrowing.FertileLevel" value="0" />
-    <property name="PlantGrowing.Next" value="smelterStage2" />
-	<!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
-    <property name="PlantGrowing.LightLevelStay" value="0" />
-    <property name="PlantGrowing.IsRandom" value="false" />
-    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
-  </block>
-  
-  <!-- MACHINE ACTIVITY STAGE 2/4 - PROCESS COMPLETE BEGIN OUTPUT -->
-  <!-- Final working stage, when it transitions to the next stage it goes back to inactive and requires more batteries. -->
-  <block id="1427" name="smelterStage2">
-    <property name="Class" value="PlantGrowing" />
-    <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332,332,332,332,324,332" />
-    <property name="Weight" value="216" />
-    <property name="Collide" value="rockets,melee" />
-    <!-- Smelter Stage 2 - finish and prepare water, reset base to inactive -->
-    <property name="IsTerrainDecoration" value="true" />
-    <property name="PlantGrowing.FertileLevel" value="0" />
-	<!-- Go back to inactive to reset for more fuel -->
-    <property name="PlantGrowing.Next" value="Smelter" />
-	<!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="12" />
-    <property name="PlantGrowing.LightLevelStay" value="0" />
-    <property name="PlantGrowing.IsRandom" value="false" />
-    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
-    <!-- <property name="PlantGrowing.GrowOnTop" value="machineTopStage1" param1="3" param2="machineFinishedTop1" /> -->
-	<property name="PlantGrowing.GrowOnTop" value="smelterStage3" param1="3" param2="smelterStage3" />
-  </block>
-  
-  <!-- MACHINE ACTIVITY STAGE 3/4 - FIRST BATCH OF OUTPUT -->
-  <!-- The block that contains the items / produce from the machine. LT note rename all this shit before release. -->
-  <block id="1428" name="smelterStage3">
-    <property name="Class" value="CropsGrown" />
-    <property name="Material" value="glass" />
-    <property name="Shape" value="Eighth" />
-    <property name="Texture" value="356" />
-    <!-- Produced Water is collectable on top of machine -->
-    <property name="IsTerrainDecoration" value="true" />
-    <drop event="Harvest" name="rawSteel" count="200" />
-    <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
-  </block>
-  
-    <!-- MACHINE ACTIVITY STAGE 4/4 - SECOND BATCH OF OUTPUT -->
-  <!-- This is a second batch of produce that appears after the machine has been reset and refueled - this relates to param2 and i'm still using it because I don't know if i can skip param2. -->
-  <block id="1429" name="smelterStage4">
-    <property name="Class" value="CropsGrown" />
-    <property name="Material" value="glass" />
-    <property name="Shape" value="Eighth" />
-    <property name="Texture" value="356" />
-    <!-- Second Batch of Product after reset -->
-    <property name="IsTerrainDecoration" value="true" />
-    <drop event="Harvest" name="rawSteel" count="200" />
-    <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
-  </block>  
-  
-</blocks>
 
+  <block id="1433" name="steelDoor2_v2">
+    <property name="Class" value="DoorSecure" />
+    <property name="Material" value="hardened_steel" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="357" />
+    <property name="Tag" value="Door" />
+    <property name="MultiBlockDim" value="1,2,1" />
+    <property name="Place" value="Door" />
+    <property name="Model" value="Entities/Doors/steel_door_1_v2Prefab" />
+    <property name="Mesh-Damage-1" value="Door/Door_DMG0" />
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1" />
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2" />
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
+    <property name="OpenSound" value="UseActions/open_door_metal" />
+    <property name="CloseSound" value="UseActions/close_door_metal" />
+    <property name="DowngradeBlock" value="steelDoor2_v1" />
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="steelDoor2_v3" />
+      <property name="Item" value="forgedSteel" />
+      <property name="ItemCount" value="2" />
+      <property name="UpgradeHitCount" value="4" />
+    </property>
+    <drop event="Destroy" count="0" />
+    <property name="Group" value="Building" />
+  </block>
+  
+  <block id="1434" name="steelDoor2_v3">
+    <property name="Class" value="DoorSecure" />
+    <property name="Material" value="hardened_steel" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="357" />
+    <property name="Tag" value="Door" />
+    <property name="MultiBlockDim" value="1,2,1" />
+    <property name="Place" value="Door" />
+    <property name="Model" value="Entities/Doors/steel_door_1_v3Prefab" />
+    <property name="Mesh-Damage-1" value="Door/Door_DMG0" />
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1" />
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2" />
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
+    <property name="OpenSound" value="UseActions/open_door_metal" />
+    <property name="CloseSound" value="UseActions/close_door_metal" />
+    <property name="DowngradeBlock" value="steelDoor2_v2" />
+    <drop event="Destroy" count="0" />
+    <property name="Group" value="Building" />
+  </block>
+ 
+ </blocks>

@@ -766,7 +766,7 @@ plentiful loot items in the game.
     	</lootgroup>
 
 	<lootgroup name="ultrarareBooks">  		
-		<item name="MomsSecretKevlarRecipe" />
+		<item name="MomsRecipeSecrets" />
 		<item name="smgSchematics" />
 		<item name="sniperRifleSchematic" />
 		<item name="Furukawa780Schematic" />
