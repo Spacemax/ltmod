@@ -284,4 +284,10 @@
 		<modify id="1" stat="health" amount="1" rate="1"/>
 	</buff>
 
+	<!-- [RH99] Initial implementation of Tetanus -->
+	<buff id="tetanus" name="Tetanus" type="sickness" duration="7200t" actions="increment(@wellness, -1, 0, 0, 1)" description="You have contracted Tetanus." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-1" rate="1"/>
+	</buff>
+
 </buffs>

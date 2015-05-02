@@ -9584,16 +9584,4 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <!-- Fletching for Arrow/Bolt -->
-    <item id="804" name="fletching">
-		<property name="CustomIcon" value="paper"/>
-		<property name="CustomIconTint" value="E86005"/>
-        <property name="Meshfile" value="Items/Crafting/paper" />
-        <property name="Material" value="cloth" />
-        <property name="HoldType" value="21" />
-        <property name="Stacknumber" value="250" />
-        <property name="FuelValue" value="1" />
-        <property name="Group" value="Resources" />
-    </item>
-
 </items>
