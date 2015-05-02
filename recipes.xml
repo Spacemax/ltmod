@@ -2371,4 +2371,15 @@
         <ingredient name="shortSteelPipe" count="1" grid="1, 1"/>
     </recipe>
 
+	<recipe name="steelDoor2_v1" count="1" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedSteel" count="1" grid="-1, -2"/>
+        <ingredient name="forgedSteel" count="1" grid="0, -2"/>
+        <ingredient name="forgedSteel" count="1" grid="-1, -1"/>
+        <ingredient name="forgedSteel" count="1" grid="0, -1"/>
+        <ingredient name="forgedSteel" count="1" grid="-1, 0"/>
+        <ingredient name="forgedSteel" count="1" grid="0, 0"/>
+        <ingredient name="forgedSteel" count="1" grid="-1, 1"/>
+        <ingredient name="forgedSteel" count="1" grid="0, 1"/>
+    </recipe>
+	
 </recipes>
