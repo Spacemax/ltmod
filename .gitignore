@@ -41,3 +41,11 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Code::Blocks Projects
+.cbp
+.layout
+.depend
+.depends
+*.cbp
+*.layout
