@@ -10141,7 +10141,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="DegradationMax" value="5,100" />
+            <property name="DegradationMax" value="10, 250" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10164,7 +10164,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Attributes">
           <property name="EntityDamage" value="25, 35" />
           <property name="BlockDamage" value="1" />
-          <property name="DegradationMax" value="5, 100" />
+          <property name="DegradationMax" value="10, 80" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10185,7 +10185,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="DegradationMax" value="5,100" />
+            <property name="DegradationMax" value="10, 80" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10194,7 +10194,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="27" name="crossbow_parts">
+    <item id="827" name="crossbow_parts">
         <property name="PartType" value="Pump" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="pistol_parts" />
@@ -10207,7 +10207,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Group" value="Resources" />
         <property class="Attributes">
             <property name="Accuracy" value="1, 0.2" />
-            <property name="DegradationMax" value="5,100" />
+            <property name="DegradationMax" value="10, 80" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />

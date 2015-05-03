@@ -901,6 +901,7 @@
         <ingredient name="shortMetalPipe" count="1" grid="2, 2"/>
     </recipe>
 
+    <!-- Moved to: LT Mod
     <recipe name="ironBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="leather" count="1" grid="0, -1"/>
         <ingredient name="forgedIron" count="1" grid="0, 0"/>
@@ -950,7 +951,7 @@
         <ingredient name="forgedIron" count="1" grid="1, 1"/>
         <ingredient name="forgedIron" count="1" grid="-1, 2"/>
         <ingredient name="forgedIron" count="1" grid="1, 2"/>
-    </recipe>
+    </recipe>-->
 
     <recipe name="ironWall" count="1" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="ingotIron" count="1" grid="-1, -1"/>
@@ -2427,7 +2428,8 @@
       <ingredient name="treeSap" count="1" grid="0, 1"/>
     </recipe>
 
-    <!-- Hardened Leather, Scrap Armor -->
+    <!-- LT Armor Tweaks -->
+    <!-- Scrap Armor -->
     <recipe name="scrapBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="hardenedLeather" count="1" grid="0, -1"/>
         <ingredient name="scrapIron" count="1" grid="0, 0"/>
@@ -2479,6 +2481,59 @@
         <ingredient name="scrapIron" count="1" grid="1, 2"/>
     </recipe>
 
+    <!-- Iron Armor -->
+    <recipe name="ironBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="hardenedLeather" count="1" grid="0, -1"/>
+        <ingredient name="forgedIron" count="1" grid="0, 0"/>
+        <ingredient name="forgedIron" count="1" grid="1, 0"/>
+    </recipe>
+
+    <recipe name="ironChestArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedIron" count="1" grid="-1, -1"/>
+        <ingredient name="forgedIron" count="1" grid="0, -1"/>
+        <ingredient name="forgedIron" count="1" grid="1, -1"/>
+        <ingredient name="forgedIron" count="1" grid="-2, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="0, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="2, 0"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 1"/>
+        <ingredient name="forgedIron" count="1" grid="0, 1"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 1"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, 2"/>
+        <ingredient name="forgedIron" count="1" grid="0, 2"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, 2"/>
+    </recipe>
+
+    <recipe name="ironGloves" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedIron" count="1" grid="1, -1"/>
+        <ingredient name="hardenedLeather" count="1" grid="0, 0"/>
+    </recipe>
+
+    <recipe name="ironHelmet" count="1" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedIron" count="1" grid="0, -1"/>
+        <ingredient name="forgedIron" count="1" grid="-1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="0, 0"/>
+        <ingredient name="forgedIron" count="1" grid="1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="-1, 1"/>
+    </recipe>
+
+    <recipe name="ironLegArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="hardenedLeather" count="1" grid="-1, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="0, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, -2"/>
+        <ingredient name="hardenedLeather" count="1" grid="-1, -1"/>
+        <ingredient name="forgedIron" count="1" grid="0, -1"/>
+        <ingredient name="hardenedLeather" count="1" grid="1, -1"/>
+        <ingredient name="forgedIron" count="1" grid="-1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="1, 0"/>
+        <ingredient name="forgedIron" count="1" grid="-1, 1"/>
+        <ingredient name="forgedIron" count="1" grid="1, 1"/>
+        <ingredient name="forgedIron" count="1" grid="-1, 2"/>
+        <ingredient name="forgedIron" count="1" grid="1, 2"/>
+    </recipe>
+
+    <!-- LT Crossbow Tweaks -->
     <!-- Crude Crossbow -->
     <recipe name="crossbow" count="1" scrapable="True" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
       <ingredient name="crossbow_arms" count="1" grid="1, -1"/>
