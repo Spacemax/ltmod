@@ -2670,7 +2670,29 @@
     </recipe>-->
 
     <recipe name="beefCharred" count="1" scrapable="False" craft_area="campfire" craft_tool="stick" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+      <ingredient name="beef" count="1" />
+    </recipe>
+
+    <recipe name="beefSteak" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
+      <ingredient name="beef" count="1" />
+    </recipe>
+
+    <recipe name="beefSkewered" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+      <ingredient name="beef" count="1" grid="0, 0" />
+      <ingredient name="stick" count="1" grid="1, 0" />
+      <ingredient name="stick" count="1" grid="-1, 0" />
+    </recipe>
+
+    <recipe name="beefKebob" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
+      <ingredient name="beef" count="1" />
+    </recipe>
+
+    <!-- Maybe change the raw beef to "beefSteak" -->
+    <recipe name="beefStroganof" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot" craft_time="40" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="bottledWater" count="1"/>
         <ingredient name="beef" count="1"/>
+        <ingredient name="potato" count="1"/>
+        <ingredient name="cornMeal" count="5"/>
     </recipe>
 
 </recipes>

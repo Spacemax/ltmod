@@ -294,4 +294,8 @@
 		<modify id="1" stat="health" amount="-1" rate="1"/>
 	</buff>
 
+		<buff id="goodFood" name="Good Food" type="healthup" duration="24t" description="Eating good food in hard times." icon="buff_icon_hunger">
+			<modify id="0" stat="health" amount="0.1" rate="1" />
+		</buff>
+
 </buffs>
