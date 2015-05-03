@@ -174,9 +174,9 @@
 	</buff>
 
 	<!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
-	<buff id="criticalBleedout" duration="50" name="Bleeding" type="bleeding" description="You are bleeding profusely. Use a bandage to stop the bleeding." icon="buff_icon_critical_hit">
+	<buff id="criticalBleedout" duration="150" name="Bleeding" type="bleeding" description="You are bleeding profusely. Use a bandage to stop the bleeding." icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-1" rate="1" type="bleeding"/>
-		<modify id="1" stat="health" amount="-1" rate="1" type="bleeding"/>
+		<modify id="1" stat="health" amount="-2" rate="1" type="bleeding"/>
 	</buff>
 
 	<buff id="CoffeeStaminaBoost" duration="180" name="Caffiene Buzz" type="staminaup" description="A nice rush of energy." icon="buff_icon_coffee" stack="extend">
