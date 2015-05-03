@@ -829,11 +829,11 @@ plentiful loot items in the game.
 
 	<!-- Adjust skill book spread here -->
 	<lootgroup name="books" count="1">
-		<item group="ultrarareBooks" prob="0.005" />	
-		<item group="kevlarArmorSchematics" prob="0.01"/>	
-		<item group="rareBooks" prob="0.02"/>				
-		<item group="ironArmorSchematics" prob="0.05"/>		
-		<item group="uncommonBooks" prob="0.25"/>			
+		<item group="ultrarareBooks" prob="0.0025" />	
+		<item group="kevlarArmorSchematics" prob="0.005"/>	
+		<item group="rareBooks" prob="0.01"/>				
+		<item group="ironArmorSchematics" prob="0.025"/>		
+		<item group="uncommonBooks" prob="0.2925"/>			
 		<item group="commonBooks" prob="0.665" />
 	</lootgroup>
 
