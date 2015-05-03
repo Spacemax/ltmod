@@ -2569,7 +2569,7 @@
     </recipe>
 
     <!-- Crude Crossbow -->
-    <recipe name="crossbow" count="1" scrapable="True" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="customCrossbow" count="1" scrapable="True" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
       <ingredient name="crossbow_arms" count="1" grid="1, -1"/>
       <ingredient name="crossbow_frame" count="1" grid="0, 0"/>
       <ingredient name="crossbow_parts" count="1" grid="1, 0"/>
