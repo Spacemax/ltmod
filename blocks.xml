@@ -11101,18 +11101,6 @@
     <property name="Group" value="Building" />
   </block>
 
-  <block id="1435" name="algaeWater">
-    <property name="CustomIcon" value="water"/>
-    <property name="CustomIconTint" value="00AB00"/>
-    <property name="Class" value="LiquidStatic" />
-    <property name="Material" value="water" />
-    <property name="Shape" value="Water" />
-    <property name="Mesh" value="water" />
-    <property name="Texture" value="223" />
-    <property name="Map.Color" value="20,20,120" />
-    <property name="Map.Color" value="119,136,204" />
-  </block>
-
   <!-- Algae Breeding Machine -->
   <!-- ALGAE MACHINE BUILD STAGE 1/2 - BUILT BUT INACTIVE -->
   <!-- Inactive Algae Machine - First stage after placement. Needs coal to upgrade. -->
@@ -11203,28 +11191,61 @@
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
     <!-- <property name="PlantGrowing.GrowOnTop" value="machineTopStage1" param1="3" param2="machineFinishedTop1" /> -->
-  <property name="PlantGrowing.GrowOnTop" value="algaeWater" param1="3" param2="algaeWater" />
+  <property name="PlantGrowing.GrowOnTop" value="algaeStage3" param1="3" param2="algaeStage3" />
   </block>
+
+  <!-- algaeBreeder machine stage 3/3 - output rawSteel growing from top -->
+  <block id="1440" name="algaeStage3">
+    <property name="Class" value="CropsGrown" />
+    <property name="Material" value="glass" />
+    <property name="Shape" value="Eighth" />
+    <property name="Texture" value="356" />
+    <!-- Produced rawSteel is collectable on top of machine -->
+    <property name="IsTerrainDecoration" value="true" />
+    <drop event="Harvest" name="algaeBucketFull" count="1" />
+  </block>
+
+  <!-- <block id="1435" name="algaeWater">
+    <property name="CustomIcon" value="water"/>
+    <property name="CustomIconTint" value="00AB00"/>
+    <property name="Class" value="LiquidStatic" />
+    <property name="Material" value="water" />
+    <property name="Shape" value="Water" />
+    <property name="Mesh" value="water" />
+    <property name="Texture" value="223" />
+    <property name="Map.Color" value="20,20,120" />
+    <property name="Map.Color" value="119,136,204" />
+  </block> -->
+
+
+
+
 
   <!-- Algae Crusher -->
   <!-- ALGAE CRUSHER MACHINE BUILD STAGE 1/2 - BUILT BUT INACTIVE -->
   <!-- Inactive Algae Machine - First stage after placement. Needs Algae Water to upgrade. -->
-    <block id="1440" name="algaeCrusher">
+    <block id="1441" name="algaeCrusher">
   <property name="CustomIcon" value="ironWall"/>
   <property name="CustomIconTint" value="FD9095"/>
     <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332,332,332,332,324,332" />
+    <property name="Texture" value="356" />
     <property name="Weight" value="216" />
+    <property class="UpgradeBlock">
+        <property name="ToBlock" value="algaeCrusherStage1" />
+        <property name="Item" value="algaeBucketFull" />
+        <property name="ItemCount" value="1" />
+        <property name="UpgradeHitCount" value="1" />
+      </property>
     <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
   </block>
 
   <!-- algaeCrusher machine - input ironOre and coalOre and output rawSteel -->
   <!-- MACHINE ACTIVITY STAGE 1/3 - half fueled -->
   <!-- After ironOre added to upgrade machine, it becomes active in this stage. -->
-  <block id="1441" name="algaeCrusherStage1">
+  <block id="1442" name="algaeCrusherStage1">
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332,332,332,332,356,332" />
+    <property name="Texture" value="64" />
     <property name="Weight" value="216" />
     <property name="Collide" value="rockets,melee" />
   <property name="CustomIcon" value="brickpainted"/>
@@ -11243,10 +11264,10 @@
 
   <!-- MACHINE ACTIVITY STAGE 2/3 - PROCESS COMPLETE BEGIN OUTPUT -->
   <!-- Final working stage, when it transitions to the next stage it goes back to inactive and requires more batteries. -->
-  <block id="1442" name="algaeCrusherStage2">
+  <block id="1443" name="algaeCrusherStage2">
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="metal_hard" />
-    <property name="Texture" value="332,332,332,332,356,332" />
+    <property name="Texture" value="332" />
     <property name="Weight" value="216" />
     <property name="Collide" value="rockets,melee" />
     <!-- algaeCrusher Stage 2 - finish and prepare , reset base to inactive -->
@@ -11260,18 +11281,19 @@
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
     <!-- <property name="PlantGrowing.GrowOnTop" value="machineTopStage1" param1="3" param2="machineFinishedTop1" /> -->
-  <property name="PlantGrowing.GrowOnTop" value="algaeCrusherStage3" param1="3" param2="algaeCrusherStage3" />
+  <property name="PlantGrowing.GrowOnTop" value="algaeCrusherStage3" />
   </block>
 
   <!-- algaeCrusher machine stage 3/3 - output rawSteel growing from top -->
-  <block id="1443" name="algaeCrusherStage3">
+  <block id="1444" name="algaeCrusherStage3">
     <property name="Class" value="CropsGrown" />
     <property name="Material" value="glass" />
     <property name="Shape" value="Eighth" />
     <property name="Texture" value="311" />
     <!-- Produced rawSteel is collectable on top of machine -->
     <property name="IsTerrainDecoration" value="true" />
-    <drop event="Harvest" name="bioDiesel" count="1" />
+    <drop event="Harvest" name="bioDiesel" count="100" />
+    <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
   </block>
 
 
