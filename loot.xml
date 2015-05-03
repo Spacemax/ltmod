@@ -875,6 +875,7 @@ plentiful loot items in the game.
 		<item name="venison"/>
 		<item name="rabbit"/>
 		<item name="pork"/>
+    <item name="beef" prob="0.05" />
 		<item name="corn"/>
 		<item name="potato"/>
 		<item name="blueberries"/>
