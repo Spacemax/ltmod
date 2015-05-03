@@ -2072,7 +2072,7 @@
         <ingredient name="shortMetalPipe" count="1" grid="0, 1"/>
         <ingredient name="shortMetalPipe" count="1" grid="0, 2"/>
     </recipe>
-	
+
 	<recipe name="pickaxeSteel" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="ingotSteel" count="1" grid="0, -2"/>
         <ingredient name="ingotSteel" count="1" grid="-1, -1"/>
@@ -2080,32 +2080,32 @@
         <ingredient name="fineHardwoodHandle" count="1" grid="0, 0"/>
         <ingredient name="ingotSteel" count="1" grid="1, -1"/>
     </recipe>
-	
+
 	<recipe name="forgedSteel" count="4" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="ingotSteel" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="shortSteelPipe" count="3" scrapable="False" craft_time="1" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="forgedSteel" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="steelStrips" count="5" scrapable="False" craft_time="1" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="shortSteelPipe" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="zincPowder" count="5" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="sphalerite" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="brassFragment" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot" craft_time="15" craft_exp_gain="2" learn_exp_gain="80" >
         <ingredient name="zincPowder" count="1"/>
         <ingredient name="copperOre" count="1"/>
     </recipe>
-	
+
 	<recipe name="steelFibers" count="5" scrapable="False" craft_time="1" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="steelStrips" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="IngotMoldSteel" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="300" >
         <ingredient name="clayLump" count="1" grid="-1, 0"/>
         <ingredient name="clayLump" count="1" grid="1, 0"/>
@@ -2114,7 +2114,7 @@
         <ingredient name="clayLump" count="1" grid="1, 1"/>
 		<ingredient name="ingotLead" count="1" grid="0, 2"/>
     </recipe>
-	
+
 	<recipe name="IngotMoldCopper" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="clayLump" count="1" grid="-1, 0"/>
         <ingredient name="clayLump" count="1" grid="1, 0"/>
@@ -2123,14 +2123,14 @@
         <ingredient name="clayLump" count="1" grid="1, 1"/>
 		<ingredient name="ingotLead" count="1" grid="0, 2"/>
     </recipe>
-	
+
 	<recipe name="steelAxe" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="100" >
         <ingredient name="ingotSteel" count="1" grid="1, -2"/>
         <ingredient name="steelStrips" count="1" grid="1, -1"/>
         <ingredient name="ingotSteel" count="1" grid="2, -1"/>
         <ingredient name="fineHardwoodHandle" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="compoundBow" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="steelStrips" count="1" grid="2, -2"/>
         <ingredient name="steelFibers" count="1" grid="1, -1"/>
@@ -2142,13 +2142,13 @@
         <ingredient name="stick" count="1" grid="-2, 2"/>
         <ingredient name="steelStrips" count="1" grid="-1, 2"/>
     </recipe>
-	
+
 	<recipe name="arrowBrass" count="5" scrapable="True" craft_time="10" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="brassArrowTip" count="1" grid="2, -2"/>
         <ingredient name="stick" count="1" grid="1, -1"/>
         <ingredient name="feather" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="brassArrowTipMold" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="clayLump" count="1" grid="-1, 0"/>
         <ingredient name="brassArrowTip" count="1" grid="0, 0"/>
@@ -2157,7 +2157,7 @@
         <ingredient name="clayLump" count="1" grid="0, 1"/>
         <ingredient name="clayLump" count="1" grid="1, 1"/>
     </recipe>
-	
+
 	<recipe name="plushSleepingBag" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="cloth" count="1" grid="-2, 1"/>
         <ingredient name="cloth" count="1" grid="-2, 2"/>
@@ -2175,7 +2175,7 @@
 		<ingredient name="cloth" count="1" grid="1, 0"/>
 		<ingredient name="cloth" count="1" grid="2, 0"/>
     </recipe>
-	
+
 	<recipe name="caveBrew" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="stickyMoss" count="1" grid="0, -2"/>
         <ingredient name="stickyMoss" count="1" grid="-1, -1"/>
@@ -2183,7 +2183,7 @@
         <ingredient name="zincPowder" count="1" grid="1, -1"/>
         <ingredient name="emptyJar" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="kevlar" count="5" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="500" >
         <ingredient name="householdChemicals" count="5" grid="0, -1"/>
         <ingredient name="householdChemicals" count="5" grid="-1, 0"/>
@@ -2191,11 +2191,11 @@
         <ingredient name="steelFibers" count="64" grid="1, 0"/>
         <ingredient name="cotton" count="64" grid="-1, 1"/>
     </recipe>
-	
+
 	<recipe name="kevlarStrips" count="5" scrapable="False" craft_time="1" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="kevlar" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="kevlarChestArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="forgedSteel" count="1" grid="-1, -1"/>
         <ingredient name="forgedSteel" count="1" grid="0, -1"/>
@@ -2212,7 +2212,7 @@
         <ingredient name="forgedSteel" count="1" grid="0, 2"/>
         <ingredient name="kevlar" count="1" grid="1, 2"/>
     </recipe>
-	
+
 	<recipe name="kevlarHelmet" count="1" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="forgedSteel" count="1" grid="0, -1"/>
         <ingredient name="kevlar" count="1" grid="-1, 0"/>
@@ -2220,7 +2220,7 @@
         <ingredient name="kevlarStrips" count="1" grid="1, 0"/>
         <ingredient name="cloth" count="1" grid="-1, 1"/>
     </recipe>
-	
+
 	    <recipe name="kevlarLegArmor" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="kevlarStrips" count="1" grid="-1, -2"/>
         <ingredient name="leather" count="1" grid="0, -2"/>
@@ -2235,7 +2235,7 @@
         <ingredient name="forgedSteel" count="1" grid="-1, 2"/>
         <ingredient name="forgedSteel" count="1" grid="1, 2"/>
     </recipe>
-	
+
 	<recipe name="kevlarGloves" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="forgedSteel" count="1" grid="1, -1"/>
         <ingredient name="leather" count="1" grid="0, 0"/>
@@ -2243,7 +2243,7 @@
 		<ingredient name="kevlar" count="1" grid="-1, -1"/>
 		<ingredient name="kevlarStrips" count="1" grid="0, -1"/>
     </recipe>
-	
+
 	<recipe name="kevlarBoots" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="leather" count="1" grid="0, -1"/>
         <ingredient name="kevlar" count="1" grid="0, 0"/>
@@ -2251,7 +2251,7 @@
 		<ingredient name="steelFibers" count="1" grid="0, 1"/>
 		<ingredient name="steelFibers" count="1" grid="1, 1"/>
     </recipe>
-	
+
 	<recipe name="Remington8" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="rem8Barrel" count="1" grid="1, -1"/>
         <ingredient name="rem8Stock" count="1" grid="0, 0"/>
@@ -2266,36 +2266,36 @@
         <ingredient name="hardwoodPlank" count="1" grid="-1, 1"/>
         <ingredient name="hardwoodPlank" count="1" grid="-2, 2"/>
     </recipe>
-	
+
 	<recipe name="hardwoodPlank" count="16" scrapable="False" craft_time="4" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="hardwood" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="sandpaper" count="1" scrapable="False" craft_time="3" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="crushedSand" count="1" grid="0, -1"/>
         <ingredient name="paper" count="1" grid="-1, 0"/>
         <ingredient name="treeSap" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="fineHardwoodHandle" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="100" >
         <ingredient name="hardwoodPlank" count="1" grid="0, -1"/>
         <ingredient name="sandpaper" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="machineRepairKit" count="1" scrapable="False" craft_time="3" craft_exp_gain="2" learn_exp_gain="100" >
         <ingredient name="oil" count="1" grid="1, -1"/>
         <ingredient name="cloth" count="1" grid="0, 0"/>
         <ingredient name="steelStrips" count="1" grid="-1, 1"/>
 		<ingredient name="householdChemicals" count="1" grid="0, 1"/>
     </recipe>
-	
+
 	<recipe name="Furukawa780RockDrill" count="1" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="500" >
         <ingredient name="Furukawa780Grips" count="1" grid="1, -1"/>
         <ingredient name="FurukawaEngine" count="1" grid="0, 0"/>
         <ingredient name="FurukawaBlades" count="1" grid="-1, 1"/>
 		<ingredient name="machineRepairKit" count="1" grid="0, -1"/>
     </recipe>
-	
+
 	<recipe name="hardwoodFrame" count="1" scrapable="False" craft_time="4" craft_exp_gain="4" learn_exp_gain="150" >
         <ingredient name="hardwoodPlank" count="1" grid="-1, -1"/>
         <ingredient name="hardwoodPlank" count="1" grid="0, -1"/>
@@ -2306,19 +2306,19 @@
         <ingredient name="hardwoodPlank" count="1" grid="0, 1"/>
         <ingredient name="hardwoodPlank" count="1" grid="1, 1"/>
     </recipe>
-	
+
 	<recipe name="uhpconcreteMix" count="5" scrapable="False" craft_time="5" craft_exp_gain="10" learn_exp_gain="200" >
         <ingredient name="cement" count="250" grid="0, -1"/>
         <ingredient name="steelFibers" count="900" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="Smelter" count="1" scrapable="False" craft_time="60" craft_exp_gain="10" learn_exp_gain="500" >
         <ingredient name="cobblestoneFrame" count="1" grid="1, -1"/>
         <ingredient name="cobblestones" count="1" grid="0, 0"/>
         <ingredient name="ingotIron" count="1" grid="-1, 1"/>
 		<ingredient name="hardwoodPlank" count="1" grid="0, -1"/>
     </recipe>
-	
+
 	<recipe name="steelRebarFrame" count="1" scrapable="False" craft_time="5" craft_exp_gain="4" learn_exp_gain="200" >
         <ingredient name="shortSteelPipe" count="1" grid="-1, -1"/>
         <ingredient name="shortSteelPipe" count="1" grid="0, -1"/>
@@ -2329,7 +2329,7 @@
         <ingredient name="shortSteelPipe" count="1" grid="0, 1"/>
         <ingredient name="shortSteelPipe" count="1" grid="1, 1"/>
     </recipe>
-	
+
 	<recipe name="thermite" count="100" scrapable="False" craft_time="150" craft_exp_gain="4" learn_exp_gain="200" >
         <ingredient name="gunPowder" count="100" grid="-1, -1"/>
         <ingredient name="magnesiumPowder" count="200" grid="0, -1"/>
@@ -2341,7 +2341,7 @@
         <ingredient name="potassiumNitratePowder" count="100" grid="0, 1"/>
         <ingredient name="gunPowder" count="100" grid="1, 1"/>
     </recipe>
-	
+
 	<recipe name="thermiteCharge" count="1" scrapable="False" craft_time="5" craft_exp_gain="4" learn_exp_gain="200" >
         <ingredient name="wick" count="1" grid="0, -2"/>
         <ingredient name="steelStrips" count="1" grid="0, -1"/>
@@ -2349,17 +2349,17 @@
         <ingredient name="shortSteelPipe" count="1" grid="0, 1"/>
         <ingredient name="steelStrips" count="1" grid="0, 2"/>
     </recipe>
-	
+
 	<recipe name="wick" count="1" scrapable="False" craft_time="5" craft_exp_gain="4" learn_exp_gain="200" >
         <ingredient name="tallow" count="2" grid="0, -2"/>
         <ingredient name="gunPowder" count="100" grid="0, -1"/>
         <ingredient name="yuccaFibers" count="32" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="magnesiumPowder" count="5" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="magnesiumOre" count="1" grid="0, 0"/>
     </recipe>
-	
+
 	<recipe name="shotgunSlug" count="5" scrapable="True" craft_time="2" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="steelSlug" count="5" grid="1, -2"/>
         <ingredient name="gunPowder" count="5" grid="0, -1"/>
@@ -2367,7 +2367,7 @@
 		<ingredient name="paper" count="5" grid="0, 1"/>
 		<ingredient name="scrapBrass" count="5" grid="0, 2"/>
     </recipe>
-	
+
 	   <!-- Altered the bone recipe so it's more rewarding for a less useful resource -->
     <recipe name="crossbowBolt" count="30" scrapable="False" craft_time="50" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="femur" count="5" grid="1, -1"/>
@@ -2410,7 +2410,7 @@
         <ingredient name="forgedSteel" count="1" grid="-1, 1"/>
         <ingredient name="forgedSteel" count="1" grid="0, 1"/>
     </recipe>
-	
+
 <recipe name="308calBullet" count="1" scrapable="True" craft_time="1" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="bulletTip" count="1" grid="-2, 0"/>
         <ingredient name="gunPowder" count="1" grid="-1, 0"/>
@@ -2476,6 +2476,63 @@
         <ingredient name="scrapIron" count="1" grid="1, 1"/>
         <ingredient name="scrapIron" count="1" grid="-1, 2"/>
         <ingredient name="scrapIron" count="1" grid="1, 2"/>
-    </recipe>	
-	
+    </recipe>
+
+    <recipe name="boneDust" count="5" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="femur" count="1" grid="0, -1"/>
+        <ingredient name="femur" count="1" grid="0, 0"/>
+    </recipe>
+
+    <recipe name="algaeFood" count="1" scrapable="False" craft_time="120" craft_exp_gain="20" learn_exp_gain="200" >
+        <ingredient name="boneDust" count="5" grid="0, -1"/>
+        <ingredient name="bloodBag" count="5" grid="-1, 0"/>
+        <ingredient name="potassiumNitratePowder" count="5" grid="0, 0"/>
+    </recipe>
+
+    <recipe name="algaeBreeder" count="1" scrapable="False" craft_time="180" craft_exp_gain="50" learn_exp_gain="300" >
+        <ingredient name="ingotBrass" count="1" grid="-1, -2"/>
+        <ingredient name="concreteMix" count="1" grid="0, -2"/>
+        <ingredient name="ingotSteel" count="1" grid="1, -2"/>
+        <ingredient name="ingotSteel" count="1" grid="-1, -1"/>
+        <ingredient name="ingotSteel" count="1" grid="0, -1"/>
+        <ingredient name="ingotBrass" count="1" grid="1, -1"/>
+        <ingredient name="steelRebarFrame" count="1" grid="-1, 0"/>
+        <ingredient name="keystone" count="1" grid="0, 0"/>
+        <ingredient name="steelRebarFrame" count="1" grid="1, 0"/>
+        <ingredient name="ingotBrass" count="1" grid="-1, 1"/>
+        <ingredient name="bucketWater" count="1" grid="0, 1"/>
+        <ingredient name="ingotBrass" count="1" grid="1, 1"/>
+        <ingredient name="ingotSteel" count="1" grid="-1, 2"/>
+        <ingredient name="concreteMix" count="1" grid="0, 2"/>
+        <ingredient name="ingotBrass" count="1" grid="1, 2"/>
+    </recipe>
+
+    <recipe name="algaeCrusher" count="1" scrapable="False" craft_time="180" craft_exp_gain="50" learn_exp_gain="300" >
+        <ingredient name="ingotBrass" count="1" grid="-1, -2"/>
+        <ingredient name="concreteMix" count="1" grid="0, -2"/>
+        <ingredient name="ingotSteel" count="1" grid="1, -2"/>
+        <ingredient name="ingotSteel" count="1" grid="-1, -1"/>
+        <ingredient name="ingotSteel" count="1" grid="0, -1"/>
+        <ingredient name="ingotBrass" count="1" grid="1, -1"/>
+        <ingredient name="steelRebarFrame" count="1" grid="-1, 0"/>
+        <ingredient name="smallEngine" count="1" grid="0, 0"/>
+        <ingredient name="steelRebarFrame" count="1" grid="1, 0"/>
+        <ingredient name="ingotBrass" count="1" grid="-1, 1"/>
+        <ingredient name="augerBlade" count="1" grid="0, 1"/>
+        <ingredient name="ingotBrass" count="1" grid="1, 1"/>
+        <ingredient name="ingotSteel" count="1" grid="-1, 2"/>
+        <ingredient name="concreteMix" count="1" grid="0, 2"/>
+        <ingredient name="ingotBrass" count="1" grid="1, 2"/>
+    </recipe>
+
+    <recipe name="algaeBucket" count="1" scrapable="False" craft_time="60" craft_exp_gain="2" learn_exp_gain="100" >
+        <ingredient name="forgedSteel" count="1" grid="-1, -1"/>
+        <ingredient name="forgedSteel" count="1" grid="1, -1"/>
+        <ingredient name="forgedSteel" count="1" grid="-1, 0"/>
+        <ingredient name="forgedSteel" count="1" grid="1, 0"/>
+        <ingredient name="forgedSteel" count="1" grid="-1, 1"/>
+        <ingredient name="forgedSteel" count="1" grid="0, 1"/>
+        <ingredient name="forgedSteel" count="1" grid="1, 1"/>
+    </recipe>
+
 </recipes>
