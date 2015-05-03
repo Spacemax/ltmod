@@ -2310,6 +2310,7 @@
 	<recipe name="uhpconcreteMix" count="5" scrapable="False" craft_time="5" craft_exp_gain="10" learn_exp_gain="200" >
         <ingredient name="cement" count="250" grid="0, -1"/>
         <ingredient name="steelFibers" count="900" grid="0, 0"/>
+        <ingredient name="bucketWater" count="1" grid="0, 1"/>
     </recipe>
 
 	<recipe name="Smelter" count="1" scrapable="False" craft_time="60" craft_exp_gain="10" learn_exp_gain="500" >
