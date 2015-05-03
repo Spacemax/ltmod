@@ -2,8 +2,8 @@
 <groups> <!--http://www.colorpicker.com/-->
 
   <!--Red-->
-	  <group name="HeavyAmmo/Weapons"		color="690101"	alpha="1.0"/>
-    <group name="Tools/Traps"			color="690101"	alpha="1.0"/> 
+	  <group name="LightAmmo/Weapons"		color="690101"	alpha="1.0"/>
+    <group name="Tools/Traps"			color="690101"	alpha="1.0"/>
 
   <!--Orange-->
 	  <group name="Building"		color="786853"	alpha="1.0"/>
