@@ -2,7 +2,7 @@
 <groups> <!--http://www.colorpicker.com/-->
 
   <!--Red-->
-	  <group name="LightAmmo/Weapons"		color="690101"	alpha="1.0"/>
+	  <group name="Ammo/Weapons"		color="690101"	alpha="1.0"/>
     <group name="Tools/Traps"			color="690101"	alpha="1.0"/>
 
   <!--Orange-->
