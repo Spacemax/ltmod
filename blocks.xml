@@ -11154,7 +11154,7 @@
       <property name="UpgradeRated.ToBlock" value="algaeStage2" param1="1" />  <!-- param1 is density value in percent -->
 
   	<!-- 1=min, 15=max NOTE: 1 tick is approximately a 1 to 2 minute real-time interval. -->
-      <property name="UpgradeRated.Rate" value="2" />		<!-- 15 is max for the Rate -->
+      <property name="UpgradeRated.Rate" value="15" />		<!-- 15 is max for the Rate -->
 
   	<property name="HeatMapStrength" value="5"/>
   	<property name="HeatMapTime" value="1200"/>
@@ -11186,7 +11186,7 @@
   <!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="algaeBreeder" />
   <!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="2" />
+    <property name="PlantGrowing.GrowthRate" value="120" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -11256,7 +11256,7 @@
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.Next" value="algaeCrusherStage2" />
   <!-- Rate at which machine moves to next stage 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="2" />
+    <property name="PlantGrowing.GrowthRate" value="60" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -11276,7 +11276,7 @@
   <!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="algaeCrusher" />
   <!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="2" />
+    <property name="PlantGrowing.GrowthRate" value="60" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />

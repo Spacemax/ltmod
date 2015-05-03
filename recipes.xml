@@ -1164,15 +1164,6 @@
         <ingredient name="woodPlank" count="1" grid="1, 0"/>
     </recipe>
 
-    <recipe name="oilBarrel" count="1" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="gasCan" count="1" grid="-1, -2"/>
-        <ingredient name="gasCan" count="1" grid="0, -2"/>
-        <ingredient name="gasCan" count="1" grid="-1, -1"/>
-        <ingredient name="gasCan" count="1" grid="0, -1"/>
-        <ingredient name="gasCan" count="1" grid="-1, 0"/>
-        <ingredient name="gasCan" count="1" grid="0, 0"/>
-    </recipe>
-
     <recipe name="oldChair" count="3" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="stick" count="1" grid="1, -2"/>
         <ingredient name="stick" count="1" grid="1, -1"/>
