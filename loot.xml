@@ -1160,9 +1160,9 @@ plentiful loot items in the game.
 	</lootgroup>
 
   	<lootgroup name="workingStiffs" count="1">
-    	<item group="tools" prob="0.2" />					<!--20%-->
-		<item group="seeds" prob="0.3" />					<!--30%-->
-		<item group="constructionSupplies" prob="0.5" />	<!--50%-->
+    <item group="seeds" prob="0.1" />					<!--10%-->
+    <item group="tools" prob="0.3" />					<!--30%-->
+		<item group="constructionSupplies" prob="0.6" />	<!--60%-->
   	</lootgroup>
 
 	<lootgroup name="rareMedicine" count="1">
@@ -1612,7 +1612,6 @@ plentiful loot items in the game.
     <!-- working stiffs  -->
     <lootcontainer id="53" count="0,3" size="3,3" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
 		<item group="workingStiffs" />
-		<item group="seeds" />
     </lootcontainer>
 
     <!-- shopping cart-->
