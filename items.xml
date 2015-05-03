@@ -10357,7 +10357,7 @@ ARMOR ATTRIBUTE EXAMPLE
     <item id="834" name="beef">
         <property name="Meshfile" value="Items/Food/meat_venison" />
         <property name="CustomIcon" value="venison" />
-        <property name="CustomIconTint" value="9E2F1E"/>
+        <property name="CustomIconTint" value="E95858"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="7" />
         <property class="Action1">
@@ -10385,7 +10385,7 @@ ARMOR ATTRIBUTE EXAMPLE
     <item id="835" name="beefCharred">
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="venisonCharred" />
-        <property name="CustomIconTint" value="9E2F1E"/>
+        <property name="CustomIconTint" value="E95858"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="31" />
         <property class="Action1">
@@ -10411,7 +10411,7 @@ ARMOR ATTRIBUTE EXAMPLE
       <property name="Description" value="A juicy beef steak." />
       <property name="Meshfile" value="Items/Misc/parcel" />
       <property name="CustomIcon" value="venisonGrilled" />
-      <property name="CustomIconTint" value="9E2F1E"/>
+      <property name="CustomIconTint" value="E95858"/>
       <property name="Material" value="organic" />
       <property name="HoldType" value="31" />
       <property class="Action1">
@@ -10436,7 +10436,7 @@ ARMOR ATTRIBUTE EXAMPLE
     <item id="837" name="beefStroganof">
       <property name="Meshfile" value="Items/Food/venison_stew" />
       <property name="CustomIcon" value="venisonStew" />
-      <property name="CustomIconTint" value="943B00"/>
+      <property name="CustomIconTint" value="E95858"/>
       <property name="Material" value="organic" />
       <property name="HoldType" value="23" />
       <property class="Action1">
@@ -10459,11 +10459,10 @@ ARMOR ATTRIBUTE EXAMPLE
       </property>
     </item>
 
-    <!-- TODO: Recipe should require a stick on the left and right side of the beef in the center-->
     <item id="838" name="beefSkewered">
         <property name="Meshfile" value="Items/Food/meat_raw_stickPrefab" />
         <property name="CustomIcon" value="rabbitOnAStick" />
-        <property name="CustomIconTint" value="9E2F1E"/>
+        <property name="CustomIconTint" value="E95858"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="16" />
         <property class="Action1">
@@ -10483,11 +10482,10 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <!-- TODO: Cook on a grill -->
     <item id="839" name="beefKebob">
         <property name="Meshfile" value="Items/Food/meat_raw_stickPrefab" />
         <property name="CustomIcon" value="rabbitOnAStick" />
-        <property name="CustomIconTint" value="943B00"/>
+        <property name="CustomIconTint" value="FB651A"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="16" />
         <property class="Action1">
@@ -10496,7 +10494,6 @@ ARMOR ATTRIBUTE EXAMPLE
           <property name="Use_time" value="..." />
           <property name="Gain_health" value="2" />
           <property name="Gain_food" value="30" />
-          <property name="Gain_water" value="4" />
           <property name="Gain_wellness" value="1.25" />
           <property name="Buff" value="goodFood" />
           <property name="Sound_start" value="UseActions/player_eating" />
@@ -10508,5 +10505,6 @@ ARMOR ATTRIBUTE EXAMPLE
           <property name="Pos" value="0,-1" />
           <property name="Rot" value="90,45,0" />
         </property>
+      </item>
 
 </items>
