@@ -2698,14 +2698,14 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="wood" />
         <property name="HoldType" value="26" />
         <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="stick" />
-        <property name="Degradation" value="250" param1="true" />
+        <property name="RepairTools" value="leatherStrips" />
+        <property name="Degradation" value="100" param1="true" />
         <property name="FuelValue" value="40" />
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Launcher" />
             <property name="Delay" value="0.8" />
-            <property name="Range" value="100" />
+            <property name="Range" value="40" />
             <property name="Magazine_size" value="1" />
             <property name="Magazine_item" value="crossbowBolt" />
             <property name="Reload_time" value="2" />
@@ -2745,7 +2745,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
             <property name="Velocity" value="400" />
-            <property name="FlyTime" value="0.7" />
+            <property name="FlyTime" value="0.6" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
@@ -10220,8 +10220,9 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Crude Crossbow -->
-    <item id="266" name="crossbow">
+    <item id="829" name="customCrossbow">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="CustomIcon" value="crossbow" />
         <property name="Material" value="wood" />
         <property name="HoldType" value="26" />
         <property name="Stacknumber" value="1" />
@@ -10264,7 +10265,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Generic Crossbow Frame to be used in all three Crossbow recipes -->
-    <item id="829" name="crossbow_frame">
+    <item id="830" name="crossbow_frame">
         <property name="PartType" value="Receiver" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="crossbow" />
@@ -10285,7 +10286,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="830" name="crossbow_arms">
+    <item id="831" name="crossbow_arms">
         <property name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="woodenBow" />
@@ -10308,7 +10309,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="831" name="crossbow_stock">
+    <item id="832" name="crossbow_stock">
         <property name="PartType" value="Stock" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_stock" />
@@ -10329,7 +10330,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="832" name="crossbow_parts">
+    <item id="833" name="crossbow_parts">
         <property name="PartType" value="Pump" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="pistol_parts" />
@@ -10352,7 +10353,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Beef -->
-    <item id="833" name="beef">
+    <item id="834" name="beef">
         <property name="Meshfile" value="Items/Food/meat_venison" />
         <property name="CustomIcon" value="venison" />
         <property name="CustomIconTint" value="9E2F1E"/>
@@ -10380,7 +10381,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="834" name="beefCharred">
+    <item id="835" name="beefCharred">
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="venisonCharred" />
         <property name="CustomIconTint" value="9E2F1E"/>
