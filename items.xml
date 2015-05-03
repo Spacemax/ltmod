@@ -456,7 +456,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="BlockDamage" value="2,10" />
             <property name="DegradationMax" value="400,900" />
 			<property name="DegradationRate" value="3,1" />
-        </property>       
+        </property>
         </property>
         <property name="CritChance" value=".4" />
         <property class="Attributes">
@@ -2693,7 +2693,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
-    <item id="266" name="crossbow">
+    <!--<item id="266" name="crossbow">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
         <property name="Material" value="wood" />
         <property name="HoldType" value="26" />
@@ -2702,7 +2702,6 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Degradation" value="250" param1="true" />
         <property name="FuelValue" value="40" />
         <property class="Action0">
-            <!-- AttackAction -->
             <property name="Class" value="Launcher" />
             <property name="Delay" value="0.8" />
             <property name="Range" value="100" />
@@ -2717,7 +2716,6 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
         </property>
         <property class="Action1">
-            <!-- UseAction -->
             <property name="Class" value="Zoom" />
             <property name="Zoom_max_out" value="45" />
             <property name="Zoom_max_in" value="45" />
@@ -2728,7 +2726,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="0,-0.05" />
             <property name="Rot" value="90,45,0" />
         </property>
-    </item>
+    </item>-->
     <item id="267" name="crossbowBolt">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
         <property name="Material" value="wood" />
@@ -2738,21 +2736,21 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Projectile" />
-            <property name="DamageEntity" value="50" />
+            <property name="DamageEntity" value="35" />
             <property name="DamageBlock" value="0.2" />
             <property name="Buff" value="criticalBleedout" />
-            <property name="Buff_chance" value="0.5" />
+            <property name="Buff_chance" value="0.25" />
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
-            <property name="Velocity" value="500" />
-            <property name="FlyTime" value="0.6" />
+            <property name="Velocity" value="300" />
+            <property name="FlyTime" value="0.8" />
             <property name="LifeTime" value="4" />
-            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.head" value="4" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.wood" value="0.1" />
             <property name="DamageBonus.earth" value="0" />
-            <property name="DamageBonus.metal" value="0" />
-            <property name="DamageBonus.cloth" value="0" />
+            <property name="DamageBonus.metal" value="-0.4" />
+            <property name="DamageBonus.cloth" value="0.1" />
         </property>
         <property name="Group" value="Ammo/Weapons" />
     </item>
@@ -5355,7 +5353,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Ammunition Nation" />
             <property name="Description" value="Tired of paying top dollar for your ammo then make your own ammunion with this great guide." />
-            <property name="Recipes_to_learn" value="9mmBullet,10mmBullet,762mmBullet,bulletTipMold,bulletCasingMold" />
+            <property name="Recipes_to_learn" value="9mmBullet,223calBullet,308calBullet,bulletTipMold,bulletCasingMold" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -5379,7 +5377,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Buckshot Weekly" />
             <property name="Description" value="Give a man a shotgun shell and he can kill one walker. Teach a man how to craft a shotgun shell and he can kill 'em all." />
-            <property name="Recipes_to_learn" value="shotgunShell,buckshot,steelSlugMold,shotgunSlug" />
+            <property name="Recipes_to_learn" value="556mmBullet,762mmBullet,10mmBullet,shotgunShell,buckshot,steelSlugMold,shotgunSlug" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
@@ -10022,7 +10020,6 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pump" value="sniperRifleParts" />
         </property>
         <property class="Action0">
-            <!-- AttackAction -->
             <property name="Class" value="Ranged" />
             <property name="Delay" value="0.5" />
             <property name="Range" value="200" />
@@ -10047,7 +10044,6 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.glass" value="25" />
         </property>
         <property class="Action1">
-            <!-- UseAction -->
             <property name="Class" value="Zoom" />
             <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
             <property name="Zoom_max_out" value="40" />
@@ -10081,6 +10077,138 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Stacknumber" value="64" />
         <property name="FuelValue" value="20" />
         <property name="Group" value="Resources" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <!-- Crude Crossbow -->
+    <item id="266" name="crossbow">
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="Material" value="wood" />
+        <property name="HoldType" value="26" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="leatherStrips" />
+        <property name="FuelValue" value="90" />
+        <property name="Degradation" value="250" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="Weight" value="48" />
+        <property class="Parts">
+            <property name="Stock" value="crossbow_stock" />
+            <property name="Receiver" value="crossbow_frame" />
+            <property name="Barrel" value="crossbow_arms" />
+            <property name="Pump" value="crossbow_parts" />
+        </property>
+        <property class="Action0">
+            <property name="Class" value="Launcher" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="100" />
+            <property name="Magazine_size" value="1" />
+            <property name="Magazine_item" value="crossbowBolt" />
+            <property name="Reload_time" value="2" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
+        </property>
+        <property class="Action1">
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="45" />
+            <property name="Zoom_max_in" value="45" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <!-- Generic Crossbow Frame to be used in all three Crossbow recipes -->
+    <item id="830" name="crossbow_frame">
+        <property name="PartType" value="Receiver" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="crossbow" />
+        <property name="CustomIconTint" value="B95D2E"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="DegradationMax" value="5,100" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="831" name="CrudeCrossbow_arms">
+        <property name="PartType" value="Barrel" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="woodenBow" />
+        <property name="CustomIconTint" value="B95D2E"/>
+        <property name="Material" value="wood" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+          <property name="EntityDamage" value="25, 35" />
+          <property name="BlockDamage" value="1" />
+          <property name="DegradationMax" value="5, 100" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="832" name="CrudeCrossbow_stock">
+        <property name="PartType" value="Stock" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_stock" />
+        <property name="CustomIconTint" value="B95D2E"/>
+        <property name="Material" value="wood" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="DegradationMax" value="5,100" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="833" name="CrudeCrossbow_parts">
+        <property name="PartType" value="Pump" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="pistol_parts" />
+        <property name="CustomIconTint" value="B95D2E"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="Accuracy" value="1, 0.2" />
+            <property name="DegradationMax" value="5,100" />
+        </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
             <property name="Pos" value="0,-0.05" />
