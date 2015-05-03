@@ -10129,7 +10129,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Generic Crossbow Frame to be used in all three Crossbow recipes -->
-    <item id="830" name="crossbow_frame">
+    <item id="824" name="crossbow_frame">
         <property name="PartType" value="Receiver" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="crossbow" />
@@ -10150,7 +10150,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="831" name="CrudeCrossbow_arms">
+    <item id="825" name="crossbow_arms">
         <property name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="woodenBow" />
@@ -10173,7 +10173,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="832" name="CrudeCrossbow_stock">
+    <item id="826" name="crossbow_stock">
         <property name="PartType" value="Stock" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_stock" />
@@ -10194,7 +10194,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="833" name="CrudeCrossbow_parts">
+    <item id="27" name="crossbow_parts">
         <property name="PartType" value="Pump" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="pistol_parts" />
