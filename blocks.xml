@@ -2935,8 +2935,8 @@
 	<property name="ModelOffset" value="0,-0.5,0" />
     <!-- uses dummy texture id from opaque atlas -->
     <drop event="Destroy" name="trunkPine" count="2" prob="1" />
-    <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
-	<drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
+    <drop event="Destroy" name="pineSeed" count="1,2" prob=".3" />
+	  <drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
   </block>
   <block id="560" name="MountainPine8m">
     <property name="Class" value="ModelTree" />
@@ -3004,7 +3004,7 @@
     <!-- uses dummy texture id from opaque atlas -->
     <drop event="Destroy" name="trunkPine" count="6" prob="1" />
     <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
-	<drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
+	<drop event="Destroy" name="treeSap" count="1,2" prob="1" />
   </block>
   <block id="564" name="MountainPine20m">
     <property name="Class" value="ModelTree" />
@@ -3021,7 +3021,7 @@
     <!-- uses dummy texture id from opaque atlas -->
     <drop event="Destroy" name="trunkPine" count="7" prob="1" />
     <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
-	<drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
+	<drop event="Destroy" name="treeSap" count="1,2" prob="1" />
   </block>
   <block id="565" name="MountainPineDry">
     <property name="Class" value="ModelTree" />
@@ -3083,6 +3083,7 @@
     <!-- uses dummy texture id from opaque atlas -->
     <drop event="Destroy" name="trunkPine" count="3" prob="0.5" />
 	<drop event="Destroy" name="hardwood" count="3" prob="1" />
+  <drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
   </block>
   <block id="569" name="DeadShrub">
     <property name="Material" value="leaves" />
@@ -3342,6 +3343,7 @@
 	<property name="ModelOffset" value="0,-1.2,0" />
     <drop event="Destroy" name="trunkPine" count="3" prob="1" />
 	<drop event="Destroy" name="hardwood" count="2" prob="0.5" />
+  <drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
   </block>
   <block id="587" name="WinterPine01">
     <property name="Class" value="ModelTree" />
@@ -3357,6 +3359,7 @@
 	<property name="ModelOffset" value="0,-1.2,0" />
     <drop event="Destroy" name="trunkPine" count="7" prob="1" />
 	<drop event="Destroy" name="hardwood" count="2" prob="0.3" />
+  <drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
   </block>
 
   <block id="588" name="Stump">
@@ -3384,6 +3387,7 @@
 	<property name="ModelOffset" value="0,-1.2,0" />
     <drop event="Destroy" name="trunkPine" count="7" prob="1" />
 	<drop event="Destroy" name="hardwood" count="4" prob="0.5" />
+  <drop event="Destroy" name="treeSap" count="1,2" prob=".5" />
   </block>
   <block id="590" name="WinterPine03">
     <property name="Class" value="ModelTree" />
@@ -3399,6 +3403,7 @@
 	<property name="ModelOffset" value="0,-1.2,0" />
     <drop event="Destroy" name="trunkPine" count="8" prob="1" />
 	<drop event="Destroy" name="hardwood" count="4" prob="0.5" />
+  <drop event="Destroy" name="treeSap" count="1,2" prob="1" />
   </block>
   <block id="591" name="desertShrub">
     <property name="Class" value="Deadgrass" />
