@@ -289,7 +289,7 @@
 
 	<buff id="wellness3" buffif="wellness greater 189" mutex="wellness1,wellness2" debuffif="wellness less 189" name="Relentess" description="You are inexhaustible and relentless" stack="discard" icon="buff_icon_first_aid" />
 
-	<buff id="welltest1" buffif="wellness gequal 119" mutex="wellness2,wellness3" name="Testing Healthy" description="Testing if You feel healthy" icon="buff_icon_first_aid" />
+	<buff id="welltest1" buffif="Wellness gequal 119" mutex="wellness2,wellness3" name="Testing Healthy" description="Testing if You feel healthy" icon="buff_icon_first_aid" />
 
 	<!-- Start Stun Controller -->
 	<buff id="stunned" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" duration="1" name="Stunned" onexpired="stunned2" mutex="stunned2,wellness3" description="You are stunned." icon="buff_icon_stunned">
