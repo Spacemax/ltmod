@@ -2696,4 +2696,14 @@
         <ingredient name="cornMeal" count="5"/>
     </recipe>
 
+    <!-- We didnt merge the steelSlugMold into 0.5 or 0.6 -->
+    <recipe name="steelSlugMold" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="40" >
+        <ingredient name="clayLump" count="1" grid="-1, 0"/>
+        <ingredient name="steelSlug" count="1" grid="0, 0"/>
+        <ingredient name="clayLump" count="1" grid="1, 0"/>
+        <ingredient name="clayLump" count="1" grid="-1, 1"/>
+        <ingredient name="clayLump" count="1" grid="0, 1"/>
+        <ingredient name="clayLump" count="1" grid="1, 1"/>
+    </recipe>
+
 </recipes>
