@@ -9044,8 +9044,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="25" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding,infection,burning" />
-            <property name="Buff_chance" value="0.3,0.2,0.5" />
+            <property name="Buff" value="bleeding,burning,bite,wound" />
+            <property name="Buff_chance" value="0.3,0.2,0.5,0.5" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
             <property name="DamageBonus.wood" value="3" />
@@ -9068,8 +9068,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="2" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding" />
-            <property name="Buff_chance" value="0.1" />
+            <property name="Buff" value="bleeding,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.1,0.2" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
             <property name="DamageBonus.wood" value="3" />
@@ -9092,7 +9092,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="25" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding" />
+            <property name="Buff" value="bleeding,gash,wound2" />
             <property name="Buff_chance" value="0.6" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
@@ -10216,6 +10216,100 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Zoom" value="10" />
             <property name="Pos" value="0,-0.2" />
             <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <!-- Begin Extended Attack System / Part of Advanced Wound System -->
+
+      <!-- xAttack is most basic of extended attacks, melee only and basic bite and wound -->
+
+    <item id="829" name="xAttack">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="1.8" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="10" />
+            <property name="DamageBlock" value="2" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+    </item>
+
+        <!-- xAttack2 is only melee but suited for underbosses -->
+
+    <item id="829" name="xAttack2">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="1.8" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="10" />
+            <property name="DamageBlock" value="2" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+    </item>
+
+    <!-- xAttack3 is both ranged and melee for bosses and will inflict major wounds gash and wound2 -->
+
+    <item id="830" name="xAttack3">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.5" />
+            <property name="Range" value="1.5" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="30" />
+            <property name="DamageBlock" value="5" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,gash,wound2" />
+            <property name="Buff_chance" value="0.2,0.07,0.7,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Vomit" />
+            <property name="Delay" value="0.35" />
+            <property name="Range" value="200" />
+            <property name="Auto_fire" value="true" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Magazine_item" value="vomitZombieProjectile" />
+            <property name="Rays_spread" value="0.5" />
+            <property name="Reload_time" value="2" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_warning" value="Enemies/Acid_Puking_Hulk/hulkvomitwarning" />
+            <property name="Sound_start" value="Enemies/Acid_Puking_Hulk/hulkvomitattack" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="" />
+            <property name="Sound_reload" value="" />
+            <property name="Buff" value="infection" />
+            <property name="Buff_chance" value="0.2" />
         </property>
     </item>
 
