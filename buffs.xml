@@ -314,42 +314,45 @@
 		<modify id="1" stat="health" amount="1" rate="1"/>
 	</buff>
 
-		<!-- Tetanus is a modified 'Infection' that is curable by Antibiotics. It doesn't have as heavy consequences as Infection -->
-		<buff id="tetanus" name="Tetanus" type="sickness" mutex="cured,tetanus2" onexpired="tetanus2" duration="4800t" description="You have contracted Tetanus." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
-		</buff>
+	<!-- RH99: Tetanus is a modified 'Infection' that is curable by Antibiotics. It doesn't have as heavy consequences as Infection -->
+	<buff id="tetanus" name="Tetanus" type="sickness" mutex="cured,tetanus2" onexpired="tetanus2" duration="4800t" description="You have contracted Tetanus." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
+	</buff>
 
-		<buff id="tetanus2" name="Advanced Tetanus" type="sickness" duration="7200t" actions="increment(@wellness, -1, 120t, 0, 0)" description="Your infection is progressing. Use antibiotics to heal the infection." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-1" rate="1"/>
-			<modify id="1" stat="health" amount="-1" rate="1"/>
-		</buff>
+	<buff id="tetanus2" name="Advanced Tetanus" type="sickness" duration="7200t" actions="increment(@wellness, -1, 200t, 0, 0)" description="Your infection is progressing. Use antibiotics to heal the infection." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-1" rate="1"/>
+	</buff>
 
-		<buff id="goodFood" name="Good Food" type="healthup" duration="24t" description="You ate a healthy meal." icon="buff_icon_hunger">
-			<modify id="0" stat="health" amount="0.1" rate="1" />
-		</buff>
+	<!-- RH99: This buff is applied from eating high-tier cooked 'meals' providing a slow healing buff for 24 hours -->
+	<buff id="goodFood" name="Good Food" type="healthup" duration="24t" description="You ate a healthy meal." icon="buff_icon_hunger">
+		<modify id="0" stat="health" amount="0.1" rate="1" />
+	</buff>
 
-		<!-- Radiation Poisoning Debuffs -->
-		<!-- TODO: Add wellness debuff to the final two stages. Should lose 1 wellness every game-hour in stage 3 and two every hour in stage 4 -->
-		<!-- TODO: Need to continue adjusting these buff stages properly, apparently there is an internal variable called "radiation" we can use -->
-		<buff id="radPoison" name="Minor Radiation Poisoning" type="sickness" duration="2400t" description="You have minor radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
-		</buff>
+	<!-- RH99: Radiation Poisoning Debuffs -->
+	<!-- TODO: Need to continue adjusting these buff stages properly, apparently there is an internal variable called "radiation" we can use -->
+	<buff id="radPoison" name="Minor Radiation Poisoning" type="sickness" duration="2400t" description="You have minor radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
+	</buff>
 
-		<buff id="radPoison2" name="Moderate Radiation Poisoning" onexpired="radPoison" type="sickness" duration="2400t" description="You have moderate radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-1" rate="1"/>
-			<modify id="1" stat="health" amount="-0.5" rate="1"/>
-		</buff>
+	<buff id="radPoison2" name="Moderate Radiation Poisoning" onexpired="radPoison" type="sickness" actions="increment(@wellness, -1, 200t, 0, 0)" duration="2400t" description="You have moderate radiation poisoning, your muscles feel weak." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-0.5" rate="1"/>
+	</buff>
 
-		<buff id="radPoison3" name="Severe Radiation Poisoning" onexpired="radPoison2" type="sickness" duration="2400t" description="You have severe radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-2" rate="1"/>
-			<modify id="1" stat="health" amount="-2" rate="1"/>
-		</buff>
+	<buff id="radPoison3" name="Severe Radiation Poisoning" onexpired="radPoison2" type="sickness" actions="increment(@wellness, -1, 100t, 0, 0)" duration="2400t" description="You have severe radiation poisoning, your skin has puss filled sores." icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-2" rate="1"/>
+		<modify id="1" stat="health" amount="-2" rate="1"/>
+	</buff>
 
-		<buff id="radPoison4" name="Lethal Radiation Poisoning" onexpired="radPoison3" type="sickness" duration="2400t" description="You have lethal radiation poisoning! Take antirad drugs to purge your system." icon="buff_icon_infection">
-			<modify id="0" stat="stamina" amount="-5" rate="1"/>
-			<modify id="1" stat="health" amount="-5" rate="1"/>
-		</buff>
+	<buff id="radPoison4" name="Lethal Radiation Poisoning" onexpired="radPoison3" type="sickness" actions="increment(@wellness, -2, 100t, 0, 0)" duration="2400t" description="You have lethal radiation poisoning and are internally bleeding!" icon="buff_icon_infection">
+		<modify id="0" stat="stamina" amount="-5" rate="1"/>
+		<modify id="1" stat="health" amount="-5" rate="1"/>
+	</buff>
 
+	<buff id="radPoison5" name="Fatal Radiation Poisoning" actions="kill" type="sickness" duration="1" description="You're internal organs are breaking down into mush." icon="buff_icon_infection">
+	</buff>
+	
 <!-- Fever -->
 	<buff id="fever" mutex="HeatStroke" buffif="warmth greater 40" debuffif="warmth less 40" actions="setvar(warmth, 40);increment(warmth, 1, 200t, 0, 0);max(warmth, 50);increment(@hydrated, -2, 100t, 0, 0);increment(@wellness, -0.5, 100t, 0, 0);debuff(VeryWarm);debuff(Recovery)" ondebuff="Recovery" name="Fever" type="staminadown" description="You are sick with Fever." icon="buff_icon_dysentery">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
