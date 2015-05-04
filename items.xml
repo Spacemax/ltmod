@@ -10220,7 +10220,6 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-<<<<<<< HEAD
     <!-- Crude Crossbow -->
     <item id="829" name="customCrossbow">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
@@ -10508,12 +10507,12 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
       </item>
 
-=======
+
     <!-- Begin Extended Attack System / Part of Advanced Wound System -->
 
       <!-- xAttack is most basic of extended attacks, melee only and basic bite and wound -->
 
-    <item id="829" name="xAttack">
+    <item id="840" name="xAttack">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
         <property name="HoldType" value="9" />
@@ -10537,7 +10536,7 @@ ARMOR ATTRIBUTE EXAMPLE
 
         <!-- xAttack2 is only melee but suited for underbosses -->
 
-    <item id="829" name="xAttack2">
+    <item id="841" name="xAttack2">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
         <property name="HoldType" value="9" />
@@ -10561,7 +10560,7 @@ ARMOR ATTRIBUTE EXAMPLE
 
     <!-- xAttack3 is both ranged and melee for bosses and will inflict major wounds gash and wound2 -->
 
-    <item id="830" name="xAttack3">
+    <item id="842" name="xAttack3">
         <property name="Material" value="organic" />
         <property name="Canhold" value="false" />
         <property name="HoldType" value="9" />
@@ -10603,7 +10602,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="706" name="holyBeer">
+    <item id="843" name="holyBeer">
       <property name="CustomIcon" value="beer" />
       <property name="CustomIconTint" value="89470c"/>
         <property name="Meshfile" value="Items/Food/honeyPrefab" />
@@ -10632,5 +10631,4 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
->>>>>>> origin/LTBranch
 </items>
