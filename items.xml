@@ -8236,11 +8236,13 @@ ARMOR ATTRIBUTE EXAMPLE
 	<item id="753" name="steelFibers">
 		<property name="CustomIcon" value="brownGrassDiagonal"/>
 		<property name="CustomIconTint" value="576AFF"/>
-        <property name="Meshfile" value="Items/Crafting/plant_fibers" />
-        <property name="Material" value="metal_steel" />
-        <property name="HoldType" value="16" />
+    <property name="Meshfile" value="Items/Crafting/plant_fibers" />
+    <property name="Material" value="metal_steel" />
+    <property name="HoldType" value="16" />
 		<property name="Stacknumber" value="900" />
-        <property name="Group" value="Resources" />
+    <property name="Group" value="Resources" />
+    <property name="RepairTime" value="1" />
+    <property name="RepairAmount" value="10" />
     </item>
 
 	<item id="754" name="zincPowder">
