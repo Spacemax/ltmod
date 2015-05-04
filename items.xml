@@ -218,6 +218,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Pos" value="-0.1,-0.7" />
         </property>
     </item>
+
     <item id="2" name="clubIron">
         <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
         <property name="Material" value="metal" />
@@ -2698,14 +2699,14 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="wood" />
         <property name="HoldType" value="26" />
         <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="stick" />
-        <property name="Degradation" value="250" param1="true" />
+        <property name="RepairTools" value="leatherStrips" />
+        <property name="Degradation" value="100" param1="true" />
         <property name="FuelValue" value="40" />
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Launcher" />
             <property name="Delay" value="0.8" />
-            <property name="Range" value="100" />
+            <property name="Range" value="40" />
             <property name="Magazine_size" value="1" />
             <property name="Magazine_item" value="crossbowBolt" />
             <property name="Reload_time" value="2" />
@@ -2745,7 +2746,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
             <property name="Velocity" value="400" />
-            <property name="FlyTime" value="0.7" />
+            <property name="FlyTime" value="0.6" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
@@ -9044,8 +9045,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="25" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding,infection,burning" />
-            <property name="Buff_chance" value="0.3,0.2,0.5" />
+            <property name="Buff" value="bleeding,burning,bite,wound" />
+            <property name="Buff_chance" value="0.3,0.2,0.5,0.5" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
             <property name="DamageBonus.wood" value="3" />
@@ -9068,8 +9069,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="2" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding" />
-            <property name="Buff_chance" value="0.1" />
+            <property name="Buff" value="bleeding,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.1,0.2" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
             <property name="DamageBonus.wood" value="3" />
@@ -9092,7 +9093,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="25" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding" />
+            <property name="Buff" value="bleeding,gash,wound2" />
             <property name="Buff_chance" value="0.6" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
@@ -10220,8 +10221,9 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Crude Crossbow -->
-    <item id="266" name="crossbow">
+    <item id="829" name="customCrossbow">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="CustomIcon" value="crossbow" />
         <property name="Material" value="wood" />
         <property name="HoldType" value="26" />
         <property name="Stacknumber" value="1" />
@@ -10264,7 +10266,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Generic Crossbow Frame to be used in all three Crossbow recipes -->
-    <item id="829" name="crossbow_frame">
+    <item id="830" name="crossbow_frame">
         <property name="PartType" value="Receiver" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="crossbow" />
@@ -10285,7 +10287,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="830" name="crossbow_arms">
+    <item id="831" name="crossbow_arms">
         <property name="PartType" value="Barrel" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="woodenBow" />
@@ -10297,7 +10299,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-          <property name="EntityDamage" value="25, 35" />
+          <property name="EntityDamage" value="30, 50" />
           <property name="BlockDamage" value="1" />
           <property name="DegradationMax" value="10, 100" />
         </property>
@@ -10308,7 +10310,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="831" name="crossbow_stock">
+    <item id="832" name="crossbow_stock">
         <property name="PartType" value="Stock" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="PumpShotgun_stock" />
@@ -10329,7 +10331,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="832" name="crossbow_parts">
+    <item id="833" name="crossbow_parts">
         <property name="PartType" value="Pump" />
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="pistol_parts" />
@@ -10352,10 +10354,10 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
 
     <!-- Beef -->
-    <item id="833" name="beef">
+    <item id="834" name="beef">
         <property name="Meshfile" value="Items/Food/meat_venison" />
         <property name="CustomIcon" value="venison" />
-        <property name="CustomIconTint" value="9E2F1E"/>
+        <property name="CustomIconTint" value="E95858"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="7" />
         <property class="Action1">
@@ -10380,14 +10382,13 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <item id="834" name="beefCharred">
+    <item id="835" name="beefCharred">
         <property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="venisonCharred" />
-        <property name="CustomIconTint" value="9E2F1E"/>
+        <property name="CustomIconTint" value="E95858"/>
         <property name="Material" value="organic" />
         <property name="HoldType" value="31" />
         <property class="Action1">
-            <!-- UseAction -->
             <property name="Class" value="Eat" />
             <property name="Delay" value="1.0" />
             <property name="Use_time" value="..." />
@@ -10403,6 +10404,259 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Zoom" value="5" />
             <property name="Pos" value="0,-1" />
             <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="836" name="beefSteak">
+      <property name="Description" value="A juicy beef steak." />
+      <property name="Meshfile" value="Items/Misc/parcel" />
+      <property name="CustomIcon" value="venisonGrilled" />
+      <property name="CustomIconTint" value="E95858"/>
+      <property name="Material" value="organic" />
+      <property name="HoldType" value="31" />
+      <property class="Action1">
+        <property name="Class" value="Eat" />
+        <property name="Delay" value="1.0" />
+        <property name="Use_time" value="..." />
+        <property name="Gain_health" value="5" />
+        <property name="Gain_food" value="30" />
+        <property name="Gain_water" value="0" />
+        <property name="Gain_wellness" value="1.5" />
+        <property name="Sound_start" value="UseActions/player_eating" />
+      </property>
+      <property name="Smell" value="largeSmell" />
+      <property name="Group" value="Food/Cooking" />
+      <property class="Preview">
+        <property name="Zoom" value="5" />
+        <property name="Pos" value="0,-1" />
+        <property name="Rot" value="90,45,0" />
+      </property>
+    </item>
+
+    <item id="837" name="beefStroganof">
+      <property name="Meshfile" value="Items/Food/venison_stew" />
+      <property name="CustomIcon" value="venisonStew" />
+      <property name="CustomIconTint" value="E95858"/>
+      <property name="Material" value="organic" />
+      <property name="HoldType" value="23" />
+      <property class="Action1">
+        <property name="Class" value="Eat" />
+        <property name="Delay" value="1.0" />
+        <property name="Use_time" value="..." />
+        <property name="Gain_health" value="5" />
+        <property name="Gain_food" value="40" />
+        <property name="Gain_water" value="25" />
+        <property name="Gain_wellness" value="1.6" />
+        <property name="Buff" value="goodFood" />
+        <property name="Sound_start" value="UseActions/player_drinking" />
+      </property>
+      <property name="Smell" value="exLargeSmell" />
+      <property name="Group" value="Food/Cooking" />
+      <property class="Preview">
+        <property name="Zoom" value="30" />
+        <property name="Pos" value="0,-0.03" />
+        <property name="Rot" value="90,45,0" />
+      </property>
+    </item>
+
+    <item id="838" name="beefSkewered">
+        <property name="Meshfile" value="Items/Food/meat_raw_stickPrefab" />
+        <property name="CustomIcon" value="rabbitOnAStick" />
+        <property name="CustomIconTint" value="E95858"/>
+        <property name="Material" value="organic" />
+        <property name="HoldType" value="16" />
+        <property class="Action1">
+          <property name="Class" value="Eat" />
+          <property name="Delay" value="1.0" />
+          <property name="Use_time" value="..." />
+          <property name="Gain_food" value="15" />
+          <property name="Gain_water" value="2" />
+          <property name="Sound_start" value="UseActions/player_eating" />
+        </property>
+        <property name="Smell" value="largeSmell" />
+        <property name="Group" value="Food/Cooking" />
+        <property class="Preview">
+          <property name="Zoom" value="5" />
+          <property name="Pos" value="0,-1" />
+          <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="839" name="beefKebob">
+        <property name="Meshfile" value="Items/Food/meat_raw_stickPrefab" />
+        <property name="CustomIcon" value="rabbitOnAStick" />
+        <property name="CustomIconTint" value="FB651A"/>
+        <property name="Material" value="organic" />
+        <property name="HoldType" value="16" />
+        <property class="Action1">
+          <property name="Class" value="Eat" />
+          <property name="Delay" value="1.0" />
+          <property name="Use_time" value="..." />
+          <property name="Gain_health" value="2" />
+          <property name="Gain_food" value="30" />
+          <property name="Gain_wellness" value="1.25" />
+          <property name="Buff" value="goodFood" />
+          <property name="Sound_start" value="UseActions/player_eating" />
+        </property>
+        <property name="Smell" value="largeSmell" />
+        <property name="Group" value="Food/Cooking" />
+        <property class="Preview">
+          <property name="Zoom" value="5" />
+          <property name="Pos" value="0,-1" />
+          <property name="Rot" value="90,45,0" />
+        </property>
+      </item>
+
+
+    <!-- Begin Extended Attack System / Part of Advanced Wound System -->
+
+      <!-- xAttack is most basic of extended attacks, melee only and basic bite and wound -->
+
+    <item id="840" name="xAttack">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="1.8" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="10" />
+            <property name="DamageBlock" value="2" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+    </item>
+
+        <!-- xAttack2 is only melee but suited for underbosses -->
+
+    <item id="841" name="xAttack2">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="1.8" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="10" />
+            <property name="DamageBlock" value="2" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+            <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+    </item>
+
+    <!-- xAttack3 is both ranged and melee for bosses and will inflict major wounds gash and wound2 -->
+
+    <item id="842" name="xAttack3">
+        <property name="Material" value="organic" />
+        <property name="Canhold" value="false" />
+        <property name="HoldType" value="9" />
+        <property name="Stacknumber" value="1" />
+        <property name="Candrop" value="false" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="Melee" />
+            <property name="Delay" value="0.5" />
+            <property name="Range" value="1.5" />
+            <property name="Sphere" value="0.4" />
+            <property name="Block_range" value="2.5" />
+            <property name="DamageEntity" value="30" />
+            <property name="DamageBlock" value="5" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Buff" value="bleeding,infection,stunned,gash,wound2" />
+            <property name="Buff_chance" value="0.2,0.07,0.7,0.5,0.5" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Vomit" />
+            <property name="Delay" value="0.35" />
+            <property name="Range" value="200" />
+            <property name="Auto_fire" value="true" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Magazine_item" value="vomitZombieProjectile" />
+            <property name="Rays_spread" value="0.5" />
+            <property name="Reload_time" value="2" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_warning" value="Enemies/Acid_Puking_Hulk/hulkvomitwarning" />
+            <property name="Sound_start" value="Enemies/Acid_Puking_Hulk/hulkvomitattack" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="" />
+            <property name="Sound_reload" value="" />
+            <property name="Buff" value="infection" />
+            <property name="Buff_chance" value="0.2" />
+        </property>
+    </item>
+
+    <item id="843" name="holyBeer">
+      <property name="CustomIcon" value="beer" />
+      <property name="CustomIconTint" value="89470c"/>
+        <property name="Meshfile" value="Items/Food/honeyPrefab" />
+        <property name="Material" value="glass" />
+        <property name="HoldType" value="3" />
+        <property name="Stacknumber" value="15" />
+        <property name="Weight" value="12" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Eat" />
+            <property name="Delay" value="1" />
+            <property name="Use_time" value="..." />
+            <property name="Gain_health" value="0" />
+            <property name="Gain_stamina" value="20" />
+            <property name="Gain_food" value="0" />
+            <property name="Gain_water" value="0" />
+            <property name="Gain_wellness" value="10" />
+            <property name="Sound_start" value="UseActions/player_drinking" />
+            <property name="Create_item" value="holyBeer" />
+        </property>
+        <property name="Group" value="Food/Cooking" />
+        <property class="Preview">
+            <property name="Zoom" value="23" />
+            <property name="Pos" value="0.18,-0.15" />
+            <property name="Rot" value="0,-45,0" />
+        </property>
+    </item>
+
+    <item id="844" name="evilBeer">
+      <property name="CustomIcon" value="beer" />
+      <property name="CustomIconTint" value="89470c"/>
+        <property name="Meshfile" value="Items/Food/honeyPrefab" />
+        <property name="Material" value="glass" />
+        <property name="HoldType" value="3" />
+        <property name="Stacknumber" value="15" />
+        <property name="Weight" value="12" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Eat" />
+            <property name="Delay" value="1" />
+            <property name="Use_time" value="..." />
+            <property name="Gain_health" value="0" />
+            <property name="Gain_stamina" value="0" />
+            <property name="Gain_food" value="0" />
+            <property name="Gain_water" value="0" />
+            <property name="Gain_wellness" value="-10" />
+            <property name="Sound_start" value="UseActions/player_drinking" />
+            <property name="Create_item" value="holyBeer" />
+        </property>
+        <property name="Group" value="Food/Cooking" />
+        <property class="Preview">
+            <property name="Zoom" value="23" />
+            <property name="Pos" value="0.18,-0.15" />
+            <property name="Rot" value="0,-45,0" />
         </property>
     </item>
 

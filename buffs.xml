@@ -139,21 +139,21 @@
 
 	-->
 	<buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
-		<modify id="0" stat="stamina" amount="2" rate="1"/>
+		<modify id="0" stat="stamina" amount="0.5" rate="1"/>
 	</buff>
 
 	<buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 4, 0, 0, 1)">
-		<modify id="0" stat="stamina" amount="2" rate="1"/>
+		<modify id="0" stat="stamina" amount="1" rate="1"/>
 	</buff>
 
 	<buff id="MetabolizeBeer" buffif="beers greater 0" debuffif="beers less 1" actions="increment(beers, -1, 100t, 0, 0);min(beers, 0)"/>
 
 	<buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" buffif="beers greater 0" debuffif="beers less 1" duration="0" name="Beer Buzz" type="staminaup" description="A nice buzz." icon="buff_icon_beer" >
-		<modify id="0" stat="stamina" amount="2" rate="1"/>
+		<modify id="0" stat="stamina" amount="1" rate="1"/>
 	</buff>
 
 	<buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" name="Drunk" type="staminadown" description="You are drunk." icon="buff_icon_beer_hangover">
-		<modify id="0" stat="stamina" amount="5" rate="1"/>
+		<modify id="0" stat="stamina" amount="1" rate="1"/>
 		<modify id="0" stat="speedmodifier" setValue="0.90"/>
 	</buff>
 
@@ -249,9 +249,7 @@
 		<modify id="0" stat="speedmodifier" setValue="0.80"/>
 	</buff>
 
-	<buff id="stunned" duration="4" name="Stunned" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" description="You are stunned." icon="buff_icon_stunned">
-		<modify id="0" stat="speedmodifier" setValue="0.1"/>
-	</buff>
+<!-- moved stunned down to modded section -->
 
 	<buff id="burningSmall" mutex="burning" debuffif="+water > 1" ffcheck="true" duration="10" name="Burning" description="You are burning." actions="attach(ParticleEffects/p_onFire, @impact);damage(2,1,0,0)" icon="buff_icon_fire"/>
 	<buff id="burning" debuffif="+water > 1" duration="15" ffcheck="true" name="Fire" description="You are on fire." actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(10,1,0,0)" icon="buff_icon_fire"/>
@@ -279,19 +277,216 @@
 
 <!-- Start LT Mod -->
 
+<!-- Start LT Buffs -->
+
+	<!-- Advanced expanded stun system -->
+
+		<!-- Wellness check for will be a mutex for any buff that you want a player to be immune to with high wellness -->
+
+	<buff id="wellness1" buffif="wellness greater 119" mutex="wellness2,wellness3" debuffif="wellness less 119" name="Healthy" description="You feel healthy" stack="discard" icon="buff_icon_first_aid" />
+
+	<buff id="wellness2" buffif="wellness greater 149" mutex="wellness1,wellness3" debuffif="wellness less 149" name="Steadfast" description="You are strong and steadfast" stack="discard" icon="buff_icon_first_aid" />
+
+	<buff id="wellness3" buffif="wellness greater 189" mutex="wellness1,wellness2" debuffif="wellness less 189" name="Relentess" description="You are inexhaustible and relentless" stack="discard" icon="buff_icon_first_aid" />
+
+	<buff id="welltest1" buffif="Wellness gequal 119" mutex="wellness2,wellness3" name="Testing Healthy" description="Testing if You feel healthy" icon="buff_icon_first_aid" />
+
+	<!-- Start Stun Controller -->
+	<buff id="stunned" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" duration="1" name="Stunned" onexpired="stunned2" mutex="stunned2,wellness3" description="You are stunned." icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.1"/>
+	</buff>
+
+	<buff id="stunned2" type="speedmodifier" duration="2" name="Stunned" onexpired="stunned3" mutex="stunned3" description="" icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.2"/>
+	</buff>
+
+	<buff id="stunned3" type="speedmodifier" duration="2" name="Stunned" onexpired="stunned4" mutex="stunned4" description="" icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.4"/>
+	</buff>
+
+	<buff id="stunned4" mutex="stunned3"  duration="2" name="Stunned" type="speedmodifier" description="" icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.8"/>
+	</buff>
+
+
 	<buff id="slowheal" duration="180" name="Slow Heal" type="healthup" description="You are slowly recovering and feel stronger." icon="buff_icon_first_aid">
 		<modify id="0" stat="stamina" amount="1" rate="1"/>
 		<modify id="1" stat="health" amount="1" rate="1"/>
 	</buff>
 
-	<!-- Tetanus is a modified 'Infection' that is curable by Antibiotics. It doesn't have as heavy consequences as Infection -->
-	<buff id="tetanus" name="Tetanus" type="sickness" mutex="cured,tetanus2" onexpired="tetanus2" duration="4800t" description="You have contracted Tetanus." icon="buff_icon_infection">
-		<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
+		<!-- Tetanus is a modified 'Infection' that is curable by Antibiotics. It doesn't have as heavy consequences as Infection -->
+		<buff id="tetanus" name="Tetanus" type="sickness" mutex="cured,tetanus2" onexpired="tetanus2" duration="4800t" description="You have contracted Tetanus." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
+		</buff>
+
+		<buff id="tetanus2" name="Advanced Tetanus" type="sickness" duration="7200t" actions="increment(@wellness, -1, 120t, 0, 0)" description="Your infection is progressing. Use antibiotics to heal the infection." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-1" rate="1"/>
+			<modify id="1" stat="health" amount="-1" rate="1"/>
+		</buff>
+
+		<buff id="goodFood" name="Good Food" type="healthup" duration="24t" description="You ate a healthy meal." icon="buff_icon_hunger">
+			<modify id="0" stat="health" amount="0.1" rate="1" />
+		</buff>
+
+		<!-- Radiation Poisoning Debuffs -->
+		<!-- TODO: Add wellness debuff to the final two stages. Should lose 1 wellness every game-hour in stage 3 and two every hour in stage 4 -->
+		<!-- TODO: Need to continue adjusting these buff stages properly, apparently there is an internal variable called "radiation" we can use -->
+		<buff id="radPoison" name="Minor Radiation Poisoning" type="sickness" duration="2400t" description="You have minor radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
+		</buff>
+
+		<buff id="radPoison2" name="Moderate Radiation Poisoning" onexpired="radPoison" type="sickness" duration="2400t" description="You have moderate radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-1" rate="1"/>
+			<modify id="1" stat="health" amount="-0.5" rate="1"/>
+		</buff>
+
+		<buff id="radPoison3" name="Severe Radiation Poisoning" onexpired="radPoison2" type="sickness" duration="2400t" description="You have severe radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-2" rate="1"/>
+			<modify id="1" stat="health" amount="-2" rate="1"/>
+		</buff>
+
+		<buff id="radPoison4" name="Lethal Radiation Poisoning" onexpired="radPoison3" type="sickness" duration="2400t" description="You have lethal radiation poisoning! Take antirad drugs to purge your system." icon="buff_icon_infection">
+			<modify id="0" stat="stamina" amount="-5" rate="1"/>
+			<modify id="1" stat="health" amount="-5" rate="1"/>
+		</buff>
+
+<!-- Fever -->
+	<buff id="fever" mutex="HeatStroke" buffif="warmth greater 40" debuffif="warmth less 40" actions="setvar(warmth, 40);increment(warmth, 1, 200t, 0, 0);max(warmth, 50);increment(@hydrated, -2, 100t, 0, 0);increment(@wellness, -0.5, 100t, 0, 0);debuff(VeryWarm);debuff(Recovery)" ondebuff="Recovery" name="Fever" type="staminadown" description="You are sick with Fever." icon="buff_icon_dysentery">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.85"/>
+	</buff>
+<!-- You aren't 100% while recovering from an illness like hypothermia or heat stroke. -->
+	<buff id="recovery" mutex="Hypothermia,HeatStroke" duration="200t" name="Recovering from Illness" type="staminadown" description="You are recovering from an illness." icon="buff_icon_food_poisoning">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.95"/>
+	</buff>
+<!-- The final stage of heat related illness, results in death if heat not reduced. -->
+	<buff id="heatStroke" buffif="warmth greater 49" debuffif="warmth less 49" ondebuff="Fever" name="Heat Stroke" type="bleeding" description="You are dying from severe heat stroke." actions="increment(warmth, 1, 200t, 0, 0);increment(@wellness, -1, 100t, 0, 0);debuff(Fever);debuff(Recovery)" icon="buff_icon_food_poisoning" stack="extend">
+		<modify id="0" stat="stamina" amount="-5" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.40"/>
 	</buff>
 
-	<buff id="tetanus2" name="Advanced Tetanus" type="sickness" duration="7200t" actions="increment(@wellness, -1, 120t, 0, 0)" description="Your infection is progressing. Use antibiotics to heal the infection." icon="buff_icon_infection">
+<!-- Death from either Too Hot or Too Cold -->
+	<buff id="death" name="The End" actions="kill" description="Your illness has reached its lethal phase." icon="buff_icon_infection"/>
+
+<!-- Water Related - Make jumping in the river end fire related buffs -->
+	<buff id="wet" buffif="+water > 1" duration="120" debuffif="-water > 1" name="Wet" actions="debuff(Burning2);debuff(burningSmall)debuff(burning);increment(@wellness, -0.2, 10, 0, 0)" description="You are wet. Get on to dry land to prevent sickness."/>
+
+<!-- Wound System with Infections Bleeding always causes a wound, wounds sometimes cause an infection if low wellness-->
+
+<!-- Injury Types to extend zombie attack systems and integrate into advanced wound system and first aid -->
+	<buff id="bite" duration="60" name="Zombie Bite" type="bleeding" description="You are bleeding from a zombie bite. Use a bandage to stop the bleeding." ondebuff="wound3" onexpired="wound" icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
 		<modify id="1" stat="health" amount="-1" rate="1"/>
 	</buff>
+
+	<buff id="gash" duration="60" name="Zombie Bite" type="bleeding" description="You are bleeding from a nasty gash. Use a bandage to stop the bleeding." ondebuff="wound4" onexpired="wound2" icon="buff_icon_critical_hit">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-2" rate="1"/>
+	</buff>
+
+<!-- Wound left over from Injuries that weren't treated with medicated bandages CAN STACK -->
+
+	<buff id="wound" duration="200t" name="Untreated Wound" stack="stack" stacklimit="5" type="speedmodifier" actions="debuff(firstAid);debuff(splint)" ondebuff="wound3" onexpired="SetFever" description="You are bleeding from an untreated wound. Use a disinfected bandage." icon="buff_icon_critical_hit">
+		<modify id="0" stat="speedmodifier" setValue="0.96"/>
+		<modify id="1" stat="stamina" amount="-0.25" rate="1"/>
+		<modify id="2" stat="health" amount="-0.20" rate="1"/>
+	</buff>
+
+	<buff id="wound2" duration="400t" name="Untreated Nasty Wound" stack="stack" stacklimit="5" type="speedmodifier" actions="debuff(firstAid);debuff(splint)" ondebuff="wound4" onexpired="SetFever" description="You have a nasty untreated wound. Use a disinfected bandage or proper first aid kit" icon="buff_icon_critical_hit">
+		<modify id="0" stat="speedmodifier" setValue="0.96"/>
+		<modify id="1" stat="stamina" amount="-0.50" rate="1"/>
+		<modify id="2" stat="health" amount="-0.25" rate="1"/>
+	</buff>
+
+<!-- Healing Wounds CAN STACK -->
+
+	<buff id="wound3" duration="200t" name="Healing Wound" stack="stack" stacklimit="5" type="speedmodifier" actions="buff(rapidhealing)" description="You a treated wound and it is healing." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98"/>
+	</buff>
+
+	<buff id="wound4" duration="400t" name="Healing Nasty Wound" stack="stack" stacklimit="5" type="speedmodifier" actions="buff(rapidhealing2)" description="You have treated a nasty wound and it is healing." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98"/>
+	</buff>
+
+	<!-- Infection Fever -->
+	<buff id="SetFever" mutex="Fever,antibiotics" duration="10" debuffif="@wellness >= 200" actions="increment(@hydrated, -2, 100t, 0, 0);increment(@wellness, -0.5, 100t, 0, 0);debuff(VeryWarm);debuff(Recovery)" onexpired="Fever" type="staminadown" >
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+	</buff>
+
+<!-- Rapid Healing - Triggers if wounds treated and conditions met -->
+	<buff id="rapidhealing" buffif="@wellness >= 180" requires="wound3" overrides="splint,sprainedLeg,wound3,wound4" name="Just a scratch!" type="speedmodifier" overrideicon="true" description="Your injuries heal rapidly due to your high wellness." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98,0.99"/>
+		<modify id="1" buff="brokenLeg" tickrate="2"/>
+		<modify id="2" buff="sprainedLeg" tickrate="2"/>
+		<modify id="3" buff="wound3" tickrate="2"/>
+		<modify id="4" buff="wound4" tickrate="2"/>
+	</buff>
+
+	<buff id="rapidhealing2" buffif="@wellness >= 180" requires="wound4" overrides="splint,sprainedLeg,wound3,wound4" name="Merely a flesh wound!" type="speedmodifier" overrideicon="true" description="You are healing quickly from a nasty injury." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98,0.99"/>
+		<modify id="1" buff="brokenLeg" tickrate="2"/>
+		<modify id="2" buff="sprainedLeg" tickrate="2"/>
+		<modify id="3" buff="wound3" tickrate="2"/>
+		<modify id="4" buff="wound4" tickrate="2"/>
+	</buff>
+
+	<buff id="rapidhealing3" buffif="@wellness >= 180" requires="splint" overrides="splint,sprainedLeg,wound3,wound4" name="Walk it off!" type="speedmodifier" overrideicon="true" description="Your leg is healing rapidly due to your high wellness." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98,0.99"/>
+		<modify id="1" buff="brokenLeg" tickrate="2"/>
+		<modify id="2" buff="sprainedLeg" tickrate="2"/>
+		<modify id="3" buff="wound3" tickrate="2"/>
+		<modify id="4" buff="wound4" tickrate="2"/>
+	</buff>
+
+<!-- <buff id="splint" overrides="brokenLeg,sprainedLeg" name="Splint" type="speedmodifier" actions="buff(rapidhealing3)" overrideicon="true" description="Your leg is splinted." icon="buff_icon_splint">
+	<modify id="0" stat="speedmodifier" setValue="0.60,0.80"/>
+	<modify id="1" buff="brokenLeg" tickrate="2"/>
+	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+</buff> -->
+
+<!-- Cannibalism Buffs / Not turned on yet -->
+
+<!-- Set starting power at 1 -->
+	<buff id="instantPower" duration="1" buffif="power less 1" mutex="powerup" actions="setvar(power, 1)" name="InstantPower" type="staminadown"/>
+
+<!-- Manually Increment power by 1 -->
+	<buff id="powerup" duration="100t" stack="discard" actions="increment(power, 1, 0, 0, 1);max(power, 400)">
+		<modify id="0" stat="stamina" amount="2" rate="1"/>
+	</buff>
+
+<!-- Ravenous Speed Buff for 60 seconds -->
+	<buff id="ravenous" duration="60" buffif="power greater 10" debuffif="power less 10" name="Ravenous" type="speedmodifier" description="Your hunger for human flesh drives you forward." icon="buff_icon_critical_hit">
+		<modify id="0" stat="speedmodifier" setValue="1.20"/>
+		<modify id="1" stat="stamina" amount="4" rate="1"/>
+	</buff>
+
+	<buff id="bloodpact" buffif="power greater 10" requires="splint" overrides="splint,sprainedLeg,wound3,wound4" name="Blood Pact" type="speedmodifier" overrideicon="true" description="The blood of your enemies makes you stronger." icon="buff_icon_splint">
+		<modify id="0" stat="speedmodifier" setValue="0.98,0.99"/>
+		<modify id="1" buff="brokenLeg" tickrate="2"/>
+		<modify id="2" buff="sprainedLeg" tickrate="2"/>
+		<modify id="3" buff="wound3" tickrate="2"/>
+		<modify id="4" buff="wound4" tickrate="2"/>
+	</buff>
+
+	<buff id="rage" duration="180" name="Rage" type="staminaup" description="You are fueled by rage." icon="buff_icon_coffee" stack="extend">
+		<modify id="0" stat="stamina" amount="2" rate="1"/>
+		<modify id="1" stat="health" amount="-0.25" rate="1"/>
+	</buff>
+
+<!-- New Zombie Buffs -->
+
+	<buff id="acidburning" duration="60" name="Acid Burning" description="You are burning." actions="attach(ParticleEffects/p_onFire, @impact);damage(1,1,0,0)" icon="buff_icon_fire"/>
+
+	<buff id="burning2" debuffif="+hydrated > 5" duration="15" name="Burning" description="You are on Fire." actions="attach(ParticleEffects/p_onFire, @impact);damage(5,1,0,0)" icon="buff_icon_fire"/>
+
+	<buff id="burningshotgun" debuffif="+hydrated > 5" duration="15" name="AcidBurning" description="You are burning." actions="attach(ParticleEffects/p_onFire, @impact);damage(20,1,0,0)" icon="buff_icon_fire"/>
+
+	<buff id="immobilized" duration="4" name="immobilized" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" description="You are immobilized." icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.01"/>
+	</buff>
+
+
+	<!-- Nothing after here -->
 
 </buffs>
