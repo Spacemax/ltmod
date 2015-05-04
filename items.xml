@@ -8297,14 +8297,13 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Group" value="Tools/Traps" />
     </item>
 
-    <!-- TODO: Verify steelFibers work as a repair tool, Boner Fart reported that his compoundBow did not repair and dumped the fibers back in his inventory -->
     <item id="756" name="compoundBow">
-		<property name="CustomIcon" value="woodenBow"/>
-		<property name="CustomIconTint" value="99CCFF"/>
+		    <property name="CustomIcon" value="woodenBow"/>
+		    <property name="CustomIconTint" value="99CCFF"/>
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab" />
         <property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="steelFibers" />
-         <property name="Degradation" value="550" param1="true" />
+        <property name="RepairTools" value="steelFibers" />
+        <property name="Degradation" value="550" param1="true" />
         <property name="Material" value="metal_steel" />
         <property name="HoldType" value="27" />
         <property name="FuelValue" value="34" />
@@ -8321,11 +8320,11 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Sound_end" value="" />
             <property name="Sound_empty" value="Weapons/weapon_empty" />
             <property name="Sound_reload" value="Weapons/Ranged/Bows/Bow/bow_reload" />
-			<property name="Sound_draw" value="Weapons/Ranged/Bows/Bow/bow_draw" />
-			<property name="Sound_cancel" value="Weapons/Ranged/Bows/Bow/bow_fire_cancel" />
+			      <property name="Sound_draw" value="Weapons/Ranged/Bows/Bow/bow_draw" />
+			      <property name="Sound_cancel" value="Weapons/Ranged/Bows/Bow/bow_fire_cancel" />
             <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
             <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-			<property name="Max_strain_time" value=".5" />
+			      <property name="Max_strain_time" value=".5" />
         </property>
         <property class="Action1"> <!-- UseAction -->
             <property name="Class" value="Zoom" />
