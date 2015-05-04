@@ -818,26 +818,26 @@ plentiful loot items in the game.
 		<item name="homeMaintenanceBookVolumeII" />
 		<item name="theEnforcerMagazine" />
 		<item name="smgSchematics" />
-    	</lootgroup>
+    </lootgroup>
 
 	<lootgroup name="ultrarareBooks">
 		<item name="Mossburg500Schematics" />
 		<item name="momsSurvivalGuide" />
-    <item name="momsEcoFuels" />
+		<item name="momsEcoFuels" />
 		<item name="sniperRifleSchematic" />
 		<item name="Furukawa780Schematic" />
 	</lootgroup>
 
 	<!-- Adjust skill book spread here -->
 	<lootgroup name="books" count="1">
-		<item group="ultrarareBooks" prob="0.0025" />
-		<item group="kevlarArmorSchematics" prob="0.005"/>
-		<item group="rareBooks" prob="0.01"/>
-		<item group="ironArmorSchematics" prob="0.025"/>
-		<item group="uncommonBooks" prob="0.2925"/>
-		<item group="commonBooks" prob="0.665" />
-	</lootgroup>
-
+		<item group="ultrarareBooks" 			prob="0.0025" />			<!-- 0.25% or 2.5 in 1000 skill books 	~1 in 20 double story book stores -->
+		<item group="kevlarArmorSchematics" 	prob="0.005"/>				<!-- 0.5% or 5 in a 1000 skill books 	~1 in 10 double story book stores -->
+		<item group="rareBooks" 				prob="0.02"/>				<!-- 2% or 20 in 1000 skill books		~1 in 2.5 double story book stores -->
+		<item group="ironArmorSchematics" 		prob="0.05"/>				<!-- 5% or 50 in 1000 skill books 		~1 in 1 double story book store -->
+		<item group="uncommonBooks" 			prob="0.3075"/>				<!-- 30.75% -->
+		<item group="commonBooks" 				prob="0.615" />				<!-- 61.5% -->
+	</lootgroup>												
+	
 	<lootgroup name="cannedfood">
 		<item name="canBeef"/>
 		<item name="canCatfood"/>
@@ -856,30 +856,30 @@ plentiful loot items in the game.
     </lootgroup>
 
 	<lootgroup name="seeds" count="1">
-		<item name="coffeeBeans" prob="0.1"/>
-		<item name="potatoSeed" prob="0.1"/>
-		<item name="cornSeed" prob="0.4"/>
-		<item name="blueberrySeed" prob="0.4"/>
+		<item name="coffeeBeans" 	prob="0.1"/>
+		<item name="potatoSeed" 	prob="0.1"/>
+		<item name="cornSeed" 		prob="0.4"/>
+		<item name="blueberrySeed" 	prob="0.4"/>
    	 </lootgroup>
 
 	<lootgroup name="airdropfood">
 		<item name="canBeef"/>
 		<item name="canChicken"/>
         <item name="canLamb"/>
-    	</lootgroup>
+    </lootgroup>
 
     <lootgroup name="coldfood">
-		<item name="egg" count="1,2" />
-		<item name="blueberryPie"/>
-		<item name="venisonStew"/>
-		<item name="venison"/>
-		<item name="rabbit"/>
-		<item name="pork"/>
-    <item name="beef" prob="0.05" />
-		<item name="corn"/>
-		<item name="potato"/>
-		<item name="blueberries"/>
-    	</lootgroup>
+		<item name="beef" 				prob="0.05" />		<!-- 5% -->
+		<item name="egg" count="1,2" 	prob="0.1" />
+		<item name="blueberryPie" 		prob="0.1" />
+		<item name="venisonStew" 		prob="0.1" />
+		<item name="venison" 			prob="0.1" />
+		<item name="rabbit" 			prob="0.1" />
+		<item name="pork" 				prob="0.1" />
+		<item name="potato"				prob="0.1" />
+		<item name="blueberries"		prob="0.1" />
+    	<item name="corn"				prob="0.15" />
+	</lootgroup>
 
     <lootgroup name="cupboard">
 		<item name="householdChemicals" prob="0.05" />
@@ -932,17 +932,17 @@ plentiful loot items in the game.
     </lootgroup>
 
 	<lootgroup name="rareAutomotive" count="1">
-		<item group="rockDrillParts" prob="0.005" />
-		<item group="augerParts" prob="0.01" />
-		<item name="gasCan" prob="0.185" />
-		<item group="junk" prob="0.8" />
+		<item group="uncommonTools" prob="0.1" />
+		<item group="commonTools" 	prob="0.1" />
+		<item group="cannedfood" 	prob="0.2" />
+		<item group="junk" 			prob="0.6" />
 	</lootgroup>
 
 	<lootgroup name="commonAutomotive" count="all">
-		<item name="airFilter" count="0,1"/>
-		<item name="radiator" count="0,1" />
+		<item name="airFilter" 	count="0,1"/>
+		<item name="radiator" 	count="0,1" />
 		<item name="carBattery" count="0,1" />
-		<item name="hubcap" count= "1,4" />
+		<item name="hubcap" 	count= "1,4" />
 	</lootgroup>
 
 	<lootgroup name="automotive" count="all">
@@ -1017,19 +1017,19 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="Armor" count="1">
-		<item group="rareArmor" prob="0.001" />
-		<item group="heavyArmor" prob="0.059" />
-		<item group="lightArmor" prob="0.30" />
-		<item group="clothes" prob="0.60" />
-        </lootgroup>
+		<item group="rareArmor" 	prob="0.001" />
+		<item group="heavyArmor" 	prob="0.059" />
+		<item group="lightArmor" 	prob="0.30" />
+		<item group="clothes" 		prob="0.60" />
+    </lootgroup>
 
 	<lootgroup name="garbage">
 		<item group="junk"/>
 	</lootgroup>
 
 	<lootgroup name="metalpipe_scrap">
-		<item group="empty" prob="0.4" />
-		<item name="scrapIron" prob="0.6" />
+		<item group="empty" 	prob="0.4" />
+		<item name="scrapIron" 	prob="0.6" />
 	</lootgroup>
 
 	<lootgroup name="metalpipe" count="all">
@@ -1122,19 +1122,19 @@ plentiful loot items in the game.
 		<item name="nailgun" />			<!-- KM:Moved from raretools-->
 		<item group="steelAxe" />
 		<item group="pickaxeSteel" />
-    	</lootgroup>
+    </lootgroup>
 
 	<lootgroup name="rareTools" count="1">
    		<item group="fireaxe" />
 		<item group="pickaxeIron" />	<!-- KM:Moved down from ultra rare-->
 		<item group="sledgehammer" />
-    	</lootgroup>
+    </lootgroup>
 
   	<lootgroup name="uncommonTools" count="1">
 		<item group="shovel" />
 		<item group="hammer" />
 		<item group="hoe" />			<!--KM:Moved down from rare tools-->
-    	</lootgroup>
+    </lootgroup>
 
 	<lootgroup name="commonTools" count="1">
 		<item group="stoneShovel" />
@@ -1161,28 +1161,28 @@ plentiful loot items in the game.
 	</lootgroup>
 
   	<lootgroup name="workingStiffs" count="1">
-    <item group="seeds" prob="0.1" />					<!--10%-->
-    <item group="tools" prob="0.3" />					<!--30%-->
-		<item group="constructionSupplies" prob="0.6" />	<!--60%-->
+		<item group="seeds" 				prob="0.1" />				<!--10%-->
+		<item group="tools" 				prob="0.3" />				<!--30%-->
+		<item group="constructionSupplies" 	prob="0.6" />				<!--60%-->
   	</lootgroup>
 
 	<lootgroup name="rareMedicine" count="1">
-		<item name="beaker" prob="0.05"/>								<!--5%-->
-		<item name="bloodDrawKit" prob="0.15" />						<!--25%-->
-		<item name="firstAidKit" count="1" prob="0.35" />				<!--35%-->
-		<item name="antibiotics" count="1" prob="0.35" />				<!--35%-->
+		<item name="beaker" 				prob="0.05"/>				<!--5%-->
+		<item name="bloodDrawKit" 			prob="0.15" />				<!--25%-->
+		<item name="firstAidKit" count="1" 	prob="0.35" />				<!--35%-->
+		<item name="antibiotics" count="1" 	prob="0.35" />				<!--35%-->
 	</lootgroup>
 
 <!-- KM:Removed empty jar as not needed in this group, Reduced are rareMedicine drop rate to 5%	-->
 	<lootgroup name="medicine" count="1">
-		<item group="rareMedicine" prob="0.1" />  		<!--10%-->
-		<item name="painkillers" prob="0.1" />			<!--10%-->
-		<item name="firstAidBandage" prob="0.1" />		<!--10%-->
-		<item name="bloodBag" prob="0.1" />				<!--10%-->
-		<item name="vitamins" prob="0.1" />				<!--10%-->
-		<item name="grainAlcohol" prob="0.1" />			<!--10%-->
-		<item name="splint" prob="0.2" />				<!--20%-->
-		<item name="bandage" prob="0.20" />				<!--20%-->
+		<item group="rareMedicine" 		prob="0.1" />  		<!--10%-->
+		<item name="painkillers" 		prob="0.1" />		<!--10%-->
+		<item name="firstAidBandage" 	prob="0.1" />		<!--10%-->
+		<item name="bloodBag" 			prob="0.1" />		<!--10%-->
+		<item name="vitamins" 			prob="0.1" />		<!--10%-->
+		<item name="grainAlcohol" 		prob="0.1" />		<!--10%-->
+		<item name="splint" 			prob="0.2" />		<!--20%-->
+		<item name="bandage" 			prob="0.20" />		<!--20%-->
 	</lootgroup>
 
 	<lootgroup name="sportingGoods" count="1">
@@ -1204,9 +1204,9 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="beverages" count="1">
-		<item name ="coffee" prob="0.15" /> 		<!--15%-->
-		<item name="beer" prob="0.15" />			<!--15%-->
-		<item name="bottledWater" prob="0.7" />		<!--70%-->
+		<item name ="coffee" 		prob="0.15" /> 		<!--15%-->
+		<item name="beer" 			prob="0.15" />		<!--15%-->
+		<item name="bottledWater" 	prob="0.7" />		<!--70%-->
 	</lootgroup>
 
 	<lootgroup name="automotive+tools+junk" count="all">
@@ -1368,13 +1368,15 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 22 garage stuff, tools, etc -->
-    <lootcontainer id="22" count="0,3" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-		<item group="books" prob="0.05" />			<!--5%-->
-		<item group="tools" prob="0.05" />			<!--5%-->
-		<item group="automotive" prob="0.1" />		<!--10%-->
-		<item name="canCatfood" prob="0.1" />		<!--10%-->
-		<item name="canDogfood" prob="0.1" />   	<!--10%-->
-		<item group="junk" prob="0.6" />			<!--60%-->
+    <lootcontainer id="22" count="0,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+		<item group="rockDrillParts" 		prob="0.001" />			<!-- 0.1% 	~ 1 part per 1000 boxes opened-->
+		<item group="augerParts" 			prob="0.01" />			<!-- 1% 	~ 1 part per 100 boxes opened-->
+		<item group="books" 				prob="0.039" />			<!--3.9%-->
+		<item group="tools" 				prob="0.05" />			<!--5%-->
+		<item group="automotive" 			prob="0.1" />			<!--10%-->
+		<item name="canCatfood" 			prob="0.1" />			<!--10%-->
+		<item name="canDogfood" 			prob="0.1" />   		<!--10%-->
+		<item group="junk" 					prob="0.6" />			<!--60%-->
     </lootcontainer>
 
 	<!-- 23 see below !!! -->
