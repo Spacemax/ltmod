@@ -823,7 +823,7 @@ plentiful loot items in the game.
 	<lootgroup name="ultrarareBooks">
 		<item name="Mossburg500Schematics" />
 		<item name="momsSurvivalGuide" />
-    <item name="momsEcoFuels" />
+		<item name="momsEcoFuels" />
 		<item name="sniperRifleSchematic" />
 		<item name="Furukawa780Schematic" />
 	</lootgroup>
@@ -832,9 +832,9 @@ plentiful loot items in the game.
 	<lootgroup name="books" count="1">
 		<item group="ultrarareBooks" prob="0.0025" />
 		<item group="kevlarArmorSchematics" prob="0.005"/>
-		<item group="rareBooks" prob="0.01"/>
-		<item group="ironArmorSchematics" prob="0.025"/>
-		<item group="uncommonBooks" prob="0.2925"/>
+		<item group="rareBooks" prob="0.015"/>
+		<item group="ironArmorSchematics" prob="0.05"/>
+		<item group="uncommonBooks" prob="0.2625"/>
 		<item group="commonBooks" prob="0.665" />
 	</lootgroup>
 
@@ -931,10 +931,8 @@ plentiful loot items in the game.
     </lootgroup>
 
 	<lootgroup name="rareAutomotive" count="1">
-		<item group="rockDrillParts" prob="0.005" />
-		<item group="augerParts" prob="0.01" />
-		<item name="gasCan" prob="0.185" />
-		<item group="junk" prob="0.8" />
+		<item name="gasCan" prob="0.05" />
+		<item group="junk" prob="0.95" />
 	</lootgroup>
 
 	<lootgroup name="commonAutomotive" count="all">
@@ -1160,8 +1158,8 @@ plentiful loot items in the game.
 	</lootgroup>
 
   	<lootgroup name="workingStiffs" count="1">
-    <item group="seeds" prob="0.1" />					<!--10%-->
-    <item group="tools" prob="0.3" />					<!--30%-->
+		<item group="seeds" prob="0.05" />					<!--5%-->
+		<item group="tools" prob="0.35" />					<!--35%-->
 		<item group="constructionSupplies" prob="0.6" />	<!--60%-->
   	</lootgroup>
 
@@ -1210,7 +1208,7 @@ plentiful loot items in the game.
 
 	<lootgroup name="automotive+tools+junk" count="all">
         	<item group="automotive" />
-        	<item group="tools" count="0,1"/>
+        	
     </lootgroup>
 
 	<lootgroup name="backpacks" count="1,4">
@@ -1368,12 +1366,14 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 22 garage stuff, tools, etc -->
     <lootcontainer id="22" count="0,3" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-		<item group="books" prob="0.05" />			<!--5%-->
-		<item group="tools" prob="0.05" />			<!--5%-->
-		<item group="automotive" prob="0.1" />		<!--10%-->
-		<item name="canCatfood" prob="0.1" />		<!--10%-->
-		<item name="canDogfood" prob="0.1" />   	<!--10%-->
-		<item group="junk" prob="0.6" />			<!--60%-->
+		<item group="rockDrillParts" prob="0.005" />	<!--0.5%-->
+		<item group="augerParts" prob="0.015" />		<!--1.5%-->
+		<item group="books" prob="0.04" />				<!--5%-->
+		<item group="tools" prob="0.04" />				<!--5%-->
+		<item group="automotive" prob="0.1" />			<!--10%-->
+		<item name="canCatfood" prob="0.1" />			<!--10%-->
+		<item name="canDogfood" prob="0.1" />   		<!--10%-->
+		<item group="junk" prob="0.6" />				<!--60%-->
     </lootcontainer>
 
 	<!-- 23 see below !!! -->
