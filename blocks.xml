@@ -11301,5 +11301,4 @@
     <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
   </block>
 
-
  </blocks>
