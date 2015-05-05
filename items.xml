@@ -10680,4 +10680,295 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
+    <!-- Iron Crossbow -->
+    <item id="845" name="ironCrossbow">
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="CustomIcon" value="crossbow" />
+        <property name="CustomIconTint" value="4c4c4c"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="26" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="leatherStrips" />
+        <property name="FuelValue" value="90" />
+        <property name="Degradation" value="350" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="Weight" value="48" />
+        <property class="Parts">
+            <property name="Stock" value="crossbow_stock" />
+            <property name="Receiver" value="crossbow_frame" />
+            <property name="Barrel" value="ironCrossbow_arms" />
+            <property name="Pump" value="ironCrossbow_parts" />
+        </property>
+        <property class="Action0">
+            <property name="Class" value="Launcher" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="150" />
+            <property name="Magazine_size" value="1" />
+            <property name="Magazine_item" value="ironCrossbowBolt" />
+            <property name="Reload_time" value="2" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
+        </property>
+        <property class="Action1">
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="45" />
+            <property name="Zoom_max_in" value="45" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="846" name="ironCrossbow_arms">
+        <property name="PartType" value="Barrel" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="woodenBow" />
+        <property name="CustomIconTint" value="4c4c4c"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+          <property name="EntityDamage" value="40, 50" />
+          <property name="BlockDamage" value="2" />
+          <property name="DegradationMax" value="25, 200" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="847" name="ironCrossbow_parts">
+        <property name="PartType" value="Pump" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="pistol_parts" />
+        <property name="CustomIconTint" value="4c4c4c"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="Accuracy" value="0.8, 0.15" />
+            <property name="DegradationMax" value="25,200" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="848" name="ironCrossbowBolt">
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
+        <property name="CustomIcon" value="crossbowBolt" />
+        <property name="CustomIconTint" value="4c4c4c"/>
+        <property name="Material" value="metal" />
+        <property name="HoldType" value="16" />
+        <property name="Stacknumber" value="210" />
+        <property name="FuelValue" value="8" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Projectile" />
+            <property name="DamageEntity" value="50" />
+            <property name="DamageBlock" value="2" />
+            <property name="Buff" value="bleeding,tetanus" />
+            <property name="Buff_chance" value="0.3,0.02" />
+            <property name="Explosion.ParticleIndex" value="0" />
+            <!-- no expl. -->
+            <property name="Velocity" value="400" />
+            <property name="FlyTime" value="0.7" />
+            <property name="LifeTime" value="4" />
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+            <property name="DamageBonus.wood" value="0.5" />
+            <property name="DamageBonus.earth" value="0" />
+            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.cloth" value="2" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+    </item>
+
+    <!-- Iron Crossbow -->
+    <item id="849" name="steelCrossbow">
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="CustomIcon" value="crossbow" />
+        <property name="CustomIconTint" value="99ccff"/>
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="26" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="steelStrips" />
+        <property name="FuelValue" value="90" />
+        <property name="Degradation" value="450" param1="false" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="Weight" value="48" />
+        <property class="Parts">
+            <property name="Stock" value="steelCrossbow_stock" />
+            <property name="Receiver" value="crossbow_frame" />
+            <property name="Barrel" value="steelCrossbow_arms" />
+            <property name="Pump" value="steelCrossbow_parts" />
+        </property>
+        <property class="Action0">
+            <property name="Class" value="Launcher" />
+            <property name="Delay" value="0.8" />
+            <property name="Range" value="200" />
+            <property name="Magazine_size" value="1" />
+            <property name="Magazine_item" value="steelCrossbowBolt" />
+            <property name="Reload_time" value="2" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
+        </property>
+        <property class="Action1">
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="45" />
+            <property name="Zoom_max_in" value="45" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="850" name="steelCrossbow_arms">
+        <property name="PartType" value="Barrel" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="woodenBow" />
+        <property name="CustomIconTint" value="99ccff"/>
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+          <property name="EntityDamage" value="50, 60" />
+          <property name="BlockDamage" value="2" />
+          <property name="DegradationMax" value="40, 350" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="851" name="steelCrossbow_parts">
+        <property name="PartType" value="Pump" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="pistol_parts" />
+        <property name="CustomIconTint" value="99ccff"/>
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="Accuracy" value="0.6, 0.05" />
+            <property name="DegradationMax" value="40,350" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="852" name="steelCrossbow_stock">
+        <property name="PartType" value="Stock" />
+        <property name="Meshfile" value="Items/Misc/parcel" />
+        <property name="CustomIcon" value="PumpShotgun_stock" />
+        <property name="CustomIconTint" value="99ccff"/>
+        <property name="Material" value="wood" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="Weight" value="10" />
+        <property name="Group" value="Resources" />
+        <property class="Attributes">
+            <property name="DegradationMax" value="80,550" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
+    <item id="853" name="steelCrossbowBolt">
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
+        <property name="CustomIcon" value="crossbowBolt" />
+        <property name="CustomIconTint" value="99ccff"/>
+        <property name="Material" value="metal_steel" />
+        <property name="HoldType" value="16" />
+        <property name="Stacknumber" value="150" />
+        <property name="FuelValue" value="8" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="Projectile" />
+            <property name="DamageEntity" value="65" />
+            <property name="DamageBlock" value="2" />
+            <property name="Buff" value="bleeding,criticalBleedout" />
+            <property name="Buff_chance" value="0.35,0.02" />
+            <property name="Explosion.ParticleIndex" value="0" />
+            <!-- no expl. -->
+            <property name="Velocity" value="450" />
+            <property name="FlyTime" value="0.8" />
+            <property name="LifeTime" value="4" />
+            <property name="DamageBonus.head" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+            <property name="DamageBonus.wood" value="0.9" />
+            <property name="DamageBonus.earth" value="0" />
+            <property name="DamageBonus.metal" value="1.5" />
+            <property name="DamageBonus.cloth" value="4" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+    </item>
+
+
+    <!-- Hunting Weapons/Tools -->
+    <item id="854" name="medievalWarsAndYouBook">
+        <property name="Meshfile" value="Items/Misc/Book" />
+        <property name="CustomIcon" value="urbanCombatBook" />
+        <property name="CustomIconTint" value="5e3ac3"/>
+        <property name="Material" value="paper" />
+        <property name="HoldType" value="21" />
+        <property name="Stacknumber" value="50" />
+        <property class="Action1">
+            <!-- UseAction -->
+            <property name="Class" value="LearnRecipe" />
+            <property name="Title" value="Medieval Wars And You!" />
+            <property name="Description" value="Learn of all the amazing ways humans killed each other during the reign of King Henry The VIII!" />
+            <property name="Recipes_to_learn" value="ironCrossbowBolt,steelCrossbowBolt,ironCrossbow,steelCrossbow,ironCrossbow_parts,ironCrossbow_arms,steelCrossbow_arms,steelCrossbow_stock,steelCrossbow_parts" />
+            <property name="Delay" value="0" />
+            <property name="Sound_start" value="Misc/recipe_unlocked" />
+        </property>
+        <property name="FuelValue" value="20" />
+        <property name="Weight" value="20" />
+        <property name="Group" value="Special Items" />
+        <property class="Preview">
+            <property name="Zoom" value="10" />
+            <property name="Pos" value="0,-0.2" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+    </item>
+
 </items>
