@@ -2578,7 +2578,7 @@
     </recipe>
 
     <!-- Crude Crossbow Parts -->
-    <recipe name="crossbow_frame" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="crossbow_frame" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="25" >
       <ingredient name="woodPlank" count="1" grid="0, 0"/>
       <ingredient name="woodPlank" count="1" grid="1, 0"/>
       <ingredient name="woodPlank" count="1" grid="-1, 0"/>
@@ -2591,7 +2591,7 @@
       <ingredient name="yuccaFibers" count="1" grid="1, -1"/>
     </recipe>
 
-    <recipe name="crossbow_arms" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="crossbow_arms" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="25" >
       <ingredient name="woodPlank" count="1" grid="2, -2"/>
       <ingredient name="leatherStrips" count="1" grid="1, -1"/>
       <ingredient name="woodPlank" count="1" grid="2, -1"/>
@@ -2604,13 +2604,13 @@
     </recipe>
 
     <!-- TODO: Need to update this so it isn't so ridiculously lame. -->
-    <recipe name="crossbow_parts" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="crossbow_parts" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="25" >
       <ingredient name="woodPlank" count="1" grid="0, 0" />
       <ingredient name="leatherStrips" count="1" grid="-1, 0" />
       <ingredient name="scrapIron" count="1" grid="-1, 1" />
     </recipe>
 
-    <recipe name="crossbow_stock" count="1" scrapable="False" craft_time="35" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="crossbow_stock" count="1" scrapable="False" craft_time="25" craft_exp_gain="2" learn_exp_gain="25" >
       <ingredient name="woodPlank" count="1" grid="1, 0"/>
       <ingredient name="woodPlank" count="1" grid="0, 0"/>
       <ingredient name="woodPlank" count="1" grid="0, 1"/>
@@ -2622,7 +2622,7 @@
     </recipe>
 
     <!-- Iron Crossbow Parts, Stock, Arms -->
-    <!--<recipe name="ironCrossbow_arms" count="1" scrapable="False" craft_time="45" craft_exp_gain="4" learn_exp_gain="50" >
+    <recipe name="ironCrossbow_arms" count="1" scrapable="False" craft_time="50" craft_exp_gain="4" learn_exp_gain="50" >
       <ingredient name="forgedIron" count="1" grid="2, -2"/>
       <ingredient name="leatherStrips" count="1" grid="1, -1"/>
       <ingredient name="forgedIron" count="1" grid="2, -1"/>
@@ -2632,43 +2632,22 @@
       <ingredient name="forgedIron" count="1" grid="0, 1"/>
       <ingredient name="forgedIron" count="1" grid="-2, 2"/>
       <ingredient name="forgedIron" count="1" grid="-1, 2"/>
-    </recipe>-->
+    </recipe>
 
-    <!--<recipe name="ironCrossbow_parts" count="1" scrapable="False" craft_time="45" craft_exp_gain="4" learn_exp_gain="50" >
+    <recipe name="ironCrossbow_parts" count="1" scrapable="False" craft_time="50" craft_exp_gain="4" learn_exp_gain="50" >
       <ingredient name="woodPlank" count="1" grid="0, 0" />
       <ingredient name="leatherStrips" count="1" grid="-1, 0" />
       <ingredient name="forgedIron" count="1" grid="1, 0" />
       <ingredient name="metalStrips" count="1" grid="0, 1" />
-    </recipe>-->
-
-    <!--<recipe name="ironCrossbow_stock" count="1" scrapable="False" craft_time="45" craft_exp_gain="4" learn_exp_gain="50" >
-      <ingredient name="hardwoodPlank" count="1" grid="0, 0"/>
-      <ingredient name="forgedIron" count="1" grid="1, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-1, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-1, 1"/>
-      <ingredient name="cloth" count="1" grid="-1, -1"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-2, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-2, 1"/>
-    </recipe>-->
+    </recipe>
 
     <!-- Iron Crossbow Recipe -->
-    <!--<recipe name="ironCrossbow" count="1" scrapable="True" craft_time="45" craft_exp_gain="4" learn_exp_gain="200" >
-        <ingredient name="IronCrossbow_arms" count="1" grid="1, -1"/>
-        <ingredient name="CrudeCrossbow_frame" count="1" grid="0, 0"/>
-        <ingredient name="IronCrossbow_parts" count="1" grid="1, 0"/>
-        <ingredient name="IronCrossbow_stock" count="1" grid="-1, 1"/>
-    </recipe>-->
-
-    <!-- Steel Crossbow Parts, Stock, Arms -->
-    <!--<recipe name="IronCrossbow_stock" count="1" scrapable="False" craft_time="45" craft_exp_gain="4" learn_exp_gain="50" >
-      <ingredient name="hardwoodPlank" count="1" grid="0, 0"/>
-      <ingredient name="forgedIron" count="1" grid="1, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-1, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-1, 1"/>
-      <ingredient name="cloth" count="1" grid="-1, -1"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-2, 0"/>
-      <ingredient name="hardwoodPlank" count="1" grid="-2, 1"/>
-    </recipe>-->
+    <recipe name="ironCrossbow" count="1" scrapable="True" craft_time="45" craft_exp_gain="4" learn_exp_gain="200" >
+        <ingredient name="ironCrossbow_arms" count="1" grid="1, -1"/>
+        <ingredient name="crossbow_frame" count="1" grid="0, 0"/>
+        <ingredient name="ironCrossbow_parts" count="1" grid="1, 0"/>
+        <ingredient name="crossbow_stock" count="1" grid="-1, 1"/>
+    </recipe>
 
     <recipe name="beefCharred" count="1" scrapable="False" craft_area="campfire" craft_tool="stick" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
       <ingredient name="beef" count="1" />
@@ -2692,7 +2671,7 @@
     <recipe name="beefStroganof" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot" craft_time="40" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="bottledWater" count="1"/>
         <ingredient name="beef" count="1"/>
-        <ingredient name="potato" count="1"/>
+        <ingredient name="mushrooms" count="5"/>
         <ingredient name="cornMeal" count="5"/>
     </recipe>
 
@@ -2704,6 +2683,63 @@
         <ingredient name="clayLump" count="1" grid="-1, 1"/>
         <ingredient name="clayLump" count="1" grid="0, 1"/>
         <ingredient name="clayLump" count="1" grid="1, 1"/>
+    </recipe>
+
+    <!-- Iron and Steel Crossbow Bolts -->
+    <!-- TODO: Most likely need to change this to have ironBoltTip which needs a mold -->
+    <recipe name="ironCrossbowBolt" count="30" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedIron" count="4" grid="1, -1"/>
+        <ingredient name="stick" count="30" grid="0, 0"/>
+        <ingredient name="feather" count="15" grid="-1, 1"/>
+        <ingredient name="treeSap" count="1" grid="-1, 0"/>
+        <ingredient name="metalStrips" count="5" grid="-1, -1"/>
+    </recipe>
+
+    <!-- TODO: Most likely need to change this to have steelBoltTip which needs a mold -->
+    <recipe name="steelCrossbowBolt" count="30" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="forgedSteel" count="4" grid="1, -1"/>
+        <ingredient name="stick" count="30" grid="0, 0"/>
+        <ingredient name="feather" count="15" grid="-1, 1"/>
+        <ingredient name="treeSap" count="1" grid="-1, 0"/>
+        <ingredient name="steelStrips" count="5" grid="-1, -1"/>
+    </recipe>
+
+    <!-- Steel Crossbow Parts, Stock, Arms -->
+    <recipe name="steelCrossbow_stock" count="1" scrapable="False" craft_time="75" craft_exp_gain="6" learn_exp_gain="75" >
+      <ingredient name="hardwoodPlank" count="1" grid="0, 0"/>
+      <ingredient name="forgedSteel" count="1" grid="1, 0"/>
+      <ingredient name="hardwoodPlank" count="1" grid="-1, 0"/>
+      <ingredient name="hardwoodPlank" count="1" grid="-1, 1"/>
+      <ingredient name="leather" count="1" grid="-1, -1"/>
+      <ingredient name="hardwoodPlank" count="1" grid="-2, 0"/>
+      <ingredient name="hardwoodPlank" count="1" grid="-2, 1"/>
+    </recipe>
+
+    <recipe name="steelCrossbow_arms" count="1" scrapable="False" craft_time="75" craft_exp_gain="6" learn_exp_gain="75" >
+      <ingredient name="forgedSteel" count="1" grid="2, -2"/>
+      <ingredient name="steelFibers" count="1" grid="1, -1"/>
+      <ingredient name="forgedSteel" count="1" grid="2, -1"/>
+      <ingredient name="steelFibers" count="1" grid="0, 0"/>
+      <ingredient name="forgedSteel" count="1" grid="1, 0"/>
+      <ingredient name="steelFibers" count="1" grid="-1, 1"/>
+      <ingredient name="forgedSteel" count="1" grid="0, 1"/>
+      <ingredient name="forgedSteel" count="1" grid="-2, 2"/>
+      <ingredient name="forgedSteel" count="1" grid="-1, 2"/>
+    </recipe>
+
+    <recipe name="steelCrossbow_parts" count="1" scrapable="False" craft_time="50" craft_exp_gain="6" learn_exp_gain="75" >
+      <ingredient name="hardwoodPlank" count="1" grid="0, 0" />
+      <ingredient name="leatherStrips" count="1" grid="-1, 0" />
+      <ingredient name="forgedSteel" count="1" grid="1, 0" />
+      <ingredient name="steelStrips" count="1" grid="0, 1" />
+    </recipe>
+
+    <!-- Steel Crossbow Recipe -->
+    <recipe name="steelCrossbow" count="1" scrapable="True" craft_time="60" craft_exp_gain="6" learn_exp_gain="250" >
+        <ingredient name="steelCrossbow_arms" count="1" grid="1, -1"/>
+        <ingredient name="crossbow_frame" count="1" grid="0, 0"/>
+        <ingredient name="steelCrossbow_parts" count="1" grid="1, 0"/>
+        <ingredient name="steelCrossbow_stock" count="1" grid="-1, 1"/>
     </recipe>
 
 </recipes>
