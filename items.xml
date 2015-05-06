@@ -9167,92 +9167,93 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-	<item id="791" name="toastmaker">
-        <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
-		<property name="CustomIcon" value="blunderbuss"/>
-		<property name="CustomIconTint" value="F54500"/>
-        <property name="Material" value="metal" />
-        <property name="HoldType" value="26" />
-        <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="weaponRepairKit" />
-        <property name="Degradation" value="1000" param1="false" />
-        <property name="DegradationBreaksAfter" value="false" />
-        <property name="SoundJammed" value="Weapons/weapon_jam" />
-        <property name="Weight" value="33" />
-        <property class="Action0">
-     <!-- AttackAction -->
-            <property name="Class" value="Launcher" />
-            <property name="Delay" value="0.05" />
-			<property name="Auto_fire" value="true" />
-            <property name="Rays_per_shot" value="3" />
-            <property name="Rays_spread" value="0.05" />
-            <property name="Range" value="45" />
-            <property name="Magazine_size" value="2000" />
-            <property name="Magazine_item" value="compressedFuel" />
-            <property name="Instantiate_on_load" value="false" />
-            <property name="Reload_time" value="2" />
-            <property name="Bullet_icon" value="uzi" />
-            <property name="Sound_start" value="avalanche" />
-            <property name="Sound_repeat" value="avalanche" />
-            <property name="Sound_end" value="" />
-            <property name="Sound_empty" value="Weapons/weapon_empty" />
-            <property name="Sound_reload" value="Weapons/Motorized/Auger/auger_reload" />
-			<property name="Horde_meter_rate" value="2.5" />
-            <property name="Horde_meter_distance" value="20" />
-            <property name="DamageBonus.head" value="6" />
-            <property name="DamageBonus.glass" value="25" />
-			<property name="Particles_muzzle_fire" value="nozzleflash" />
-            <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
-        </property>
-       <property class="Action1">
-            <!-- UseAction -->
-            <property name="Class" value="Zoom" />
-            <property name="Zoom_max_out" value="35" />
-            <property name="Zoom_max_in" value="35" />
-        </property>
-        <property name="Group" value="Ammo/Weapons" />
-        <property class="Attributes">
-            <property name="EntityDamage" value="5,25" />
-            <property name="BlockDamage" value="1,3" />
-            <property name="DegradationMax" value="800,1000" />
-			<property name="DegradationRate" value="2,1" />
-        </property>
-        <property class="Preview">
-            <property name="Zoom" value="5" />
-            <property name="Pos" value="0.1,-0.05" />
-            <property name="Rot" value="0,-45,0" />
-        </property>
-    </item>
+    <item id="791" name="toastmaker">
+          <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
+  		<property name="CustomIcon" value="blunderbuss"/>
+  		<property name="CustomIconTint" value="F54500"/>
+          <property name="Material" value="metal" />
+          <property name="HoldType" value="26" />
+          <property name="Stacknumber" value="1" />
+          <property name="RepairTools" value="weaponRepairKit" />
+          <property name="Degradation" value="1000" param1="false" />
+          <property name="DegradationBreaksAfter" value="false" />
+          <property name="SoundJammed" value="Weapons/weapon_jam" />
+          <property name="Weight" value="33" />
+          <property class="Action0">
+       <!-- AttackAction -->
+              <property name="Class" value="Launcher" />
+              <property name="Delay" value="0.05" />
+  			<property name="Auto_fire" value="true" />
+              <property name="Rays_per_shot" value="3" />
+              <property name="Rays_spread" value="0.05" />
+              <property name="Range" value="10" />
+              <property name="Magazine_size" value="200" />
+              <property name="Magazine_item" value="compressedFuel" />
+              <property name="Single_magazine_usage" value="true" />
+              <property name="Instantiate_on_load" value="false" />
+              <property name="Reload_time" value="2" />
+              <property name="Bullet_icon" value="uzi" />
+              <property name="Sound_start" value="avalanche" />
+              <property name="Sound_repeat" value="avalanche" />
+              <property name="Sound_end" value="" />
+              <property name="Sound_empty" value="Weapons/weapon_empty" />
+              <property name="Sound_reload" value="Weapons/Motorized/Auger/auger_reload" />
+  			<property name="Horde_meter_rate" value="2.5" />
+              <property name="Horde_meter_distance" value="20" />
+              <property name="DamageBonus.head" value="6" />
+              <property name="DamageBonus.glass" value="25" />
+  			<property name="Particles_muzzle_fire" value="nozzleflash" />
+              <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+          </property>
+         <property class="Action1">
+              <!-- UseAction -->
+              <property name="Class" value="Zoom" />
+              <property name="Zoom_max_out" value="35" />
+              <property name="Zoom_max_in" value="35" />
+          </property>
+          <property name="Group" value="Ammo/Weapons" />
+          <property class="Attributes">
+              <property name="EntityDamage" value="5,25" />
+              <property name="BlockDamage" value="1,3" />
+              <property name="DegradationMax" value="800,1000" />
+  			<property name="DegradationRate" value="2,1" />
+          </property>
+          <property class="Preview">
+              <property name="Zoom" value="5" />
+              <property name="Pos" value="0.1,-0.05" />
+              <property name="Rot" value="0,-45,0" />
+          </property>
+      </item>
 
-     <item id="792" name="compressedFuel">
-	 	<property name="CustomIcon" value="canBoiledWater"/>
-		<property name="CustomIconTint" value="F54500"/>
-        <property name="Meshfile" value="ParticleEffects/p_onFire" />
-        <property name="Material" value="organic" />
-        <property class="Action1">
-            <!-- UseAction -->
-            <property name="Class" value="Projectile" />
-            <property name="DamageEntity" value="50" />
-            <property name="DamageBlock" value="5" />
-            <property name="Velocity" value="70" />
-            <property name="FlyTime" value=".5" />
-            <property name="LifeTime" value="0.8" />
-            <property name="CollisionRadius" value="0.5" />
+       <item id="792" name="compressedFuel">
+  	 	<property name="CustomIcon" value="canBoiledWater"/>
+  		<property name="CustomIconTint" value="F54500"/>
+          <property name="Meshfile" value="ParticleEffects/p_onFire" />
+          <property name="Material" value="organic" />
+          <property class="Action1">
+              <!-- UseAction -->
+              <property name="Class" value="Projectile" />
+              <property name="DamageEntity" value="50" />
+              <property name="DamageBlock" value="5" />
+              <property name="Velocity" value="25" />
+              <property name="FlyTime" value="0.5" />
+              <property name="LifeTime" value="0.3" />
+              <property name="CollisionRadius" value="0.5" />
 
-			<property name="Explosion.BlockDamage" value="1" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.EntityDamage" value="200" />
-			<!-- damage for entities in the center of the explosion -->
-			<property name="Explosion.ParticleIndex" value="0" />
-			<!-- which prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.DamageBonus.cloth" value="20" />
-			<property name="Explosion.DamageBonus.wood" value="5" />
-			</property>
-    </item>
+  			<property name="Explosion.BlockDamage" value="1" />
+  			<!-- damage for blocks in the center of the explosion -->
+  			<property name="Explosion.EntityDamage" value="200" />
+  			<!-- damage for entities in the center of the explosion -->
+  			<property name="Explosion.ParticleIndex" value="0" />
+  			<!-- which prefab/particle is used -->
+  			<property name="Explosion.RadiusBlocks" value="5" />
+  			<!-- damage radius for blocks -->
+  			<property name="Explosion.RadiusEntities" value="5" />
+  			<!-- damage radius for entities -->
+  			<property name="Explosion.DamageBonus.cloth" value="20" />
+  			<property name="Explosion.DamageBonus.wood" value="5" />
+  			</property>
+      </item>
 
 	    <!-- Guide to making Kevlar -->
     <item id="793" name="momsSurvivalGuide">
@@ -10970,5 +10971,271 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Rot" value="90,45,0" />
         </property>
     </item>
+
+    <!-- Begin Extended Attack System / Part of Advanced Wound System -->
+
+  <!-- xAttack is most basic of extended attacks, melee only and basic bite and wound -->
+
+<item id="855" name="xAttack">
+    <property name="Material" value="organic" />
+    <property name="Canhold" value="false" />
+    <property name="HoldType" value="9" />
+    <property name="Stacknumber" value="1" />
+    <property name="Candrop" value="false" />
+    <property class="Action0">
+        <!-- AttackAction -->
+        <property name="Class" value="Melee" />
+        <property name="Delay" value="0.8" />
+        <property name="Range" value="1.8" />
+        <property name="Sphere" value="0.4" />
+        <property name="Block_range" value="2.5" />
+        <property name="DamageEntity" value="10" />
+        <property name="DamageBlock" value="2" />
+        <property name="Sound_start" value="swoosh" />
+        <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+        <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+        <property name="DamageBonus.glass" value="25" />
+    </property>
+</item>
+
+    <!-- xAttack2 is only melee but suited for underbosses -->
+
+<item id="856" name="xAttack2">
+    <property name="Material" value="organic" />
+    <property name="Canhold" value="false" />
+    <property name="HoldType" value="9" />
+    <property name="Stacknumber" value="1" />
+    <property name="Candrop" value="false" />
+    <property class="Action0">
+        <!-- AttackAction -->
+        <property name="Class" value="Melee" />
+        <property name="Delay" value="0.8" />
+        <property name="Range" value="1.8" />
+        <property name="Sphere" value="0.4" />
+        <property name="Block_range" value="2.5" />
+        <property name="DamageEntity" value="10" />
+        <property name="DamageBlock" value="2" />
+        <property name="Sound_start" value="swoosh" />
+        <property name="Buff" value="bleeding,infection,stunned,bite,wound" />
+        <property name="Buff_chance" value="0.1,0.07,0.5,0.5,0.5" />
+        <property name="DamageBonus.glass" value="25" />
+    </property>
+</item>
+
+<!-- xAttack3 is both ranged and melee for bosses and will inflict major wounds gash and wound2 -->
+
+<item id="857" name="xAttack3">
+    <property name="Material" value="organic" />
+    <property name="Canhold" value="false" />
+    <property name="HoldType" value="9" />
+    <property name="Stacknumber" value="1" />
+    <property name="Candrop" value="false" />
+    <property class="Action0">
+        <!-- AttackAction -->
+        <property name="Class" value="Melee" />
+        <property name="Delay" value="0.5" />
+        <property name="Range" value="1.5" />
+        <property name="Sphere" value="0.4" />
+        <property name="Block_range" value="2.5" />
+        <property name="DamageEntity" value="30" />
+        <property name="DamageBlock" value="5" />
+        <property name="Sound_start" value="swoosh" />
+        <property name="Buff" value="bleeding,infection,stunned,gash,wound2" />
+        <property name="Buff_chance" value="0.2,0.07,0.7,0.5,0.5" />
+        <property name="DamageBonus.glass" value="25" />
+    </property>
+    <property class="Action1">
+        <!-- UseAction -->
+        <property name="Class" value="Vomit" />
+        <property name="Delay" value="0.35" />
+        <property name="Range" value="200" />
+        <property name="Auto_fire" value="true" />
+        <property name="Infinite_ammo" value="true" />
+        <property name="Magazine_item" value="vomitZombieProjectile" />
+        <property name="Rays_spread" value="0.5" />
+        <property name="Reload_time" value="2" />
+        <property name="Bullet_icon" value="uzi" />
+        <property name="Sound_warning" value="Enemies/Acid_Puking_Hulk/hulkvomitwarning" />
+        <property name="Sound_start" value="Enemies/Acid_Puking_Hulk/hulkvomitattack" />
+        <property name="Sound_repeat" value="" />
+        <property name="Sound_end" value="" />
+        <property name="Sound_empty" value="" />
+        <property name="Sound_reload" value="" />
+        <property name="Buff" value="infection" />
+        <property name="Buff_chance" value="0.2" />
+    </property>
+</item>
+
+    <item id="858" name="thermicLance">
+      <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
+  <property name="CustomIcon" value="blunderbuss"/>
+  <property name="CustomIconTint" value="F54500"/>
+      <property name="Material" value="metal" />
+      <property name="HoldType" value="26" />
+      <property name="Stacknumber" value="1" />
+      <property name="RepairTools" value="weaponRepairKit" />
+      <property name="Degradation" value="800" param1="false" />
+      <property name="DegradationBreaksAfter" value="false" />
+      <property name="SoundJammed" value="Weapons/weapon_jam" />
+      <property name="Weight" value="33" />
+      <property class="Action0">
+   <!-- AttackAction -->
+          <property name="Class" value="Launcher" />
+          <property name="Delay" value="0.05" />
+    <property name="Auto_fire" value="true" />
+          <property name="Rays_per_shot" value="7" />
+          <property name="Rays_spread" value="0.05" />
+          <property name="Range" value="4" />
+          <property name="Magazine_size" value="100" />
+          <property name="Magazine_item" value="thermiteFuel" />
+          <property name="Single_magazine_usage" value="true" />
+          <property name="Instantiate_on_load" value="false" />
+          <property name="Reload_time" value="4" />
+          <property name="Bullet_icon" value="uzi" />
+          <property name="Sound_start" value="" />
+          <property name="Sound_repeat" value="avalanche" />
+          <property name="Sound_end" value="" />
+          <property name="Sound_empty" value="Weapons/weapon_empty" />
+          <property name="Sound_reload" value="Weapons/Motorized/Auger/auger_reload" />
+          <property name="Horde_meter_rate" value="2.5" />
+          <property name="Horde_meter_distance" value="20" />
+          <property name="DamageBonus.head" value="6" />
+          <property name="DamageBonus.glass" value="25" />
+          <property name="DamageBonus.metal" value="2" />
+          <!-- <property name="DamageBonus.hardened_steel" value="100" /> -->
+          <property name="DamageBonus.stone" value="1" />
+          <property name="Particles_muzzle_fire" value="nozzleflash" />
+          <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+      </property>
+     <property class="Action1">
+          <!-- UseAction -->
+          <property name="Class" value="Zoom" />
+          <property name="Zoom_max_out" value="35" />
+          <property name="Zoom_max_in" value="35" />
+      </property>
+          <property name="Group" value="Ammo/Weapons" />
+          <property class="Attributes">
+          <property name="EntityDamage" value="5,10" />
+          <property name="BlockDamage" value="5,10" />
+          <property name="DegradationMax" value="800,1000" />
+          <property name="DegradationRate" value="2,1" />
+      </property>
+      <property class="Preview">
+          <property name="Zoom" value="5" />
+          <property name="Pos" value="0.1,-0.05" />
+          <property name="Rot" value="0,-45,0" />
+      </property>
+  </item>
+
+  <item id="859" name="thermiteFuel">
+         <property name="CustomIcon" value="canBoiledWater"/>
+         <property name="CustomIconTint" value="F54500"/>
+         <property name="Meshfile" value="ParticleEffects/p_onFire" />
+         <property name="Material" value="metal" />
+         <property class="Action1">
+         <!-- UseAction -->
+         <property name="Class" value="Projectile" />
+         <property name="DamageEntity" value="50" />
+         <property name="DamageBlock" value="25" />
+         <property name="Velocity" value="200" />
+         <property name="FlyTime" value="1.2" />
+         <property name="LifeTime" value="1.5" />
+         <property name="DamageBonus.head" value="6" />
+         <property name="DamageBonus.glass" value="25" />
+         <property name="DamageBonus.wood" value="2" />
+         <property name="DamageBonus.earth" value="0" />
+         <property name="DamageBonus.metal" value="12" />
+         <!-- <property name="DamageBonus.hardened_steel" value="100" /> -->
+         <property name="DamageBonus.stone" value="1" />
+         <property name="DamageBonus.cloth" value="25" />
+         <property name="CollisionRadius" value="0.5" />
+
+         <property name="Explosion.BlockDamage" value="5" />
+         <!-- damage for blocks in the center of the explosion -->
+         <property name="Explosion.EntityDamage" value="200" />
+         <!-- damage for entities in the center of the explosion -->
+         <property name="Explosion.ParticleIndex" value="0" />
+         <!-- which prefab/particle is used -->
+         <property name="Explosion.RadiusBlocks" value="1" />
+         <!-- damage radius for blocks -->
+         <property name="Explosion.RadiusEntities" value="5" />
+         <!-- damage radius for entities -->
+         <property name="Explosion.DamageBonus.cloth" value="20" />
+         <property name="Explosion.DamageBonus.wood" value="5" />
+         <property name="Explosion.DamageBonus.metal" value="100" />
+         <property name="Explosion.DamageBonus.stone" value="50" />
+         <property name="Explosion.DamageBonus.concrete" value="20" />
+        </property>
+ </item>
+
+ <item id="860" name="flowRegulatorShort">
+   <property name="CustomIcon" value="PumpShotgun_shortBarrel"/>
+   <property name="CustomIconTint" value="e98819"/>
+     <property name="Meshfile" value="Items/Misc/parcel" />
+     <property name="Material" value="metal" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="1" />
+     <property name="Degradation" value="100" param1="true" />
+     <property name="Weight" value="10" />
+     <property name="Group" value="Resources" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+ <item id="861" name="flowRegulatorLong">
+   <property name="CustomIcon" value="huntingRifleBarrel"/>
+   <property name="CustomIconTint" value="e98819"/>
+     <property name="Meshfile" value="Items/Misc/parcel" />
+     <property name="Material" value="metal" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="1" />
+     <property name="Degradation" value="100" param1="true" />
+     <property name="Weight" value="10" />
+     <property name="Group" value="Resources" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+ <item id="862" name="fuelAdapterDiesel">
+     <property name="CustomIcon" value="44MagnumParts" />
+     <property name="CustomIconTint" value="0047f1"/>
+     <property name="Meshfile" value="Items/Misc/parcel" />
+     <property name="Material" value="metal" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="1" />
+     <property name="Degradation" value="100" param1="true" />
+     <property name="Weight" value="8" />
+     <property name="Group" value="Resources" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+ <item id="863" name="fuelAdapterThermite">
+     <property name="CustomIcon" value="44MagnumParts" />
+     <property name="CustomIconTint" value="fe4700"/>
+     <property name="Meshfile" value="Items/Misc/parcel" />
+     <property name="Material" value="metal" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="1" />
+     <property name="Degradation" value="100" param1="true" />
+     <property name="Weight" value="8" />
+     <property name="Group" value="Resources" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+
 
 </items>

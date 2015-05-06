@@ -2742,4 +2742,34 @@
         <ingredient name="steelCrossbow_stock" count="1" grid="-1, 1"/>
     </recipe>
 
+        <!-- Module Flamethrower -->
+
+    <recipe name="toastmaker" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="flowRegulatorLong" count="1" grid="1, -1"/>
+        <ingredient name="nailgun" count="1" grid="0, 0"/>
+        <ingredient name="fuelAdapterDiesel" count="1" grid="-1, 1"/>
+        <ingredient name="machineRepairKit" count="1" grid="1, 0"/>
+    </recipe>
+
+    <recipe name="thermicLance" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="flowRegulatorShort" count="1" grid="1, -1"/>
+        <ingredient name="nailgun" count="1" grid="0, 0"/>
+        <ingredient name="fuelAdapterThermite" count="1" grid="-1, 1"/>
+        <ingredient name="machineRepairKit" count="1" grid="1, 0"/>
+    </recipe>
+
+    <recipe name="compressedFuel" count="2" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="gasCan" count="1" grid="0, 0"/>
+        <ingredient name="gasCan" count="1" grid="1, 0"/>
+        <ingredient name="bioFuel" count="1" grid="0, 1"/>
+        <ingredient name="grainAlcohol" count="1" grid="1, 1"/>
+    </recipe>
+
+    <recipe name="thermiteFuel" count="2" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="gasCan" count="1" grid="0, 0"/>
+        <ingredient name="gasCan" count="1" grid="1, 0"/>
+        <ingredient name="thermite" count="100" grid="0, 1"/>
+        <ingredient name="thermite" count="100" grid="1, 1"/>
+    </recipe>
+
 </recipes>

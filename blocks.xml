@@ -11281,7 +11281,7 @@
   <!-- Go back to inactive to reset for more fuel -->
     <property name="PlantGrowing.Next" value="algaeCrusher" />
   <!-- Rate at which machine produces 1 FAST - 100 SLOW -->
-    <property name="PlantGrowing.GrowthRate" value="60" />
+    <property name="PlantGrowing.GrowthRate" value="45" />
     <property name="PlantGrowing.LightLevelStay" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -11297,7 +11297,7 @@
     <property name="Texture" value="311" />
     <!-- Produced rawSteel is collectable on top of machine -->
     <property name="IsTerrainDecoration" value="true" />
-    <drop event="Harvest" name="bioDiesel" count="100" />
+    <drop event="Harvest" name="bioDiesel" count="50" />
     <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
   </block>
 
