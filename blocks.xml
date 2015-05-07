@@ -1900,7 +1900,7 @@
     <!-- damage radius for blocks -->
     <property name="Explosion.RadiusEntities" value="3" />
     <!-- damage radius for entities -->
-    <property name="CanPickup" value="true" />
+    <property name="CanPickup" value="false" />
     <property name="DropScale" value="3" />
     <drop event="Destroy" count="0" />
     <property name="Group" value="Tools/Traps" />
@@ -1918,7 +1918,7 @@
     <!-- damage radius for blocks -->
     <property name="Explosion.RadiusEntities" value="4" />
     <!-- damage radius for entities -->
-    <property name="CanPickup" value="true" />
+    <property name="CanPickup" value="false" />
     <property name="DropScale" value="3" />
     <drop event="Destroy" count="0" />
     <property name="Group" value="Tools/Traps" />
@@ -1936,7 +1936,7 @@
     <!-- damage radius for blocks -->
     <property name="Explosion.RadiusEntities" value="5" />
     <!-- damage radius for entities -->
-    <property name="CanPickup" value="true" />
+    <property name="CanPickup" value="false" />
     <property name="DropScale" value="3" />
     <drop event="Destroy" count="0" />
     <property name="Group" value="Tools/Traps" />
