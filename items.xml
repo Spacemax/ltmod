@@ -2339,7 +2339,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_bandage" />
-            <property name="Debuff" value="bleeding,burning" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical" />
             <property name="Buff" value="firstAid" />
         </property>
         <property name="Group" value="Medicine" />
@@ -3491,7 +3491,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_bandage" />
-            <property name="Debuff" value="bleeding,burning" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical" />
         </property>
         <property name="Group" value="Medicine" />
         <property class="Preview">
@@ -5993,7 +5993,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_firstAidKit" />
-            <property name="Debuff" value="bleeding,burning" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical" />
 
             <property name="Buff" value="firstAidLarge" />
         </property>

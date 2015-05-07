@@ -392,9 +392,9 @@
 		<modify id="1" stat="health" amount="-3" rate="1"/>
 	</buff>
 
-	<buff id="bleedingCritical" duration="40" name="Critical Bleeding" type="bleeding" description="You are critically bleeding, use a bandage to stop the bleeding!" ondebuff="wound4" onexpired="bleedingSevere" icon="buff_icon_critical_hit">
+	<buff id="bleedingCritical" duration="40" name="Critical Bleeding" type="bleeding" description="You are critically bleeding, use a bandage to stop the bleeding!" ondebuff="wound4" onexpired="bleedingSevere" icon="buff_icon_critical_hit" actions="damage(5,1,0,0)">
 		<modify id="0" stat="stamina" amount="-3" rate="1" />
-		<modify id="1" stat="health" amount="-5" rate="1" />
+		<!-- modify id="1" stat="health" amount="-5" rate="1" /> -->
 	</buff>
 
 <!-- Injury Types to extend zombie attack systems and integrate into advanced wound system and first aid -->
