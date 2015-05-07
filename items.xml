@@ -2925,6 +2925,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="Stacknumber" value="250" />
         <property name="FuelValue" value="8" />
+        <property name="Weight" value="0" />
         <property class="Action1"> <!-- UseAction -->
             <property name="Class" value="Projectile" />
             <property name="DamageEntity" value="25" />
