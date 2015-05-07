@@ -114,10 +114,11 @@
 
 <buffs>
 
+	<!-- RH99: removed vanilla 'bleeding' in favor of LTMod 'bleeding' see below
 	<buff id="bleeding" duration="60" name="Bleeding" type="bleeding" description="You are bleeding out. Use a bandage to stop the bleeding." icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
 		<modify id="1" stat="health" amount="-1" rate="1"/>
-	</buff>
+	</buff>-->
 
 	<!--
 
@@ -173,11 +174,11 @@
 		<modify id="0" stat="speedmodifier" setValue="0.40"/>
 	</buff>
 
-	<!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
+	<!-- RH99: Removed vanilla 'criticalBleedout' in favor of LTMod 'bleedingCritical'
 	<buff id="criticalBleedout" duration="180" name="Bleeding" type="bleeding" description="You are bleeding profusely. Use a bandage to stop the bleeding." icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-2" rate="1" type="bleeding"/>
 		<modify id="1" stat="health" amount="-3" rate="1" type="bleeding"/>
-	</buff>
+	</buff>-->
 
 	<buff id="CoffeeStaminaBoost" duration="180" name="Caffiene Buzz" type="staminaup" description="A nice rush of energy." icon="buff_icon_coffee" stack="extend">
 		<modify id="0" stat="stamina" amount="2" rate="1"/>
@@ -331,7 +332,7 @@
 
 	<!-- RH99: Radiation Poisoning Debuffs -->
 	<!-- TODO: Need to continue adjusting these buff stages properly, apparently there is an internal variable called "radiation" we can use -->
-	<buff id="radPoison" name="Minor Radiation Poisoning" type="sickness" buffif="radiation > 1" duration="2400t" description="You have minor radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
+	<buff id="radPoison" name="Minor Radiation Poisoning" type="sickness" buffif="radiation greater 1" duration="2400t" description="You have minor radiation poisoning, take antirad drugs to purge your system." icon="buff_icon_infection">
 		<modify id="0" stat="stamina" amount="-0.5" rate="1"/>
 	</buff>
 
@@ -376,6 +377,26 @@
 	<buff id="wet" buffif="+water > 1" duration="120" debuffif="-water > 1" name="Wet" actions="debuff(Burning2);debuff(burningSmall)debuff(burning);increment(@wellness, -0.2, 10, 0, 0)" description="You are wet. Get on to dry land to prevent sickness."/>
 
 <!-- Wound System with Infections Bleeding always causes a wound, wounds sometimes cause an infection if low wellness-->
+	<buff id="bleeding" duration="20" name="Bleeding" mutex="bleedingBadly,bleedingSevere,bleedingCritical" type="bleeding" description="You are bleeding, use a bandage to stop the bleeding." ondebuff="wound3" onexpired="wound" icon="buff_icon_critical_hit">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-1" rate="1"/>
+	</buff>
+
+	<buff id="bleedingBadly" duration="25" name="Badly Bleeding" mutex="bleedingSevere,bleedingCritical" type="bleeding" description="You are badly bleeding, use a bandage to stop the bleeding." ondebuff="wound3" onexpired="bleeding" icon="buff_icon_critical_hit">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="1" stat="health" amount="-2" rate="1"/>
+	</buff>
+
+	<buff id="bleedingSevere" duration="30" name="Severe Bleeding" mutex="bleedingCritical" type="bleeding" description="You are severely bleeding, use a bandage to stop the bleeding." ondebuff="wound4" onexpired="bleedingBadly" icon="buff_icon_critical_hit">
+		<modify id="0" stat="stamina" amount="-2" rate="1"/>
+		<modify id="1" stat="health" amount="-3" rate="1"/>
+	</buff>
+
+	<buff id="bleedingCritical" duration="40" name="Critical Bleeding" type="bleeding" description="You are critically bleeding, use a bandage to stop the bleeding!" ondebuff="wound4" onexpired="bleedingSevere" icon="buff_icon_critical_hit">
+		<modify id="0" stat="stamina" amount="-3" rate="1" />
+		<modify id="1" stat="health" amount="-5" rate="1" />
+		<modify id="2" stat="hydration" amount="-2" rate="1" />
+	</buff>
 
 <!-- Injury Types to extend zombie attack systems and integrate into advanced wound system and first aid -->
 	<buff id="bite" duration="60" name="Zombie Bite" type="bleeding" description="You are bleeding from a zombie bite. Use a bandage to stop the bleeding." ondebuff="wound3" onexpired="wound" icon="buff_icon_critical_hit">
