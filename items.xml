@@ -6275,6 +6275,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="EquipSlot" value="Legs" />
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="250" param1="true" />
+        <property name="RepairTools" value="scrapIron" />
         <property class="Armor">
             <property name="Melee" value="0.3" />
             <property name="Bullet" value="0.2" />
