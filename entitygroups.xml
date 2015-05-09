@@ -13,8 +13,10 @@
 		<entity name="zombiegal04" />
 		<entity name="fatzombie" />
 		<entity name="zombiecrawler" />
+    <entity name="fatcrawlerzombie" />
 		<entity name="Ruby" prob="0.0035" />
 		<entity name="nurseBetty" prob="0.0045" />
+    <entity name="witch" prob="0.0045" />
     </entitygroup>
 
     <entitygroup name="ZombiesNight">
@@ -27,6 +29,7 @@
 		<entity name="zombiegal03" />
 		<entity name="zombiegal04" />
 		<entity name="fatzombie" />
+    <entity name="shitterzombie" />
 		<entity name="hornet" prob="0.05" />
 		<entity name="zombiedog" prob="0.05" />
 		<entity name="zombiecrawler" />
@@ -77,6 +80,7 @@
 		<entity name="Ruby" prob="0.0035" />
 		<entity name="nurseBetty" prob="0.0045" />
 		<entity name="zombieripper" prob="0.0015" />
+    <entity name="witch" prob="0.0015" />
 		<entity name="Hellhound" prob="0.0005" />
     </entitygroup>
 
@@ -140,7 +144,7 @@
     </entitygroup>
 
     <entitygroup name="ZombiesBoss">
-		<entity name="Gorilla" prob="0.0025" />
+		<entity name="Gorilla" prob="1.5" />
 		<entity name="fatzombiecop" prob="2.25" />
 
     </entitygroup>

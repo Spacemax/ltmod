@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 
+<!--
 
 Sounds that are unspecified in this file will play on the default master at max volume
 with no rate or maxvoice limits.
 
 -->
 
-<!-- 
+<!--
 A master acts like a mixing fader, it can be grouped and assigned to other mixes (like a submix)
 A masters volume is controlled by its submix
 
@@ -19,7 +19,7 @@ volume: The volume level of the master, it will mix down to all assigned submast
 rate: How often (in seconds) a new sound can be played on this master. Zero (0) means no limit
 and is the default.
 
-NOTE: this attribute only applies directly to sounds that are played on this master, if this 
+NOTE: this attribute only applies directly to sounds that are played on this master, if this
 master has submasters it will not throttle those submasters.
 
 maxvoices: The maximum number of concurrently playing sounds.
@@ -36,12 +36,12 @@ sounddebug tells you some limited information
 <mix>
 	<!-- The default master controls the global volume of all sounds not contained in this xml file. -->
 	<master name="default" volume=".6"/>
-	
+
 	<!-- Make footsteps emitted by a player sound quieter to them, but normal volume to observers -->
   <master name="footsteps" volume="0.35" crouchVolume="0.25" localVolume="0.4" localCrouchVolume="0.3">
 		<assign filter="Step/step"/>
 	</master>
-	
+
 	<!-- Make a master that all zombie voices will get played on -->
 	<master name="testmastername" volume="0.5" maxvoices="3">
 		<!-- all nonspecific sounds with "zombie" in the name will go on "zombies" -->
@@ -50,7 +50,7 @@ sounddebug tells you some limited information
 		<submaster name="testsubmastername" rate="0.2" maxvoices="3"> <!-- rate in this example would never here any closer than 2/10 of second apart -->
 			<!-- assign [filter] {volume=} -->
 			<assign filter="test1" />
-		</submaster>   
+		</submaster>
 	</master>
 
   <master name="wellness" volume="0.2">
@@ -63,7 +63,7 @@ sounddebug tells you some limited information
     <assign filter="zombiesnowfootstep" />
     <assign filter="zombieburntfootstep" />
   </master>
-  
+
 
   <master name="gun_fires" volume="1.0" localVolume="1.0">
     <assign filter="pump_shotgun_fire" />
@@ -94,7 +94,7 @@ sounddebug tells you some limited information
     <assign filter="zombieburntroam" />
   </master>
 
-  <master name="zombiesense" volume="0.2" rate="7.0" maxvoices="4">
+  <master name="zombiesense" volume="0.3" rate="7.0" maxvoices="4">
     <assign filter="zombiefemalesense" />
     <assign filter="zombiemalesense" />
     <assign filter="hornetsense" />
@@ -132,7 +132,7 @@ sounddebug tells you some limited information
     <assign filter="zombieburntattack" />
   </master>
 
-  <master name="zombiepain" volume="0.2" rate="2.0" maxvoices="3">
+  <master name="zombiepain" volume="0.3" rate="2.0" maxvoices="3">
     <assign filter="hulkpain" />
     <assign filter="zombiefemalepain" />
     <assign filter="zombiemalepain" />
@@ -244,15 +244,15 @@ sounddebug tells you some limited information
     <assign filter="open_file_cabinet"/>
     <assign filter="close_file_cabinet"/>
     <assign filter="open_medicine_cabinet"/>
-    <assign filter="close_medicine_cabinet"/> 
+    <assign filter="close_medicine_cabinet"/>
     <assign filter="open_cash_register"/>
-    <assign filter="close_cash_register"/>   
+    <assign filter="close_cash_register"/>
     <assign filter="open_shopping_basket"/>
     <assign filter="close_shopping_basket"/>
     <assign filter="open_shopping_cart"/>
     <assign filter="close_shopping_cart"/>
      <assign filter="open_pill_case"/>
-    <assign filter="close_pill_case"/>  
+    <assign filter="close_pill_case"/>
      <assign filter="open_apache_artifact_chest"/>
     <assign filter="close_apache_artifact_chest"/>
   </master>
@@ -297,15 +297,15 @@ sounddebug tells you some limited information
     <assign filter="clothdestroy" />
     <assign filter="glassdestroy" />
     <assign filter="planthit" />
-    <assign filter="plantdestroy" />   
+    <assign filter="plantdestroy" />
   </master>
 
   <master name="swoosh" volume="0.4" rate=".2" maxvoices="3">
     <assign filter="swoosh" />
   </master>
-  
+
   <master name="farting" volume="0.14" maxvoices="3">
     <assign filter="playersick" />
   </master>
-  
+
 </mix>
