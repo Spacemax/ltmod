@@ -3707,7 +3707,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
     <item id="340" name="radiator">
         <property name="Meshfile" value="Items/Crafting/radiator" />
-        <property name="Material" value="brass" />
+        <property name="Material" value="iron" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="5" />
         <property name="Weight" value="32" />
@@ -3736,7 +3736,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="lead" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="5" />
-        <property name="Weight" value="160" />
+        <property name="Weight" value="80" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="18" />
