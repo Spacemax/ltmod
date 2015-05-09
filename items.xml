@@ -8096,7 +8096,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="10" />
             <property name="DamageBlock" value="2" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Stamina_usage" value="5" />
+            <property name="Stamina_usage" value="4" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
             <property name="DamageBonus.stone" value="2" />
