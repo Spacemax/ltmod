@@ -948,6 +948,8 @@ plentiful loot items in the game.
 	<lootgroup name="automotive" count="all">
 		<item group="rareAutomotive" />
 		<item group="commonAutomotive" />
+    <item group="clothes" />
+    <item group="medicine" />
 	</lootgroup>
 
 	<lootgroup name="hats">
@@ -1353,7 +1355,7 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 19 cars-->
-    <lootcontainer id="19" count="1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
+    <lootcontainer id="19" count="2,6" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
     	<item group="automotive+tools+junk" />
     </lootcontainer>
 
