@@ -830,12 +830,12 @@ plentiful loot items in the game.
 
 	<!-- Adjust skill book spread here -->
 	<lootgroup name="books" count="1">
-		<item group="ultrarareBooks" prob="0.0025" />			<!-- 0.25% or 2.5 in 1000 skill books 	~1 in 20 double story book stores -->
+		<item group="ultrarareBooks" prob="0.005" />			<!-- 5% or 5 in 1000 skill books 	~1 in 20 double story book stores -->
 		<item group="kevlarArmorSchematics" prob="0.005"/>				<!-- 0.5% or 5 in a 1000 skill books 	~1 in 10 double story book stores -->
-		<item group="rareBooks" prob="0.02"/>				<!-- 2% or 20 in 1000 skill books		~1 in 2.5 double story book stores -->
+		<item group="rareBooks" prob="0.04"/>				<!-- 4% or 40 in 1000 skill books		~1 in 2.5 double story book stores -->
 		<item group="ironArmorSchematics" prob="0.05"/>				<!-- 5% or 50 in 1000 skill books 		~1 in 1 double story book store -->
-		<item group="uncommonBooks" prob="0.3075"/>				<!-- 30.75% -->
-		<item group="commonBooks" prob="0.615" />				<!-- 61.5% -->
+		<item group="uncommonBooks" prob="0.3050"/>				<!-- 30.5% -->
+		<item group="commonBooks" prob="0.505" />				<!-- 60.5% -->
 	</lootgroup>
 
 	<lootgroup name="cannedfood">
@@ -1144,9 +1144,9 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="tools" count="1">
-		<item group="ultrarareTools" prob="0.01" />
-		<item group="rareTools" prob="0.19" />
-		<item group="uncommonTools" prob="0.25"/>
+		<item group="ultrarareTools" prob="0.02" />
+		<item group="rareTools" prob="0.20" />
+		<item group="uncommonTools" prob="0.23"/>
 		<item group="commonTools" prob="0.55" />
 	</lootgroup>
 
