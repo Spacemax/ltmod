@@ -2205,7 +2205,7 @@
         <ingredient name="kevlar" count="1" grid="1, 2"/>
     </recipe>
 
-	<recipe name="kevlarHelmet" count="1" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="200" >
+	<recipe name="kevlarHelmet" count="1" scrapable="True" craft_time="30" craft_exp_gain="2" learn_exp_gain="200" >
         <ingredient name="forgedSteel" count="1" grid="0, -1"/>
         <ingredient name="kevlar" count="1" grid="-1, 0"/>
         <ingredient name="kevlar" count="1" grid="0, 0"/>

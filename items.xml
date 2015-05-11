@@ -3707,7 +3707,7 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
     <item id="340" name="radiator">
         <property name="Meshfile" value="Items/Crafting/radiator" />
-        <property name="Material" value="iron" />
+        <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="5" />
         <property name="Weight" value="32" />
@@ -5115,6 +5115,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
     <item id="410" name="kevlarHelmet">
+      <property name="CustomIconTint" value="FAAB00"/>
         <property name="Meshfile" value="Items/Clothing/Head/kevlar_helmet" />
         <property name="Material" value="cloth" />
         <property name="HoldType" value="7" />
@@ -8231,8 +8232,8 @@ ARMOR ATTRIBUTE EXAMPLE
     <property name="HoldType" value="16" />
 		<property name="Stacknumber" value="900" />
     <property name="Group" value="Resources" />
-    <property name="RepairTime" value="1" />
-    <property name="RepairAmount" value="10" />
+    <property name="RepairTime" value="0.5" />
+    <property name="RepairAmount" value="5" />
     </item>
 
 	<item id="754" name="zincPowder">
@@ -11225,7 +11226,6 @@ ARMOR ATTRIBUTE EXAMPLE
          <property name="Rot" value="90,45,0" />
      </property>
  </item>
-
 
 
 </items>
