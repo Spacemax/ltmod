@@ -1219,8 +1219,8 @@
         <property name="SoundAttack"     value="Enemies/Acid_Puking_Hulk/hulkattack" />
         <property name="SoundRandom"     value="Enemies/Acid_Puking_Hulk/hulkroam" />
         <property name="SoundAlert"     value="Enemies/Acid_Puking_Hulk/hulkalert" />
-        <property name="SoundHurt"     value="Enemies/Acid_Puking_Hulk/hulkpain" />
-        <property name="SoundDeath"   value="Enemies/Acid_Puking_Hulk/hulkdeath" />
+        <property name="SoundHurt"     value="Player_Male/player1painlg" />
+        <property name="SoundDeath"   value="Player_Male/player1death" />
 
 
         <!-- Attached explosion is triggered when hurt much -->
