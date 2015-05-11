@@ -6508,7 +6508,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="7" />
         <property name="Stacknumber" value="64" />
-        <property name="Weight" value="28" />
+        <property name="Weight" value="0" />
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Repair" />
@@ -9517,7 +9517,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="7" />
         <property name="Stacknumber" value="64" />
-        <property name="Weight" value="28" />
+        <property name="Weight" value="0" />
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Repair" />
