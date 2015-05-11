@@ -3757,6 +3757,8 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="7" />
         <property name="Weight" value="8" />
+        <property name="RepairTime" value="1" />
+        <property name="RepairAmount" value="10" />
         <property name="Group" value="Resources" />
     </item>
     <item id="348" name="scrapLead">
@@ -8232,8 +8234,8 @@ ARMOR ATTRIBUTE EXAMPLE
     <property name="HoldType" value="16" />
 		<property name="Stacknumber" value="900" />
     <property name="Group" value="Resources" />
-    <property name="RepairTime" value="0.5" />
-    <property name="RepairAmount" value="5" />
+    <property name="RepairTime" value="0.2" />
+    <property name="RepairAmount" value="2" />
     </item>
 
 	<item id="754" name="zincPowder">
