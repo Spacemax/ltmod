@@ -181,6 +181,7 @@
     </entitygroup>
 
     <entitygroup name="AnimalsAll" >
+      <entity name="GhostBear" prob="0.01" />
 		<entity name="Boar" prob="0.1" />
     	<entity name="animalRabbit" prob="0.8" />
         <entity name="animalStag" />
