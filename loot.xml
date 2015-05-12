@@ -744,8 +744,8 @@ more opportunities to score that flawless part!
 	</lootgroup>
 
 	<lootgroup name="WeaponParts" count="1">
-		<item group="ultrarareWeaponParts" prob="0.001" />			<!-- 0.1% -->
-		<item group="Mossburg_components" prob="0.049" />			<!-- 4.9% -->
+		<item group="ultrarareWeaponParts" prob="0.005" />			<!-- 0.5% -->
+		<item group="Mossburg_components" prob="0.045" />			<!-- 4.5% -->
 		<item group="rareWeaponParts" prob="0.05" />				<!-- 5% -->
 		<item group="rem8_components" prob="0.1" />					<!-- 10% -->
 		<item group="Shotgun_components" prob="0.2" />				<!-- 20% -->

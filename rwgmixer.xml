@@ -111,7 +111,7 @@
 		<property name="WildernessPOIMinCount" value="1" />
 		<property name="WildernessPOIMaxCount" value="6" />
 		
-		<hub name="town" prob="0.5">
+		<hub name="town" prob="0.4">
 			<property name="MinCityBlockSizeInMeters" value="103,103" />
 			<property name="MaxCityBlockSizeInMeters" value="206,206" />
 			
@@ -124,10 +124,10 @@
 		
 		<hub name="rural" prob="0.8">
 			<property name="MinCityBlockSizeInMeters" value="96,96" />
-			<property name="MaxCityBlockSizeInMeters" value="96,96" />
+			<property name="MaxCityBlockSizeInMeters" value="103,103" />
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" />
-			<property name="MaxHubSizeInCityBlocks" value="1,2" />
+			<property name="MaxHubSizeInCityBlocks" value="2,2" />
 			
 			<property name="RoadMaterial" value="asphalt" />
 			<property name="RoadRadius" value="6" />
