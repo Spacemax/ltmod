@@ -818,7 +818,7 @@ plentiful loot items in the game.
 		<item name="homeMaintenanceBookVolumeII" />
 		<item name="theEnforcerMagazine" />
 		<item name="smgSchematics" />
-		<item name="medievalWarsAndYouBook" />
+		<item name="medievalWarsAndYou" />
     </lootgroup>
 
 	<lootgroup name="ultrarareBooks">
@@ -1203,7 +1203,7 @@ plentiful loot items in the game.
 		<item name="firstAidKit" count="2,5" />
 		<item name="antibiotics" count="1,3" />
 	</lootgroup>
-	
+
 	<lootgroup name="rareAutomotive" count="1">
 		<item group="uncommonTools" prob="0.1" />
 		<item group="commonTools" prob="0.1" />
@@ -1224,7 +1224,7 @@ plentiful loot items in the game.
     <item group="clothes" />
     <item group="medicine" />
 	</lootgroup>
-	
+
 	<lootgroup name="automotive+tools+junk" count="all">
         	<item group="automotive" />
         	<item group="tools" count="0,1"/>

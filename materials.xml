@@ -595,15 +595,5 @@
        <property name="explosionresistance" value=".9" />
 	</material>
 
-  <material id="false_floor">
-     <property name="damage_category" value="stone" />
-     <property name="surface_category" value="stone" />
-     <property name="forge_category" value="stone" />
-     <property name="Hardness" type="float" value="1" />
-     <property name="stepsound" value="stone" />
-     <property name="stability_glue" value="1" />
-     <property name="Mass" type="int" value="2" />
-  </material>
-
 
 </materials>
