@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Condition" value="Normal" />
+    <property name="Age" value="Normal" />
+    <property name="AllowedBiomes" value="burnt_forest,plains,pine_forest,forest,desert,wasteland" />
+</prefab>

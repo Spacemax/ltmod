@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-5" />
+    <property name="Condition" value="New" />
+    <property name="AllowedTownships" value="rural" />
+    <property name="AllowedBiomes" value="burnt_forest,desert,wasteland" />
+    <property name="Age" value="Normal" />
+</prefab>

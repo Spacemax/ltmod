@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-5" />
+    <property name="Condition" value="New" />
+    <property name="AllowedTownships" value="City" />
+    <property name="AllowedBiomes" value="wasteland_hub" />
+	<property name="MaxPerHub" value="1" />
+</prefab>
