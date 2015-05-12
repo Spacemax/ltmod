@@ -929,7 +929,7 @@ plentiful loot items in the game.
 	<lootgroup name="rockDrillParts">
 		<item name="FurukawaEngine"/>
 		<item name="FurukawaBlades"/>
-    <item name="Furukawa780Grips"/>
+		<item name="Furukawa780Grips"/>
   </lootgroup>
 
 	<lootgroup name="hats">
@@ -1206,9 +1206,11 @@ plentiful loot items in the game.
 
 	<lootgroup name="rareAutomotive" count="1">
 		<item group="uncommonTools" prob="0.1" />
-		<item group="commonTools" prob="0.1" />
-		<item group="cannedfood" prob="0.2" />
-		<item group="junk" prob="0.6" />
+		<item group="commonTools" 	prob="0.1" />
+		<item group="cannedfood" 	prob="0.1" />
+		<item group="clothes" 		prob="0.2" />
+		<item group="medicine" 		prob="0.2" />
+		<item group="junk" 			prob="0.2" />
 	</lootgroup>
 
 	<lootgroup name="commonAutomotive" count="all">
@@ -1221,8 +1223,7 @@ plentiful loot items in the game.
 	<lootgroup name="automotive" count="all">
 		<item group="rareAutomotive" />
 		<item group="commonAutomotive" />
-    <item group="clothes" />
-    <item group="medicine" />
+    
 	</lootgroup>
 
 	<lootgroup name="automotive+tools+junk" count="all">
