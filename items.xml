@@ -4889,7 +4889,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_wellness" value="1" />
             <property name="Sound_start" value="UseActions/player_painkillers" />
             <property name="Buff" value="cured" />
-            <property name="Debuff" value="infection,infection2,infection3,dysentery,dysentery2" />
+            <property name="Debuff" value="infection,infection2,infection3,dysentery,dysentery2,fever,tetanus,tetanus2" />
         </property>
         <property name="Group" value="Medicine" />
         <property class="Preview">
@@ -8436,7 +8436,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="0" />
             <property name="Gain_stamina" value="40" />
             <property name="Gain_wellness" value="0.4" />
-			<property name="Buff" value="slowheal" />
+			<property name="Buff" value="slowheal,tetanus,tetanus2,fever" />
 			<property name="Create_item" value="emptyJar" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
