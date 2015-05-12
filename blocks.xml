@@ -11301,19 +11301,5 @@
     <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
   </block>
 
-  <block id="1445" name="dropfloor">
-    <property name="CustomIcon" value="reinforcedWood"/>
-    <property name="CustomIconTint" value="FD9095"/>
-    <property name="Material" value="false_floor" />
-    <property name="Texture" value="379" />
-    <property name="DowngradeBlock" value="oldWood" />
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="reinforcedWoodMetal" />
-      <property name="Item" value="scrapIron" />
-      <property name="ItemCount" value="2" />
-      <property name="UpgradeHitCount" value="4" />
-    </property>
-    <drop event="Destroy" count="0" />
-  </block>
 
  </blocks>
