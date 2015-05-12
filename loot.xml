@@ -818,7 +818,7 @@ plentiful loot items in the game.
 		<item name="homeMaintenanceBookVolumeII" />
 		<item name="theEnforcerMagazine" />
 		<item name="smgSchematics" />
-		<item name="medievalWarsAndYouBook />"
+		<item name="medievalWarsAndYouBook" />
     </lootgroup>
 
 	<lootgroup name="ultrarareBooks">
