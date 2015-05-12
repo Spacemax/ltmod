@@ -2135,7 +2135,7 @@
         <ingredient name="steelStrips" count="1" grid="-1, 2"/>
     </recipe>
 
-	<recipe name="arrowBrass" count="5" scrapable="True" craft_time="10" craft_exp_gain="2" learn_exp_gain="50" >
+	<recipe name="arrowBrass" count="5" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="50" >
         <ingredient name="brassArrowTip" count="1" grid="2, -2"/>
         <ingredient name="stick" count="1" grid="1, -1"/>
         <ingredient name="feather" count="1" grid="0, 0"/>
@@ -2765,7 +2765,7 @@
         <ingredient name="grainAlcohol" count="1" grid="1, 1"/>
     </recipe>
 
-    <recipe name="thermiteFuel" count="2" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="thermiteFuel" count="1" scrapable="False" craft_time="60" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="gasCan" count="1" grid="0, 0"/>
         <ingredient name="gasCan" count="1" grid="1, 0"/>
         <ingredient name="thermite" count="100" grid="0, 1"/>

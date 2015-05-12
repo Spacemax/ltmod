@@ -310,6 +310,7 @@ The higher your level the more ammo you can find
 	<lootgroup name="ammo" count="1">
 		<item name="44MagBullet" count="1,3" />
 		<item name="arrowBrass" count="1,2" />
+    <item name="brassArrowTip" count="1,2" />
 		<item name="arrow" count="2,6" />
 		<item name="crossbowBolt" count="2,6" />
 		<item name="9mmBullet" count="4,7" />
@@ -1223,7 +1224,7 @@ plentiful loot items in the game.
 	<lootgroup name="automotive" count="all">
 		<item group="rareAutomotive" />
 		<item group="commonAutomotive" />
-    
+
 	</lootgroup>
 
 	<lootgroup name="automotive+tools+junk" count="all">
