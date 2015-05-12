@@ -2339,7 +2339,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_bandage" />
-            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite,gash" />
             <property name="Buff" value="firstAid" />
         </property>
         <property name="Group" value="Medicine" />
@@ -3492,7 +3492,9 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_bandage" />
-            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite" />
+            <property name="Buff" value="tetanus,dysentery" />
+            <property name="Buff_chance" value="0.5,0.1" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite,gash" />
         </property>
         <property name="Group" value="Medicine" />
         <property class="Preview">
@@ -5997,7 +5999,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Sound_start" value="UseActions/player_firstAidKit" />
-            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite" />
+            <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite,gash" />
 
             <property name="Buff" value="firstAidLarge" />
         </property>
@@ -11245,7 +11247,7 @@ ARMOR ATTRIBUTE EXAMPLE
          <property name="Gain_food" value="0" />
          <property name="Gain_water" value="0" />
          <property name="Sound_start" value="UseActions/player_bandage" />
-         <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite" />
+         <property name="Debuff" value="bleeding,burning,bleedingBadly,bleedingSevere,bleedingCritical,bite,gash" />
          <property name="Buff" value="firstAid" />
      </property>
      <property name="Group" value="Medicine" />
