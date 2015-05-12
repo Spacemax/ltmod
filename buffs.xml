@@ -375,7 +375,7 @@
 	<buff id="death" name="The End" actions="kill" description="Your illness has reached its lethal phase." icon="buff_icon_infection"/>
 
 <!-- Water Related - Make jumping in the river end fire related buffs -->
-	<buff id="wet" buffif="+water > 1" duration="120" debuffif="-water > 1" name="Wet" actions="heatStroke;debuff(Burning2);debuff(burningSmall)debuff(burning);increment(@wellness, -0.2, 10, 0, 0)" description="You are wet. Get on to dry land to prevent sickness."/>
+	<buff id="wet" buffif="+water > 1" duration="120" debuffif="-water > 1" name="Wet" actions="debuff(heatStroke);debuff(Burning2);debuff(burningSmall)debuff(burning);increment(@wellness, -0.2, 10, 0, 0)" description="You are wet. Get on to dry land to prevent sickness."/>
 
 <!-- Wound System with Infections Bleeding always causes a wound, wounds sometimes cause an infection if low wellness-->
 	<buff id="bleeding" duration="20" name="Bleeding" mutex="bleedingBadly,bleedingSevere,bleedingCritical" type="bleeding" description="You are bleeding, use a bandage to stop the bleeding." ondebuff="wound3" onexpired="wound" icon="buff_icon_critical_hit">

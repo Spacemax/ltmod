@@ -1194,7 +1194,7 @@
         <property name="Mesh"                 value="Zombies/FatZombieCopRagdoll" />
 <!--         <property name="Class"             value="EntityZombieCop" /> -->
         <property name="CanClimbVertical"  value="true" />
-        <property name="HandItem"             value="gorillaAttack" />
+        <property name="HandItem"             value="xAttack2" />
         <property name="WalkType"             value="5" />
         <property name="RightHandJointName"   value="Muzzle" />
         <property name="ApproachSpeed"      value="0.9" />

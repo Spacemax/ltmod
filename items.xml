@@ -1055,7 +1055,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="HoldType" value="6" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="weaponRepairKit" />
-        <property name="Degradation" value="500" param1="false" />
+        <property name="Degradation" value="1000" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
         <property name="SoundJammed" value="Weapons/weapon_jam" />
         <property name="Weight" value="54" />
@@ -2763,8 +2763,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2" />
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
-            <property name="Velocity" value="400" />
-            <property name="FlyTime" value="0.6" />
+            <property name="Velocity" value="35" />
+            <property name="FlyTime" value="0.2" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
@@ -2969,7 +2969,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="100" />
+        <property name="Degradation" value="200" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -2988,7 +2988,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="100" />
+        <property name="Degradation" value="200" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -3006,7 +3006,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="100" />
+        <property name="Degradation" value="200" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -10592,8 +10592,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageEntity" value="30" />
             <property name="DamageBlock" value="5" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding,infection,stunned,gash,wound2" />
-            <property name="Buff_chance" value="0.2,0.07,0.7,0.5,0.5" />
+            <property name="Buff" value="infection,stunned,gash,wound2" />
+            <property name="Buff_chance" value="0.2,0.07,0.7,0.5" />
             <property name="DamageBonus.glass" value="25" />
         </property>
         <property class="Action1">
@@ -10784,8 +10784,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.3,0.02" />
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
-            <property name="Velocity" value="400" />
-            <property name="FlyTime" value="0.7" />
+            <property name="Velocity" value="35" />
+            <property name="FlyTime" value="0.4" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
@@ -10926,8 +10926,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.35,0.02" />
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
-            <property name="Velocity" value="450" />
-            <property name="FlyTime" value="0.8" />
+            <property name="Velocity" value="55" />
+            <property name="FlyTime" value="0.6" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
