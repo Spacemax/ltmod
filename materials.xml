@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- 
-     *** Materials definitions 
-     *** 
+<!--
+     *** Materials definitions
+     ***
      *** Attributes:
-     ***  id                    - mandatory, type: string, semantic: defines name of the material to be referenced within block tags         
+     ***  id                    - mandatory, type: string, semantic: defines name of the material to be referenced within block tags
      ***  lightopacity
      ***  hardness              - mandatory, float:, values go from 1 to infinite, hardnes="1" means one hit with current digger destroys the block
      ***  explosionresistance
@@ -17,11 +17,11 @@
 
      *** damage_category = wood, stone, metal, earth, glass
      *** => used to determine the damage category if an item hits this block
-     
+
      *** surface_category = stone, metal, earth, cloth, wood, water, glass
      *** => used to determine the sound + effect on impact
 		damage category = damage bonus from items.xml so this is used for bonus damage.
-		
+
 	* DEFAULT SURFACE FRICTION = 0.454
 -->
 
@@ -532,7 +532,7 @@
       <property name="stability_glue" value="0" />
       <property name="Mass" type="int" value="1" />
    </material>
-   
+
       <!-- LT Mod Begins -->
    <material id="metal_steel">
       <property name="damage_category" value="metal" />
@@ -544,7 +544,7 @@
       <property name="Mass" type="int" value="30" />
       <property name="explosionresistance" value=".7" />
    </material>
-   
+
    <material id="copper">
       <property name="damage_category" value="metal" />
       <property name="surface_category" value="metal" />
@@ -554,7 +554,7 @@
       <property name="stability_glue" value="320" />
       <property name="Mass" type="int" value="20" />
    </material>
-   
+
    <material id="hardwood">
       <property name="damage_category" value="wood" />
       <property name="surface_category" value="wood" />
@@ -563,7 +563,7 @@
       <property name="stability_glue" value="90" />
       <property name="Mass" type="int" value="10" />
    </material>
-   
+
    <material id="hardwood+metal">
       <property name="damage_category" value="metal" />
       <property name="surface_category" value="metal" />
@@ -572,8 +572,8 @@
       <property name="stability_glue" value="100" />
       <property name="Mass" type="int" value="6" />
    </material>
- 
- <!-- LT Steel / Concrete Hybrid -->  
+
+ <!-- LT Steel / Concrete Hybrid -->
 	<material id="concrete_steel">
 		<property name="damage_category" value="stone" />
 		<property name="surface_category" value="metal" />
@@ -583,8 +583,8 @@
 		<property name="Mass" type="int" value="25" />
 		<property name="explosionresistance" value=".9" />
 	</material>
-   
-    <!-- LT Steel / Hardened Doors -->  
+
+    <!-- LT Steel / Hardened Doors -->
 	<material id="hardened_steel">
        <property name="damage_category" value="metal" />
        <property name="surface_category" value="metal" />
@@ -594,6 +594,16 @@
        <property name="Mass" type="int" value="25" />
        <property name="explosionresistance" value=".9" />
 	</material>
-   
-   
+
+  <material id="false_floor">
+     <property name="damage_category" value="stone" />
+     <property name="surface_category" value="stone" />
+     <property name="forge_category" value="stone" />
+     <property name="Hardness" type="float" value="1" />
+     <property name="stepsound" value="stone" />
+     <property name="stability_glue" value="1" />
+     <property name="Mass" type="int" value="2" />
+  </material>
+
+
 </materials>
