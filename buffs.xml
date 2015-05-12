@@ -355,12 +355,12 @@
 	</buff>
 
 <!-- Fever -->
-	<buff id="fever" mutex="heatStroke,antibiotics" type="sickness" actions="increment(@wellness, -2, 100t, 0, 0)" duration="2400t" ondebuff="Recovery" onexpired="bleedingSevere" name="Fever" type="staminadown" description="You are sick with Fever." icon="buff_icon_dysentery">
+	<buff id="fever" mutex="heatStroke,antibiotics" actions="increment(@wellness, -2, 100t, 0, 0)" duration="2400t" ondebuff="recovery" onexpired="heatStroke" name="Fever" type="staminadown" description="You are sick with Fever." icon="buff_icon_dysentery">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
 		<modify id="0" stat="speedmodifier" setValue="0.85"/>
 	</buff>
 <!-- You aren't 100% while recovering from an illness like hypothermia or heat stroke. -->
-	<buff id="recovery" mutex="Hypothermia,HeatStroke" duration="200t" name="Recovering from Illness" type="staminadown" description="You are recovering from an illness." icon="buff_icon_food_poisoning">
+	<buff id="recovery" mutex="heatStroke" duration="200t" name="Recovering from Illness" type="staminadown" description="You are recovering from an illness." icon="buff_icon_food_poisoning">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
 		<modify id="0" stat="speedmodifier" setValue="0.95"/>
 	</buff>
