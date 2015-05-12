@@ -10797,7 +10797,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Group" value="Ammo/Weapons" />
     </item>
 
-    <!-- Iron Crossbow -->
+    <!-- Steel Crossbow -->
     <item id="849" name="steelCrossbow">
         <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
         <property name="CustomIcon" value="crossbow" />
