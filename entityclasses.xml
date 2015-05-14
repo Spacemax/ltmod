@@ -987,8 +987,8 @@
         <property name="SoundDeath"   value="Animals/pigdeath" />
         <property name="LootListOnDeath"  value="39" />
         <property name="TimeStayAfterDeath" value="90" />
-		    <property name="ApproachSpeed"      value="1.4" />
-        <property name="PanicSpeed"    value="1.6" />
+		    <property name="ApproachSpeed"      value="1.2" />
+        <property name="PanicSpeed"    value="1.4" />
 		    <property name="ExperienceGain" value="300"/>
     </entity_class>
 
