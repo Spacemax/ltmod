@@ -976,34 +976,34 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="lightArmor">
-		<item name="leatherBoots"/>
-		<item name="leatherPants"/>
-		<item name="leatherJacket"/>
-		<item name="leatherGloves"/>
-		<item name="goggles"/>
+		<item name="leatherBoots" 	quality="50, 300"/>
+		<item name="leatherPants" 	quality="50, 300"/>
+		<item name="leatherJacket" 	quality="50, 300"/>
+		<item name="leatherGloves" 	quality="50, 300"/>
+		<item name="goggles" 		quality="50, 300"/>
 	</lootgroup>
 
 	<lootgroup name="heavyArmor">
-		<item name="ironBoots"/>
-		<item name="ironLegArmor"/>
-		<item name="ironChestArmor"/>
-		<item name="ironGloves"/>
+		<item name="ironBoots" 		quality="50, 300"/>
+		<item name="ironLegArmor" 	quality="50, 300"/>
+		<item name="ironChestArmor"	quality="50, 300"/>
+		<item name="ironGloves" 	quality="50, 300"/>
 	</lootgroup>
 
 	<lootgroup name="rareArmor">
-		<item name="kevlarBoots" />
-        <item name="kevlarLegArmor" />
-        <item name="kevlarChestArmor" />
-        <item name="kevlarGloves" />
-        <item name="kevlarHelmet" />
-        <item name="swatHelmet" />
+		<item name="kevlarBoots" 		quality="50, 300"/>
+        <item name="kevlarLegArmor" 	quality="50, 300"/>
+        <item name="kevlarChestArmor" 	quality="50, 300"/>
+        <item name="kevlarGloves" 		quality="50, 300"/>
+        <item name="kevlarHelmet" 		quality="50, 300"/>
+        <item name="swatHelmet" 		quality="50, 300"/>
 	</lootgroup>
 
 	<lootgroup name="Armor" count="1">
-		<item group="rareArmor" prob="0.001" />
-		<item group="heavyArmor" prob="0.059" />
-		<item group="lightArmor" prob="0.30" />
-		<item group="clothes" prob="0.60" />
+		<item group="rareArmor" 	prob="0.001" />
+		<item group="heavyArmor" 	prob="0.049" />
+		<item group="lightArmor" 	prob="0.25" />
+		<item group="clothes" 		prob="0.70" />
     </lootgroup>
 
 	<lootgroup name="garbage">
@@ -1169,9 +1169,9 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="sportingGoods" count="1">
-        	<item group="hats" />
-			<item group="Armor" />
-        	<item name="flashlight02"/>
+        	<item group="Armor" prob="0.5"/>
+			<item group="hats" />
+			<item name="flashlight02"/>
         	<item name="huntingKnife"/>
         	<item name="gunPowder"/>
         	<item name="bulletCasing"/>
@@ -1268,7 +1268,7 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 6 night stands and dressers, pistol, ammo, magazines, books -->
-    <lootcontainer id="6" count="1,2" size="3,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
+    <lootcontainer id="6" count="0,2" size="3,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
        	<item group="books" prob="0.01"/>				<!--1%-->
 		<item group="ammo" count="1,3" prob="0.09" /> 	<!--9%-->
 		<item group="medicine" prob="0.1" />			<!--10%-->
@@ -1358,7 +1358,7 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 19 cars-->
-    <lootcontainer id="19" count="1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
+    <lootcontainer id="19" count="0,1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
     	<item group="automotive" />
     </lootcontainer>
 
