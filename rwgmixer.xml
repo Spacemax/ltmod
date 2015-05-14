@@ -37,7 +37,7 @@
 			<property name="MaxCityBlockSizeInMeters" value="206,206" />
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" />
-			<property name="MaxHubSizeInCityBlocks" value="1,1" />
+			<property name="MaxHubSizeInCityBlocks" value="2,1" />
 			
 			<property name="RoadMaterial" value="snowRoad" />
 			<property name="RoadRadius" value="8" />
@@ -81,7 +81,7 @@
 			<property name="MaxCityBlockSizeInMeters" value="96,96" /> 
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" /> 
-			<property name="MaxHubSizeInCityBlocks" value="2,2" /> 
+			<property name="MaxHubSizeInCityBlocks" value="1,1" /> 
 			
 			<property name="RoadMaterial" value="asphalt" /> 
 			<property name="RoadRadius" value="7" /> 
@@ -116,7 +116,7 @@
 			<property name="MaxCityBlockSizeInMeters" value="206,206" />
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" />
-			<property name="MaxHubSizeInCityBlocks" value="2,2" />
+			<property name="MaxHubSizeInCityBlocks" value="3,3" />
 			
 			<property name="RoadMaterial" value="asphalt" />
 			<property name="RoadRadius" value="8" />
@@ -127,7 +127,7 @@
 			<property name="MaxCityBlockSizeInMeters" value="103,103" />
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" />
-			<property name="MaxHubSizeInCityBlocks" value="2,2" />
+			<property name="MaxHubSizeInCityBlocks" value="1,1" />
 			
 			<property name="RoadMaterial" value="asphalt" />
 			<property name="RoadRadius" value="6" />
@@ -193,12 +193,12 @@
 			<property name="RoadRadius" value="8" /> 
 		</hub>
 		
-		<hub name="rural" prob="0.8">
+		<hub name="rural" prob="0.25">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 
 			<property name="MaxCityBlockSizeInMeters" value="96,96" /> 
 			
-			<property name="MinHubSizeInCityBlocks" value="2,2" /> 
-			<property name="MaxHubSizeInCityBlocks" value="3,2" /> 
+			<property name="MinHubSizeInCityBlocks" value="1,1" /> 
+			<property name="MaxHubSizeInCityBlocks" value="1,1" /> 
 			
 			<property name="RoadMaterial" value="asphalt" /> 
 			<property name="RoadRadius" value="7" /> 
@@ -222,7 +222,7 @@
 			<property name="MaxCityBlockSizeInMeters" value="96,96" /> 
 			
 			<property name="MinHubSizeInCityBlocks" value="1,1" /> 
-			<property name="MaxHubSizeInCityBlocks" value="2,1" /> 
+			<property name="MaxHubSizeInCityBlocks" value="1,1" /> 
 			
 			<property name="RoadMaterial" value="gravel" /> 
 			<property name="RoadRadius" value="7" /> 
