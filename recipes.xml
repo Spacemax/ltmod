@@ -87,7 +87,7 @@
         <ingredient name="corn" count="1"/>
     </recipe>
 
-    <recipe name="baconAndEggs" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" craft_time="10" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="baconAndEggs" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="egg" count="1"/>
         <ingredient name="egg" count="1"/>
         <ingredient name="pork" count="1"/>
@@ -364,6 +364,7 @@
         <ingredient name="clayLump" count="1" grid="1, 1"/>
     </recipe>
 
+	<!-- Removed due to it spawning loot
     <recipe name="cabinet" count="1" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="cobblestones" count="1" grid="0, -1"/>
         <ingredient name="cabinetTop" count="1" grid="0, 0"/>
@@ -371,7 +372,7 @@
 
     <recipe name="cabinetTop" count="1" scrapable="False" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="planks4" count="1" grid="0, 0"/>
-    </recipe>
+    </recipe> -->
 
     <recipe name="campfire" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="rockSmall" count="1" grid="-1, -1"/>
@@ -632,12 +633,13 @@
         <ingredient name="planks4" count="1" grid="2, 2"/>
     </recipe>
 
+	<!-- Removed as it spawns loot
     <recipe name="deskSafe" count="1" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="ingotIron" count="1" grid="0, -1"/>
         <ingredient name="ingotIron" count="1" grid="1, -1"/>
         <ingredient name="ingotIron" count="1" grid="0, 0"/>
         <ingredient name="ingotIron" count="1" grid="1, 0"/>
-    </recipe>
+    </recipe> -->
 
     <recipe name="emptyJarMold" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="clayLump" count="1" grid="-1, 0"/>
@@ -1152,7 +1154,8 @@
         <ingredient name="clayLump" count="1" grid="1, 1"/>
     </recipe>
 
-    <recipe name="nightstand" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
+    <!-- Removed due to spawning loot
+	<recipe name="nightstand" count="1" scrapable="False" craft_time="15" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="woodPlank" count="1" grid="-1, -2"/>
         <ingredient name="woodPlank" count="1" grid="0, -2"/>
         <ingredient name="woodPlank" count="1" grid="1, -2"/>
@@ -1162,7 +1165,7 @@
         <ingredient name="woodPlank" count="1" grid="-1, 0"/>
         <ingredient name="woodPlank" count="1" grid="0, 0"/>
         <ingredient name="woodPlank" count="1" grid="1, 0"/>
-    </recipe>
+    </recipe> -->
 
     <recipe name="oldChair" count="3" scrapable="False" craft_time="30" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="stick" count="1" grid="1, -2"/>

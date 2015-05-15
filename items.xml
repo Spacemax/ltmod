@@ -2718,7 +2718,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="HoldType" value="26" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="leatherStrips" />
-        <property name="Degradation" value="100" param1="true" />
+        <property name="Degradation" value="50" param1="true" />
         <property name="FuelValue" value="40" />
         <property class="Action0">
             <!-- AttackAction -->
@@ -2763,15 +2763,15 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Buff_chance" value="0.2" />
             <property name="Explosion.ParticleIndex" value="0" />
             <!-- no expl. -->
-            <property name="Velocity" value="35" />
+            <property name="Velocity" value="45" />
             <property name="FlyTime" value="0.4" />
             <property name="LifeTime" value="4" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="25" />
-            <property name="DamageBonus.wood" value="0.1" />
+            <property name="DamageBonus.wood" value="0.5" />
             <property name="DamageBonus.earth" value="0" />
-            <property name="DamageBonus.metal" value="0" />
-            <property name="DamageBonus.cloth" value="0" />
+            <property name="DamageBonus.metal" value="1" />
+            <property name="DamageBonus.cloth" value="1" />
         </property>
         <property name="Group" value="Ammo/Weapons" />
     </item>
@@ -2969,12 +2969,12 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="200" />
+        <property name="Degradation" value="400" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="EntityDamage" value="1,42" />
-            <property name="Accuracy" value="1, 0.01" />
+            <property name="EntityDamage" value="10,42" />
+            <property name="Accuracy" value="0.9, 0.01" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -2988,7 +2988,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="200" />
+        <property name="Degradation" value="400" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -3006,7 +3006,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Material" value="metal" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="1" />
-        <property name="Degradation" value="200" />
+        <property name="Degradation" value="400" />
         <property name="Weight" value="36" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -10245,7 +10245,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="leatherStrips" />
         <property name="FuelValue" value="90" />
-        <property name="Degradation" value="250" param1="false" />
+        <property name="Degradation" value="100" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
         <property name="Weight" value="48" />
         <property class="Parts">
@@ -10294,7 +10294,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="DegradationMax" value="10,250" />
+        <property name="DegradationMax" value="20,100" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10315,9 +10315,9 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-          <property name="EntityDamage" value="30, 50" />
+          <property name="EntityDamage" value="35" />
           <property name="BlockDamage" value="1" />
-          <property name="DegradationMax" value="10, 100" />
+          <property name="DegradationMax" value="20, 100" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10338,7 +10338,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="DegradationMax" value="10,100" />
+            <property name="DegradationMax" value="20,100" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10359,8 +10359,8 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="Accuracy" value="1, 0.2" />
-            <property name="DegradationMax" value="10,100" />
+            <property name="Accuracy" value="0.95, 0.5" />
+            <property name="DegradationMax" value="20,100" />
         </property>
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -10734,7 +10734,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-          <property name="EntityDamage" value="40, 50" />
+          <property name="EntityDamage" value="50" />
           <property name="BlockDamage" value="2" />
           <property name="DegradationMax" value="25, 200" />
         </property>
@@ -10757,7 +10757,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="Accuracy" value="0.8, 0.15" />
+            <property name="Accuracy" value="0.6, 0.15" />
             <property name="DegradationMax" value="25,200" />
         </property>
         <property class="Preview">
@@ -10791,7 +10791,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.wood" value="0.5" />
             <property name="DamageBonus.earth" value="0" />
-            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.metal" value="1" />
             <property name="DamageBonus.cloth" value="2" />
         </property>
         <property name="Group" value="Ammo/Weapons" />
@@ -10855,7 +10855,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-          <property name="EntityDamage" value="50, 60" />
+          <property name="EntityDamage" value="65" />
           <property name="BlockDamage" value="2" />
           <property name="DegradationMax" value="40, 350" />
         </property>
@@ -10878,7 +10878,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="Weight" value="10" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
-            <property name="Accuracy" value="0.6, 0.05" />
+            <property name="Accuracy" value="0.4, 0.05" />
             <property name="DegradationMax" value="40,350" />
         </property>
         <property class="Preview">

@@ -310,13 +310,13 @@ The higher your level the more ammo you can find
 	<lootgroup name="ammo" count="1">
 		<item name="44MagBullet" count="1,3" />
 		<item name="arrowBrass" count="1,2" />
-    <item name="brassArrowTip" count="1,2" />
+		<item name="brassArrowTip" count="1,2" />
 		<item name="arrow" count="2,6" />
 		<item name="crossbowBolt" count="2,6" />
 		<item name="9mmBullet" count="4,7" />
         <item name="shotgunShell" count="2,6" />
-		<item name="10mmBullet" count="1,6" />
-        <item name="762mmBullet" count="1,5" />
+		<item name="10mmBullet" count="2,6" />
+        <item name="308calBullet" count="1,5" />
 		<item name="shotgunSlug" count="0,1" />
 	</lootgroup>
 
@@ -748,8 +748,8 @@ more opportunities to score that flawless part!
 		<item group="ultrarareWeaponParts" prob="0.005" />			<!-- 0.5% -->
 		<item group="Mossburg_components" prob="0.045" />			<!-- 4.5% -->
 		<item group="rareWeaponParts" prob="0.05" />				<!-- 5% -->
-		<item group="rem8_components" prob="0.1" />					<!-- 10% -->
-		<item group="Shotgun_components" prob="0.2" />				<!-- 20% -->
+		<item group="rem8_components" prob="0.05" />				<!-- 5% -->
+		<item group="Shotgun_components" prob="0.2" />				<!-- 25% -->
 		<item group="pistol_components" prob="0.3" />				<!-- 30% -->
 		<item group="HuntingRifle_components" prob="0.3" />			<!-- 30% -->
 	</lootgroup>
@@ -946,33 +946,42 @@ plentiful loot items in the game.
 		<item name="footballHelmet"/>
 		<item name="santaHat"/>
 	</lootgroup>
+	
+	<lootgroup name="bandanas">
+		<item name="bandana"/>
+        <item name="bandanaRed"/>
+        <item name="bandanaBlue"/>
+        <item name="bandanaGreen"/>
+        <item name="bandanaBrown"/>
+        <item name="bandanaBlack"/>
+	</lootgroup>
 
 	<lootgroup name="clothes">
-			<item name="clothPants"/>
-        	<item name="clothJacket"/>
-        	<item name="clothBoots"/>
-        	<item name="clothGloves"/>
-	        <item name="denimPants"/>
-        	<item name="denimJacket"/>
-        	<item name="tankTopWhite"/>
-        	<item name="tankTopRed"/>
-        	<item name="tankTopPurple"/>
-        	<item name="tankTopGreen"/>
-        	<item name="tankTopBlue"/>
-        	<item name="wornBoots"/>
-        	<item name="bandana"/>
-        	<item name="bandanaRed"/>
-        	<item name="bandanaBlue"/>
-        	<item name="bandanaGreen"/>
-        	<item name="bandanaBrown"/>
-        	<item name="bandanaBlack"/>
-        	<item name="shades"/>
-        	<item name="plaidShirt"/>
-        	<item name="plaidShirtRed"/>
-        	<item name="plaidShirtBrown"/>
-           	<item name="blackDenimPants"/>
-        	<item name="redDenimPants"/>
-        	<item name="brownDenimPants"/>
+		<item name="clothPants"/>
+        <item name="clothJacket"/>
+        <item name="clothBoots"/>
+        <item name="clothGloves"/>
+	    <item name="denimPants"/>
+        <item name="denimJacket"/>
+        <item name="tankTopWhite"/>
+        <item name="tankTopRed"/>
+        <item name="tankTopPurple"/>
+        <item name="tankTopGreen"/>
+        <item name="tankTopBlue"/>
+        <item name="wornBoots"/>
+        <item name="shades"/>
+        <item name="plaidShirt"/>
+        <item name="plaidShirtRed"/>
+        <item name="plaidShirtBrown"/>
+        <item name="blackDenimPants"/>
+        <item name="redDenimPants"/>
+        <item name="brownDenimPants"/>
+	</lootgroup>
+	
+	<lootgroup name="clothing">
+		<item group="hats" prob="0.5"	/>
+		<item group="clothes" 	/>
+		<item group="bandanas" 	/>
 	</lootgroup>
 
 	<lootgroup name="lightArmor">
@@ -1003,7 +1012,7 @@ plentiful loot items in the game.
 		<item group="rareArmor" 	prob="0.001" />
 		<item group="heavyArmor" 	prob="0.049" />
 		<item group="lightArmor" 	prob="0.25" />
-		<item group="clothes" 		prob="0.70" />
+		<item group="clothing" 		prob="0.70" />
     </lootgroup>
 
 	<lootgroup name="garbage">
@@ -1021,51 +1030,51 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="pickaxeIron" count="1">
-		<item name="pickaxeIron" quality="500, 600" prob="0.010"/>
-		<item name="pickaxeIron" quality="400, 499" prob="0.05"/>
-		<item name="pickaxeIron" quality="300, 399" prob="0.2"/>
+		<item name="pickaxeIron" quality="400, 450" prob="0.010"/>
+		<item name="pickaxeIron" quality="350, 399" prob="0.05"/>
+		<item name="pickaxeIron" quality="300, 349" prob="0.2"/>
 		<item name="pickaxeIron" quality="200, 299" prob="0.35"/>
-		<item name="pickaxeIron" quality="100, 199" prob="0.39"/>
+		<item name="pickaxeIron" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="pickaxeSteel" count="1">
-		<item name="pickaxeSteel" quality="500, 600" prob="0.010"/>
-		<item name="pickaxeSteel" quality="400, 499" prob="0.05"/>
-		<item name="pickaxeSteel" quality="300, 399" prob="0.2"/>
+		<item name="pickaxeSteel" quality="400, 450" prob="0.010"/>
+		<item name="pickaxeSteel" quality="350, 399" prob="0.05"/>
+		<item name="pickaxeSteel" quality="300, 349" prob="0.2"/>
 		<item name="pickaxeSteel" quality="200, 299" prob="0.35"/>
-		<item name="pickaxeSteel" quality="100, 199" prob="0.39"/>
+		<item name="pickaxeSteel" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="steelAxe" count="1">
-		<item name="steelAxe" quality="500, 600" prob="0.010"/>
-		<item name="steelAxe" quality="400, 499" prob="0.05"/>
-		<item name="steelAxe" quality="300, 399" prob="0.2"/>
+		<item name="steelAxe" quality="400, 450" prob="0.010"/>
+		<item name="steelAxe" quality="350, 399" prob="0.05"/>
+		<item name="steelAxe" quality="300, 349" prob="0.2"/>
 		<item name="steelAxe" quality="200, 299" prob="0.35"/>
-		<item name="steelAxe" quality="100, 199" prob="0.39"/>
+		<item name="steelAxe" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="shovel" count="1">
-		<item name="shovel" quality="500, 600" prob="0.010"/>
-		<item name="shovel" quality="400, 499" prob="0.05"/>
-		<item name="shovel" quality="300, 399" prob="0.2"/>
+		<item name="shovel" quality="400, 450" prob="0.010"/>
+		<item name="shovel" quality="350, 399" prob="0.05"/>
+		<item name="shovel" quality="300, 349" prob="0.2"/>
 		<item name="shovel" quality="200, 299" prob="0.35"/>
-		<item name="shovel" quality="100, 199" prob="0.39"/>
+		<item name="shovel" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="fireaxe" count="1">
-		<item name="fireaxe" quality="500, 600" prob="0.010"/>
-		<item name="fireaxe" quality="400, 499" prob="0.05"/>
-		<item name="fireaxe" quality="300, 399" prob="0.2"/>
+		<item name="fireaxe" quality="400, 450" prob="0.010"/>
+		<item name="fireaxe" quality="350, 399" prob="0.05"/>
+		<item name="fireaxe" quality="300, 349" prob="0.2"/>
 		<item name="fireaxe" quality="200, 299" prob="0.35"/>
-		<item name="fireaxe" quality="100, 199" prob="0.39"/>
+		<item name="fireaxe" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="hoe" count="1">
-		<item name="hoe" quality="500, 600" prob="0.010"/>
-		<item name="hoe" quality="400, 499" prob="0.05"/>
-		<item name="hoe" quality="300, 399" prob="0.2"/>
+		<item name="hoe" quality="400, 450" prob="0.010"/>
+		<item name="hoe" quality="350, 399" prob="0.05"/>
+		<item name="hoe" quality="300, 349" prob="0.2"/>
 		<item name="hoe" quality="200, 299" prob="0.35"/>
-		<item name="hoe" quality="100, 199" prob="0.39"/>
+		<item name="hoe" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="hammer" count="1">
@@ -1073,7 +1082,7 @@ plentiful loot items in the game.
 		<item name="hammer" quality="400, 499" prob="0.05"/>
 		<item name="hammer" quality="300, 399" prob="0.2"/>
 		<item name="hammer" quality="200, 299" prob="0.35"/>
-		<item name="hammer" quality="100, 199" prob="0.39"/>
+		<item name="hammer" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="sledgehammer" count="1">
@@ -1081,7 +1090,7 @@ plentiful loot items in the game.
 		<item name="sledgehammer" quality="400, 499" prob="0.05"/>
 		<item name="sledgehammer" quality="300, 399" prob="0.2"/>
 		<item name="sledgehammer" quality="200, 299" prob="0.35"/>
-		<item name="sledgehammer" quality="100, 199" prob="0.39"/>
+		<item name="sledgehammer" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="stoneShovel" count="1">
@@ -1089,7 +1098,7 @@ plentiful loot items in the game.
 		<item name="stoneShovel" quality="400, 499" prob="0.05"/>
 		<item name="stoneShovel" quality="300, 399" prob="0.2"/>
 		<item name="stoneShovel" quality="200, 299" prob="0.35"/>
-		<item name="stoneShovel" quality="100, 199" prob="0.39"/>
+		<item name="stoneShovel" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="stoneAxe" count="1">
@@ -1097,7 +1106,7 @@ plentiful loot items in the game.
 		<item name="stoneAxe" quality="400, 499" prob="0.05"/>
 		<item name="stoneAxe" quality="300, 399" prob="0.2"/>
 		<item name="stoneAxe" quality="200, 299" prob="0.35"/>
-		<item name="stoneAxe" quality="100, 199" prob="0.39"/>
+		<item name="stoneAxe" quality="50, 199" prob="0.39"/>
 	</lootgroup>
 
 	<lootgroup name="ultrarareTools" count="1">
@@ -1144,40 +1153,38 @@ plentiful loot items in the game.
 	</lootgroup>
 
   	<lootgroup name="workingStiffs" count="1">
-		<item group="seeds" prob="0.1" />				<!--10%-->
-		<item group="tools" prob="0.3" />				<!--30%-->
-		<item group="constructionSupplies" prob="0.6" />				<!--60%-->
+		<item group="seeds" prob="0.1" />							<!--10%-->
+		<item group="tools" prob="0.3" />							<!--30%-->
+		<item group="constructionSupplies" prob="0.6" />			<!--60%-->
   	</lootgroup>
 
 	<lootgroup name="rareMedicine" count="1">
-		<item name="beaker" prob="0.05"/>				<!--5%-->
-		<item name="bloodDrawKit" prob="0.15" />				<!--25%-->
-		<item name="firstAidKit" count="1" prob="0.35" />				<!--35%-->
-		<item name="antibiotics" count="1" prob="0.35" />				<!--35%-->
+		<item name="beaker" prob="0.05"/>							<!--5%-->
+		<item name="bloodDrawKit" prob="0.15" />					<!--25%-->
+		<item name="firstAidKit" count="1" prob="0.35" />			<!--35%-->
+		<item name="antibiotics" count="1" prob="0.35" />			<!--35%-->
 	</lootgroup>
 
 <!-- KM:Removed empty jar as not needed in this group, Reduced are rareMedicine drop rate to 5%	-->
 	<lootgroup name="medicine" count="1">
-		<item group="rareMedicine" prob="0.1" />  		<!--10%-->
+		<item group="rareMedicine" prob="0.05" />  	<!--5%-->
 		<item name="painkillers" prob="0.1" />		<!--10%-->
-		<item name="firstAidBandage" prob="0.1" />		<!--10%-->
-		<item name="bloodBag" prob="0.1" />		<!--10%-->
-		<item name="vitamins" prob="0.1" />		<!--10%-->
+		<item name="firstAidBandage" prob="0.1" />	<!--10%-->
+		<item name="bloodBag" prob="0.1" />			<!--10%-->
+		<item name="vitamins" prob="0.1" />			<!--10%-->
 		<item name="grainAlcohol" prob="0.1" />		<!--10%-->
-		<item name="splint" prob="0.2" />		<!--20%-->
-		<item name="bandage" prob="0.20" />		<!--20%-->
+		<item name="splint" prob="0.2" />			<!--20%-->
+		<item name="bandage" prob="0.25" />			<!--25%-->
 	</lootgroup>
 
 	<lootgroup name="sportingGoods" count="1">
         	<item group="Armor" prob="0.5"/>
-			<item group="hats" />
 			<item name="flashlight02"/>
         	<item name="huntingKnife"/>
         	<item name="gunPowder"/>
         	<item name="bulletCasing"/>
         	<item name="bulletTip"/>
-        	<item name="cookingGrill"/>
-        	<item name="leather"/>
+           	<item name="leather"/>
         	<item name="goggles"/>
         	<item name="nightvisionGoggles"/>
         	<item name="firstAidKit"/>
@@ -1188,11 +1195,11 @@ plentiful loot items in the game.
 
 	<lootgroup name="beverages" count="1">
 		<item name ="coffee" prob="0.15" /> 		<!--15%-->
-		<item name="beer" prob="0.15" />		<!--15%-->
+		<item name="beer" prob="0.15" />			<!--15%-->
 		<item name="bottledWater" prob="0.7" />		<!--70%-->
 	</lootgroup>
 
-	<lootgroup name="backpacks" count="1,4">
+	<lootgroup name="backpacks" count="1,3">
 			<item group="cupboard" />
         	<item group="guns+ammo" count="0,1" />
         	<item group="melee" count="0,1"/>
@@ -1272,9 +1279,9 @@ plentiful loot items in the game.
        	<item group="books" prob="0.01"/>				<!--1%-->
 		<item group="ammo" count="1,3" prob="0.09" /> 	<!--9%-->
 		<item group="medicine" prob="0.1" />			<!--10%-->
-		<item group="trophyGroup" prob="0.1" />			<!--10%-->
-		<item name="book" prob="0.1" />					<!--10%-->
-		<item group="Armor" prob="0.6"/>				<!--60%-->
+		<item group="trophyGroup" prob="0.2" />			<!--20%-->
+		<item name="book" prob="0.2" />					<!--20%-->
+		<item group="Armor" prob="0.4"/>				<!--40%-->
 	    </lootcontainer>
 
     <!-- lootcontainer 7 medicine cabinets -->
@@ -1375,13 +1382,13 @@ plentiful loot items in the game.
     <!-- lootcontainer 22 garage stuff, tools, etc -->
     <lootcontainer id="22" count="0,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
 		<item group="rockDrillParts" prob="0.001" />			<!-- 0.1% 	~ 1 part per 1000 boxes opened-->
-		<item group="augerParts" prob="0.01" />			<!-- 1% 	~ 1 part per 100 boxes opened-->
-		<item group="books" prob="0.039" />			<!--3.9%-->
-		<item group="tools" prob="0.05" />			<!--5%-->
-		<item group="automotive" prob="0.1" />			<!--10%-->
-		<item name="canCatfood" prob="0.1" />			<!--10%-->
-		<item name="canDogfood" prob="0.1" />   		<!--10%-->
-		<item group="junk" prob="0.6" />			<!--60%-->
+		<item group="augerParts" prob="0.01" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
+		<item group="books" prob="0.039" />						<!--3.9%-->
+		<item group="tools" prob="0.05" />						<!--5%-->
+		<item group="automotive" prob="0.1" />					<!--10%-->
+		<item name="canCatfood" prob="0.1" />					<!--10%-->
+		<item name="canDogfood" prob="0.1" />   				<!--10%-->
+		<item group="junk" prob="0.6" />						<!--60%-->
     </lootcontainer>
 
 	<!-- 23 see below !!! -->
