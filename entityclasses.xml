@@ -981,8 +981,13 @@
         <property name="AITask-6" value="Wander" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
         <property name="AITarget-2" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombie" />
         <property name="Weight"       value="100" />
         <property name="MaxHealth"    value="350" />
+		<property name="SoundFootstepModifier"  value="Player_Male/player1painlg" />
+		<property name="SoundAlert"     value="Animals/pigdeath" />
+		<property name="SoundAttack"     value="Animals/pigdeath" />
+        <property name="SoundRandom"     value="Animals/pigdeath" />
         <property name="SoundHurt"    value="Animals/pigpain" />
         <property name="SoundDeath"   value="Animals/pigdeath" />
         <property name="LootListOnDeath"  value="39" />

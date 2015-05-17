@@ -9105,7 +9105,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Range" value="1.8" />
             <property name="Sphere" value="0.4" />
             <property name="Block_range" value="2.5" />
-            <property name="DamageEntity" value="25" />
+            <property name="DamageEntity" value="20" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
             <property name="Buff" value="bleeding,gash,wound2" />
