@@ -3709,10 +3709,10 @@ ARMOR ATTRIBUTE EXAMPLE
     </item>
     <item id="340" name="radiator">
         <property name="Meshfile" value="Items/Crafting/radiator" />
-        <property name="Material" value="metal" />
+        <property name="Material" value="brass" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="5" />
-        <property name="Weight" value="32" />
+        <property name="Weight" value="16" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="18" />
@@ -8436,8 +8436,9 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Gain_water" value="0" />
             <property name="Gain_stamina" value="40" />
             <property name="Gain_wellness" value="0.4" />
-			<property name="Buff" value="slowheal,tetanus,tetanus2,fever" />
-			<property name="Create_item" value="emptyJar" />
+			      <property name="Buff" value="slowheal" />
+            <property name="Debuff" value="tetanus,tetanus2,fever" />
+			      <property name="Create_item" value="emptyJar" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
         <property name="Group" value="Food/Cooking" />
