@@ -144,7 +144,7 @@
 		<property name="RoadRadius" value="6" />
 
 		<property name="WildernessPOIProb" value="1" />
-		<property name="WildernessPOIMinCount" value="5" />
+		<property name="WildernessPOIMinCount" value="4" />
 		<property name="WildernessPOIMaxCount" value="6" />
 
 		<hub name="rural" prob="0.3">
@@ -249,7 +249,7 @@
 		<property name="RoadRadius" value="7" />
 
 		<property name="WildernessPOIProb" value="1" />
-		<property name="WildernessPOIMinCount" value="5" />
+		<property name="WildernessPOIMinCount" value="4" />
 		<property name="WildernessPOIMaxCount" value="6" />
 
 		<hub name="rural" prob="0.3">
