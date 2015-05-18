@@ -8473,7 +8473,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="HoldType" value="14" />
         <property name="Stacknumber" value="64" />
         <property name="RepairTime" value="1" />
-        <property name="RepairAmount" value="10" />
+        <property name="RepairAmount" value="50" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -8514,33 +8514,41 @@ ARMOR ATTRIBUTE EXAMPLE
 	<item id="765" name="kevlarBoots">
 		<property name="CustomIcon" value="wornBoots"/>
 		<property name="CustomIconTint" value="FAAB00"/>
-        <property name="Meshfile" value="Items/Crafting/leather" />
-        <property name="Material" value="organic" />
-        <property name="HoldType" value="21" />
-        <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="kevlarStrips" />
-        <property name="EquipSlot" value="Feet" />
-        <property name="FuelValue" value="2" />
-        <property name="Degradation" value="100" param1="true" />
-        <property class="Armor">
-            <property name="Melee" value="0.6" />
-            <property name="Bullet" value="0.7" />
-            <property name="Puncture" value="0.7" />
-            <property name="Blunt" value="0.7" />
-            <property name="Explosive" value="0.4" />
-        </property>
-        <property name="Group" value="Clothing" />
-        <property class="UMA">
-            <property name="Mesh" value="worn_boots" />
-            <property name="Overlay" value="worn_boots" />
-            <property name="Layer" value="0" />
-            <property name="UISlot" value="Footwear" />
-        </property>
-        <property class="Preview">
-            <property name="Zoom" value="28" />
-            <property name="Pos" value="0,-0.05" />
-            <property name="Rot" value="90,45,0" />
-        </property>
+    <property name="Meshfile" value="Items/Crafting/leather" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="kevlarStrips" />
+    <property name="EquipSlot" value="Feet" />
+    <property name="FuelValue" value="2" />
+    <property name="Degradation" value="100" param1="true" />
+    <property class="Armor">
+        <property name="Melee" value="0.6" />
+        <property name="Bullet" value="0.7" />
+        <property name="Puncture" value="0.7" />
+        <property name="Blunt" value="0.7" />
+        <property name="Explosive" value="0.4" />
+    </property>
+    <property class="Attributes">
+        <property name="MeleeProtection" value="0.6, 0.8" />
+        <property name="BulletProtection" value="0.6, 0.8" />
+        <property name="PunctureProtection" value="0.5, 0.7" />
+        <property name="BluntProtection" value="0.5, 0.6" />
+        <property name="ExplosiveProtection" value="0.5,0.7" />
+        <property name="DegradationMin" value="0.1,0.1" />
+    </property>
+    <property name="Group" value="Clothing" />
+    <property class="UMA">
+        <property name="Mesh" value="worn_boots" />
+        <property name="Overlay" value="worn_boots" />
+        <property name="Layer" value="0" />
+        <property name="UISlot" value="Footwear" />
+    </property>
+    <property class="Preview">
+        <property name="Zoom" value="28" />
+        <property name="Pos" value="0,-0.05" />
+        <property name="Rot" value="90,45,0" />
+    </property>
     </item>
 
     <item id="766" name="kevlarLegArmor">
