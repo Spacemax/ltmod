@@ -2,4 +2,8 @@
 <prefab>
     <property name="CopyAirBlocks" value="False" />
     <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Residential" />
+    <property name="AllowedTownships" value="City" />
+    <property name="AllowedBiomes" value="wasteland_hub" />
+    <property name="MaxPerHub" value="1" />
 </prefab>

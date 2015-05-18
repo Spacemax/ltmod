@@ -4,9 +4,8 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="Zoning" value="Industrial" />
     <property name="YOffset" value="-1" />
-    <property name="AllowedTownships" value="rural" />
+    <property name="AllowedTownships" value="rural,wilderness" />
     <property name="AllowedBiomes" value="snow" />
-    <property name="Condition" value="Old" />
     <property name="StaticSpawner.Class" value="SpawnSnowMedium" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="160" />

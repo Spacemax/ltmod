@@ -4,5 +4,6 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="Zoning" value="Commercial" />
     <property name="AllowedBiomes" value="wasteland_hub" />
-    <property name="AllowedTownships" value="city" />
+    <property name="AllowedTownships" value="City" />
+    <property name="MaxPerHub" value="1" />
 </prefab>

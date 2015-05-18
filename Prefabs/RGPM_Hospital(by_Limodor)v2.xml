@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-1" />
+    <property name="Zoning" value="Commercial" />
+    <property name="RotationToFaceNorth" value="1" />
+    <property name="AllowedTownships" value="rural,wilderness" />
+    <property name="AllowedBiomes" value="plains,pine_forest,forest,burnt_forest,desert,snow,wasteland" />
+</prefab>

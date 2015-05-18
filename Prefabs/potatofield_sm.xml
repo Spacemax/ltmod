@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <prefab>
-    <property name="CopyAirBlocks" value="True" />
+    <property name="CopyAirBlocks" value="False" />
     <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Industrial" />
+    <property name="RotationToFaceNorth" value="0" />
+    <property name="AllowedTownships" value="town,rural" />
+    <property name="AllowedBiomes" value="plains,pine_forest" />
+    <property name="MaxPerHub" value="1" />
 </prefab>

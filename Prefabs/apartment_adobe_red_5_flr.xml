@@ -2,12 +2,12 @@
 <prefab>
     <property name="CopyAirBlocks" value="False" />
     <property name="AllowTopSoilDecorations" value="False" />
-    <property name="Zoning" value="Commercial" />
+    <property name="Zoning" value="Residential" />
     <property name="RotationToFaceNorth" value="2" />
-    <property name="AllowedTownships" value="city" />
-    <property name="MaxPerHub" value="1" />
+    <property name="AllowedTownships" value="City,town" />
+    <property name="AllowedBiomes" value="plains,forest,pine_forest,burnt_forest,snow,wasteland,wasteland_hub" />
     <property name="StaticSpawner.Class" value="SpawnSmall" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="160" />
-    <property name="Condition" value="New" />
+    <property name="MaxPerHub" value="1" />
 </prefab>

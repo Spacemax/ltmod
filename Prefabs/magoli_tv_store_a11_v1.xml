@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Commercial" />
+    <property name="AllowedTownships" value="City,town" />
+    <property name="AllowedBiomes" value="plains,pine_forest,burnt_forest,forest,wasteland,wasteland_hub" />
+    <property name="MaxPerHub" value="1" />
+</prefab>

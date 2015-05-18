@@ -4,10 +4,10 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="Zoning" value="Commercial" />
     <property name="RotationToFaceNorth" value="2" />
-    <property name="AllowedTownships" value="city,rural,town" />
+    <property name="YOffset" value="-3" />
+    <property name="AllowedBiomes" value="plains,forest,pine_forest,desert,snow,burnt_forest,wasteland" />
+    <property name="AllowedTownships" value="rural" />
     <property name="StaticSpawner.Class" value="SpawnMedium" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="160" />
-    <property name="MaxPerHub" value="1" />
-    <property name="YOffset" value="-3" />
 </prefab>

@@ -2,4 +2,9 @@
 <prefab>
     <property name="CopyAirBlocks" value="False" />
     <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Industrial" />
+    <property name="RotationToFaceNorth" value="0" />
+    <property name="AllowedTownships" value="town" />
+    <property name="AllowedBiomes" value="plains,forest,pine_forest,burnt_forest,wasteland" />
+    <property name="MaxPerHub" value="1" />
 </prefab>

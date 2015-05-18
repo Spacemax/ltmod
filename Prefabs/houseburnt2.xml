@@ -5,10 +5,10 @@
     <property name="Zoning" value="Residential" />
     <property name="RotationToFaceNorth" value="2" />
     <property name="YOffset" value="-3" />
-    <property name="AllowedTownships" value="town,rural" />
-    <property name="Condition" value="Old" />
-    <property name="AllowedBiomes" value="burnt_forest" />
+    <property name="AllowedTownships" value="City,town,rural" />
+    <property name="AllowedBiomes" value="burnt_forest,wasteland,wasteland_hub" />
     <property name="StaticSpawner.Class" value="SpawnSmall" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="160" />
+    <property name="MaxPerHub" value="1" />
 </prefab>
