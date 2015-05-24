@@ -2,10 +2,10 @@
 <rwgmixer>
 	<world>
 		<property name="BiomeSizeInMeters" value="1200" />									<!-- The distance between each biome center point -->
-		<property name="BiomeMaxCenterOffset" value="0.8" /> 								<!-- The maximum distance percentage to offset from the center point,  0.8 is max of 80% of BiomeSizeInMeters -->
-		<property name="RiverRadius" value="24" /> 												<!-- The global river half width, must be a whole number. -->
+		<property name="BiomeMaxCenterOffset" value="0.6" /> 								<!-- The maximum distance percentage to offset from the center point,  0.8 is max of 80% of BiomeSizeInMeters -->
+		<property name="RiverRadius" value="36" /> 												<!-- The global river half width, must be a whole number. -->
 		<property name="RiverCurveOffsetDistance" value="80" />							<!-- How curvy the rivers are, higher means curvier but less controlled, lower means more straight -->
-		<property name="MaxGenerationDistanceFromWorldCenter" value="0,0" /> 	<!--0,0 means no max dist. First value is X, Second Value is Y, Measured in Biomes -->
+		<property name="MaxGenerationDistanceFromWorldCenter" value="12,12" /> 	<!--0,0 means no max dist. First value is X, Second Value is Y, Measured in Biomes -->
 	</world>
 	
 	<biome name="snow" prob="0.15">
@@ -17,10 +17,10 @@
 		<property name="RoadRadius" value="7" /> 												<!-- The half width of biome roads must be a whole number-->
 		
 		<property name="WildernessPOIProb" value="1.25" /> 								<!-- Controls the chance for Wilderness POIs to spawn in this biome -->
-		<property name="WildernessPOIMinCount" value="3" /> 								<!-- Controls the minimum amount of wilderness POIs to spawn -->
+		<property name="WildernessPOIMinCount" value="4" /> 								<!-- Controls the minimum amount of wilderness POIs to spawn -->
 		<property name="WildernessPOIMaxCount" value="6" /> 								<!-- Controls the maximum amount of wilderness POIs to spawn. clamped to the number of biome edges max (~6 edges)-->
 		
-		<hub name="rural" prob="0.75">
+		<hub name="rural" prob="0.4">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 					<!-- Minimum City Block size. First value is width, Second value is height -->
 			<property name="MaxCityBlockSizeInMeters" value="96,96" /> 				<!-- Maximum City Block size. First value is width, Second value is height -->
 			
@@ -31,7 +31,7 @@
 			<property name="RoadRadius" value="7" /> 											<!-- The half width of hub roads must be a whole number-->
 		</hub>
 		
-		<hub name="town" prob="0.1">
+		<hub name="town" prob="0.0">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" />
 			
@@ -87,10 +87,10 @@
 		<property name="RoadRadius" value="7" />
 		
 		<property name="WildernessPOIProb" value="1.25" />
-		<property name="WildernessPOIMinCount" value="3" /> 
+		<property name="WildernessPOIMinCount" value="4" /> 
 		<property name="WildernessPOIMaxCount" value="6" /> 
 		
-		<hub name="rural" prob="0.5">
+		<hub name="rural" prob="0.0">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 
 			<property name="MaxCityBlockSizeInMeters" value="96,96" /> 
 			
@@ -101,7 +101,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.1">
+		<hub name="town" prob="0.0">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="412,412" /> 
 			
@@ -171,7 +171,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.75">
+		<hub name="town" prob="0.0">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="103,103" /> 
 			
@@ -193,7 +193,7 @@
 		
 		<property name="WildernessPOIProb" value="0.75" /> 
 		<property name="WildernessPOIMinCount" value="1" /> 
-		<property name="WildernessPOIMaxCount" value="6" /> 
+		<property name="WildernessPOIMaxCount" value="4" /> 
 		
 		<hub name="rural" prob="0.55">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 
@@ -206,7 +206,7 @@
 			<property name="RoadRadius" value="7" /> 
 		</hub>
 		
-		<hub name="town" prob="0.75">
+		<hub name="town" prob="1.25">
 			<property name="MinCityBlockSizeInMeters" value="103,103" /> 
 			<property name="MaxCityBlockSizeInMeters" value="103,103" /> 
 			

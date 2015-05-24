@@ -519,7 +519,7 @@
       <property name="explosionresistance" value="1" />
       <property name="stepsound" value="cloth" />
       <property name="lightopacity" value="4" />
-      <property name="stability_glue" value="0" />
+      <property name="stability_glue" value="320" />
       <property name="Mass" type="int" value="1" />
    </material>
    <material id="boulder">
