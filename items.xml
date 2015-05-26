@@ -11338,7 +11338,8 @@ ARMOR ATTRIBUTE EXAMPLE
          <property name="Gain_water" value="0" />
          <property name="Gain_wellness" value="-0.5" />
          <property name="Sound_start" value="Player_Male/player1drownsurface" />
-         <property name="Buff" value="useCocaine" />
+         <property name="Buff" value="useCocaine,bleeding" />
+         <property name="Buff_chance" value="1,.25" />
      </property>
      <property name="Group" value="Medicine" />
      <property class="Preview">
