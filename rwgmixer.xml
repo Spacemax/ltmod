@@ -17,8 +17,8 @@
 		<property name="RoadRadius" value="7" /> 												<!-- The half width of biome roads must be a whole number-->
 		
 		<property name="WildernessPOIProb" value="1.25" /> 								<!-- Controls the chance for Wilderness POIs to spawn in this biome -->
-		<property name="WildernessPOIMinCount" value="4" /> 								<!-- Controls the minimum amount of wilderness POIs to spawn -->
-		<property name="WildernessPOIMaxCount" value="6" /> 								<!-- Controls the maximum amount of wilderness POIs to spawn. clamped to the number of biome edges max (~6 edges)-->
+		<property name="WildernessPOIMinCount" value="3" /> 								<!-- Controls the minimum amount of wilderness POIs to spawn -->
+		<property name="WildernessPOIMaxCount" value="5" /> 								<!-- Controls the maximum amount of wilderness POIs to spawn. clamped to the number of biome edges max (~6 edges)-->
 		
 		<hub name="rural" prob="0.4">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 					<!-- Minimum City Block size. First value is width, Second value is height -->
@@ -53,7 +53,7 @@
 
 		<property name="WildernessPOIProb" value="1.25" />
 		<property name="WildernessPOIMinCount" value="3" />
-		<property name="WildernessPOIMaxCount" value="6" />
+		<property name="WildernessPOIMaxCount" value="5" />
 		
 		<hub name="rural" prob="1.25">
 			<property name="MinCityBlockSizeInMeters" value="96,96" />
@@ -87,8 +87,8 @@
 		<property name="RoadRadius" value="7" />
 		
 		<property name="WildernessPOIProb" value="1.25" />
-		<property name="WildernessPOIMinCount" value="4" /> 
-		<property name="WildernessPOIMaxCount" value="6" /> 
+		<property name="WildernessPOIMinCount" value="3" /> 
+		<property name="WildernessPOIMaxCount" value="5" /> 
 		
 		<hub name="rural" prob="0.0">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 
@@ -123,7 +123,7 @@
 		
 		<property name="WildernessPOIProb" value="0.75" /> 
 		<property name="WildernessPOIMinCount" value="1" /> 
-		<property name="WildernessPOIMaxCount" value="6" /> 
+		<property name="WildernessPOIMaxCount" value="5" /> 
 		
 		<hub name="rural" prob="1.25">
 			<property name="MinCityBlockSizeInMeters" value="96,96" /> 
