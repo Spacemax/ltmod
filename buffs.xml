@@ -372,7 +372,7 @@
 	</buff>
 
 <!-- Death from either Too Hot or Too Cold -->
-	<buff id="death" name="The End" actions="kill" description="Your illness has reached its lethal phase." icon="buff_icon_infection"/>
+	<buff id="death" name="The End" actions="kill" description="It's all over baby." icon="buff_icon_infection"/>
 
 <!-- Water Related - Make jumping in the river end fire related buffs -->
 	<buff id="wet" buffif="+water > 30" duration="120" debuffif="-water > 1" name="Wet" actions="debuff(heatStroke);debuff(Burning2);debuff(burningSmall)debuff(burning);increment(@wellness, -0.1, 10, 0, 0)" description="You are wet. Get on to dry land to prevent sickness."/>
@@ -513,6 +513,38 @@
 		<modify id="0" stat="speedmodifier" setValue="0.01"/>
 	</buff>
 
+<!-- Cocaine system -->
+
+<buff id="useCocaine" duration="1" actions="increment(cocaine, 1, 0, 0, 1)">
+	<modify id="0" stat="stamina" amount="3.5" rate="1"/>
+</buff>
+
+<buff id="MetabolizeCocaine" buffif="cocaine greater 0" debuffif="cocaine less 1" actions="increment(cocaine, -1, 100t, 0, 0);min(cocaine, 0)"/>
+
+<buff id="Pumped" mutex="Rekt,Boosted,SickHigh,CocainePoisoning" buffif="cocaine greater 0" debuffif="cocaine less 1" duration="0" name="Elwood" type="staminaup" description="It’s 106 miles to Chicago, we’ve got a full tank of gas, half a pack of cigarettes, it’s dark and we’re wearing sunglasses." icon="buff_icon_beer" >
+	<modify id="0" stat="stamina" amount="3" rate="1"/>
+</buff>
+
+<buff id="Boosted" mutex="Rekt,SickHigh,CocainePoisoning" buffif="cocaine greater 5" debuffif="cocaine less 2" actions="debuff(Pumped)" name="Jake" type="staminadown" description="Hit it!" icon="buff_icon_beer_hangover">
+	<modify id="0" stat="stamina" amount="5" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="1.20"/>
+</buff>
+
+<buff id="InstantSickHigh" duration="1" buffif="cocaine greater 0" mutex="SickHigh,CocainePoisoning" requires="Rekt" actions="setvar(cocaine, 9)" name="InstantSickHigh" type="staminadown"/>
+
+<buff id="SickHigh" mutex="CocainePoisoning" buffif="cocaine greater 8" debuffif="cocaine less 1" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Boosted);debuff(Rekt)" ondebuff="Rekt" name="Scarface" type="staminadown" description="You need help." icon="buff_icon_dysentery">
+	<modify id="0" stat="stamina" amount="-1" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.70"/>
+</buff>
+
+<buff id="Rekt" mutex="CocainePoisoning" duration="1200t" name="Rekt" type="staminadown" description="One of those crazy monkeys with symbols lives in your head now." icon="buff_icon_food_poisoning">
+	<modify id="0" stat="stamina" amount="-1" rate="1"/>
+</buff>
+
+<buff id="CocainePoisoning" buffif="cocaine greater 14" debuffif="cocaine less 9" ondebuff="SickHigh" name="Mysterious Poisoning" type="bleeding" description="You hear Chris Farley calling you... " actions="increment(@wellness, -1, 100t, 0, 0);debuff(SickHigh);debuff(Rekt)" icon="buff_icon_food_poisoning" stack="extend">
+	<modify id="0" stat="stamina" amount="-5" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.40"/>
+</buff>
 
 	<!-- Nothing after here -->
 

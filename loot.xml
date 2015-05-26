@@ -859,6 +859,7 @@ plentiful loot items in the game.
 
 	<lootgroup name="seeds" count="1">
 		<item name="coffeeBeans" prob="0.1"/>
+    <item name="cocaSeeds" prob="0.03"/>
 		<item name="potatoSeed" prob="0.1"/>
 		<item name="cornSeed" prob="0.4"/>
 		<item name="blueberrySeed" prob="0.4"/>

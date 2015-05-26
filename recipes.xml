@@ -2780,4 +2780,8 @@
         <ingredient name="cloth" count="1" grid="0, 0"/>
     </recipe>
 
+    <recipe name="mysteriousPowder" count="1" scrapable="False" craft_area="campfire" craft_tool="beaker" craft_time="150" craft_exp_gain="2" learn_exp_gain="60" >
+        <ingredient name="cocaPlant" count="1"/>
+    </recipe>
+
 </recipes>

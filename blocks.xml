@@ -11301,5 +11301,53 @@
     <drop event="Destroy" name="scrapIron" count="1" prob="0.8" />
   </block>
 
+  <!-- Cocoa Plants -->
+
+  <block id="1445" name="cocaSprout">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="cutoutmoveable" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <drop event="Destroy" count="0" />
+    <property class="PlantGrowing">
+      <property name="Next" value="cocaGrowing" />
+      <property name="GrowthRate" value="60" />
+      <property name="FertileLevel" value="5" />
+      <property name="IsRandom" value="false" />
+    </property>
+  </block>
+  <block id="1446" name="cocaGrowing">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="cutoutmoveable" />
+    <property name="Texture" value="394" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <drop event="Destroy" count="0" />
+    <property class="PlantGrowing">
+      <property name="Next" value="cocaPlant" />
+      <property name="GrowthRate" value="60" />
+      <property name="FertileLevel" value="5" />
+      <property name="IsRandom" value="false" />
+    </property>
+  </block>
+  <block id="1447" name="cocaPlant">
+    <property name="CustomIcon" value="coffeePlant"/>
+    <property name="CustomIconTint" value="d900fb"/>
+    <property name="Class" value="CropsGrown" />
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="cutoutmoveable" />
+    <property name="Texture" value="395" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <drop event="Destroy" name="cocaPlant" count="1,2" prob="0.3" />
+    <drop event="Harvest" name="cocaPlant" count="1" />
+  </block>
+
 
  </blocks>

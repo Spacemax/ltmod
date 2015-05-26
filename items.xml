@@ -8950,12 +8950,12 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Hitmask_override" value="Melee" />
             <property name="Delay" value="0.1" />
             <property name="Range" value="2.3" />
-            <property name="Rays_per_shot" value="1" />
+            <property name="Rays_per_shot" value="3" />
             <property name="Rays_spread" value=".7" />
             <property name="Crosshair_min_distance" value="5" />
             <property name="Crosshair_max_distance" value="30" />
             <property name="DamageEntity" value="16" />
-            <property name="DamageBlock" value="1" />
+            <property name="DamageBlock" value="2" />
             <property name="Magazine_size" value="1000" />
             <property name="Single_magazine_usage" value="true" />
             <property name="Magazine_item" value="gasCan" />
@@ -8970,7 +8970,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Horde_meter_distance" value="20" />
             <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
             <property name="DamageBonus.wood" value="0.2" />
-			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="0.5" />
             <property name="DamageBonus.head" value="4" />
             <property name="DamageBonus.glass" value="25" />
@@ -9010,6 +9010,8 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBlock" value="1" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="8" />
+            <property name="DamageBonus.stone" value="10" />
+            <property name="DamageBonus.metal" value="0.5" />
             <property name="DamageBonus.earth" value="15" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
@@ -11241,6 +11243,8 @@ ARMOR ATTRIBUTE EXAMPLE
  </item>
 
  <item id="864" name="bushBandage">
+   <property name="CustomIcon" value="bandage" />
+   <property name="CustomIconTint" value="8c753f"/>
      <property name="Meshfile" value="Items/Health/gauze" />
      <property name="Material" value="cloth" />
      <property name="HoldType" value="16" />
@@ -11267,5 +11271,81 @@ ARMOR ATTRIBUTE EXAMPLE
      </property>
  </item>
 
+ <!-- Speed -->
+ <item id="865" name="speedPills">
+   <property name="CustomIcon" value="vitamins" />
+   <property name="CustomIconTint" value="8c753f"/>
+     <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+     <property name="Material" value="organic" />
+     <property name="HoldType" value="16" />
+     <property class="Action1">
+         <!-- UseAction -->
+         <property name="Class" value="Eat" />
+         <property name="Delay" value="1.0" />
+         <property name="Use_time" value="..." />
+         <property name="Gain_health" value="0" />
+         <property name="Gain_food" value="0" />
+         <property name="Gain_water" value="0" />
+         <property name="Gain_wellness" value="-0.5" />
+         <property name="Sound_start" value="UseActions/player_painkillers" />
+         <property name="Debuff" value="dysentery" />
+         <property name="Buff" value="bleeding" />
+         <property name="Buff_chance" value="0.1,1" />
+     </property>
+     <property name="Group" value="Medicine" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="-0.02,-0.1" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+ <item id="866" name="cocaSeeds">
+   <property name="CustomIcon" value="coffeeBeans" />
+   <property name="CustomIconTint" value="d734cc"/>
+     <property name="Meshfile" value="Items/Food/seed_blueberry" />
+     <property name="Material" value="organic" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="250" />
+     <property class="Action1">
+         <!-- UseAction -->
+         <property name="Class" value="PlaceAsBlock" />
+         <property name="Delay" value="0.5" />
+         <property name="Blockname" value="cocaSprout" />
+     </property>
+     <property name="Group" value="Food/Cooking" />
+     <property class="Preview">
+         <property name="Zoom" value="25" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
+
+ <item id="867" name="mysteriousPowder">
+   <property name="CustomIcon" value="potassiumNitratePowder" />
+     <property name="Meshfile" value="Items/Food/cornmeal" />
+     <property name="Material" value="metal" />
+     <property name="HoldType" value="21" />
+     <property name="Stacknumber" value="100" />
+     <property name="HoldType" value="16" />
+     <property class="Action1">
+         <!-- UseAction -->
+         <property name="Class" value="Eat" />
+         <property name="Delay" value="1.0" />
+         <property name="Use_time" value="..." />
+         <property name="Gain_health" value="0" />
+         <property name="Gain_food" value="0" />
+         <property name="Gain_water" value="0" />
+         <property name="Gain_wellness" value="-0.5" />
+         <property name="Sound_start" value="Player_Male/player1drownsurface" />
+         <property name="Buff" value="useCocaine" />
+     </property>
+     <property name="Group" value="Medicine" />
+     <property class="Preview">
+         <property name="Zoom" value="28" />
+         <property name="Pos" value="0,-0.05" />
+         <property name="Rot" value="90,45,0" />
+     </property>
+ </item>
 
 </items>
