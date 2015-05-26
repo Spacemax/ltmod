@@ -5841,7 +5841,7 @@
   <block id="829" name="reinforcedCobblestone">
     <property name="Material" value="concrete" />
     <property name="Texture" value="273" />
-    <property name="DowngradeBlock" value="cobblestone" />>
+    <property name="DowngradeBlock" value="cobblestone" />
     <drop event="Destroy" count="0" />
   </block>
   <block id="830" name="halfBlockOldWood">
@@ -9226,7 +9226,7 @@
   <block id="1238" name="gunStoreSignLit">
     <property name="Material" value="metal" />
     <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="241" />>
+    <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="Entities/Signs/gunStoreSignLitPrefab" />
     <drop event="Destroy" count="0" />
@@ -9689,7 +9689,7 @@
   <block id="1303" name="bookSignLit">
     <property name="Material" value="metal" />
     <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="241" />>
+    <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="Entities/Signs/bookSignLitPrefab" />
     <drop event="Destroy" count="0" />
@@ -9760,7 +9760,7 @@
   <block id="1311" name="pharmacySignLit">
     <property name="Material" value="metal" />
     <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="241" />>
+    <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="Entities/Signs/pharmacySignLitPrefab" />
     <drop event="Destroy" count="0" />
@@ -9831,7 +9831,7 @@
   <block id="1319" name="toolSignLit">
     <property name="Material" value="metal" />
     <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="241" />>
+    <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="Entities/Signs/toolSignLitPrefab" />
     <drop event="Destroy" count="0" />
@@ -9892,7 +9892,7 @@
 
   <block id="1326" name="coldBeer">
     <property name="Material" value="wood_weak" />
-    <property name="Shape" value="BillboardSingleOnWall" />>
+    <property name="Shape" value="BillboardSingleOnWall" />
     <property name="Texture" value="427" />
     <property name="Collide" value="melee" />
     <drop event="Destroy" count="0" />
@@ -10254,7 +10254,7 @@
   <block id="1361" name="grocerySignLit">
     <property name="Material" value="metal" />
     <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="241" />>
+    <property name="Texture" value="241" />
     <property name="Collide" value="movement,rocket,melee" />
     <property name="Model" value="Entities/Signs/grocerySignLitPrefab" />
     <drop event="Destroy" count="0" />
