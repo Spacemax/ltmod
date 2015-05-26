@@ -11345,7 +11345,7 @@
     <property name="Texture" value="395" />
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
-    <drop event="Destroy" name="cocaPlant" count="1,2" prob="0.3" />
+    <drop event="Destroy" name="cocaSeeds" count="1,2" prob="0.9" />
     <drop event="Harvest" name="cocaPlant" count="1" />
   </block>
 
