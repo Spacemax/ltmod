@@ -435,7 +435,7 @@ ARMOR ATTRIBUTE EXAMPLE
         <property name="HoldType" value="33" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="steelStrips" />
-        <property name="Degradation" value="200" param1="true" />
+        <property name="Degradation" value="500" param1="true" />
         <property name="SoundDestroy" value="metaldestroy1" />
         <property name="FuelValue" value="16" />
         <property name="Weight" value="72" />
@@ -444,34 +444,28 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="Melee" />
             <property name="Delay" value="1.8" />
             <property name="Range" value="2" />
-            <property name="Sphere" value="0.2" />
+            <property name="Sphere" value="0.6" />
             <property name="Block_range" value="4" />
-            <property name="DamageEntity" value="35" />
-            <property name="DamageBlock" value="1" />
+            <property name="DamageEntity" value="90" />
+            <property name="DamageBlock" value="15" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="15" />
             <property name="Buff" value="criticalBlunt" />
-            <property name="Buff_chance" value=".3" />
+            <property name="Buff_chance" value=".5" />
             <property name="DamageBonus.wood" value=".5" />
             <property name="DamageBonus.stone" value="1" />
-             <property name="DamageBonus.metal" value="2" />
-            <property name="DamageBonus.head" value="4" />
+            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.head" value="10" />
             <property name="DamageBonus.concrete" value="3" />
             <property name="DamageBonus.glass" value="20" />
-            <property class="Attributes">
-            <property name="EntityDamage" value="15,60" />
-            <property name="BlockDamage" value="2,10" />
-            <property name="DegradationMax" value="400,900" />
-			<property name="DegradationRate" value="3,1" />
-        </property>
-        </property>
-        <property name="CritChance" value=".4" />
-        <property class="Attributes">
-            <property name="EntityDamage" value="20,50" />
-            <property name="BlockDamage" value="1" />
+          </property>
+          <property class="Attributes">
+            <property name="EntityDamage" value="90,300" />
+            <property name="BlockDamage" value="15,25" />
             <property name="DegradationMax" value="500,900" />
-			<property name="DegradationRate" value="3,1" />
-        </property>
+			      <property name="DegradationRate" value="3,1" />
+          </property>
+            <property name="CritChance" value=".5" />
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
             <property name="Zoom" value="-2" />
@@ -801,9 +795,9 @@ ARMOR ATTRIBUTE EXAMPLE
             <!-- AttackAction -->
             <property name="Class" value="Melee" />
             <property name="Delay" value="1.2" />
-            <property name="Range" value="2.2" />
+            <property name="Range" value="1.5" />
             <property name="Sphere" value="0.1" />
-            <property name="DamageEntity" value="15" />
+            <property name="DamageEntity" value="60" />
             <property name="DamageBlock" value="0.4" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="8" />
@@ -817,12 +811,12 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="DamageBonus.leaves" value="25" />
         </property>
         <property class="Attributes">
-            <property name="EntityDamage" value="10,20" />
+            <property name="EntityDamage" value="60,240" />
             <property name="BlockDamage" value=".4,1" />
             <property name="DegradationMax" value="100,600" />
             <property name="DegradationRate" value="1,1" />
         </property>
-        <property name="CritChance" value=".4" />
+        <property name="CritChance" value=".6" />
         <property name="Group" value="Ammo/Weapons" />
     </item>
     <item id="35" name="handZombieDog">
