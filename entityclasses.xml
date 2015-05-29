@@ -739,7 +739,7 @@
 	       <property name="TimeStayAfterDeath" value="0" />
 
 		  <!-- If set this entity shows on the map -->
-	    <!-- <property name="MapIcon"   		 value="map_supply_crate" /> -->
+	    <property name="MapIcon"   		 value="map_supply_crate" />
     </entity_class>
 
 
@@ -983,7 +983,7 @@
         <property name="AITarget-2" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombie" />
         <property name="Weight"       value="100" />
-        <property name="MaxHealth"    value="350" />
+        <property name="MaxHealth"    value="250" />
 		<property name="SoundFootstepModifier"  value="Player_Male/player1painlg" />
 		<property name="SoundAlert"     value="Animals/pigdeath" />
 		<property name="SoundAttack"     value="Animals/pigdeath" />
@@ -992,8 +992,8 @@
         <property name="SoundDeath"   value="Animals/pigdeath" />
         <property name="LootListOnDeath"  value="39" />
         <property name="TimeStayAfterDeath" value="90" />
-		    <property name="ApproachSpeed"      value="1.2" />
-        <property name="PanicSpeed"    value="1.4" />
+		    <property name="ApproachSpeed"      value="1.0" />
+        <property name="PanicSpeed"    value="1.2" />
 		    <property name="ExperienceGain" value="300"/>
     </entity_class>
 

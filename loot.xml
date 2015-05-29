@@ -859,7 +859,6 @@ plentiful loot items in the game.
 
 	<lootgroup name="seeds" count="1">
 		<item name="coffeeBeans" prob="0.1"/>
-    <item name="cocaSeeds" prob="0.03"/>
 		<item name="potatoSeed" prob="0.1"/>
 		<item name="cornSeed" prob="0.4"/>
 		<item name="blueberrySeed" prob="0.4"/>
@@ -1315,7 +1314,7 @@ plentiful loot items in the game.
 		<item group="rareMedicine" prob="0.05" />
 		<item name="casinoCoin" count="1,5" prob="0.15" />
 		<item group="ammo" prob="0.30" />
-		<item group="WeaponParts" prob="0.5" />	            <!-- KM:Changed to weaponparts to remove double chance at ammo-->
+		<item group="books" prob="0.05"/>	          <!-- KM:Changed to weaponparts to remove double chance at ammo-->
     </lootcontainer>
 
     <!-- lootcontainer 12 deer todo add deer skin or leather bones-->
@@ -1353,6 +1352,7 @@ plentiful loot items in the game.
 		<item group="WeaponParts" />
 		<item group="ammo" count="1,2" />
 		<item name="shamSandwich" count="1,3"/>
+		<item group="books" />
 
 		<!-- <item group="pistol+ammo"/>
     	<item group="shotgun+ammo"/>
@@ -1368,6 +1368,8 @@ plentiful loot items in the game.
     <!-- lootcontainer 19 cars-->
     <lootcontainer id="19" count="0,1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
     	<item group="automotive" />
+		<item group="books" prob="0.01" />
+		<item group="junk" prob="0.99" />
     </lootcontainer>
 
     <!-- lootcontainer 20 air conditioners-->
@@ -1537,6 +1539,7 @@ plentiful loot items in the game.
     <!-- military munitions  -->
     <lootcontainer id="40" count="1"  size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15">
 			<item group="militaryguns+ammo" prob="0.3"/>
+			<item group="books" prob="0.05"/>	
 	</lootcontainer>
 
 	<!-- player dropped backpacks -->
@@ -1548,6 +1551,8 @@ plentiful loot items in the game.
     <lootcontainer id="42" count="2,6" size="10,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
 		<item group="guns+ammo" prob="0.2"/>
 		<item group="WeaponParts" prob="0.8" />
+		<item group="books" prob="0.01" />
+		
 
     </lootcontainer>
 
@@ -1562,6 +1567,7 @@ plentiful loot items in the game.
 		<item name="gunPowder" count="1,5" prob="0.1" />		<!--10%-->
 		<item group="hats" prob="0.25" />						<!--25%-->
 		<item group="clothes" prob="0.25" />					<!--25%-->
+		<item group="books" prob="0.01" />
     </lootcontainer>
 
     <!-- file cabinet -->
@@ -1571,6 +1577,8 @@ plentiful loot items in the game.
 		<item group="trophyGroup" prob="0.20" />			<!--20%-->
 		<item name="book" count="1,4" prob="0.35" />		<!--35%-->
 		<item name="paper" count="5,30" prob="0.35" />		<!--35%-->
+		<item group="books" prob="0.01" />
+	
     </lootcontainer>
 
     <!-- cooler loot -->
@@ -1583,10 +1591,10 @@ plentiful loot items in the game.
     <!-- lootcontainer 46 Supply Crate General multi player -->
     <lootcontainer id="46" count="1,5" size="10,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
 		<item group="rareTools" prob="0.02" />				<!--2%-->
-		<item group="books" prob="0.10" />					<!--10%-->
+		<item group="books" prob="0.20" />					<!--20%-->
 		<item group="ammo" prob="0.2" count="1,3"/>			<!--20%-->
 		<item group="airdropMedicine" prob="0.25" />		<!--25%-->
-		<item group="airdropfood" prob="0.38" />			<!--38%-->
+		<item group="airdropfood" prob="0.38" />			<!--28%-->
     </lootcontainer>
 
     <!-- zombie dog loot-->
@@ -1606,8 +1614,8 @@ plentiful loot items in the game.
     <!-- bookcase  -->
     <lootcontainer id="49" count="3,7" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
 		<!-- KM drop overall drop rate to reflect that household book numbers would be less than a store-->
-		<item group="books" prob="0.02" />
-		<item name="book" prob="0.98" />
+		<item group="books" prob="0.03" />
+		<item name="book" prob="0.97" />
     </lootcontainer>
 
     <!-- shotgun Messiah  -->
@@ -1671,8 +1679,8 @@ plentiful loot items in the game.
 
   <!-- Bookstore bookcase  -->
   <lootcontainer id="60" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
-	<item group="books" prob="0.02"/>
-	<item name="book" prob="0.98" />
+	<item group="books" prob="0.03"/>
+	<item name="book" prob="0.97" />
   </lootcontainer>
 
   <!-- LT tough zombie and feral loot  -->
@@ -1682,6 +1690,7 @@ plentiful loot items in the game.
 		<item group="tools" />
 		<item group="ammo"/>
 		<item group="Armor" count="0,1"/>
+		<item group="books" />
     </lootcontainer>
 
 </lootcontainers>

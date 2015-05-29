@@ -45,7 +45,7 @@
     <biome name="plains">
         <spawn maxcount="3" respawndelay="4" time="Any"   entitygroup="ZombiesAll" />
 		<spawn maxcount="1" respawndelay="14" time="Day"   entitygroup="CarsWild" />
-		<spawn maxcount="6" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
         <spawn maxcount="1" respawndelay="5" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0.1" />
 
     </biome>
@@ -53,19 +53,21 @@
     <biome name="desert">
         <spawn maxcount="3" respawndelay="4" time="Any"   entitygroup="ZombiesAll" />
         <spawn maxcount="1" respawndelay="14" time="Day"   entitygroup="CarsWild" />
-		<spawn maxcount="6" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
         <spawn maxcount="1" respawndelay="5" time="Any"   entitygroup="AnimalsSmall" spawnDeadChance="0.1" />
     </biome>
 
     <biome name="wasteland">
         <spawn maxcount="6" respawndelay="4" time="Day"   entitygroup="ZombiesAll" />
-        <spawn maxcount="6" respawndelay="4" time="Night" entitygroup="ZombiesWastelandNight" />	
+        <spawn maxcount="6" respawndelay="4" time="Night" entitygroup="ZombiesWastelandNight" />
+		<spawn maxcount="2" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />		
         <spawn maxcount="1" respawndelay="5" time="Any"   entitygroup="AnimalsSmall" spawnDeadChance="0.1" />
     </biome>
 
     <biome name="burnt_forest">
         <spawn maxcount="2" respawndelay="4" time="Any"   entitygroup="ZombiesBurntForest" />
-		<spawn maxcount="6" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieDogGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZrabbitGroup" />
         <spawn maxcount="1" respawndelay="5" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0.1" />
 		</biome>
 		
