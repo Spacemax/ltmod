@@ -9268,7 +9268,7 @@ ARMOR ATTRIBUTE EXAMPLE
             <property name="Class" value="LearnRecipe" />
             <property name="Title" value="Government's Hate her!" />
             <property name="Description" value="Learn how to make Thermite, Kevlar and Kevlar Armor in 3 easy steps." />
-            <property name="Recipes_to_learn" value="kevlar,kevlarStrips,thermite,thermiteCharge" />
+            <property name="Recipes_to_learn" value="kevlar,kevlarStrips,thermite,thermiteCharge,thermicLance,thermiteFuel" />
             <property name="Delay" value="0" />
             <property name="Sound_start" value="Misc/recipe_unlocked" />
         </property>
