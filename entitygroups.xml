@@ -181,11 +181,12 @@
     </entitygroup>
 
     <entitygroup name="AnimalsAll" >
-      <entity name="GhostBear" prob="0.005" />
-		<entity name="Boar" prob="0.05" />
-    	<entity name="animalRabbit" prob="0.8" />
-        <entity name="animalStag" />
-        <entity name="animalPig" />
+    <entity name="GhostBear" prob="0.005" />
+		<entity name="Boar" prob="0.04" />
+    <entity name="RaZorBack" prob="0.02" />
+    <entity name="animalRabbit" prob="0.8" />
+    <entity name="animalStag" />
+    <entity name="animalPig" />
     </entitygroup>
 
     <entitygroup name="ZrabbitGroup">
@@ -194,6 +195,7 @@
 
     <entitygroup name="HornetGroup">
         <entity name="hornet" />
+        <entity name="Whornet" prob="0.2" />
     </entitygroup>
 
     <entitygroup name="ZombieDogGroup">

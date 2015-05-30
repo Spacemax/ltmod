@@ -9106,15 +9106,15 @@ ARMOR ATTRIBUTE EXAMPLE
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Melee" />
-            <property name="Delay" value="0.7" />
+            <property name="Delay" value="1.0" />
             <property name="Range" value="1.8" />
             <property name="Sphere" value="0.4" />
             <property name="Block_range" value="2.5" />
-            <property name="DamageEntity" value="20" />
+            <property name="DamageEntity" value="10" />
             <property name="DamageBlock" value="3" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Buff" value="bleeding,gash,wound2" />
-            <property name="Buff_chance" value="0.6" />
+            <property name="Buff" value="bleeding,wound" />
+            <property name="Buff_chance" value="0.6,0.8" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.earth" value="5" />
             <property name="DamageBonus.wood" value="3" />
@@ -11342,5 +11342,29 @@ ARMOR ATTRIBUTE EXAMPLE
          <property name="Rot" value="90,45,0" />
      </property>
  </item>
+
+ <item id="868" name="razorAttack">
+   <property name="Material" value="organic" />
+   <property name="Canhold" value="false" />
+   <property name="HoldType" value="35" />
+   <property name="Stacknumber" value="1" />
+   <property name="Candrop" value="false" />
+   <property class="Action0">
+       <!-- AttackAction -->
+       <property name="Class" value="Melee" />
+       <property name="Delay" value="0.7" />
+       <property name="Range" value="1.8" />
+       <property name="Sphere" value="0.4" />
+       <property name="Block_range" value="2.5" />
+       <property name="DamageEntity" value="20" />
+       <property name="DamageBlock" value="3" />
+       <property name="Sound_start" value="swoosh" />
+       <property name="Buff" value="bleeding,gash,wound2" />
+       <property name="Buff_chance" value="0.8,0.8,0.8" />
+       <property name="DamageBonus.glass" value="25" />
+       <property name="DamageBonus.earth" value="5" />
+       <property name="DamageBonus.wood" value="3" />
+   </property>
+</item>
 
 </items>

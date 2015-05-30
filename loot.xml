@@ -847,14 +847,14 @@ plentiful loot items in the game.
 		<item name="canChili"/>
 		<item name="canDogfood"/>
 		<item name="canHam"/>
-        <item name="canLamb"/>
-        <item name="canMiso"/>
-        <item name="canPasta"/>
+    <item name="canLamb"/>
+    <item name="canMiso"/>
+    <item name="canPasta"/>
 		<item name="canPeas"/>
 		<item name="canSalmon"/>
 		<item name="canSoup"/>
 		<item name="canStock"/>
-        <item name="canTuna"/>
+    <item name="canTuna"/>
     </lootgroup>
 
 	<lootgroup name="seeds" count="1">
@@ -865,8 +865,8 @@ plentiful loot items in the game.
    	 </lootgroup>
 
 	<lootgroup name="airdropfood">
-		<item name="canBeef"/>
-		<item name="canChicken"/>
+    		<item name="canBeef"/>
+    		<item name="canChicken"/>
         <item name="canLamb"/>
     </lootgroup>
 
@@ -936,10 +936,10 @@ plentiful loot items in the game.
 	<lootgroup name="hats">
 		<item name="cowboyHat"/>
 		<item name="skullCap"/>
-        <item name="skullCapRed"/>
-        <item name="skullCapGreen"/>
-        <item name="skullCapBlue"/>
-        <item name="skullCapBrown"/>
+    <item name="skullCapRed"/>
+    <item name="skullCapGreen"/>
+    <item name="skullCapBlue"/>
+    <item name="skullCapBrown"/>
 		<item name="ballCap"/>
 		<item name="miningHelmet"/>
 		<item name="clothHat"/>
@@ -1539,7 +1539,7 @@ plentiful loot items in the game.
     <!-- military munitions  -->
     <lootcontainer id="40" count="1"  size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15">
 			<item group="militaryguns+ammo" prob="0.3"/>
-			<item group="books" prob="0.05"/>	
+			<item group="books" prob="0.05"/>
 	</lootcontainer>
 
 	<!-- player dropped backpacks -->
@@ -1552,7 +1552,7 @@ plentiful loot items in the game.
 		<item group="guns+ammo" prob="0.2"/>
 		<item group="WeaponParts" prob="0.8" />
 		<item group="books" prob="0.01" />
-		
+
 
     </lootcontainer>
 
@@ -1578,7 +1578,7 @@ plentiful loot items in the game.
 		<item name="book" count="1,4" prob="0.35" />		<!--35%-->
 		<item name="paper" count="5,30" prob="0.35" />		<!--35%-->
 		<item group="books" prob="0.01" />
-	
+
     </lootcontainer>
 
     <!-- cooler loot -->
@@ -1684,7 +1684,7 @@ plentiful loot items in the game.
   </lootcontainer>
 
   <!-- LT tough zombie and feral loot  -->
-    <lootcontainer id="61" count="1,3" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+    <lootcontainer id="61" count="2,4" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="rareMedicine" prob="0.5" />
 		<item group="WeaponParts" prob="0.5" />
 		<item group="tools" />
