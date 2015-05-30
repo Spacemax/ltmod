@@ -9183,7 +9183,7 @@ ARMOR ATTRIBUTE EXAMPLE
        <!-- AttackAction -->
               <property name="Class" value="Launcher" />
               <property name="Delay" value="0.05" />
-  			<property name="Auto_fire" value="true" />
+			  <property name="Auto_fire" value="true" />
               <property name="Rays_per_shot" value="3" />
               <property name="Rays_spread" value="0.05" />
               <property name="Range" value="10" />
@@ -9198,7 +9198,7 @@ ARMOR ATTRIBUTE EXAMPLE
               <property name="Sound_end" value="" />
               <property name="Sound_empty" value="Weapons/weapon_empty" />
               <property name="Sound_reload" value="Weapons/Motorized/Auger/auger_reload" />
-  			<property name="Horde_meter_rate" value="2.5" />
+  			  <property name="Horde_meter_rate" value="2.5" />
               <property name="Horde_meter_distance" value="20" />
               <property name="DamageBonus.head" value="6" />
               <property name="DamageBonus.glass" value="25" />
@@ -9678,7 +9678,7 @@ ARMOR ATTRIBUTE EXAMPLE
         </property>
     </item>
 
-    <!-- [RH99] 12G Sabot Slug -->
+    <!-- [RH99] Shotgun Slug -->
     <item id="811" name="shotgunSlug">
         <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShell" />
         <property name="CustomIcon" value="shotgunShell" />
