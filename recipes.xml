@@ -180,12 +180,18 @@
         <ingredient name="emptyJar" count="1" grid="0, 0"/>
     </recipe>
 
+    <recipe name="arrow" count="6" scrapable="False" craft_time="45" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="rockSmall" count="6" grid="2, -2"/>
+        <ingredient name="femur" count="6" grid="1, -1"/>
+        <ingredient name="feather" count="9" grid="0, 0"/>
+		<ingredient name="yuccaFibers" count="1" grid="0, -1"/>
     </recipe>
 
-    <recipe name="arrow" count="5" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="rockSmall" count="1" grid="2, -2"/>
-        <ingredient name="stick" count="1" grid="1, -1"/>
-        <ingredient name="feather" count="1" grid="0, 0"/>
+    <recipe name="arrow" count="6" scrapable="False" craft_time="45" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="rockSmall" count="6" grid="2, -2"/>
+        <ingredient name="stick" count="6" grid="1, -1"/>
+        <ingredient name="feather" count="9" grid="0, 0"/>
+		<ingredient name="yuccaFibers" count="1" grid="0, -1"/>
     </recipe>
 
     <recipe name="auger" count="1" scrapable="False" craft_time="10" craft_exp_gain="2" learn_exp_gain="20" >
