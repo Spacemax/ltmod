@@ -10492,6 +10492,7 @@ ARMOR ATTRIBUTE EXAMPLE
           <property name="Use_time" value="..." />
           <property name="Gain_food" value="15" />
           <property name="Gain_water" value="2" />
+          <property name="Buff" value="dysentery" />
           <property name="Sound_start" value="UseActions/player_eating" />
         </property>
         <property name="Smell" value="largeSmell" />
