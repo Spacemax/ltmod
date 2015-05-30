@@ -1559,16 +1559,15 @@ plentiful loot items in the game.
     <!-- lockers -->
     <lootcontainer id="43" count="0,3" size="2,4" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker">
     	<!--Prob Normalized-->
-		<item group="books" prob="0.01" />						<!--1%-->
 		<item group="militaryguns+ammo" prob="0.05"/>			<!--5%-->
 		<item group="trophyGroup" prob="0.05" />				<!--5%-->
 		<item name="book" count="1,2" prob="0.1"  />			<!--10%-->
 		<item name="paper" count="1,2" prob="0.1" />			<!--10%-->
 		<item group="medicine" prob="0.1" />					<!--10%-->
 		<item name="gunPowder" count="1,5" prob="0.1" />		<!--10%-->
-		<item group="hats" prob="0.24" />						<!--24%-->
+		<item group="hats" prob="0.25" />						<!--25%-->
 		<item group="clothes" prob="0.25" />					<!--25%-->
-		
+		<item group="books" prob="0.01" />
     </lootcontainer>
 
     <!-- file cabinet -->
