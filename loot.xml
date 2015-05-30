@@ -1685,12 +1685,12 @@ plentiful loot items in the game.
 
   <!-- LT tough zombie and feral loot  -->
     <lootcontainer id="61" count="1,4" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="books" 		prob="0.05" />
-		<item group="rareMedicine" 	prob="0.1" />
-		<item group="WeaponParts" 	prob="0.15" />
-		<item group="Armor" 		prob="0.2"/>
-		<item group="tools" 		prob="0.2"/>
-		<item group="ammo" 			prob="0.3"/>
+		<item group="books" 				prob="0.05" />
+		<item group="rareMedicine" 			prob="0.1" />
+		<item group="WeaponParts" 			prob="0.15" />
+		<item group="Armor" 				prob="0.2"/>
+		<item group="tools" 				prob="0.2"/>
+		<item group="ammo" 	count="1,3"		prob="0.3"/>
 		
 		
     </lootcontainer>
