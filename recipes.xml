@@ -2662,14 +2662,16 @@
       <ingredient name="beef" count="1" />
     </recipe>
 
-    <recipe name="beefSkewered" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="beefSkewered" count="4" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
       <ingredient name="beef" count="1" grid="0, 0" />
       <ingredient name="stick" count="1" grid="1, 0" />
       <ingredient name="stick" count="1" grid="-1, 0" />
+      <ingredient name="stick" count="1" grid="0, 1" />
+      <ingredient name="stick" count="1" grid="0, -1" />
     </recipe>
 
     <recipe name="beefKebob" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="2" learn_exp_gain="20" >
-      <ingredient name="beef" count="1" />
+      <ingredient name="beefSkewered" count="1" />
     </recipe>
 
     <!-- Maybe change the raw beef to "beefSteak" -->
