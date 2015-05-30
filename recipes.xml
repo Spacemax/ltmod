@@ -2749,7 +2749,7 @@
         <ingredient name="steelCrossbow_stock" count="1" grid="-1, 1"/>
     </recipe>
 
-        <!-- Module Flamethrower -->
+    <!-- Module Flamethrower -->
 
     <recipe name="toastmaker" count="1" scrapable="True" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="flowRegulatorLong" count="1" grid="1, -1"/>

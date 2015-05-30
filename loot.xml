@@ -1614,8 +1614,8 @@ plentiful loot items in the game.
     <!-- bookcase  -->
     <lootcontainer id="49" count="3,7" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
 		<!-- KM drop overall drop rate to reflect that household book numbers would be less than a store-->
-		<item group="books" prob="0.03" />
-		<item name="book" prob="0.97" />
+		<item group="books" prob="0.04" />
+		<item name="book" prob="0.96" />
     </lootcontainer>
 
     <!-- shotgun Messiah  -->
@@ -1679,18 +1679,20 @@ plentiful loot items in the game.
 
   <!-- Bookstore bookcase  -->
   <lootcontainer id="60" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
-	<item group="books" prob="0.03"/>
-	<item name="book" prob="0.97" />
+	<item group="books" prob="0.025"/>
+	<item name="book" prob="0.975" />
   </lootcontainer>
 
   <!-- LT tough zombie and feral loot  -->
-    <lootcontainer id="61" count="2,4" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item group="rareMedicine" prob="0.5" />
-		<item group="WeaponParts" prob="0.5" />
-		<item group="tools" />
-		<item group="ammo"/>
-		<item group="Armor" count="0,1"/>
-		<item group="books" />
+    <lootcontainer id="61" count="1,4" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="books" 		prob="0.05" />
+		<item group="rareMedicine" 	prob="0.1" />
+		<item group="WeaponParts" 	prob="0.15" />
+		<item group="Armor" 		prob="0.2"/>
+		<item group="tools" 		prob="0.2"/>
+		<item group="ammo" 			prob="0.3"/>
+		
+		
     </lootcontainer>
 
 </lootcontainers>
