@@ -11349,5 +11349,19 @@
     <drop event="Harvest" name="cocaPlant" count="1" />
   </block>
 
+  <block id="1448" name="steelBars">
+    <property name="CustomIcon" value="ironBars"/>
+    <property name="CustomIconTint" value="99CCFF"/>
+    <property name="Material" value="hardened_steel" />
+    <property name="Shape" value="Ext3dModel" />
+    <property name="Mesh" value="models" />
+    <property name="Model" value="OutdoorDecor/iron_bars" param1="main_mesh" />
+    <property name="Place" value="TowardsPlacer" />
+    <property name="Collide" value="movement,rocket,melee" />
+    <property name="Weight" value="10" />
+    <drop event="Destroy" name="scrapIron" count="6" prob="1" />
+    <property name="Group" value="Building" />
+  </block>
+
 
  </blocks>
