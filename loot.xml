@@ -308,16 +308,16 @@ The higher your level the more ammo you can find
 -->
 
 	<lootgroup name="ammo" count="1">
-		<item name="44MagBullet" count="1,3" />
-		<item name="arrowBrass" count="1,2" />
-		<item name="brassArrowTip" count="1,2" />
-		<item name="arrow" count="2,6" />
-		<item name="crossbowBolt" count="2,6" />
-		<item name="9mmBullet" count="4,7" />
-        <item name="shotgunShell" count="2,6" />
-		<item name="10mmBullet" count="2,6" />
-        <item name="308calBullet" count="1,5" />
-		<item name="shotgunSlug" count="0,1" />
+		<item name="44MagBullet" 	count="1,3" />
+		<item name="arrowBrass" 	count="1,2" />
+		<item name="brassArrowTip" 	count="1,2" />
+		<item name="arrow" 			count="2,6" />
+		<item name="crossbowBolt" 	count="2,6" />
+		<item name="9mmBullet" 		count="4,7" />
+        <item name="shotgunShell" 	count="2,6" />
+		<item name="10mmBullet" 	count="2,6" />
+        <item name="308calBullet" 	count="2,5" />
+		<item name="shotgunSlug" 	count="1,2" />
 	</lootgroup>
 
 	<!-- KM:Increase drop rate when this group is called, this should populate fridges,coolers with more rotten items in general-->
@@ -353,7 +353,7 @@ The higher your level the more ammo you can find
 
 	<lootgroup name="boar+hide" count="all">
 		<item name="pork" count="6,9"/>
-		<item name="toughHide" count="1,2"/>
+		<item name="toughHide" count="2,3"/>
 		<item name="femur" count="1,4"/>
 		<item name="animalFat" count="6,10"/>
 	</lootgroup>
@@ -392,7 +392,6 @@ The higher your level the more ammo you can find
 	<lootgroup name="trophyGroup" count="1">
 		<item name="trophy"/>
 		<item name="trophy2"/>
-
 	</lootgroup>
 
 	<lootgroup name="sniperRifle+ammo" count="all">
@@ -765,8 +764,8 @@ more opportunities to score that flawless part!
 	</lootgroup>
 
 	<lootgroup name="guns+ammo">
-		<item group="ammo" prob="0.4" />
-		<item group="WeaponParts" prob="0.6" />
+		<item group="WeaponParts" prob="0.4" />
+		<item group="ammo" prob="0.6" />
 	</lootgroup>
 
 	<!-- The spiked club and hunting knife must now be crafted and cannot be looted.-->
@@ -832,12 +831,12 @@ plentiful loot items in the game.
 
 	<!-- Adjust skill book spread here -->
 	<lootgroup name="books" count="1">
-		<item group="ultrarareBooks" prob="0.010" />					<!-- 1% or 10 in 1000 skill books 		~1 in 20 double story book stores -->
-		<item group="kevlarArmorSchematics" prob="0.010"/>				<!-- 1% or 10 in a 1000 skill books 	~1 in 20 double story book stores -->
+		<item group="ultrarareBooks" prob="0.01" />						<!-- 1% or 10 in 1000 skill books 		~1 in 20 double story book stores -->
+		<item group="kevlarArmorSchematics" prob="0.01"/>				<!-- 1% or 10 in a 1000 skill books 	~1 in 20 double story book stores -->
 		<item group="rareBooks" prob="0.05"/>							<!-- 5% or 50 in 1000 skill books		~1 in 2.5 double story book stores -->
 		<item group="ironArmorSchematics" prob="0.05"/>					<!-- 5% or 50 in 1000 skill books 		~1 in 1 double story book store -->
 		<item group="uncommonBooks" prob="0.3050"/>						<!-- 30.5% -->
-		<item group="commonBooks" prob="0.505" />						<!-- 60.5% -->
+		<item group="commonBooks" prob="0.505" />						<!-- 50.5% -->
 	</lootgroup>
 
 	<lootgroup name="cannedfood">
@@ -847,9 +846,9 @@ plentiful loot items in the game.
 		<item name="canChili"/>
 		<item name="canDogfood"/>
 		<item name="canHam"/>
-    <item name="canLamb"/>
-    <item name="canMiso"/>
-    <item name="canPasta"/>
+		<item name="canLamb"/>
+		<item name="canMiso"/>
+		<item name="canPasta"/>
 		<item name="canPeas"/>
 		<item name="canSalmon"/>
 		<item name="canSoup"/>
@@ -867,7 +866,7 @@ plentiful loot items in the game.
 	<lootgroup name="airdropfood">
     		<item name="canBeef"/>
     		<item name="canChicken"/>
-        <item name="canLamb"/>
+			<item name="canLamb"/>
     </lootgroup>
 
     <lootgroup name="coldfood">
@@ -880,7 +879,7 @@ plentiful loot items in the game.
 		  <item name="pork" prob="0.1" />
 		  <item name="potato" prob="0.1" />
 		  <item name="blueberries" prob="0.1" />
-    	<item name="corn" prob="0.15" />
+		  <item name="corn" prob="0.15" />
 	</lootgroup>
 
     <lootgroup name="cupboard">
@@ -924,27 +923,27 @@ plentiful loot items in the game.
 	<lootgroup name="augerParts">
 		<item name="smallEngine"/>
 		<item name="augerBlade"/>
-    <item name="handlebars"/>
-    <item name="flowRegulatorShort"/>
+		<item name="handlebars"/>
+		<item name="flowRegulatorShort"/>
 		<item name="flowRegulatorLong"/>
-    <item name="fuelAdapterDiesel"/>
-    <item name="fuelAdapterThermite"/>
-  </lootgroup>
+		<item name="fuelAdapterDiesel"/>
+		<item name="fuelAdapterThermite"/>
+	</lootgroup>
 
 	<lootgroup name="rockDrillParts">
 		<item name="FurukawaEngine"/>
 		<item name="FurukawaBlades"/>
 		<item name="Furukawa780Grips"/>
-    <item name="keystone"/>
+		<item name="keystone"/>
   </lootgroup>
 
 	<lootgroup name="hats">
 		<item name="cowboyHat"/>
 		<item name="skullCap"/>
-    <item name="skullCapRed"/>
-    <item name="skullCapGreen"/>
-    <item name="skullCapBlue"/>
-    <item name="skullCapBrown"/>
+		<item name="skullCapRed"/>
+		<item name="skullCapGreen"/>
+		<item name="skullCapBlue"/>
+		<item name="skullCapBrown"/>
 		<item name="ballCap"/>
 		<item name="miningHelmet"/>
 		<item name="clothHat"/>
@@ -1199,9 +1198,9 @@ plentiful loot items in the game.
 	</lootgroup>
 
 	<lootgroup name="beverages" count="1">
-		<item name ="coffee" prob="0.15" /> 		<!--15%-->
-		<item name="beer" prob="0.15" />			<!--15%-->
-		<item name="bottledWater" prob="0.7" />		<!--70%-->
+		<item name ="coffee" 		prob="0.15" /> 			<!--15%-->
+		<item name="beer" 			prob="0.15" />			<!--15%-->
+		<item name="bottledWater" 	prob="0.7" />			<!--70%-->
 	</lootgroup>
 
 	<lootgroup name="backpacks" count="1,3">
@@ -1236,7 +1235,6 @@ plentiful loot items in the game.
 	<lootgroup name="automotive" count="all">
 		<item group="rareAutomotive" />
 		<item group="commonAutomotive" />
-
 	</lootgroup>
 
 	<lootgroup name="automotive+tools+junk" count="all">
@@ -1248,13 +1246,11 @@ plentiful loot items in the game.
     <lootcontainer id="1" count="0,2" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
     	<item group="books" prob="0.01" />
 		<item group="junk" prob="0.99" />
-
     </lootcontainer>
 
     <!-- lootcontainer 2 garbage-->
     <lootcontainer id="2" count="1,2" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
     	<item group="garbage" />
-
     </lootcontainer>
 
     <!-- lootcontainer 3 canned or dry food cupboard door open sound-->
@@ -1265,17 +1261,17 @@ plentiful loot items in the game.
     <!-- lootcontainer 4 frozen or refridgerated food, spoiled food -->
     <lootcontainer id="4" count="0,4" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge">
 		<!-- KM:Food normalized and more rotten food will drop in fridges to simulate spoilage-->
-    	<item group="coldfood" prob="0.05" />					<!--5%-->
-    	<item name="bottledWater" prob="0.10" count="1,2" />	<!--10%-->
-		<item name="emptyJar"  prob="0.2" count="1,2" />		<!--20%-->
-		<item group="rottenFood" prob="0.65" />					<!--65%-->
+    	<item group="coldfood" 		prob="0.1" />					<!--10%-->
+    	<item name="bottledWater" 	prob="0.1" 	count="1,2" />		<!--10%-->
+		<item name="emptyJar"  		prob="0.2" 	count="1,2" />		<!--20%-->
+		<item group="rottenFood" 	prob="0.60" />					<!--60%-->
     </lootcontainer>
 
     <!-- lootcontainer 5 stove, cooking pots and pans rotten food -->
     <lootcontainer id="5" count="0,2" size="3,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox">
-		<item name="canEmpty"  count="1,2" />
+		<item name="canEmpty"  	count="1,2" />
 		<item name="cookingPot" count="1,2" />
-		<item name="scrapIron" count="1,2" />
+		<item name="scrapIron" 	count="1,2" />
 		<item group="rottenFood" />
     </lootcontainer>
 
@@ -1287,7 +1283,7 @@ plentiful loot items in the game.
 		<item group="trophyGroup" prob="0.2" />			<!--20%-->
 		<item name="book" prob="0.2" />					<!--20%-->
 		<item group="Armor" prob="0.4"/>				<!--40%-->
-	    </lootcontainer>
+	</lootcontainer>
 
     <!-- lootcontainer 7 medicine cabinets -->
     <lootcontainer id="7" count="0,2" size="2,3" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet">
@@ -1297,11 +1293,11 @@ plentiful loot items in the game.
     <!-- lootcontainer 8 kitchen cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
     <lootcontainer id="8" count="0,2" size="3,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard">
 		<!-- KM:Cupboard added to replace a few items and make it similar to upper cupboards but with a few uniques, prob normalized-->
-		<item name="wrench" prob="0.05" count="1" />			<!--5%-->
-		<item name="cookingPot" prob="0.1" count="1" />			<!--10%-->
-		<item name="scrapLead" prob="0.15" count="1" />			<!--15%-->
-		<item name="shortMetalPipe" prob="0.20" count="1,2" />	<!--20%-->
-		<item group="cupboard" prob="0.5" />					<!--50%-->
+		<item name="wrench" 		prob="0.05" count="1" />			<!--5%-->
+		<item name="cookingPot" 	prob="0.1" 	count="1" />			<!--10%-->
+		<item name="scrapLead" 		prob="0.15" count="1" />			<!--15%-->
+		<item name="shortMetalPipe" prob="0.20" count="1,2" />			<!--20%-->
+		<item group="cupboard" 		prob="0.5" />						<!--50%-->
     </lootcontainer>
 
     <!-- lootcontainer 9 backpack, place where people stash things,  -->
@@ -1315,12 +1311,12 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 11 safes, weapon caches rare good loot -->
-    <lootcontainer id="11" count="1,3" size="2,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="15">
-		<item group="rareMedicine" prob="0.05" />
-		<item name="casinoCoin" count="1,5" prob="0.15" />
-		<item group="ammo" prob="0.30" />
-		<item group="books" prob="0.05"/>	          <!-- KM:Changed to weaponparts to remove double chance at ammo-->
-    </lootcontainer>
+    <lootcontainer id="11" count="1,4" size="2,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="15">
+		<item group="books" 				prob="0.05"/>
+		<item group="rareMedicine" 			prob="0.2" />
+		<item name="casinoCoin" count="2,5" prob="0.25" />
+		<item group="guns+ammo" 			prob="0.50" />
+	</lootcontainer>
 
     <!-- lootcontainer 12 deer todo add deer skin or leather bones-->
     <lootcontainer id="12" count="1" size="3,2" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" open_time="5" destroy_on_close="true">
@@ -1333,11 +1329,11 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 14 misc metal container mailbox-->
-    <lootcontainer id="14" count="0,2" size="2,1" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox">
+    <lootcontainer id="14" count="0,3" size="2,1" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox">
 		<!--KM:tweaked to insert blank books to represent those books that are of no use-->
     	<item group="books" prob="0.05"/>				<!--5%-->
 		<item name="book" prob="0.2" />					<!--20%-->
-		<item name="paper" prob="0.75" count="2,5" />	<!--75%-->
+		<item name="paper" prob="0.75" count="1,3" />	<!--75%-->
     </lootcontainer>
 
     <!-- lootcontainer 15 generic zombie loot-->
@@ -1353,16 +1349,10 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 17 zombie cop-->
     <lootcontainer id="17" count="1,2" size="3,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
-
 		<item group="WeaponParts" />
-		<item group="ammo" count="1,2" />
+		<item group="ammo" count="1,3" />
 		<item name="shamSandwich" count="1,3"/>
 		<item group="books" />
-
-		<!-- <item group="pistol+ammo"/>
-    	<item group="shotgun+ammo"/>
-	   	<item name="9mmBullet" count="15,60"/>
-        <item name="shotgunShell" count="1,2"/> -->
     </lootcontainer>
 
     <!-- lootcontainer 18 pig -->
@@ -1373,9 +1363,7 @@ plentiful loot items in the game.
     <!-- lootcontainer 19 cars-->
     <lootcontainer id="19" count="0,1" size="7,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4">
     	<item group="automotive" />
-		<item group="books" prob="0.01" />
-		<item group="junk" prob="0.99" />
-    </lootcontainer>
+	</lootcontainer>
 
     <!-- lootcontainer 20 air conditioners-->
     <lootcontainer id="20" count="0,2" size="3,1" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="4">
@@ -1383,20 +1371,19 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- lootcontainer 21 medical supplies dead nurse-->
-    <lootcontainer id="21" count="0,2" size="3,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+    <lootcontainer id="21" count="0,3" size="3,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="medicine" />
     </lootcontainer>
 
     <!-- lootcontainer 22 garage stuff, tools, etc -->
-    <lootcontainer id="22" count="0,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-		<item group="rockDrillParts" prob="0.005" />			<!-- 0.5% 	~ 5 part per 1000 boxes opened-->
-		<item group="augerParts" prob="0.02" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
-		<item group="books" prob="0.025" />						<!--3.9% adjusted to allow for increase of above -->
-		<item group="tools" prob="0.05" />						<!--5%-->
+    <lootcontainer id="22" count="1,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+		<item group="rockDrillParts" prob="0.01" />				<!-- 1% 	~ 5 part per 1000 boxes opened-->
+		<item group="augerParts" prob="0.05" />					<!-- 5% 	~ 1 part per 100 boxes opened-->
+		<item group="tools" prob="0.1" />						<!--10%-->
 		<item group="automotive" prob="0.1" />					<!--10%-->
 		<item name="canCatfood" prob="0.1" />					<!--10%-->
 		<item name="canDogfood" prob="0.1" />   				<!--10%-->
-		<item group="junk" prob="0.6" />						<!--60%-->
+		<item group="junk" prob="0.54" />						<!--54%-->
     </lootcontainer>
 
 	<!-- 23 see below !!! -->
@@ -1444,7 +1431,7 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 28 Supply Crate Ammo -->
     <lootcontainer id="28" count="9" size="3,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-    <item name="shotgunShell" prob="0.1" count="4,12" />
+		<item name="shotgunShell" prob="0.1" count="4,12" />
 		<item name="762mmBullet" prob="0.1" count="10,20" />
 		<item name="9mmBullet" prob="0.1" count="15,90" />
 		<item name="10mmBullet" prob="0.1" count="120" />
@@ -1453,15 +1440,13 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 29 Supply Crate Ranged weapons Day 3 -->
     <lootcontainer id="29" count="4" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-
 		<item group="guns+ammo"/>
-
     </lootcontainer>
 
     <!-- lootcontainer 30 Supply Crate Health -->
     <lootcontainer id="30" count="5" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-    <item name="painkillers" prob="0.1" count="5" />
-	<item name="firstAidBandage" prob="0.1" count="5" />
+		<item name="painkillers" prob="0.1" count="5" />
+		<item name="firstAidBandage" prob="0.1" count="5" />
     </lootcontainer>
 
     <!-- lootcontainer 31 Supply Crate Explosives -->
@@ -1472,28 +1457,21 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 32 Supply Crate Ranged weapons Day 5 -->
     <lootcontainer id="32" count="6" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-
 		<item group="guns+ammo"/>
-
     </lootcontainer>
 
     <!-- lootcontainer 33 Supply Crate Ranged weapons Day 7 -->
     <lootcontainer id="33" count="9" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-
 		<item group="guns+ammo"/>
-
     </lootcontainer>
 
     <!-- lootcontainer 34 Supply Crate General -->
     <lootcontainer id="34" count="6,12" size="10,4" destroy_on_close="false" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-        <item group="militaryguns+ammo" />
+        <item group="books" prob="0.5" />
+		<item group="militaryguns+ammo" />
 		<item group="airdropMedicine" />
 		<item group="airdropfood" />
-		<item group="books" prob="0.5" />
-		<!--
-    	<item group="rareBooks" />
--->
-    </lootcontainer>
+	</lootcontainer>
 
     <!-- lootcontainer 35 tree hollowed stump, place where people stash things,  -->
     <lootcontainer id="35" count="0,2" size="3,2" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump">
@@ -1518,22 +1496,18 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 37 corpses -->
     <lootcontainer id="37" count="0,2" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-
         <item group="junk" />
         <item group="ammo" />
         <item group="WeaponParts"/>
-
     </lootcontainer>
 
     <!-- fat zombie loot  -->
     <lootcontainer id="38" count="0,3" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-
 		<item name="shamSandwich" prob="0.1" />					<!--10%-->
 		<item name="painkillers" prob="0.1"/>					<!--10%-->
 		<item group="ammo" prob="0.1"/>							<!--10%-->
 		<item name="bottledWater" prob="0.2" count="1,2" />		<!--20%-->
 		<item name="animalFat" prob="0.5" count="4,8" />		<!--50%-->
-
     </lootcontainer>
 
     <!-- Boar Loot  -->
@@ -1542,9 +1516,8 @@ plentiful loot items in the game.
     </lootcontainer>
 
     <!-- military munitions  -->
-    <lootcontainer id="40" count="1"  size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15">
-			<item group="militaryguns+ammo" prob="0.3"/>
-			<item group="books" prob="0.05"/>
+    <lootcontainer id="40" count="1,3"  size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15">
+			<item group="militaryguns+ammo" />
 	</lootcontainer>
 
 	<!-- player dropped backpacks -->
@@ -1554,11 +1527,9 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 42 gun safe -->
     <lootcontainer id="42" count="2,6" size="10,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
-		<item group="guns+ammo" prob="0.2"/>
-		<item group="WeaponParts" prob="0.8" />
 		<item group="books" prob="0.01" />
-
-
+		<item group="ammo" prob="0.3"/>
+		<item group="WeaponParts" prob="0.6" />
     </lootcontainer>
 
     <!-- lockers -->
@@ -1566,14 +1537,11 @@ plentiful loot items in the game.
     	<!--Prob Normalized-->
 		<item group="militaryguns+ammo" prob="0.05"/>			<!--5%-->
 		<item group="trophyGroup" prob="0.05" />				<!--5%-->
-		<item name="book" count="1,2" prob="0.1"  />			<!--10%-->
-		<item name="paper" count="1,2" prob="0.1" />			<!--10%-->
-		<item group="medicine" prob="0.1" />					<!--10%-->
-		<item name="gunPowder" count="1,5" prob="0.1" />		<!--10%-->
-		<item group="hats" prob="0.25" />						<!--25%-->
-		<item group="clothes" prob="0.25" />					<!--25%-->
-		<item group="books" prob="0.01" />
-    </lootcontainer>
+		<item name="book" count="1,2" prob="0.15"  />			<!--15%-->
+		<item group="medicine" prob="0.15" />					<!--15%-->
+		<item group="hats" prob="0.3" />						<!--30%-->
+		<item group="clothes" prob="0.3" />						<!--30%-->
+	</lootcontainer>
 
     <!-- file cabinet -->
     <lootcontainer id="44" count="0,2" size="2,4" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet">
@@ -1582,15 +1550,13 @@ plentiful loot items in the game.
 		<item group="trophyGroup" prob="0.20" />			<!--20%-->
 		<item name="book" count="1,4" prob="0.35" />		<!--35%-->
 		<item name="paper" count="5,30" prob="0.35" />		<!--35%-->
-		<item group="books" prob="0.01" />
-
-    </lootcontainer>
+	</lootcontainer>
 
     <!-- cooler loot -->
     <lootcontainer id="45" count="0,3" size="3,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler">
 		<item group="coldfood" prob="0.1" />			<!--10%-->
     	<item group="beverages" prob="0.2" />			<!--20%-->
-		<item group="cupboard" prob="0.6" />			<!--60% TG: Also needs to be fixed to remove householdChemicals from the container -->
+		<item group="cannedfood" prob="0.6" />			<!--60% TG: Also needs to be fixed to remove householdChemicals from the container -->
     </lootcontainer>
 
     <!-- lootcontainer 46 Supply Crate General multi player -->
@@ -1683,21 +1649,21 @@ plentiful loot items in the game.
 	</lootcontainer>
 
   <!-- Bookstore bookcase  -->
-  <lootcontainer id="60" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
-	<item group="books" prob="0.025"/>
-	<item name="book" prob="0.975" />
-  </lootcontainer>
+	<lootcontainer id="60" count="5,15" size="3,4" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer">
+		<item group="books" prob="0.025"/>
+		<item name="book" prob="0.975" />
+	</lootcontainer>
 
   <!-- LT tough zombie and feral loot  -->
     <lootcontainer id="61" count="1,4" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+		<item group="rockDrillParts" 		prob="0.005" />			<!-- 0.5% 	~ 5 part per 1000 boxes opened-->
+		<item group="augerParts" 			prob="0.02" />			<!-- 1% 	~ 1 part per 100 boxes opened-->
 		<item group="books" 				prob="0.05" />
 		<item group="rareMedicine" 			prob="0.1" />
 		<item group="WeaponParts" 			prob="0.15" />
 		<item group="Armor" 				prob="0.2"/>
 		<item group="tools" 				prob="0.2"/>
-		<item group="ammo" 	count="1,3"		prob="0.293"/>
-    <item group="rockDrillParts" prob="0.005" />			<!-- 0.5% 	~ 5 part per 1000 boxes opened-->
-		<item group="augerParts" prob="0.02" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
+		<item group="ammo" 	count="1,3"		prob="0.2935"/>
 
     </lootcontainer>
 
