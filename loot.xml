@@ -925,12 +925,17 @@ plentiful loot items in the game.
 		<item name="smallEngine"/>
 		<item name="augerBlade"/>
     <item name="handlebars"/>
+    <item name="flowRegulatorShort"/>
+		<item name="flowRegulatorLong"/>
+    <item name="fuelAdapterDiesel"/>
+    <item name="fuelAdapterThermite"/>
   </lootgroup>
 
 	<lootgroup name="rockDrillParts">
 		<item name="FurukawaEngine"/>
 		<item name="FurukawaBlades"/>
 		<item name="Furukawa780Grips"/>
+    <item name="keystone"/>
   </lootgroup>
 
 	<lootgroup name="hats">
@@ -1384,9 +1389,9 @@ plentiful loot items in the game.
 
     <!-- lootcontainer 22 garage stuff, tools, etc -->
     <lootcontainer id="22" count="0,2" size="3,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
-		<item group="rockDrillParts" prob="0.001" />			<!-- 0.1% 	~ 1 part per 1000 boxes opened-->
-		<item group="augerParts" prob="0.01" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
-		<item group="books" prob="0.039" />						<!--3.9%-->
+		<item group="rockDrillParts" prob="0.005" />			<!-- 0.5% 	~ 5 part per 1000 boxes opened-->
+		<item group="augerParts" prob="0.02" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
+		<item group="books" prob="0.025" />						<!--3.9% adjusted to allow for increase of above -->
 		<item group="tools" prob="0.05" />						<!--5%-->
 		<item group="automotive" prob="0.1" />					<!--10%-->
 		<item name="canCatfood" prob="0.1" />					<!--10%-->
@@ -1690,9 +1695,10 @@ plentiful loot items in the game.
 		<item group="WeaponParts" 			prob="0.15" />
 		<item group="Armor" 				prob="0.2"/>
 		<item group="tools" 				prob="0.2"/>
-		<item group="ammo" 	count="1,3"		prob="0.3"/>
-		
-		
+		<item group="ammo" 	count="1,3"		prob="0.293"/>
+    <item group="rockDrillParts" prob="0.005" />			<!-- 0.5% 	~ 5 part per 1000 boxes opened-->
+		<item group="augerParts" prob="0.02" />					<!-- 1% 	~ 1 part per 100 boxes opened-->
+
     </lootcontainer>
 
 </lootcontainers>
