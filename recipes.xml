@@ -2788,4 +2788,26 @@
         <ingredient name="cocaPlant" count="1"/>
     </recipe>
 
+    <recipe name="steelBars" count="4" scrapable="False" craft_time="60" craft_exp_gain="2" learn_exp_gain="20" >
+        <ingredient name="shortSteelPipe" count="1" grid="-2, -2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-1, -2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="0, -2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="1, -2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="2, -2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-2, -1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="0, -1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="2, -1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-2, 0"/>
+        <ingredient name="shortSteelPipe" count="1" grid="0, 0"/>
+        <ingredient name="shortSteelPipe" count="1" grid="2, 0"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-2, 1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="0, 1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="2, 1"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-2, 2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="-1, 2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="0, 2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="1, 2"/>
+        <ingredient name="shortSteelPipe" count="1" grid="2, 2"/>
+    </recipe>
+
 </recipes>
