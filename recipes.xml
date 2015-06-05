@@ -3025,7 +3025,7 @@
         <ingredient name="trunkPine" count="1" grid="0, 0"/>
     </recipe>
 
-    <recipe name="oldWoodPillar" count="1" scrapable="False" craft_time="5"craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="oldWoodPillar" count="1" scrapable="False" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="woodPlank" count="1" grid="-1, -2"/>
         <ingredient name="woodPlank" count="1" grid="0, -2"/>
         <ingredient name="woodPlank" count="1" grid="-1, -1"/>
@@ -3135,16 +3135,16 @@
     </recipe>
 
     <recipe name="porchLight01" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="forgediron" count="1" grid="-1, -2" />
-        <ingredient name="forgediron" count="1" grid="-2, -1" />
-        <ingredient name="forgediron" count="1" grid="-1, 0" />
+        <ingredient name="forgedIron" count="1" grid="-1, -2" />
+        <ingredient name="forgedIron" count="1" grid="-2, -1" />
+        <ingredient name="forgedIron" count="1" grid="-1, 0" />
         <ingredient name="torch" count="1" grid="-1, 0" />
     </recipe>
 
     <recipe name="porchLight04" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="forgediron" count="1" grid="0, -2" />
-        <ingredient name="forgediron" count="1" grid="-1, -1" />
-        <ingredient name="forgediron" count="1" grid="0, 0" />
+        <ingredient name="forgedIron" count="1" grid="0, -2" />
+        <ingredient name="forgedIron" count="1" grid="-1, -1" />
+        <ingredient name="forgedIron" count="1" grid="0, 0" />
         <ingredient name="torch" count="1" grid="0, -1" />
     </recipe>
 
@@ -3156,16 +3156,16 @@
     </recipe>
 
     <recipe name="ceilingLight01" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="forgediron" count="1" grid="-2, -2" />
-        <ingredient name="forgediron" count="1" grid="-1, -1" />
-        <ingredient name="forgediron" count="1" grid="0, -2" />
+        <ingredient name="forgedIron" count="1" grid="-2, -2" />
+        <ingredient name="forgedIron" count="1" grid="-1, -1" />
+        <ingredient name="forgedIron" count="1" grid="0, -2" />
         <ingredient name="torch" count="1" grid="-1, -2" />
     </recipe>
 
     <recipe name="ceilingLight02" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-        <ingredient name="forgediron" count="1" grid="-1, -2" />
-        <ingredient name="forgediron" count="1" grid="0, -1" />
-        <ingredient name="forgediron" count="1" grid="1, -2" />
+        <ingredient name="forgedIron" count="1" grid="-1, -2" />
+        <ingredient name="forgedIron" count="1" grid="0, -1" />
+        <ingredient name="forgedIron" count="1" grid="1, -2" />
         <ingredient name="torch" count="1" grid="0, -2" />
     </recipe>
 
@@ -3178,16 +3178,16 @@
     </recipe>
 
         <recipe name="ceilingLight04" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="forgediron" count="1" grid="-2, -1" />
-              <ingredient name="forgediron" count="1" grid="0, -1" />
-              <ingredient name="forgediron" count="1" grid="-1, 0" />
+              <ingredient name="forgedIron" count="1" grid="-2, -1" />
+              <ingredient name="forgedIron" count="1" grid="0, -1" />
+              <ingredient name="forgedIron" count="1" grid="-1, 0" />
               <ingredient name="torch" count="1" grid="-1, -1" />
           </recipe>
 
           <recipe name="ceilingLight05" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="forgediron" count="1" grid="-1, -1" />
-              <ingredient name="forgediron" count="1" grid="1, -1" />
-              <ingredient name="forgediron" count="1" grid="0, 0" />
+              <ingredient name="forgedIron" count="1" grid="-1, -1" />
+              <ingredient name="forgedIron" count="1" grid="1, -1" />
+              <ingredient name="forgedIron" count="1" grid="0, 0" />
               <ingredient name="torch" count="1" grid="0, -1" />
           </recipe>
 
@@ -3199,11 +3199,11 @@
           </recipe>
 
           <recipe name="ceilingLight07" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="forgediron" count="1" grid="-2, 0" />
-              <ingredient name="forgediron" count="1" grid="-1, 0" />
-              <ingredient name="forgediron" count="1" grid="0, 0" />
-              <ingredient name="forgediron" count="1" grid="1, 0" />
-              <ingredient name="forgediron" count="1" grid="2, 0" />
+              <ingredient name="forgedIron" count="1" grid="-2, 0" />
+              <ingredient name="forgedIron" count="1" grid="-1, 0" />
+              <ingredient name="forgedIron" count="1" grid="0, 0" />
+              <ingredient name="forgedIron" count="1" grid="1, 0" />
+              <ingredient name="forgedIron" count="1" grid="2, 0" />
               <ingredient name="torch" count="1" grid="-1, -1" />
               <ingredient name="torch" count="1" grid="0, -1" />
               <ingredient name="torch" count="1" grid="1, 1" />
