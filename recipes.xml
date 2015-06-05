@@ -3148,7 +3148,7 @@
         <ingredient name="torch" count="1" grid="0, -1" />
     </recipe>
 
-    <recipe name="porchLight04brass" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+    <recipe name="porchLight04Brass" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
         <ingredient name="scrapBrass" count="1" grid="0, -2" />
         <ingredient name="scrapBrass" count="1" grid="-1, -1" />
         <ingredient name="scrapBrass" count="1" grid="0, 0" />
@@ -3209,19 +3209,19 @@
               <ingredient name="torch" count="1" grid="1, 1" />
           </recipe>
 
-          <recipe name="chaulkBoard" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="woodplank" count="1" grid="-2, -1" />
-              <ingredient name="woodplank" count="1" grid="-1, -1" />
-              <ingredient name="woodplank" count="1" grid="0, -1" />
-              <ingredient name="woodplank" count="1" grid="1, -1" />
-              <ingredient name="woodplank" count="1" grid="2, -1" />
-              <ingredient name="woodplank" count="1" grid="-2, 0" />
-              <ingredient name="woodplank" count="1" grid="2, 0" />
-              <ingredient name="woodplank" count="1" grid="-2, 1" />
-              <ingredient name="woodplank" count="1" grid="-1, 1" />
-              <ingredient name="woodplank" count="1" grid="0, 1" />
-              <ingredient name="woodplank" count="1" grid="1, 1" />
-              <ingredient name="woodplank" count="1" grid="2, 1" />
+          <recipe name="chaulkboard" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
+              <ingredient name="woodPlank" count="1" grid="-2, -1" />
+              <ingredient name="woodPlank" count="1" grid="-1, -1" />
+              <ingredient name="woodPlank" count="1" grid="0, -1" />
+              <ingredient name="woodPlank" count="1" grid="1, -1" />
+              <ingredient name="woodPlank" count="1" grid="2, -1" />
+              <ingredient name="woodPlank" count="1" grid="-2, 0" />
+              <ingredient name="woodPlank" count="1" grid="2, 0" />
+              <ingredient name="woodPlank" count="1" grid="-2, 1" />
+              <ingredient name="woodPlank" count="1" grid="-1, 1" />
+              <ingredient name="woodPlank" count="1" grid="0, 1" />
+              <ingredient name="woodPlank" count="1" grid="1, 1" />
+              <ingredient name="woodPlank" count="1" grid="2, 1" />
               <ingredient name="coal" count="1" grid="-1, 0" />
               <ingredient name="coal" count="1" grid="0, 0" />
               <ingredient name="coal" count="1" grid="1, 0" />
@@ -3258,8 +3258,8 @@
               <ingredient name="adobeWhite" count="1" grid="0, 1" />
               <ingredient name="adobeWhite" count="1" grid="-1, 0" />
               <ingredient name="adobeWhite" count="1" grid="0, 0" />
-              <ingredient name="woodplank" count="1" grid="-1, 1" />
-              <ingredient name="woodplank" count="1" grid="0, 1" />
+              <ingredient name="woodPlank" count="1" grid="-1, 1" />
+              <ingredient name="woodPlank" count="1" grid="0, 1" />
           </recipe>
 
           <recipe name="adobeWhiteInsideTrimCorner" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
@@ -3268,9 +3268,9 @@
               <ingredient name="adobeWhite" count="1" grid="-1, -1" />
               <ingredient name="adobeWhite" count="1" grid="0, -1" />
               <ingredient name="adobeWhite" count="1" grid="0, -2" />
-              <ingredient name="woodplank" count="1" grid="-2, 0" />
-              <ingredient name="woodplank" count="1" grid="0, 0" />
-              <ingredient name="woodplank" count="1" grid="-1, 0" />
+              <ingredient name="woodPlank" count="1" grid="-2, 0" />
+              <ingredient name="woodPlank" count="1" grid="0, 0" />
+              <ingredient name="woodPlank" count="1" grid="-1, 0" />
           </recipe>
 
           <recipe name="adobeWhitePole" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
@@ -3289,15 +3289,15 @@
               <ingredient name="adobeWhite" count="1" grid="-1, -1" />
               <ingredient name="adobeWhite" count="1" grid="-1, 0" />
               <ingredient name="adobeWhite" count="1" grid="0, 0" />
-              <ingredient name="woodplank" count="1" grid="-1, 1" />
-              <ingredient name="woodplank" count="1" grid="0, 1" />
+              <ingredient name="woodPlank" count="1" grid="-1, 1" />
+              <ingredient name="woodPlank" count="1" grid="0, 1" />
           </recipe>
 
           <recipe name="adobeWhiteTrimCorner" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
               <ingredient name="adobeWhite" count="1" grid="-2, -2" />
               <ingredient name="adobeWhite" count="1" grid="-1, -2" />
               <ingredient name="adobeWhite" count="1" grid="-2, -1" />
-              <ingredient name="woodplank" count="1" grid="-2, 0" />
+              <ingredient name="woodPlank" count="1" grid="-2, 0" />
           </recipe>
 
           <recipe name="adobePeach" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
@@ -3315,8 +3315,8 @@
           <recipe name="adobePeachDrywall" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
               <ingredient name="adobePeach" count="1" grid="-1, -1" />
               <ingredient name="adobePeach" count="1" grid="-1, 0" />
-              <ingredient name="Drywall" count="1" grid="0, -1" />
-              <ingredient name="DryWall" count="1" grid="0, 0" />
+              <ingredient name="drywall" count="1" grid="0, -1" />
+              <ingredient name="drywall" count="1" grid="0, 0" />
           </recipe>
 
           <recipe name="adobePeachDrywallBaseboard" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
@@ -3324,8 +3324,8 @@
               <ingredient name="adobePeach" count="1" grid="0, 1" />
               <ingredient name="adobePeach" count="1" grid="-1, 0" />
               <ingredient name="adobePeach" count="1" grid="0, 0" />
-              <ingredient name="woodplank" count="1" grid="-1, 1" />
-              <ingredient name="woodplank" count="1" grid="0, 1" />
+              <ingredient name="woodPlank" count="1" grid="-1, 1" />
+              <ingredient name="woodPlank" count="1" grid="0, 1" />
           </recipe>
 
           <recipe name="adobePeachTube" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
@@ -3347,34 +3347,26 @@
           <recipe name="asphaltDrywall" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
               <ingredient name="asphalt" count="1" grid="-1, -1" />
               <ingredient name="asphalt" count="1" grid="-1, 0" />
-              <ingredient name="Drywall" count="1" grid="0, -1" />
-              <ingredient name="DryWall" count="1" grid="0, 0" />
+              <ingredient name="drywall" count="1" grid="0, -1" />
+              <ingredient name="drywall" count="1" grid="0, 0" />
           </recipe>
 
           <recipe name="awning1cornerFullWedge" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="awning1" count="1" grid="-2, -2" />
-              <ingredient name="awning1" count="1" grid="-1, -2" />
-              <ingredient name="awning1" count="1" grid="0, -2" />
-              <ingredient name="awning1" count="1" grid="-2, -1" />
-              <ingredient name="awning1" count="1" grid="-1, -1" />
-              <ingredient name="awning1" count="1" grid="-2, 0" />
-          </recipe>
-
-          <recipe name="awning1WedgedLiner" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="awning1" count="1" grid="-2, -2" />
-              <ingredient name="awning1" count="1" grid="0, -2" />
-              <ingredient name="awning1" count="1" grid="-2, -1" />
-              <ingredient name="awning1" count="1" grid="-1, -1" />
-              <ingredient name="awning1" count="1" grid="0, -0" />
+              <ingredient name="Awning1" count="1" grid="-2, -2" />
+              <ingredient name="Awning1" count="1" grid="-1, -2" />
+              <ingredient name="Awning1" count="1" grid="0, -2" />
+              <ingredient name="Awning1" count="1" grid="-2, -1" />
+              <ingredient name="Awning1" count="1" grid="-1, -1" />
+              <ingredient name="Awning1" count="1" grid="-2, 0" />
           </recipe>
 
           <recipe name="BaseboardIndustrialTile" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
-              <ingredient name="Drywall" count="1" grid="-1, -1" />
-              <ingredient name="Drywall" count="1" grid="0, -1" />
-              <ingredient name="Drywall" count="1" grid="-1, 0" />
-              <ingredient name="TileIndustrial" count="1" grid="0, 0" />
-              <ingredient name="woodplank" count="1" grid="-1, 1" />
-              <ingredient name="woodplank" count="1" grid="0, 1" />
+              <ingredient name="drywall" count="1" grid="-1, -1" />
+              <ingredient name="drywall" count="1" grid="0, -1" />
+              <ingredient name="drywall" count="1" grid="-1, 0" />
+              <ingredient name="tileIndustrial" count="1" grid="0, 0" />
+              <ingredient name="woodPlank" count="1" grid="-1, 1" />
+              <ingredient name="woodPlank" count="1" grid="0, 1" />
           </recipe>
 
           <recipe name="barnWedgeMetalRoof" count="1" scrapable="false" craft_time="5" craft_exp_gain="2" learn_exp_gain="20" >
